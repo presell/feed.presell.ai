@@ -321,6 +321,16 @@ function PlasmicHomepage__RenderFunc(props: {
                                         role={"img"}
                                       />
                                     }
+                                    link={`/article/${(() => {
+                                      try {
+                                        return currentItem.id;
+                                      } catch (e) {
+                                        if (e instanceof TypeError) {
+                                          return "recN69bpm18hjPrwy";
+                                        }
+                                        throw e;
+                                      }
+                                    })()}`}
                                     shape={"rounded" as const}
                                     showEndIcon={true}
                                     startIcon={

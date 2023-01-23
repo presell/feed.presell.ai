@@ -252,19 +252,6 @@
           "plumeType": "text-input"
         },
         {
-          "id": "14kx10VAKJW",
-          "name": "BlogLanding2",
-          "type": "managed",
-          "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
-          "renderModuleFilePath": "plasmic/feed_presell_ai/PlasmicBlogLanding2.tsx",
-          "importSpec": {
-            "modulePath": "../pages/blog-landing-2.tsx"
-          },
-          "cssFilePath": "plasmic/feed_presell_ai/PlasmicBlogLanding2.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "JO_Hju0Bhq",
           "name": "Homepage",
           "type": "managed",
@@ -274,19 +261,6 @@
             "modulePath": "../pages/index.tsx"
           },
           "cssFilePath": "plasmic/feed_presell_ai/PlasmicHomepage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
-          "id": "vtnSeAbU5KO",
-          "name": "Homepage2",
-          "type": "managed",
-          "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
-          "renderModuleFilePath": "plasmic/feed_presell_ai/PlasmicHomepage2.tsx",
-          "importSpec": {
-            "modulePath": "../pages/-2.tsx"
-          },
-          "cssFilePath": "plasmic/feed_presell_ai/PlasmicHomepage2.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         }
