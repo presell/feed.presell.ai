@@ -13,6 +13,7 @@ export interface GlobalContextsProviderProps {
   cmsCredentialsProviderProps?: Partial<
     Omit<React.ComponentProps<typeof CmsCredentialsProvider>, "children">
   >;
+
   wordpressProviderProps?: Partial<
     Omit<React.ComponentProps<typeof WordpressProvider>, "children">
   >;
