@@ -226,27 +226,34 @@ function PlasmicSqueeze__RenderFunc(props: {
                     <div
                       className={classNames(projectcss.all, sty.freeBox__xhsS)}
                     >
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__aA2H)}
-                        displayHeight={"56px" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"auto" as const}
-                        loading={"lazy" as const}
-                        src={(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.fields.logo[0].url;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return undefined;
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__o0Xt
+                        )}
+                      >
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img__aA2H)}
+                          displayHeight={"56px" as const}
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"100%" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"auto" as const}
+                          loading={"lazy" as const}
+                          src={(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.fields.logo[0].url;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return undefined;
+                              }
+                              throw e;
                             }
-                            throw e;
-                          }
-                        })()}
-                      />
+                          })()}
+                        />
+                      </div>
 
                       {true ? (
                         <div
