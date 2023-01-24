@@ -32,8 +32,8 @@
   max-width: 100%;
   align-self: center;
   background: #ffffff;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -78,12 +78,12 @@
 }
 .heroSubHeadline {
   width: 750px;
-  height: auto;
   max-width: 100%;
   text-align: left;
   font-size: 36px;
   color: #535353;
   font-weight: 800;
+  height: auto;
   padding: 30px 0px 0px;
   margin: 0px;
 }

@@ -35,8 +35,11 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { DataFetcher } from "@plasmicpkgs/plasmic-query"; // plasmic-import: ae7V86eNoXA/codeComponent
-import TextInput from "../../TextInput"; // plasmic-import: oXgnbMzjmEb/component
 import { PlasmicHead } from "@plasmicapp/react-web"; // plasmic-import: 9R13-owMVa/codeComponent
+import TextInput from "../../TextInput"; // plasmic-import: oXgnbMzjmEb/component
+import Button from "../../Button"; // plasmic-import: tGhiKRCWdC1/component
+
+import { useScreenVariants as useScreenVariantsgpwde9M3Mng } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: GPWDE9_m3Mng/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -58,10 +61,9 @@ export const PlasmicSqueeze__ArgProps = new Array<ArgPropType>();
 export type PlasmicSqueeze__OverridesType = {
   root?: p.Flex<"div">;
   httpApiFetcher?: p.Flex<typeof DataFetcher>;
-  freeBox?: p.Flex<"div">;
-  columns?: p.Flex<"div">;
-  button?: p.Flex<"button">;
   head?: p.Flex<typeof PlasmicHead>;
+  columns?: p.Flex<"div">;
+  button?: p.Flex<typeof Button>;
 };
 
 export interface DefaultSqueezeProps {}
@@ -94,6 +96,10 @@ function PlasmicSqueeze__RenderFunc(props: {
   const currentUser = p.useCurrentUser?.() || {};
 
   const [$queries, setDollarQueries] = React.useState({});
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsgpwde9M3Mng()
+  });
 
   return (
     <React.Fragment>
@@ -180,119 +186,6 @@ function PlasmicSqueeze__RenderFunc(props: {
             <ph.DataCtxReader>
               {$ctx => (
                 <React.Fragment>
-                  {true ? (
-                    <div
-                      data-plasmic-name={"freeBox"}
-                      data-plasmic-override={overrides.freeBox}
-                      className={classNames(projectcss.all, sty.freeBox)}
-                    >
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__aA2H)}
-                        displayHeight={"56px" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"auto" as const}
-                        loading={"lazy" as const}
-                        src={(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.fields.logo[0].url;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
-                      />
-                    </div>
-                  ) : null}
-
-                  <div
-                    data-plasmic-name={"columns"}
-                    data-plasmic-override={overrides.columns}
-                    className={classNames(projectcss.all, sty.columns)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.column__aCdPz)}
-                    >
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__lDnBi)}
-                        displayHeight={"auto" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"auto" as const}
-                        loading={"lazy" as const}
-                        src={(() => {
-                          try {
-                            return undefined;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
-                      />
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__iqZnN
-                        )}
-                      >
-                        {"Enter some text"}
-                      </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__xOevu
-                        )}
-                      >
-                        {"Enter some text"}
-                      </div>
-
-                      <TextInput
-                        className={classNames(
-                          "__wab_instance",
-                          sty.textInput___83TV
-                        )}
-                      />
-
-                      <TextInput
-                        className={classNames(
-                          "__wab_instance",
-                          sty.textInput__sA0O
-                        )}
-                      />
-
-                      <button
-                        data-plasmic-name={"button"}
-                        data-plasmic-override={overrides.button}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.button,
-                          projectcss.__wab_text,
-                          sty.button
-                        )}
-                      >
-                        {"Click Me"}
-                      </button>
-                    </div>
-
-                    <div
-                      className={classNames(projectcss.all, sty.column__bfBay)}
-                    />
-                  </div>
-
                   <PlasmicHead
                     data-plasmic-name={"head"}
                     data-plasmic-override={overrides.head}
@@ -328,6 +221,387 @@ function PlasmicSqueeze__RenderFunc(props: {
                       }
                     })()}
                   />
+
+                  {true ? (
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__xhsS)}
+                    >
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__aA2H)}
+                        displayHeight={"56px" as const}
+                        displayMaxHeight={"none" as const}
+                        displayMaxWidth={"100%" as const}
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={"auto" as const}
+                        loading={"lazy" as const}
+                        src={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.fields.logo[0].url;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                      />
+
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__l1GHc
+                          )}
+                        >
+                          <p.Stack
+                            as={"div"}
+                            data-plasmic-name={"columns"}
+                            data-plasmic-override={overrides.columns}
+                            hasGap={true}
+                            className={classNames(projectcss.all, sty.columns)}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.column__cGcZq
+                              )}
+                            >
+                              <p.PlasmicImg
+                                alt={""}
+                                className={classNames(sty.img__fGtp5)}
+                                displayHeight={"auto" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"100%" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={
+                                  hasVariant(
+                                    globalVariants,
+                                    "screen",
+                                    "mobileOnly"
+                                  )
+                                    ? ("170px" as const)
+                                    : ("200px" as const)
+                                }
+                                loading={"lazy" as const}
+                                src={(() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.fields
+                                      .sThumbail[0].url;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return undefined;
+                                    }
+                                    throw e;
+                                  }
+                                })()}
+                              />
+                            </div>
+
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.column__nTBu0
+                              )}
+                            >
+                              {(
+                                hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? true
+                                  : true
+                              ) ? (
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__op1Z7
+                                  )}
+                                >
+                                  {(() => {
+                                    try {
+                                      return $ctx.fetchDyanamicData.fields.sH1;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return "Enter some text";
+                                      }
+                                      throw e;
+                                    }
+                                  })()}
+                                </div>
+                              ) : null}
+                              {(
+                                hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? true
+                                  : true
+                              ) ? (
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text___8D1YK
+                                  )}
+                                >
+                                  {(() => {
+                                    try {
+                                      return $ctx.fetchDyanamicData.fields.sH2;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return "undefine";
+                                      }
+                                      throw e;
+                                    }
+                                  })()}
+                                </div>
+                              ) : null}
+                              {(
+                                hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? true
+                                  : true
+                              ) ? (
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__u1WhW
+                                  )}
+                                >
+                                  {(() => {
+                                    try {
+                                      return $ctx.fetchDyanamicData.fields.sH1;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return "Enter some text";
+                                      }
+                                      throw e;
+                                    }
+                                  })()}
+                                </div>
+                              ) : null}
+                              {(
+                                hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? true
+                                  : true
+                              ) ? (
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__vJdSs
+                                  )}
+                                >
+                                  {(() => {
+                                    try {
+                                      return $ctx.fetchDyanamicData.fields.sH2;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return "Enter some text";
+                                      }
+                                      throw e;
+                                    }
+                                  })()}
+                                </div>
+                              ) : null}
+
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text___5XdCo
+                                )}
+                              >
+                                {(() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.fields.sH3;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return "Enter some text";
+                                    }
+                                    throw e;
+                                  }
+                                })()}
+                              </div>
+                            </div>
+                          </p.Stack>
+                        </div>
+                      ) : null}
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__ysbXk
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__a3MCw
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox___99Wqa
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text___2IoWc
+                              )}
+                            >
+                              {(() => {
+                                try {
+                                  return $ctx.fetchDyanamicData.fields.sBadge;
+                                } catch (e) {
+                                  if (e instanceof TypeError) {
+                                    return "Limited-Time Offer";
+                                  }
+                                  throw e;
+                                }
+                              })()}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__ugJYb
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__o4C3M
+                          )}
+                        >
+                          {(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.fields.sH4;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "Enter some text";
+                              }
+                              throw e;
+                            }
+                          })()}
+                        </div>
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__qDwa
+                          )}
+                        >
+                          {(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.fields.sH5;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "Enter some text";
+                              }
+                              throw e;
+                            }
+                          })()}
+                        </div>
+
+                        <TextInput
+                          className={classNames(
+                            "__wab_instance",
+                            sty.textInput__p474A
+                          )}
+                          placeholder={"📧 Your Email Address" as const}
+                        />
+
+                        <TextInput
+                          className={classNames(
+                            "__wab_instance",
+                            sty.textInput___0TAi9
+                          )}
+                          placeholder={"📲 Your Phone Number" as const}
+                        />
+
+                        <Button
+                          data-plasmic-name={"button"}
+                          data-plasmic-override={overrides.button}
+                          className={classNames("__wab_instance", sty.button)}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__pdsJ0
+                            )}
+                          >
+                            {"Get Offer"}
+                          </div>
+                        </Button>
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__lCs17
+                          )}
+                        >
+                          {"I agree to receive emails and texts."}
+                        </div>
+                      </div>
+
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__dEoA
+                          )}
+                        >
+                          <p.PlasmicImg
+                            alt={""}
+                            className={classNames(sty.img___9YjWs)}
+                            displayHeight={"56px" as const}
+                            displayMaxHeight={"none" as const}
+                            displayMaxWidth={"100%" as const}
+                            displayMinHeight={"0" as const}
+                            displayMinWidth={"0" as const}
+                            displayWidth={"auto" as const}
+                            loading={"lazy" as const}
+                            src={(() => {
+                              try {
+                                return $ctx.fetchDyanamicData.fields.logo[0]
+                                  .url;
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return undefined;
+                                }
+                                throw e;
+                              }
+                            })()}
+                          />
+                        </div>
+                      ) : null}
+                    </div>
+                  ) : null}
                 </React.Fragment>
               )}
             </ph.DataCtxReader>
@@ -339,12 +613,11 @@ function PlasmicSqueeze__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "httpApiFetcher", "freeBox", "columns", "button", "head"],
-  httpApiFetcher: ["httpApiFetcher", "freeBox", "columns", "button", "head"],
-  freeBox: ["freeBox"],
-  columns: ["columns", "button"],
-  button: ["button"],
-  head: ["head"]
+  root: ["root", "httpApiFetcher", "head", "columns", "button"],
+  httpApiFetcher: ["httpApiFetcher", "head", "columns", "button"],
+  head: ["head"],
+  columns: ["columns"],
+  button: ["button"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -352,10 +625,9 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   httpApiFetcher: typeof DataFetcher;
-  freeBox: "div";
-  columns: "div";
-  button: "button";
   head: typeof PlasmicHead;
+  columns: "div";
+  button: typeof Button;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -420,10 +692,9 @@ export const PlasmicSqueeze = Object.assign(
   {
     // Helper components rendering sub-elements
     httpApiFetcher: makeNodeComponent("httpApiFetcher"),
-    freeBox: makeNodeComponent("freeBox"),
+    head: makeNodeComponent("head"),
     columns: makeNodeComponent("columns"),
     button: makeNodeComponent("button"),
-    head: makeNodeComponent("head"),
 
     // Metadata about props expected for PlasmicSqueeze
     internalVariantProps: PlasmicSqueeze__VariantProps,

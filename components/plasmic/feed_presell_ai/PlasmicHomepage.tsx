@@ -62,7 +62,6 @@ export type PlasmicHomepage__OverridesType = {
   h4?: p.Flex<"h4">;
   text?: p.Flex<"div">;
   button?: p.Flex<typeof Button>;
-  link?: p.Flex<"a"> & Partial<LinkProps>;
 };
 
 export interface DefaultHomepageProps {}
@@ -304,70 +303,100 @@ function PlasmicHomepage__RenderFunc(props: {
                                     })()}
                                   </div>
 
-                                  <Button
-                                    data-plasmic-name={"button"}
-                                    data-plasmic-override={overrides.button}
-                                    className={classNames(
-                                      "__wab_instance",
-                                      sty.button
-                                    )}
-                                    color={"blue" as const}
-                                    endIcon={
-                                      <ArrowRightsvgIcon
+                                  {true ? (
+                                    <div
+                                      className={classNames(
+                                        projectcss.all,
+                                        sty.freeBox__kc5Br
+                                      )}
+                                    >
+                                      <Button
+                                        data-plasmic-name={"button"}
+                                        data-plasmic-override={overrides.button}
                                         className={classNames(
-                                          projectcss.all,
-                                          sty.svg__r2Rbh
+                                          "__wab_instance",
+                                          sty.button
                                         )}
-                                        role={"img"}
-                                      />
-                                    }
-                                    link={`/article/${(() => {
+                                        color={"blue" as const}
+                                        endIcon={
+                                          <ArrowRightsvgIcon
+                                            className={classNames(
+                                              projectcss.all,
+                                              sty.svg__r2Rbh
+                                            )}
+                                            role={"img"}
+                                          />
+                                        }
+                                        link={`/article/${(() => {
+                                          try {
+                                            return currentItem.id;
+                                          } catch (e) {
+                                            if (e instanceof TypeError) {
+                                              return "recN69bpm18hjPrwy";
+                                            }
+                                            throw e;
+                                          }
+                                        })()}`}
+                                        shape={"rounded" as const}
+                                        showEndIcon={true}
+                                        startIcon={
+                                          <ChecksvgIcon
+                                            className={classNames(
+                                              projectcss.all,
+                                              sty.svg__ng243
+                                            )}
+                                            role={"img"}
+                                          />
+                                        }
+                                      >
+                                        <p.PlasmicLink
+                                          className={classNames(
+                                            projectcss.all,
+                                            projectcss.a,
+                                            projectcss.__wab_text,
+                                            sty.link___9AMbf
+                                          )}
+                                          component={Link}
+                                          href={`/article/${(() => {
+                                            try {
+                                              return currentItem.id;
+                                            } catch (e) {
+                                              if (e instanceof TypeError) {
+                                                return "recN69bpm18hjPrwy";
+                                              }
+                                              throw e;
+                                            }
+                                          })()}`}
+                                          platform={"nextjs"}
+                                        >
+                                          {"Read post"}
+                                        </p.PlasmicLink>
+                                      </Button>
+                                    </div>
+                                  ) : null}
+
+                                  <p.PlasmicLink
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.a,
+                                      projectcss.__wab_text,
+                                      sty.link___3ESKz
+                                    )}
+                                    component={Link}
+                                    href={`/squeeze/${(() => {
                                       try {
                                         return currentItem.id;
                                       } catch (e) {
                                         if (e instanceof TypeError) {
-                                          return "recN69bpm18hjPrwy";
+                                          return "recv3gYlFYc1L0KHG";
                                         }
                                         throw e;
                                       }
                                     })()}`}
-                                    shape={"rounded" as const}
-                                    showEndIcon={true}
-                                    startIcon={
-                                      <ChecksvgIcon
-                                        className={classNames(
-                                          projectcss.all,
-                                          sty.svg__ng243
-                                        )}
-                                        role={"img"}
-                                      />
-                                    }
+                                    platform={"nextjs"}
                                   >
-                                    <p.PlasmicLink
-                                      data-plasmic-name={"link"}
-                                      data-plasmic-override={overrides.link}
-                                      className={classNames(
-                                        projectcss.all,
-                                        projectcss.a,
-                                        projectcss.__wab_text,
-                                        sty.link
-                                      )}
-                                      component={Link}
-                                      href={`/article/${(() => {
-                                        try {
-                                          return currentItem.id;
-                                        } catch (e) {
-                                          if (e instanceof TypeError) {
-                                            return "recN69bpm18hjPrwy";
-                                          }
-                                          throw e;
-                                        }
-                                      })()}`}
-                                      platform={"nextjs"}
-                                    >
-                                      {"Read post"}
-                                    </p.PlasmicLink>
-                                  </Button>
+                                    {"Squeez"}
+                                  </p.PlasmicLink>
                                 </div>
                               </div>
                             </div>
@@ -394,12 +423,11 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "httpApiFetcher", "h4", "text", "button", "link"],
-  httpApiFetcher: ["httpApiFetcher", "h4", "text", "button", "link"],
+  root: ["root", "httpApiFetcher", "h4", "text", "button"],
+  httpApiFetcher: ["httpApiFetcher", "h4", "text", "button"],
   h4: ["h4"],
   text: ["text"],
-  button: ["button", "link"],
-  link: ["link"]
+  button: ["button"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -410,7 +438,6 @@ type NodeDefaultElementType = {
   h4: "h4";
   text: "div";
   button: typeof Button;
-  link: "a";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -478,7 +505,6 @@ export const PlasmicHomepage = Object.assign(
     h4: makeNodeComponent("h4"),
     text: makeNodeComponent("text"),
     button: makeNodeComponent("button"),
-    link: makeNodeComponent("link"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

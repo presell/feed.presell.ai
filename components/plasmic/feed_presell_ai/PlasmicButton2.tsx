@@ -190,6 +190,7 @@ function PlasmicButton2__RenderFunc(props: {
       {
         path: "showStartIcon",
         type: "private",
+        variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.showStartIcon
           : undefined
@@ -197,6 +198,7 @@ function PlasmicButton2__RenderFunc(props: {
       {
         path: "showEndIcon",
         type: "private",
+        variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.showEndIcon
           : undefined
@@ -204,21 +206,25 @@ function PlasmicButton2__RenderFunc(props: {
       {
         path: "color",
         type: "private",
+        variableType: "variant",
         initFunc: true ? ($props, $state, $ctx) => $props.color : undefined
       },
       {
         path: "iconOnly",
         type: "private",
+        variableType: "variant",
         initFunc: true ? ($props, $state, $ctx) => $props.iconOnly : undefined
       },
       {
         path: "outline",
         type: "private",
+        variableType: "variant",
         initFunc: true ? ($props, $state, $ctx) => $props.outline : undefined
       },
       {
         path: "bgDifference",
         type: "private",
+        variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.bgDifference
           : undefined
@@ -226,21 +232,25 @@ function PlasmicButton2__RenderFunc(props: {
       {
         path: "round",
         type: "private",
+        variableType: "variant",
         initFunc: true ? ($props, $state, $ctx) => $props.round : undefined
       },
       {
         path: "large",
         type: "private",
+        variableType: "variant",
         initFunc: true ? ($props, $state, $ctx) => $props.large : undefined
       },
       {
         path: "flat",
         type: "private",
+        variableType: "variant",
         initFunc: true ? ($props, $state, $ctx) => $props.flat : undefined
       },
       {
         path: "extraSmallShadow",
         type: "private",
+        variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.extraSmallShadow
           : undefined
@@ -248,11 +258,13 @@ function PlasmicButton2__RenderFunc(props: {
       {
         path: "isDisabled",
         type: "private",
+        variableType: "variant",
         initFunc: true ? ($props, $state, $ctx) => $props.isDisabled : undefined
       },
       {
         path: "small",
         type: "private",
+        variableType: "variant",
         initFunc: true ? ($props, $state, $ctx) => $props.small : undefined
       }
     ],
