@@ -56,9 +56,7 @@ export const PlasmicArticleInfo__ArgProps = new Array<ArgPropType>();
 export type PlasmicArticleInfo__OverridesType = {
   root?: p.Flex<"div">;
   httpApiFetcher?: p.Flex<typeof DataFetcher>;
-  img?: p.Flex<typeof p.PlasmicImg>;
   heroSubHeadline?: p.Flex<"div">;
-  text?: p.Flex<"div">;
   heroImage?: p.Flex<typeof p.PlasmicImg>;
   paragraph1?: p.Flex<"div">;
   image1?: p.Flex<typeof p.PlasmicImg>;
@@ -189,10 +187,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       className={classNames(projectcss.all, sty.freeBox__kX152)}
                     >
                       <p.PlasmicImg
-                        data-plasmic-name={"img"}
-                        data-plasmic-override={overrides.img}
                         alt={""}
-                        className={classNames(sty.img)}
+                        className={classNames(sty.img___3Hkyi)}
                         displayHeight={"56px" as const}
                         displayMaxHeight={"none" as const}
                         displayMaxWidth={"100%" as const}
@@ -211,7 +207,465 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           }
                         })()}
                       />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___6Svqf
+                        )}
+                      />
                     </div>
+                  ) : null}
+                  {(
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <div
+                      className={classNames(projectcss.all, sty.columns__um87Q)}
+                    >
+                      {(
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.column__lnI4
+                          )}
+                        >
+                          {(
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <p.PlasmicImg
+                              alt={""}
+                              className={classNames(sty.img__bmaGl)}
+                              displayHeight={"auto" as const}
+                              displayMaxHeight={"none" as const}
+                              displayMaxWidth={"100%" as const}
+                              displayMinHeight={"0" as const}
+                              displayMinWidth={"0" as const}
+                              displayWidth={"400px" as const}
+                              loading={"lazy" as const}
+                              src={(() => {
+                                try {
+                                  return $ctx.fetchDyanamicData.fields.logo[0]
+                                    .url;
+                                } catch (e) {
+                                  if (e instanceof TypeError) {
+                                    return undefined;
+                                  }
+                                  throw e;
+                                }
+                              })()}
+                            />
+                          ) : null}
+                        </div>
+                      ) : null}
+                      {(
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.column__qZwpR
+                          )}
+                        />
+                      ) : null}
+                    </div>
+                  ) : null}
+                  {(
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__eiUyg)}
+                    >
+                      {(
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.columns__xMkj
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.column__rA1Hw
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__gWvpK
+                              )}
+                            >
+                              {(() => {
+                                try {
+                                  return $ctx.fetchDyanamicData.fields.aSlogan;
+                                } catch (e) {
+                                  if (e instanceof TypeError) {
+                                    return '"The Evaluation of Inhalation"';
+                                  }
+                                  throw e;
+                                }
+                              })()}
+                            </div>
+                          </div>
+
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.column__ekYKj
+                            )}
+                          >
+                            <p.PlasmicImg
+                              alt={""}
+                              className={classNames(sty.img___72MUb)}
+                              displayHeight={"auto" as const}
+                              displayMaxHeight={"none" as const}
+                              displayMaxWidth={"100%" as const}
+                              displayMinHeight={"0" as const}
+                              displayMinWidth={"0" as const}
+                              displayWidth={
+                                hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? ("500px" as const)
+                                  : ("500px" as const)
+                              }
+                              loading={"lazy" as const}
+                              src={(() => {
+                                try {
+                                  return $ctx.fetchDyanamicData.fields.logo[0]
+                                    .url;
+                                } catch (e) {
+                                  if (e instanceof TypeError) {
+                                    return undefined;
+                                  }
+                                  throw e;
+                                }
+                              })()}
+                            />
+                          </div>
+
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.column__c4A2J
+                            )}
+                          >
+                            <button
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.button,
+                                projectcss.__wab_text,
+                                sty.button__sn8Lk
+                              )}
+                            >
+                              {(() => {
+                                try {
+                                  return $ctx.fetchDyanamicData.fields.aCTA;
+                                } catch (e) {
+                                  if (e instanceof TypeError) {
+                                    return "CLAIM FREE PODS";
+                                  }
+                                  throw e;
+                                }
+                              })()}
+                            </button>
+                          </div>
+                        </div>
+                      ) : null}
+                    </div>
+                  ) : null}
+                  {(
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__kUzNs)}
+                    >
+                      {(
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.columns__lRlcp
+                          )}
+                        >
+                          {(
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.column__ykYIw
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.columns___8Xmd1
+                                )}
+                              >
+                                {(
+                                  hasVariant(
+                                    globalVariants,
+                                    "screen",
+                                    "mobileOnly"
+                                  )
+                                    ? true
+                                    : true
+                                ) ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.column__tli1L
+                                    )}
+                                  />
+                                ) : null}
+                                {(
+                                  hasVariant(
+                                    globalVariants,
+                                    "screen",
+                                    "mobileOnly"
+                                  )
+                                    ? true
+                                    : true
+                                ) ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.column__xm0Yd
+                                    )}
+                                  />
+                                ) : null}
+                              </div>
+                            </div>
+                          ) : null}
+                          {(
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.column__wvvO5
+                              )}
+                            />
+                          ) : null}
+                        </div>
+                      ) : null}
+                      {(
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.columns__irRgs
+                          )}
+                        >
+                          {(
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.column__cQPe4
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.columns___0Menr
+                                )}
+                              >
+                                {(
+                                  hasVariant(
+                                    globalVariants,
+                                    "screen",
+                                    "mobileOnly"
+                                  )
+                                    ? true
+                                    : true
+                                ) ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.column__jGp2P
+                                    )}
+                                  />
+                                ) : null}
+                                {(
+                                  hasVariant(
+                                    globalVariants,
+                                    "screen",
+                                    "mobileOnly"
+                                  )
+                                    ? true
+                                    : true
+                                ) ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.column__sffYy
+                                    )}
+                                  />
+                                ) : null}
+                              </div>
+                            </div>
+                          ) : null}
+                          {(
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.column__yfapz
+                              )}
+                            />
+                          ) : null}
+                          {(
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.column__v4Y1J
+                              )}
+                            />
+                          ) : null}
+                        </div>
+                      ) : null}
+                      {(
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.columns___7SEqV
+                          )}
+                        >
+                          {(
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.column__xGtwc
+                              )}
+                            />
+                          ) : null}
+                        </div>
+                      ) : null}
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__eopBj
+                        )}
+                      >
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__qMx9Q
+                            )}
+                          >
+                            {(
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? true
+                                : true
+                            ) ? (
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__hS6RL
+                                )}
+                              >
+                                {"“Small Hero Quote Here”"}
+                              </div>
+                            ) : null}
+                          </div>
+                        ) : null}
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__lrEg0
+                            )}
+                          >
+                            {(
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? true
+                                : true
+                            ) ? (
+                              <button
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.button,
+                                  projectcss.__wab_text,
+                                  sty.button__cmcpk
+                                )}
+                              >
+                                {"Claim Special Offer"}
+                              </button>
+                            ) : null}
+                          </div>
+                        ) : null}
+                      </div>
+                    </div>
+                  ) : null}
+                  {(
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__o3FXp)}
+                    />
                   ) : null}
 
                   <div
@@ -239,12 +693,10 @@ function PlasmicArticleInfo__RenderFunc(props: {
                     </div>
 
                     <div
-                      data-plasmic-name={"text"}
-                      data-plasmic-override={overrides.text}
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text
+                        sty.text__vLfi6
                       )}
                     >
                       {(() => {
@@ -316,9 +768,9 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       displayHeight={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? ("auto" as const)
-                          : ("400px" as const)
+                          : ("auto" as const)
                       }
-                      displayMaxHeight={"none" as const}
+                      displayMaxHeight={"400px" as const}
                       displayMaxWidth={"100%" as const}
                       displayMinHeight={"0" as const}
                       displayMinWidth={"0" as const}
@@ -366,8 +818,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       data-plasmic-override={overrides.image2}
                       alt={""}
                       className={classNames(sty.image2)}
-                      displayHeight={"400px" as const}
-                      displayMaxHeight={"none" as const}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"400px" as const}
                       displayMaxWidth={"100%" as const}
                       displayMinHeight={"0" as const}
                       displayMinWidth={"0" as const}
@@ -416,7 +868,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           ? ("auto" as const)
                           : ("auto" as const)
                       }
-                      displayMaxHeight={"none" as const}
+                      displayMaxHeight={"400px" as const}
                       displayMaxWidth={"100%" as const}
                       displayMinHeight={"0" as const}
                       displayMinWidth={"0" as const}
@@ -467,9 +919,9 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       displayHeight={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? ("auto" as const)
-                          : ("400px" as const)
+                          : ("auto" as const)
                       }
-                      displayMaxHeight={"none" as const}
+                      displayMaxHeight={"400px" as const}
                       displayMaxWidth={"100%" as const}
                       displayMinHeight={"0" as const}
                       displayMinWidth={"0" as const}
@@ -520,9 +972,9 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       displayHeight={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? ("auto" as const)
-                          : ("400px" as const)
+                          : ("auto" as const)
                       }
-                      displayMaxHeight={"none" as const}
+                      displayMaxHeight={"400px" as const}
                       displayMaxWidth={"100%" as const}
                       displayMinHeight={"0" as const}
                       displayMinWidth={"0" as const}
@@ -573,9 +1025,9 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       displayHeight={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? ("auto" as const)
-                          : ("400px" as const)
+                          : ("auto" as const)
                       }
-                      displayMaxHeight={"none" as const}
+                      displayMaxHeight={"400px" as const}
                       displayMaxWidth={"100%" as const}
                       displayMinHeight={"0" as const}
                       displayMinWidth={"0" as const}
@@ -686,6 +1138,36 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       }
                     })()}
                   />
+
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__oy9IU)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img___0Zho)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? ("500px" as const)
+                          : ("500px" as const)
+                      }
+                      loading={"lazy" as const}
+                      src={(() => {
+                        try {
+                          return $ctx.fetchDyanamicData.fields.logo[0].url;
+                        } catch (e) {
+                          if (e instanceof TypeError) {
+                            return undefined;
+                          }
+                          throw e;
+                        }
+                      })()}
+                    />
+                  </div>
                 </React.Fragment>
               )}
             </ph.DataCtxReader>
@@ -700,9 +1182,7 @@ const PlasmicDescendants = {
   root: [
     "root",
     "httpApiFetcher",
-    "img",
     "heroSubHeadline",
-    "text",
     "heroImage",
     "paragraph1",
     "image1",
@@ -722,9 +1202,7 @@ const PlasmicDescendants = {
   ],
   httpApiFetcher: [
     "httpApiFetcher",
-    "img",
     "heroSubHeadline",
-    "text",
     "heroImage",
     "paragraph1",
     "image1",
@@ -742,9 +1220,7 @@ const PlasmicDescendants = {
     "image7",
     "head"
   ],
-  img: ["img"],
   heroSubHeadline: ["heroSubHeadline"],
-  text: ["text"],
   heroImage: ["heroImage"],
   paragraph1: ["paragraph1"],
   image1: ["image1"],
@@ -768,9 +1244,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   httpApiFetcher: typeof DataFetcher;
-  img: typeof p.PlasmicImg;
   heroSubHeadline: "div";
-  text: "div";
   heroImage: typeof p.PlasmicImg;
   paragraph1: "div";
   image1: typeof p.PlasmicImg;
@@ -851,9 +1325,7 @@ export const PlasmicArticleInfo = Object.assign(
   {
     // Helper components rendering sub-elements
     httpApiFetcher: makeNodeComponent("httpApiFetcher"),
-    img: makeNodeComponent("img"),
     heroSubHeadline: makeNodeComponent("heroSubHeadline"),
-    text: makeNodeComponent("text"),
     heroImage: makeNodeComponent("heroImage"),
     paragraph1: makeNodeComponent("paragraph1"),
     image1: makeNodeComponent("image1"),

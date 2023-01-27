@@ -173,8 +173,7 @@
           "name": "GraphqlFetcher",
           "componentImportPath": "@plasmicpkgs/plasmic-query"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
@@ -529,6 +528,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.202",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.202/dist/plasmic.schema.json"
+  "cliVersion": "0.1.205",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.205/dist/plasmic.schema.json"
 }

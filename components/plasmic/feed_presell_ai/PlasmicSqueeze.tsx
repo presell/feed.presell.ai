@@ -63,7 +63,6 @@ export type PlasmicSqueeze__OverridesType = {
   httpApiFetcher?: p.Flex<typeof DataFetcher>;
   head?: p.Flex<typeof PlasmicHead>;
   columns?: p.Flex<"div">;
-  button?: p.Flex<typeof Button>;
 };
 
 export interface DefaultSqueezeProps {}
@@ -278,7 +277,7 @@ function PlasmicSqueeze__RenderFunc(props: {
                               <p.PlasmicImg
                                 alt={""}
                                 className={classNames(sty.img__fGtp5)}
-                                displayHeight={"auto" as const}
+                                displayHeight={"175px" as const}
                                 displayMaxHeight={"none" as const}
                                 displayMaxWidth={"100%" as const}
                                 displayMinHeight={"0" as const}
@@ -461,17 +460,17 @@ function PlasmicSqueeze__RenderFunc(props: {
                             sty.freeBox__a3MCw
                           )}
                         >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox___99Wqa
-                            )}
-                          >
-                            <div
+                          {(
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <button
                               className={classNames(
                                 projectcss.all,
+                                projectcss.button,
                                 projectcss.__wab_text,
-                                sty.text___2IoWc
+                                sty.button__jeVfv
                               )}
                             >
                               {(() => {
@@ -479,13 +478,13 @@ function PlasmicSqueeze__RenderFunc(props: {
                                   return $ctx.fetchDyanamicData.fields.sBadge;
                                 } catch (e) {
                                   if (e instanceof TypeError) {
-                                    return "Limited-Time Offer";
+                                    return "Click Me";
                                   }
                                   throw e;
                                 }
                               })()}
-                            </div>
-                          </div>
+                            </button>
+                          ) : null}
                         </div>
                       </div>
 
@@ -550,9 +549,10 @@ function PlasmicSqueeze__RenderFunc(props: {
                         />
 
                         <Button
-                          data-plasmic-name={"button"}
-                          data-plasmic-override={overrides.button}
-                          className={classNames("__wab_instance", sty.button)}
+                          className={classNames(
+                            "__wab_instance",
+                            sty.button__pWaS5
+                          )}
                         >
                           <div
                             className={classNames(
@@ -620,11 +620,10 @@ function PlasmicSqueeze__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "httpApiFetcher", "head", "columns", "button"],
-  httpApiFetcher: ["httpApiFetcher", "head", "columns", "button"],
+  root: ["root", "httpApiFetcher", "head", "columns"],
+  httpApiFetcher: ["httpApiFetcher", "head", "columns"],
   head: ["head"],
-  columns: ["columns"],
-  button: ["button"]
+  columns: ["columns"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -634,7 +633,6 @@ type NodeDefaultElementType = {
   httpApiFetcher: typeof DataFetcher;
   head: typeof PlasmicHead;
   columns: "div";
-  button: typeof Button;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -701,7 +699,6 @@ export const PlasmicSqueeze = Object.assign(
     httpApiFetcher: makeNodeComponent("httpApiFetcher"),
     head: makeNodeComponent("head"),
     columns: makeNodeComponent("columns"),
-    button: makeNodeComponent("button"),
 
     // Metadata about props expected for PlasmicSqueeze
     internalVariantProps: PlasmicSqueeze__VariantProps,
