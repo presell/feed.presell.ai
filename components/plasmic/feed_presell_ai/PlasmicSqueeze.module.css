@@ -322,7 +322,7 @@
   border-bottom-style: solid;
   align-self: center;
   min-width: 0;
-  padding: 8px 0px 68px;
+  padding: 6px 0px 63px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__a3MCw {
@@ -336,13 +336,19 @@
 }
 .button__jeVfv {
   position: absolute;
-  left: 186px;
-  top: 13px;
   width: 250px;
   height: 50px;
   color: #ffffff;
   background: #f70000;
   text-align: center;
+  padding-top: 2px;
+  padding-right: 0px;
+  left: 0px;
+  top: 8px;
+  z-index: 1;
+  right: auto;
+  margin-right: 200px;
+  margin-left: 200px;
   display: block;
   border-radius: 10px;
 }
@@ -350,6 +356,8 @@
   .button__jeVfv {
     left: 51px;
     top: 13px;
+    margin-right: 0px;
+    margin-left: 0px;
     display: block;
   }
 }
@@ -369,6 +377,11 @@
   padding-bottom: 119px;
   padding-top: 50px;
   border-radius: 20px 20px 0px 0px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__ugJYb {
+    padding-bottom: 50px;
+  }
 }
 .text__o4C3M {
   position: relative;
