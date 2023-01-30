@@ -357,16 +357,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                             sty.link___9AMbf
                                           )}
                                           component={Link}
-                                          href={`/article/${(() => {
-                                            try {
-                                              return currentItem.id;
-                                            } catch (e) {
-                                              if (e instanceof TypeError) {
-                                                return "recN69bpm18hjPrwy";
-                                              }
-                                              throw e;
-                                            }
-                                          })()}`}
+                                          href={`/article/${"recN69bpm18hjPrwy"}`}
                                           platform={"nextjs"}
                                         >
                                           {"Read post"}

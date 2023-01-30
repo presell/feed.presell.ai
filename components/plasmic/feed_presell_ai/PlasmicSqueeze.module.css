@@ -32,7 +32,7 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  height: auto;
+  height: 930px;
   max-width: 100%;
   align-self: stretch;
   background: #eaeaea;
@@ -45,8 +45,8 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__xhsS {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 .freeBox__o0Xt {
@@ -85,6 +85,12 @@
   max-width: 100%;
   min-width: 0;
   padding: 50px 0px 8px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__l1GHc {
+    padding-bottom: 0px;
+    padding-top: 8px;
+  }
 }
 .columns {
   flex-direction: row;
@@ -162,6 +168,7 @@
     opacity: 1;
     justify-content: center;
     align-items: center;
+    padding-bottom: 0px;
   }
 }
 .img__fGtp5 {
@@ -332,9 +339,9 @@
 }
 .button__jeVfv {
   position: absolute;
-  left: 223px;
-  top: 11px;
-  width: 225px;
+  left: 186px;
+  top: 13px;
+  width: 250px;
   height: 50px;
   color: #ffffff;
   background: #f70000;
@@ -343,8 +350,8 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .button__jeVfv {
-    left: 64px;
-    top: 14px;
+    left: 51px;
+    top: 13px;
     display: block;
   }
 }
@@ -452,7 +459,6 @@
   min-width: 0;
 }
 .freeBox__dEoA {
-  display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
@@ -462,6 +468,7 @@
   align-self: center;
   background: #ffffff;
   min-width: 0;
+  display: none;
   padding: 50px 10px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
