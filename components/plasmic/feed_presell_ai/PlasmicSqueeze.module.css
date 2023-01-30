@@ -347,8 +347,8 @@
   top: 8px;
   z-index: 1;
   right: auto;
-  margin-right: 200px;
-  margin-left: 200px;
+  margin-right: 0px;
+  margin-left: 506px;
   display: block;
   border-radius: 10px;
 }
