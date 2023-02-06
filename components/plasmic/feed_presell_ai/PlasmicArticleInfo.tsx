@@ -259,7 +259,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                               displayMaxWidth={"100%" as const}
                               displayMinHeight={"0" as const}
                               displayMinWidth={"0" as const}
-                              displayWidth={"350px" as const}
+                              displayWidth={"266px" as const}
                               loading={"lazy" as const}
                               src={(() => {
                                 try {
@@ -356,7 +356,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                                   "mobileOnly"
                                 )
                                   ? ("500px" as const)
-                                  : ("350px" as const)
+                                  : ("266px" as const)
                               }
                               loading={"lazy" as const}
                               src={(() => {
@@ -759,16 +759,27 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         sty.paragraph1
                       )}
                     >
-                      {(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.fields.paragraph1;
-                        } catch (e) {
-                          if (e instanceof TypeError) {
-                            return "Enter some text";
-                          }
-                          throw e;
-                        }
-                      })()}
+                      {hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? (() => {
+                            try {
+                              return $ctx.fetchDyanamicData.fields.paragraph1;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "Enter some text";
+                              }
+                              throw e;
+                            }
+                          })()
+                        : (() => {
+                            try {
+                              return $ctx.fetchDyanamicData.fields.paragraph1;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "Enter some text";
+                              }
+                              throw e;
+                            }
+                          })()}
                     </div>
 
                     <p.PlasmicImg
@@ -1412,8 +1423,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       displayMinWidth={"0" as const}
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? ("350px" as const)
-                          : ("350px" as const)
+                          ? ("266px" as const)
+                          : ("266px" as const)
                       }
                       loading={"lazy" as const}
                       src={(() => {

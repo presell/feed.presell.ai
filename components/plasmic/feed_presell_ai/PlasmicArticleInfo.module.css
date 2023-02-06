@@ -121,7 +121,7 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 350px;
+  width: 266px;
   display: none !important;
 }
 .img__bmaGl > picture > img {
@@ -247,7 +247,7 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 350px;
+  width: 266px;
 }
 .img___72MUb > picture > img {
   object-fit: cover;
@@ -274,13 +274,13 @@
 }
 .button__sn8Lk {
   position: relative;
-  font-size: 18px;
+  font-size: 15px;
   color: #ffffff;
   font-weight: 600;
   background: #1f7926;
   text-align: right;
   border-radius: 8px;
-  padding: 10px 30px 15px;
+  padding: 10px 31px;
 }
 .freeBox__kUzNs {
   position: relative;
@@ -1381,7 +1381,7 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 350px;
+  width: 266px;
 }
 .img___0Zho > picture > img {
   object-fit: cover;
@@ -1391,6 +1391,6 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .img___0Zho {
-    width: 350px;
+    width: 266px;
   }
 }
