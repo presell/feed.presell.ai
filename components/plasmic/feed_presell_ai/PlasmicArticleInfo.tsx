@@ -72,6 +72,17 @@ export type PlasmicArticleInfo__OverridesType = {
   image6?: p.Flex<typeof p.PlasmicImg>;
   paragraph7?: p.Flex<"div">;
   image7?: p.Flex<typeof p.PlasmicImg>;
+  divlpPomBox135?: p.Flex<"div">;
+  divlpPomText136?: p.Flex<"div">;
+  clickHereToLearnMoreOrderSparqZeroToday?: p.Flex<"div">;
+  divlpPomText137?: p.Flex<"div">;
+  fastSameDayShipping?: p.Flex<"div">;
+  alpPomButton138?: p.Flex<"div">;
+  claimFreePods?: p.Flex<"div">;
+  divlpPomBox139?: p.Flex<"div">;
+  _100000HappyCustomersInStockShipsNow?: p.Flex<"div">;
+  div?: p.Flex<"div">;
+  _4E8Df8335StarReviews103N00Q000000000000028Png?: p.Flex<"div">;
   head?: p.Flex<typeof PlasmicHead>;
 };
 
@@ -248,7 +259,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                               displayMaxWidth={"100%" as const}
                               displayMinHeight={"0" as const}
                               displayMinWidth={"0" as const}
-                              displayWidth={"400px" as const}
+                              displayWidth={"350px" as const}
                               loading={"lazy" as const}
                               src={(() => {
                                 try {
@@ -345,7 +356,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                                   "mobileOnly"
                                 )
                                   ? ("500px" as const)
-                                  : ("500px" as const)
+                                  : ("350px" as const)
                               }
                               loading={"lazy" as const}
                               src={(() => {
@@ -1101,6 +1112,255 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         }
                       })()}
                     />
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__iyJs)}
+                    >
+                      {(
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <div
+                          data-plasmic-name={"divlpPomBox135"}
+                          data-plasmic-override={overrides.divlpPomBox135}
+                          className={classNames(
+                            projectcss.all,
+                            sty.divlpPomBox135
+                          )}
+                        >
+                          <div
+                            data-plasmic-name={"divlpPomText136"}
+                            data-plasmic-override={overrides.divlpPomText136}
+                            className={classNames(
+                              projectcss.all,
+                              sty.divlpPomText136
+                            )}
+                          >
+                            <div
+                              data-plasmic-name={
+                                "clickHereToLearnMoreOrderSparqZeroToday"
+                              }
+                              data-plasmic-override={
+                                overrides.clickHereToLearnMoreOrderSparqZeroToday
+                              }
+                              className={classNames(
+                                projectcss.all,
+                                sty.clickHereToLearnMoreOrderSparqZeroToday
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text___0LmMp
+                                )}
+                              >
+                                {
+                                  "Click Here To Learn More & Order Sparq Zero® Today!"
+                                }
+                              </div>
+                            </div>
+                          </div>
+
+                          <div
+                            data-plasmic-name={"divlpPomText137"}
+                            data-plasmic-override={overrides.divlpPomText137}
+                            className={classNames(
+                              projectcss.all,
+                              sty.divlpPomText137
+                            )}
+                          >
+                            <div
+                              data-plasmic-name={"fastSameDayShipping"}
+                              data-plasmic-override={
+                                overrides.fastSameDayShipping
+                              }
+                              className={classNames(
+                                projectcss.all,
+                                sty.fastSameDayShipping
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__o3N39
+                                )}
+                              >
+                                {"Fast Same-Day Shipping"}
+                              </div>
+                            </div>
+                          </div>
+
+                          <div
+                            data-plasmic-name={"alpPomButton138"}
+                            data-plasmic-override={overrides.alpPomButton138}
+                            className={classNames(
+                              projectcss.all,
+                              sty.alpPomButton138
+                            )}
+                          >
+                            <div
+                              data-plasmic-name={"claimFreePods"}
+                              data-plasmic-override={overrides.claimFreePods}
+                              className={classNames(
+                                projectcss.all,
+                                sty.claimFreePods
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__zNhx
+                                )}
+                              >
+                                {"CLAIM FREE PODS 👉"}
+                              </div>
+                            </div>
+                          </div>
+
+                          <div
+                            data-plasmic-name={"divlpPomBox139"}
+                            data-plasmic-override={overrides.divlpPomBox139}
+                            className={classNames(
+                              projectcss.all,
+                              sty.divlpPomBox139
+                            )}
+                          />
+
+                          <div
+                            data-plasmic-name={
+                              "_100000HappyCustomersInStockShipsNow"
+                            }
+                            data-plasmic-override={
+                              overrides._100000HappyCustomersInStockShipsNow
+                            }
+                            className={classNames(
+                              projectcss.all,
+                              sty._100000HappyCustomersInStockShipsNow
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text___4UCxj
+                              )}
+                            >
+                              {
+                                "100,000+ Happy Customers! In Stock - Ships Now."
+                              }
+                            </div>
+                          </div>
+
+                          <div
+                            data-plasmic-name={"div"}
+                            data-plasmic-override={overrides.div}
+                            className={classNames(projectcss.all, sty.div)}
+                          >
+                            <div
+                              data-plasmic-name={
+                                "_4E8Df8335StarReviews103N00Q000000000000028Png"
+                              }
+                              data-plasmic-override={
+                                overrides._4E8Df8335StarReviews103N00Q000000000000028Png
+                              }
+                              className={classNames(
+                                projectcss.all,
+                                sty._4E8Df8335StarReviews103N00Q000000000000028Png
+                              )}
+                            />
+                          </div>
+                        </div>
+                      ) : null}
+                    </div>
+
+                    {(
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__lntat
+                        )}
+                      >
+                        {"Click Here To Learn More & Order Sparq Zero® Today!"}
+                      </div>
+                    ) : null}
+                    {(
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__ogQ80
+                        )}
+                      >
+                        {"Fast Same-Day Shipping"}
+                      </div>
+                    ) : null}
+                    {(
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__jQkx7
+                        )}
+                      >
+                        {"100,000+ Happy Customers! In Stock - Ships Now."}
+                      </div>
+                    ) : null}
+                    {(
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img___4HXuc)}
+                        displayHeight={"21px" as const}
+                        displayMaxHeight={"none" as const}
+                        displayMaxWidth={"100%" as const}
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={"112px" as const}
+                        loading={"lazy" as const}
+                        src={{
+                          src: "/plasmic/feed_presell_ai/images/_4E8Df8335StarReviews107A01G000000000000028Png.png",
+                          fullWidth: 262,
+                          fullHeight: 52,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    ) : null}
+                    {(
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
+                      <button
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.button,
+                          projectcss.__wab_text,
+                          sty.button__yX9KC
+                        )}
+                      >
+                        {"CLAIM FREE PODS 👉"}
+                      </button>
+                    ) : null}
                   </div>
 
                   <PlasmicHead
@@ -1152,8 +1412,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       displayMinWidth={"0" as const}
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? ("500px" as const)
-                          : ("500px" as const)
+                          ? ("350px" as const)
+                          : ("350px" as const)
                       }
                       loading={"lazy" as const}
                       src={(() => {
@@ -1198,6 +1458,17 @@ const PlasmicDescendants = {
     "image6",
     "paragraph7",
     "image7",
+    "divlpPomBox135",
+    "divlpPomText136",
+    "clickHereToLearnMoreOrderSparqZeroToday",
+    "divlpPomText137",
+    "fastSameDayShipping",
+    "alpPomButton138",
+    "claimFreePods",
+    "divlpPomBox139",
+    "_100000HappyCustomersInStockShipsNow",
+    "div",
+    "_4E8Df8335StarReviews103N00Q000000000000028Png",
     "head"
   ],
   httpApiFetcher: [
@@ -1218,6 +1489,17 @@ const PlasmicDescendants = {
     "image6",
     "paragraph7",
     "image7",
+    "divlpPomBox135",
+    "divlpPomText136",
+    "clickHereToLearnMoreOrderSparqZeroToday",
+    "divlpPomText137",
+    "fastSameDayShipping",
+    "alpPomButton138",
+    "claimFreePods",
+    "divlpPomBox139",
+    "_100000HappyCustomersInStockShipsNow",
+    "div",
+    "_4E8Df8335StarReviews103N00Q000000000000028Png",
     "head"
   ],
   heroSubHeadline: ["heroSubHeadline"],
@@ -1236,6 +1518,38 @@ const PlasmicDescendants = {
   image6: ["image6"],
   paragraph7: ["paragraph7"],
   image7: ["image7"],
+  divlpPomBox135: [
+    "divlpPomBox135",
+    "divlpPomText136",
+    "clickHereToLearnMoreOrderSparqZeroToday",
+    "divlpPomText137",
+    "fastSameDayShipping",
+    "alpPomButton138",
+    "claimFreePods",
+    "divlpPomBox139",
+    "_100000HappyCustomersInStockShipsNow",
+    "div",
+    "_4E8Df8335StarReviews103N00Q000000000000028Png"
+  ],
+  divlpPomText136: [
+    "divlpPomText136",
+    "clickHereToLearnMoreOrderSparqZeroToday"
+  ],
+  clickHereToLearnMoreOrderSparqZeroToday: [
+    "clickHereToLearnMoreOrderSparqZeroToday"
+  ],
+  divlpPomText137: ["divlpPomText137", "fastSameDayShipping"],
+  fastSameDayShipping: ["fastSameDayShipping"],
+  alpPomButton138: ["alpPomButton138", "claimFreePods"],
+  claimFreePods: ["claimFreePods"],
+  divlpPomBox139: ["divlpPomBox139"],
+  _100000HappyCustomersInStockShipsNow: [
+    "_100000HappyCustomersInStockShipsNow"
+  ],
+  div: ["div", "_4E8Df8335StarReviews103N00Q000000000000028Png"],
+  _4E8Df8335StarReviews103N00Q000000000000028Png: [
+    "_4E8Df8335StarReviews103N00Q000000000000028Png"
+  ],
   head: ["head"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -1260,6 +1574,17 @@ type NodeDefaultElementType = {
   image6: typeof p.PlasmicImg;
   paragraph7: "div";
   image7: typeof p.PlasmicImg;
+  divlpPomBox135: "div";
+  divlpPomText136: "div";
+  clickHereToLearnMoreOrderSparqZeroToday: "div";
+  divlpPomText137: "div";
+  fastSameDayShipping: "div";
+  alpPomButton138: "div";
+  claimFreePods: "div";
+  divlpPomBox139: "div";
+  _100000HappyCustomersInStockShipsNow: "div";
+  div: "div";
+  _4E8Df8335StarReviews103N00Q000000000000028Png: "div";
   head: typeof PlasmicHead;
 };
 
@@ -1341,6 +1666,23 @@ export const PlasmicArticleInfo = Object.assign(
     image6: makeNodeComponent("image6"),
     paragraph7: makeNodeComponent("paragraph7"),
     image7: makeNodeComponent("image7"),
+    divlpPomBox135: makeNodeComponent("divlpPomBox135"),
+    divlpPomText136: makeNodeComponent("divlpPomText136"),
+    clickHereToLearnMoreOrderSparqZeroToday: makeNodeComponent(
+      "clickHereToLearnMoreOrderSparqZeroToday"
+    ),
+    divlpPomText137: makeNodeComponent("divlpPomText137"),
+    fastSameDayShipping: makeNodeComponent("fastSameDayShipping"),
+    alpPomButton138: makeNodeComponent("alpPomButton138"),
+    claimFreePods: makeNodeComponent("claimFreePods"),
+    divlpPomBox139: makeNodeComponent("divlpPomBox139"),
+    _100000HappyCustomersInStockShipsNow: makeNodeComponent(
+      "_100000HappyCustomersInStockShipsNow"
+    ),
+    div: makeNodeComponent("div"),
+    _4E8Df8335StarReviews103N00Q000000000000028Png: makeNodeComponent(
+      "_4E8Df8335StarReviews103N00Q000000000000028Png"
+    ),
     head: makeNodeComponent("head"),
 
     // Metadata about props expected for PlasmicArticleInfo

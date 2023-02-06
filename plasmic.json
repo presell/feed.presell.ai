@@ -497,6 +497,21 @@
           "id": "RLB5NT3rUd",
           "name": "image 38",
           "filePath": "../public/plasmic/feed_presell_ai/images/image38.jpeg"
+        },
+        {
+          "id": "TceoKjKQ8",
+          "name": "4e8df833-5-star-reviews_107a01g000000000000028.png",
+          "filePath": "../public/plasmic/feed_presell_ai/images/_4E8Df8335StarReviews107A01G000000000000028Png.png"
+        },
+        {
+          "id": "io9cGEfbA",
+          "name": "4e8df833-5-star-reviews_103n00q000000000000028.png",
+          "filePath": "../public/plasmic/feed_presell_ai/images/_4E8Df8335StarReviews103N00Q000000000000028Png.png"
+        },
+        {
+          "id": "oEvaEHC3L",
+          "name": "article - mobile.png",
+          "filePath": "../public/plasmic/feed_presell_ai/images/articleMobilepng.png"
         }
       ],
       "indirect": false,
@@ -529,6 +544,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.205",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.205/dist/plasmic.schema.json"
+  "cliVersion": "0.1.208",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.208/dist/plasmic.schema.json"
 }
