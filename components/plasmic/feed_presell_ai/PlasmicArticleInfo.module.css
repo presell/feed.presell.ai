@@ -163,7 +163,7 @@
   max-width: 100%;
   background: #ffffff;
   min-width: 0;
-  padding: 0px;
+  padding: 10px 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__eiUyg {
@@ -217,7 +217,7 @@
   justify-content: flex-start;
   align-items: center;
   min-width: 0;
-  padding: 5px;
+  padding: 5px 5px 5px 85px;
 }
 .text__gWvpK {
   position: relative;
@@ -270,7 +270,7 @@
   justify-content: center;
   align-items: flex-end;
   min-width: 0;
-  padding: 5px;
+  padding: 5px 85px 5px 5px;
 }
 .button__sn8Lk {
   position: relative;
@@ -1375,7 +1375,7 @@
   background: #fcfcfc;
   margin-bottom: 0px;
   min-width: 0;
-  padding: 0px 8px;
+  padding: 10px 8px;
 }
 .img___0Zho {
   position: relative;

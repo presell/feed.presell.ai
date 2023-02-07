@@ -1227,7 +1227,16 @@ function PlasmicArticleInfo__RenderFunc(props: {
                                   sty.text__zNhx
                                 )}
                               >
-                                {"CLAIM FREE PODS 👉"}
+                                {(() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.fields.aCTA;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return "CLAIM FREE PODS 👉";
+                                    }
+                                    throw e;
+                                  }
+                                })()}
                               </div>
                             </div>
                           </div>
