@@ -691,21 +691,16 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         sty.heroSubHeadline
                       )}
                     >
-                      <div
-                        className={projectcss.__wab_expr_html_text}
-                        dangerouslySetInnerHTML={{
-                          __html: (() => {
-                            try {
-                              return $ctx.fetchDyanamicData.fields.heroHeadline;
-                            } catch (e) {
-                              if (e instanceof TypeError) {
-                                return "Enter some text";
-                              }
-                              throw e;
-                            }
-                          })()
-                        }}
-                      />
+                      {(() => {
+                        try {
+                          return $ctx.fetchDyanamicData.fields.heroHeadline;
+                        } catch (e) {
+                          if (e instanceof TypeError) {
+                            return "Enter some text";
+                          }
+                          throw e;
+                        }
+                      })()}
                     </div>
 
                     <div
