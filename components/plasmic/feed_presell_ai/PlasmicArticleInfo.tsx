@@ -112,6 +112,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
     ...args,
     ...variants
   };
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
 
@@ -1167,9 +1169,17 @@ function PlasmicArticleInfo__RenderFunc(props: {
                                   sty.text___0LmMp
                                 )}
                               >
-                                {
-                                  "Click Here To Learn More & Order Sparq Zero® Today!"
-                                }
+                                {(() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.fields
+                                      .aOutroH1;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return "Click Here To Learn More & Order Sparq Zero® Today!";
+                                    }
+                                    throw e;
+                                  }
+                                })()}
                               </div>
                             </div>
                           </div>
@@ -1199,7 +1209,17 @@ function PlasmicArticleInfo__RenderFunc(props: {
                                   sty.text__o3N39
                                 )}
                               >
-                                {"Fast Same-Day Shipping"}
+                                {(() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.fields
+                                      .aOutroH2;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return "Fast Same-Day Shipping";
+                                    }
+                                    throw e;
+                                  }
+                                })()}
                               </div>
                             </div>
                           </div>
@@ -1269,9 +1289,16 @@ function PlasmicArticleInfo__RenderFunc(props: {
                                 sty.text___4UCxj
                               )}
                             >
-                              {
-                                "100,000+ Happy Customers! In Stock - Ships Now."
-                              }
+                              {(() => {
+                                try {
+                                  return $ctx.fetchDyanamicData.fields.aOutroH3;
+                                } catch (e) {
+                                  if (e instanceof TypeError) {
+                                    return "100,000+ Happy Customers! In Stock - Ships Now.";
+                                  }
+                                  throw e;
+                                }
+                              })()}
                             </div>
                           </div>
 

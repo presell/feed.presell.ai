@@ -136,6 +136,8 @@ function PlasmicTextInput__RenderFunc(props: {
     ...args,
     ...variants
   };
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
 
@@ -279,6 +281,9 @@ function PlasmicTextInput__RenderFunc(props: {
         }
         name={args.name}
         placeholder={args.placeholder}
+        ref={ref => {
+          $refs["input"] = ref;
+        }}
         required={args.required}
         type={"text" as const}
         value={args.value}
