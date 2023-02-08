@@ -329,7 +329,16 @@ function PlasmicHomepage__RenderFunc(props: {
                                             role={"img"}
                                           />
                                         }
-                                        link={`/article/${"rec2g2aZndnbC3igs"}`}
+                                        link={`/article/${(() => {
+                                          try {
+                                            return currentItem.id;
+                                          } catch (e) {
+                                            if (e instanceof TypeError) {
+                                              return "rec2g2aZndnbC3igs";
+                                            }
+                                            throw e;
+                                          }
+                                        })()}`}
                                         shape={"rounded" as const}
                                         showEndIcon={true}
                                         startIcon={
@@ -350,7 +359,16 @@ function PlasmicHomepage__RenderFunc(props: {
                                             sty.link___9AMbf
                                           )}
                                           component={Link}
-                                          href={`/article/${"rec2g2aZndnbC3igs"}`}
+                                          href={`/article/${(() => {
+                                            try {
+                                              return currentItem.id;
+                                            } catch (e) {
+                                              if (e instanceof TypeError) {
+                                                return "rec2g2aZndnbC3igs";
+                                              }
+                                              throw e;
+                                            }
+                                          })()}`}
                                           platform={"nextjs"}
                                         >
                                           {"Read post"}
