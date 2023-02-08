@@ -329,16 +329,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                             role={"img"}
                                           />
                                         }
-                                        link={`/article/${(() => {
-                                          try {
-                                            return currentItem.id;
-                                          } catch (e) {
-                                            if (e instanceof TypeError) {
-                                              return "recN69bpm18hjPrwy";
-                                            }
-                                            throw e;
-                                          }
-                                        })()}`}
+                                        link={`/article/${"rec2g2aZndnbC3igs"}`}
                                         shape={"rounded" as const}
                                         showEndIcon={true}
                                         startIcon={
@@ -359,7 +350,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                             sty.link___9AMbf
                                           )}
                                           component={Link}
-                                          href={`/article/${"recN69bpm18hjPrwy"}`}
+                                          href={`/article/${"rec2g2aZndnbC3igs"}`}
                                           platform={"nextjs"}
                                         >
                                           {"Read post"}
