@@ -377,7 +377,16 @@ function PlasmicHomepage__RenderFunc(props: {
                                               }
                                               throw e;
                                             }
-                                          })()}/${undefined}`}
+                                          })()}/${(() => {
+                                            try {
+                                              return currentItem.fields.slug;
+                                            } catch (e) {
+                                              if (e instanceof TypeError) {
+                                                return undefined;
+                                              }
+                                              throw e;
+                                            }
+                                          })()}`}
                                           platform={"nextjs"}
                                         >
                                           {"Read post"}
