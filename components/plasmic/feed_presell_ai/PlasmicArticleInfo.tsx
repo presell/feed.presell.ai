@@ -181,7 +181,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
             url={(() => {
               try {
                 return (
-                  "https://api.airtable.com/v0/appmM1mMqcDvugXhY/PlasmicCMS/" +
+                  "https://api.airtable.com/v0/appmM1mMqcDvugXhY/PlasmicCMS?" +
                   $ctx.params.slug
                 );
               } catch (e) {
