@@ -181,12 +181,14 @@ function PlasmicArticleInfo__RenderFunc(props: {
             url={(() => {
               try {
                 return (
-                  "https://api.airtable.com/v0/appmM1mMqcDvugXhY/PlasmicCMS?" +
-                  $ctx.params.slug
+                  "https://api.airtable.com/v0/appmM1mMqcDvugXhY/PlasmicCMS?filterByFormula=slug=" +
+                  "'" +
+                  $ctx.params.slug +
+                  "'"
                 );
               } catch (e) {
                 if (e instanceof TypeError) {
-                  return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/PlasmicCMS?slug";
+                  return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/PlasmicCMS?filterByFormula=slug=";
                 }
                 throw e;
               }
