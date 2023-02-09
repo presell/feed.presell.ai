@@ -365,8 +365,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                               loading={"lazy" as const}
                               src={(() => {
                                 try {
-                                  return $ctx.fetchDyanamicData.fields.logo[0]
-                                    .url;
+                                  return $ctx.fetchDyanamicData.records[0]
+                                    .fields.logo[0].url;
                                 } catch (e) {
                                   if (e instanceof TypeError) {
                                     return undefined;
@@ -700,7 +700,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         dangerouslySetInnerHTML={{
                           __html: (() => {
                             try {
-                              return $ctx.fetchDyanamicData.fields.heroHeadline;
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .heroHeadline;
                             } catch (e) {
                               if (e instanceof TypeError) {
                                 return "Enter some text";
@@ -721,7 +722,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                     >
                       {(() => {
                         try {
-                          return $ctx.fetchDyanamicData.fields.heroSubHeadline;
+                          return $ctx.fetchDyanamicData.records[0].fields
+                            .heroSubHeadline;
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return "Enter some text";
@@ -749,7 +751,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       loading={"lazy" as const}
                       src={(() => {
                         try {
-                          return $ctx.fetchDyanamicData.fields.heroImage[0].url;
+                          return $ctx.fetchDyanamicData.records[0].fields
+                            .heroImage[0].url;
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return undefined;
@@ -781,7 +784,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           })()
                         : (() => {
                             try {
-                              return $ctx.fetchDyanamicData.fields.paragraph1;
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .paragraph1;
                             } catch (e) {
                               if (e instanceof TypeError) {
                                 return "Enter some text";
@@ -813,7 +817,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       loading={"lazy" as const}
                       src={(() => {
                         try {
-                          return $ctx.fetchDyanamicData.fields.image1[0].url;
+                          return $ctx.fetchDyanamicData.records[0].fields
+                            .image1[0].url;
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return undefined;
@@ -834,7 +839,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                     >
                       {(() => {
                         try {
-                          return $ctx.fetchDyanamicData.fields.paragraph2;
+                          return $ctx.fetchDyanamicData.records[0].fields
+                            .paragraph2;
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return "Enter some text";
@@ -858,7 +864,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       loading={"lazy" as const}
                       src={(() => {
                         try {
-                          return $ctx.fetchDyanamicData.fields.image2[0].url;
+                          return $ctx.fetchDyanamicData.records[0].fields
+                            .image2[0].url;
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return undefined;
@@ -879,7 +886,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                     >
                       {(() => {
                         try {
-                          return $ctx.fetchDyanamicData.fields.paragraph3;
+                          return $ctx.fetchDyanamicData.records[0].fields
+                            .paragraph3;
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return "Enter some text";
@@ -911,7 +919,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       loading={"lazy" as const}
                       src={(() => {
                         try {
-                          return $ctx.fetchDyanamicData.fields.image3[0].url;
+                          return $ctx.fetchDyanamicData.records[0].fields
+                            .image4[0].url;
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return undefined;
@@ -932,7 +941,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                     >
                       {(() => {
                         try {
-                          return $ctx.fetchDyanamicData.fields.paragraph4;
+                          return $ctx.fetchDyanamicData.records[0].fields
+                            .paragraph5;
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return "Enter some text";
@@ -964,7 +974,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       loading={"lazy" as const}
                       src={(() => {
                         try {
-                          return $ctx.fetchDyanamicData.fields.image4[0].url;
+                          return $ctx.fetchDyanamicData.records[0].fields
+                            .image5[0].url;
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return undefined;
@@ -985,7 +996,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                     >
                       {(() => {
                         try {
-                          return $ctx.fetchDyanamicData.fields.paragraph5;
+                          return $ctx.fetchDyanamicData.records[0].fields
+                            .paragraph6;
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return "Enter some text";
@@ -1017,7 +1029,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       loading={"lazy" as const}
                       src={(() => {
                         try {
-                          return $ctx.fetchDyanamicData.fields.image5[0].url;
+                          return $ctx.fetchDyanamicData.records[0].fields
+                            .image6[0].url;
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return undefined;
@@ -1038,7 +1051,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                     >
                       {(() => {
                         try {
-                          return $ctx.fetchDyanamicData.fields.paragraph6;
+                          return $ctx.fetchDyanamicData.records[0].fields
+                            .paragraph7;
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return "Enter some text";
@@ -1070,7 +1084,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       loading={"lazy" as const}
                       src={(() => {
                         try {
-                          return $ctx.fetchDyanamicData.fields.image6[0].url;
+                          return $ctx.fetchDyanamicData.records[0].fields
+                            .image7[0].url;
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return undefined;
@@ -1091,7 +1106,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                     >
                       {(() => {
                         try {
-                          return $ctx.fetchDyanamicData.fields.paragraph7;
+                          return $ctx.fetchDyanamicData.records[0].fields
+                            .paragraph7;
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return "Enter some text";
@@ -1123,7 +1139,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       loading={"lazy" as const}
                       src={(() => {
                         try {
-                          return $ctx.fetchDyanamicData.fields.image7[0].url;
+                          return $ctx.fetchDyanamicData.records[0].fields
+                            .image3[0].url;
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return undefined;
@@ -1178,8 +1195,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                               >
                                 {(() => {
                                   try {
-                                    return $ctx.fetchDyanamicData.fields
-                                      .aOutroH1;
+                                    return $ctx.fetchDyanamicData.records[0]
+                                      .fields.aOutroH1;
                                   } catch (e) {
                                     if (e instanceof TypeError) {
                                       return "Click Here To Learn More & Order Sparq Zero® Today!";
@@ -1218,8 +1235,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                               >
                                 {(() => {
                                   try {
-                                    return $ctx.fetchDyanamicData.fields
-                                      .aOutroH2;
+                                    return $ctx.fetchDyanamicData.records[0]
+                                      .fields.aOutroH2;
                                   } catch (e) {
                                     if (e instanceof TypeError) {
                                       return "Fast Same-Day Shipping";
@@ -1256,7 +1273,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                               >
                                 {(() => {
                                   try {
-                                    return $ctx.fetchDyanamicData.fields.aCTA;
+                                    return $ctx.fetchDyanamicData.records[0]
+                                      .fields.aCTA;
                                   } catch (e) {
                                     if (e instanceof TypeError) {
                                       return "CLAIM FREE PODS 👉";
@@ -1298,7 +1316,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                             >
                               {(() => {
                                 try {
-                                  return $ctx.fetchDyanamicData.fields.aOutroH3;
+                                  return $ctx.fetchDyanamicData.records[0]
+                                    .fields.aOutroH3;
                                 } catch (e) {
                                   if (e instanceof TypeError) {
                                     return "100,000+ Happy Customers! In Stock - Ships Now.";
@@ -1472,7 +1491,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       loading={"lazy" as const}
                       src={(() => {
                         try {
-                          return $ctx.fetchDyanamicData.fields.logo[0].url;
+                          return $ctx.fetchDyanamicData.records[0].fields
+                            .logo[0].url;
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return undefined;
