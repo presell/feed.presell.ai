@@ -338,7 +338,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                             }
                                             throw e;
                                           }
-                                        })()}/${(() => {
+                                        })()}&${(() => {
                                           try {
                                             return currentItem.fields.slug;
                                           } catch (e) {
@@ -377,7 +377,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                               }
                                               throw e;
                                             }
-                                          })()}/${(() => {
+                                          })()}&${(() => {
                                             try {
                                               return currentItem.fields.slug;
                                             } catch (e) {

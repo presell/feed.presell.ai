@@ -218,7 +218,7 @@
           "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
           "renderModuleFilePath": "plasmic/feed_presell_ai/PlasmicArticleInfo.tsx",
           "importSpec": {
-            "modulePath": "../pages/article/[slug]/[id].tsx"
+            "modulePath": "../pages/article/[slug]&[id].tsx"
           },
           "cssFilePath": "plasmic/feed_presell_ai/PlasmicArticleInfo.module.css",
           "scheme": "blackbox",
