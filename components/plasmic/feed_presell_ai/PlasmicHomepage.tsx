@@ -331,19 +331,10 @@ function PlasmicHomepage__RenderFunc(props: {
                                         }
                                         link={`/article/${(() => {
                                           try {
-                                            return currentItem.id;
-                                          } catch (e) {
-                                            if (e instanceof TypeError) {
-                                              return "rec2g2aZndnbC3igs";
-                                            }
-                                            throw e;
-                                          }
-                                        })()}&${(() => {
-                                          try {
                                             return currentItem.fields.slug;
                                           } catch (e) {
                                             if (e instanceof TypeError) {
-                                              return undefined;
+                                              return "rec2g2aZndnbC3igs";
                                             }
                                             throw e;
                                           }
@@ -370,19 +361,10 @@ function PlasmicHomepage__RenderFunc(props: {
                                           component={Link}
                                           href={`/article/${(() => {
                                             try {
-                                              return currentItem.id;
-                                            } catch (e) {
-                                              if (e instanceof TypeError) {
-                                                return "rec2g2aZndnbC3igs";
-                                              }
-                                              throw e;
-                                            }
-                                          })()}&${(() => {
-                                            try {
                                               return currentItem.fields.slug;
                                             } catch (e) {
                                               if (e instanceof TypeError) {
-                                                return undefined;
+                                                return "rec2g2aZndnbC3igs";
                                               }
                                               throw e;
                                             }
