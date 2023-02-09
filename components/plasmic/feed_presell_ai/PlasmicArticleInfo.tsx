@@ -183,7 +183,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                 return (
                   "https://api.airtable.com/v0/appmM1mMqcDvugXhY/PlasmicCMS/" +
                   $ctx.params.slug +
-                  "?" +
+                  "&" +
                   $ctx.params.id
                 );
               } catch (e) {
