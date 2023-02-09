@@ -338,6 +338,15 @@ function PlasmicHomepage__RenderFunc(props: {
                                             }
                                             throw e;
                                           }
+                                        })()}/${(() => {
+                                          try {
+                                            return currentItem.fields;
+                                          } catch (e) {
+                                            if (e instanceof TypeError) {
+                                              return undefined;
+                                            }
+                                            throw e;
+                                          }
                                         })()}`}
                                         shape={"rounded" as const}
                                         showEndIcon={true}
@@ -365,6 +374,15 @@ function PlasmicHomepage__RenderFunc(props: {
                                             } catch (e) {
                                               if (e instanceof TypeError) {
                                                 return "rec2g2aZndnbC3igs";
+                                              }
+                                              throw e;
+                                            }
+                                          })()}/${(() => {
+                                            try {
+                                              return currentItem.fields;
+                                            } catch (e) {
+                                              if (e instanceof TypeError) {
+                                                return undefined;
                                               }
                                               throw e;
                                             }
