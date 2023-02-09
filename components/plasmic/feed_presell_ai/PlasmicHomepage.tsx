@@ -340,7 +340,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                           }
                                         })()}/${(() => {
                                           try {
-                                            return currentItem.fields;
+                                            return currentItem.fields.slug;
                                           } catch (e) {
                                             if (e instanceof TypeError) {
                                               return undefined;
@@ -377,16 +377,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                               }
                                               throw e;
                                             }
-                                          })()}/${(() => {
-                                            try {
-                                              return currentItem.fields;
-                                            } catch (e) {
-                                              if (e instanceof TypeError) {
-                                                return undefined;
-                                              }
-                                              throw e;
-                                            }
-                                          })()}`}
+                                          })()}/${undefined}`}
                                           platform={"nextjs"}
                                         >
                                           {"Read post"}
