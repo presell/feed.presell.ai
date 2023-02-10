@@ -58,7 +58,7 @@ export type PlasmicArticleInfo__OverridesType = {
   httpApiFetcher?: p.Flex<typeof DataFetcher>;
   heroSubHeadline?: p.Flex<"div">;
   heroImage?: p.Flex<typeof p.PlasmicImg>;
-  paragraph1?: p.Flex<"div">;
+  paragraph1?: p.Flex<"a"> & Partial<LinkProps>;
   image1?: p.Flex<typeof p.PlasmicImg>;
   paragraph2?: p.Flex<"div">;
   image2?: p.Flex<typeof p.PlasmicImg>;
@@ -762,14 +762,19 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       })()}
                     />
 
-                    <div
+                    <p.PlasmicLink
                       data-plasmic-name={"paragraph1"}
                       data-plasmic-override={overrides.paragraph1}
                       className={classNames(
                         projectcss.all,
+                        projectcss.a,
                         projectcss.__wab_text,
                         sty.paragraph1
                       )}
+                      component={Link}
+                      href={"www.google.com" as const}
+                      platform={"nextjs"}
+                      target={"_blank" as const}
                     >
                       {hasVariant(globalVariants, "screen", "mobileOnly") ? (
                         (() => {
@@ -800,7 +805,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           }}
                         />
                       )}
-                    </div>
+                    </p.PlasmicLink>
 
                     <p.PlasmicImg
                       data-plasmic-name={"image1"}
@@ -1641,7 +1646,7 @@ type NodeDefaultElementType = {
   httpApiFetcher: typeof DataFetcher;
   heroSubHeadline: "div";
   heroImage: typeof p.PlasmicImg;
-  paragraph1: "div";
+  paragraph1: "a";
   image1: typeof p.PlasmicImg;
   paragraph2: "div";
   image2: typeof p.PlasmicImg;
