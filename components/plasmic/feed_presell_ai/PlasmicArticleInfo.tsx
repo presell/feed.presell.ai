@@ -58,7 +58,7 @@ export type PlasmicArticleInfo__OverridesType = {
   httpApiFetcher?: p.Flex<typeof DataFetcher>;
   heroSubHeadline?: p.Flex<"div">;
   heroImage?: p.Flex<typeof p.PlasmicImg>;
-  paragraph1?: p.Flex<"a"> & Partial<LinkProps>;
+  paragraph1?: p.Flex<"div">;
   image1?: p.Flex<typeof p.PlasmicImg>;
   paragraph2?: p.Flex<"div">;
   image2?: p.Flex<typeof p.PlasmicImg>;
@@ -762,50 +762,38 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       })()}
                     />
 
-                    <p.PlasmicLink
+                    <div
                       data-plasmic-name={"paragraph1"}
                       data-plasmic-override={overrides.paragraph1}
                       className={classNames(
                         projectcss.all,
-                        projectcss.a,
                         projectcss.__wab_text,
                         sty.paragraph1
                       )}
-                      component={Link}
-                      href={"www.google.com" as const}
-                      platform={"nextjs"}
-                      target={"_blank" as const}
                     >
-                      {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                        (() => {
-                          try {
-                            return $ctx.fetchDyanamicData.fields.paragraph1;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return "Enter some text";
-                            }
-                            throw e;
-                          }
-                        })()
-                      ) : (
-                        <div
-                          className={projectcss.__wab_expr_html_text}
-                          dangerouslySetInnerHTML={{
-                            __html: (() => {
-                              try {
-                                return $ctx.fetchDyanamicData.records[0].fields
-                                  .paragraph1;
-                              } catch (e) {
-                                if (e instanceof TypeError) {
-                                  return "Enter some text";
-                                }
-                                throw e;
+                      {hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? (() => {
+                            try {
+                              return $ctx.fetchDyanamicData.fields.paragraph1;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "Enter some text";
                               }
-                            })()
-                          }}
-                        />
-                      )}
-                    </p.PlasmicLink>
+                              throw e;
+                            }
+                          })()
+                        : (() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .paragraph1;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "Enter some text";
+                              }
+                              throw e;
+                            }
+                          })()}
+                    </div>
 
                     <p.PlasmicImg
                       data-plasmic-name={"image1"}
@@ -1646,7 +1634,7 @@ type NodeDefaultElementType = {
   httpApiFetcher: typeof DataFetcher;
   heroSubHeadline: "div";
   heroImage: typeof p.PlasmicImg;
-  paragraph1: "a";
+  paragraph1: "div";
   image1: typeof p.PlasmicImg;
   paragraph2: "div";
   image2: typeof p.PlasmicImg;
