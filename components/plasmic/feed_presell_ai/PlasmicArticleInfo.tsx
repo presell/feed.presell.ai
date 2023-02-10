@@ -771,28 +771,35 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         sty.paragraph1
                       )}
                     >
-                      {hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? (() => {
-                            try {
-                              return $ctx.fetchDyanamicData.fields.paragraph1;
-                            } catch (e) {
-                              if (e instanceof TypeError) {
-                                return "Enter some text";
-                              }
-                              throw e;
+                      {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                        (() => {
+                          try {
+                            return $ctx.fetchDyanamicData.fields.paragraph1;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return "Enter some text";
                             }
-                          })()
-                        : (() => {
-                            try {
-                              return $ctx.fetchDyanamicData.records[0].fields
-                                .paragraph1;
-                            } catch (e) {
-                              if (e instanceof TypeError) {
-                                return "Enter some text";
+                            throw e;
+                          }
+                        })()
+                      ) : (
+                        <div
+                          className={projectcss.__wab_expr_html_text}
+                          dangerouslySetInnerHTML={{
+                            __html: (() => {
+                              try {
+                                return $ctx.fetchDyanamicData.records[0].fields
+                                  .paragraph1;
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return "Enter some text";
+                                }
+                                throw e;
                               }
-                              throw e;
-                            }
-                          })()}
+                            })()
+                          }}
+                        />
+                      )}
                     </div>
 
                     <p.PlasmicImg
