@@ -813,12 +813,19 @@
   font-size: 18px;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding-bottom: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .paragraph1 {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+}
+.embedHtml:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+  width: 141px;
 }
 .image1 {
   position: relative;

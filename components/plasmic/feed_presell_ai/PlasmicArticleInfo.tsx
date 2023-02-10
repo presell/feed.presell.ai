@@ -35,6 +35,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { DataFetcher } from "@plasmicpkgs/plasmic-query"; // plasmic-import: ae7V86eNoXA/codeComponent
+import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
 import { PlasmicHead } from "@plasmicapp/react-web"; // plasmic-import: 9R13-owMVa/codeComponent
 
 import { useScreenVariants as useScreenVariantsgpwde9M3Mng } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: GPWDE9_m3Mng/globalVariant
@@ -59,6 +60,7 @@ export type PlasmicArticleInfo__OverridesType = {
   heroSubHeadline?: p.Flex<"div">;
   heroImage?: p.Flex<typeof p.PlasmicImg>;
   paragraph1?: p.Flex<"div">;
+  embedHtml?: p.Flex<typeof Embed>;
   image1?: p.Flex<typeof p.PlasmicImg>;
   paragraph2?: p.Flex<"div">;
   image2?: p.Flex<typeof p.PlasmicImg>;
@@ -802,6 +804,15 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       )}
                     </div>
 
+                    <Embed
+                      data-plasmic-name={"embedHtml"}
+                      data-plasmic-override={overrides.embedHtml}
+                      className={classNames("__wab_instance", sty.embedHtml)}
+                      code={
+                        '<a href="www.google.com" target="_blank" style="color:#03a9f4; text-decoration:underline;">test</a> \r\n' as const
+                      }
+                    />
+
                     <p.PlasmicImg
                       data-plasmic-name={"image1"}
                       data-plasmic-override={overrides.image1}
@@ -1526,6 +1537,7 @@ const PlasmicDescendants = {
     "heroSubHeadline",
     "heroImage",
     "paragraph1",
+    "embedHtml",
     "image1",
     "paragraph2",
     "image2",
@@ -1557,6 +1569,7 @@ const PlasmicDescendants = {
     "heroSubHeadline",
     "heroImage",
     "paragraph1",
+    "embedHtml",
     "image1",
     "paragraph2",
     "image2",
@@ -1586,6 +1599,7 @@ const PlasmicDescendants = {
   heroSubHeadline: ["heroSubHeadline"],
   heroImage: ["heroImage"],
   paragraph1: ["paragraph1"],
+  embedHtml: ["embedHtml"],
   image1: ["image1"],
   paragraph2: ["paragraph2"],
   image2: ["image2"],
@@ -1642,6 +1656,7 @@ type NodeDefaultElementType = {
   heroSubHeadline: "div";
   heroImage: typeof p.PlasmicImg;
   paragraph1: "div";
+  embedHtml: typeof Embed;
   image1: typeof p.PlasmicImg;
   paragraph2: "div";
   image2: typeof p.PlasmicImg;
@@ -1734,6 +1749,7 @@ export const PlasmicArticleInfo = Object.assign(
     heroSubHeadline: makeNodeComponent("heroSubHeadline"),
     heroImage: makeNodeComponent("heroImage"),
     paragraph1: makeNodeComponent("paragraph1"),
+    embedHtml: makeNodeComponent("embedHtml"),
     image1: makeNodeComponent("image1"),
     paragraph2: makeNodeComponent("paragraph2"),
     image2: makeNodeComponent("image2"),
