@@ -351,7 +351,7 @@
   z-index: 1;
   right: auto;
   margin-right: 0px;
-  margin-left: 230px;
+  margin-left: 329px;
   display: block;
   border-radius: 10px;
 }
@@ -382,7 +382,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__ugJYb {
-    padding-bottom: 0px;
+    padding-top: 0px;
   }
 }
 .text__o4C3M {
@@ -474,6 +474,12 @@
   font-size: 12px;
   padding-top: 10px;
   min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__lCs17 {
+    padding-top: 5px;
+    margin-top: 15px;
+  }
 }
 .freeBox__dEoA {
   position: relative;
