@@ -1078,8 +1078,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         loading={"lazy" as const}
                         src={(() => {
                           try {
-                            return $ctx.fetchDyanamicData.records[0].fields
-                              .image2[0].url;
+                            return undefined;
                           } catch (e) {
                             if (e instanceof TypeError) {
                               return undefined;
