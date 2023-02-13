@@ -77,7 +77,7 @@ export type PlasmicArticleInfo__OverridesType = {
   clickHereToLearnMoreOrderSparqZeroToday?: p.Flex<"div">;
   divlpPomText137?: p.Flex<"div">;
   fastSameDayShipping?: p.Flex<"div">;
-  alpPomButton138?: p.Flex<"div">;
+  alpPomButton138?: p.Flex<"a"> & Partial<LinkProps>;
   claimFreePods?: p.Flex<"div">;
   divlpPomBox139?: p.Flex<"div">;
   _100000HappyCustomersInStockShipsNow?: p.Flex<"div">;
@@ -250,34 +250,56 @@ function PlasmicArticleInfo__RenderFunc(props: {
                             sty.column__lnI4
                           )}
                         >
-                          {(
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? true
-                              : true
-                          ) ? (
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img__bmaGl)}
-                              displayHeight={"auto" as const}
-                              displayMaxHeight={"none" as const}
-                              displayMaxWidth={"100%" as const}
-                              displayMinHeight={"0" as const}
-                              displayMinWidth={"0" as const}
-                              displayWidth={"266px" as const}
-                              loading={"lazy" as const}
-                              src={(() => {
-                                try {
-                                  return $ctx.fetchDyanamicData.records[0]
-                                    .fields.logo[0].url;
-                                } catch (e) {
-                                  if (e instanceof TypeError) {
-                                    return undefined;
-                                  }
-                                  throw e;
+                          <p.PlasmicLink
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.a,
+                              sty.link___7Jrko
+                            )}
+                            component={Link}
+                            href={(() => {
+                              try {
+                                return $ctx.fetchDyanamicData.records[0].fields[
+                                  "Step 2 URL"
+                                ];
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return undefined;
                                 }
-                              })()}
-                            />
-                          ) : null}
+                                throw e;
+                              }
+                            })()}
+                            platform={"nextjs"}
+                          >
+                            {(
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? true
+                                : true
+                            ) ? (
+                              <p.PlasmicImg
+                                alt={""}
+                                className={classNames(sty.img__bmaGl)}
+                                displayHeight={"auto" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"100%" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"266px" as const}
+                                loading={"lazy" as const}
+                                src={(() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.records[0]
+                                      .fields.logo[0].url;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return undefined;
+                                    }
+                                    throw e;
+                                  }
+                                })()}
+                              />
+                            ) : null}
+                          </p.PlasmicLink>
                         </div>
                       ) : null}
                       {(
@@ -328,7 +350,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                             >
                               {(() => {
                                 try {
-                                  return $ctx.fetchDyanamicData.fields.aSlogan;
+                                  return $ctx.fetchDyanamicData.records[0]
+                                    .fields.aSlogan;
                                 } catch (e) {
                                   if (e instanceof TypeError) {
                                     return '"The Evaluation of Inhalation"';
@@ -345,28 +368,17 @@ function PlasmicArticleInfo__RenderFunc(props: {
                               sty.column__ekYKj
                             )}
                           >
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img___72MUb)}
-                              displayHeight={"auto" as const}
-                              displayMaxHeight={"none" as const}
-                              displayMaxWidth={"100%" as const}
-                              displayMinHeight={"0" as const}
-                              displayMinWidth={"0" as const}
-                              displayWidth={
-                                hasVariant(
-                                  globalVariants,
-                                  "screen",
-                                  "mobileOnly"
-                                )
-                                  ? ("500px" as const)
-                                  : ("266px" as const)
-                              }
-                              loading={"lazy" as const}
-                              src={(() => {
+                            <p.PlasmicLink
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.a,
+                                sty.link__qFsy
+                              )}
+                              component={Link}
+                              href={(() => {
                                 try {
                                   return $ctx.fetchDyanamicData.records[0]
-                                    .fields.logo[0].url;
+                                    .fields["Step 2 URL"];
                                 } catch (e) {
                                   if (e instanceof TypeError) {
                                     return undefined;
@@ -374,7 +386,39 @@ function PlasmicArticleInfo__RenderFunc(props: {
                                   throw e;
                                 }
                               })()}
-                            />
+                              platform={"nextjs"}
+                            >
+                              <p.PlasmicImg
+                                alt={""}
+                                className={classNames(sty.img___72MUb)}
+                                displayHeight={"auto" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"100%" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={
+                                  hasVariant(
+                                    globalVariants,
+                                    "screen",
+                                    "mobileOnly"
+                                  )
+                                    ? ("500px" as const)
+                                    : ("266px" as const)
+                                }
+                                loading={"lazy" as const}
+                                src={(() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.records[0]
+                                      .fields.logo[0].url;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return undefined;
+                                    }
+                                    throw e;
+                                  }
+                                })()}
+                              />
+                            </p.PlasmicLink>
                           </div>
 
                           <div
@@ -383,17 +427,31 @@ function PlasmicArticleInfo__RenderFunc(props: {
                               sty.column__c4A2J
                             )}
                           >
-                            <button
+                            <p.PlasmicLink
                               className={classNames(
                                 projectcss.all,
-                                projectcss.button,
+                                projectcss.a,
                                 projectcss.__wab_text,
-                                sty.button__sn8Lk
+                                sty.link__sn8Lk
                               )}
+                              component={Link}
+                              href={(() => {
+                                try {
+                                  return $ctx.fetchDyanamicData.records[0]
+                                    .fields["Step 2 URL"];
+                                } catch (e) {
+                                  if (e instanceof TypeError) {
+                                    return undefined;
+                                  }
+                                  throw e;
+                                }
+                              })()}
+                              platform={"nextjs"}
                             >
                               {(() => {
                                 try {
-                                  return $ctx.fetchDyanamicData.fields.aCTA;
+                                  return $ctx.fetchDyanamicData.records[0]
+                                    .fields.aCTA;
                                 } catch (e) {
                                   if (e instanceof TypeError) {
                                     return "CLAIM FREE PODS";
@@ -401,7 +459,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                                   throw e;
                                 }
                               })()}
-                            </button>
+                            </p.PlasmicLink>
                           </div>
                         </div>
                       ) : null}
@@ -657,16 +715,29 @@ function PlasmicArticleInfo__RenderFunc(props: {
                                 ? true
                                 : true
                             ) ? (
-                              <button
+                              <p.PlasmicLink
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.button,
+                                  projectcss.a,
                                   projectcss.__wab_text,
-                                  sty.button__cmcpk
+                                  sty.link__cmcpk
                                 )}
+                                component={Link}
+                                href={(() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.records[0]
+                                      .fields["Step 2 URL"];
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return undefined;
+                                    }
+                                    throw e;
+                                  }
+                                })()}
+                                platform={"nextjs"}
                               >
                                 {"Claim Special Offer"}
-                              </button>
+                              </p.PlasmicLink>
                             ) : null}
                           </div>
                         ) : null}
@@ -733,26 +804,18 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       })()}
                     </div>
 
-                    <p.PlasmicImg
-                      data-plasmic-name={"heroImage"}
-                      data-plasmic-override={overrides.heroImage}
-                      alt={""}
-                      className={classNames(sty.heroImage)}
-                      displayHeight={"auto" as const}
-                      displayMaxHeight={"400px" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? ("auto" as const)
-                          : ("750px" as const)
-                      }
-                      loading={"lazy" as const}
-                      src={(() => {
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__kMX
+                      )}
+                      component={Link}
+                      href={(() => {
                         try {
-                          return $ctx.fetchDyanamicData.records[0].fields
-                            .heroImage[0].url;
+                          return $ctx.fetchDyanamicData.records[0].fields[
+                            "Step 2 URL"
+                          ];
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return undefined;
@@ -760,7 +823,37 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           throw e;
                         }
                       })()}
-                    />
+                      platform={"nextjs"}
+                    >
+                      <p.PlasmicImg
+                        data-plasmic-name={"heroImage"}
+                        data-plasmic-override={overrides.heroImage}
+                        alt={""}
+                        className={classNames(sty.heroImage)}
+                        displayHeight={"auto" as const}
+                        displayMaxHeight={"400px" as const}
+                        displayMaxWidth={"100%" as const}
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? ("auto" as const)
+                            : ("750px" as const)
+                        }
+                        loading={"lazy" as const}
+                        src={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .heroImage[0].url;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                      />
+                    </p.PlasmicLink>
 
                     <div
                       data-plasmic-name={"paragraph1"}
@@ -802,30 +895,18 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       )}
                     </div>
 
-                    <p.PlasmicImg
-                      data-plasmic-name={"image1"}
-                      data-plasmic-override={overrides.image1}
-                      alt={""}
-                      className={classNames(sty.image1)}
-                      displayHeight={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? ("auto" as const)
-                          : ("auto" as const)
-                      }
-                      displayMaxHeight={"400px" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? ("auto" as const)
-                          : ("750px" as const)
-                      }
-                      loading={"lazy" as const}
-                      src={(() => {
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__z6Y0
+                      )}
+                      component={Link}
+                      href={(() => {
                         try {
-                          return $ctx.fetchDyanamicData.records[0].fields
-                            .image1[0].url;
+                          return $ctx.fetchDyanamicData.records[0].fields[
+                            "Step 2 URL"
+                          ];
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return undefined;
@@ -833,7 +914,41 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           throw e;
                         }
                       })()}
-                    />
+                      platform={"nextjs"}
+                    >
+                      <p.PlasmicImg
+                        data-plasmic-name={"image1"}
+                        data-plasmic-override={overrides.image1}
+                        alt={""}
+                        className={classNames(sty.image1)}
+                        displayHeight={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? ("auto" as const)
+                            : ("auto" as const)
+                        }
+                        displayMaxHeight={"400px" as const}
+                        displayMaxWidth={"100%" as const}
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? ("auto" as const)
+                            : ("750px" as const)
+                        }
+                        loading={"lazy" as const}
+                        src={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .image1[0].url;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                      />
+                    </p.PlasmicLink>
 
                     <div
                       data-plasmic-name={"paragraph2"}
@@ -857,22 +972,18 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       })()}
                     </div>
 
-                    <p.PlasmicImg
-                      data-plasmic-name={"image2"}
-                      data-plasmic-override={overrides.image2}
-                      alt={""}
-                      className={classNames(sty.image2)}
-                      displayHeight={"auto" as const}
-                      displayMaxHeight={"400px" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"750px" as const}
-                      loading={"lazy" as const}
-                      src={(() => {
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__atTjL
+                      )}
+                      component={Link}
+                      href={(() => {
                         try {
-                          return $ctx.fetchDyanamicData.records[0].fields
-                            .image2[0].url;
+                          return $ctx.fetchDyanamicData.records[0].fields[
+                            "Step 2 URL"
+                          ];
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return undefined;
@@ -880,7 +991,33 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           throw e;
                         }
                       })()}
-                    />
+                      platform={"nextjs"}
+                    >
+                      <p.PlasmicImg
+                        data-plasmic-name={"image2"}
+                        data-plasmic-override={overrides.image2}
+                        alt={""}
+                        className={classNames(sty.image2)}
+                        displayHeight={"auto" as const}
+                        displayMaxHeight={"400px" as const}
+                        displayMaxWidth={"100%" as const}
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={"750px" as const}
+                        loading={"lazy" as const}
+                        src={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .image2[0].url;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                      />
+                    </p.PlasmicLink>
 
                     <div
                       data-plasmic-name={"paragraph3"}
@@ -904,30 +1041,18 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       })()}
                     </div>
 
-                    <p.PlasmicImg
-                      data-plasmic-name={"image3"}
-                      data-plasmic-override={overrides.image3}
-                      alt={""}
-                      className={classNames(sty.image3)}
-                      displayHeight={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? ("auto" as const)
-                          : ("auto" as const)
-                      }
-                      displayMaxHeight={"400px" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? ("auto" as const)
-                          : ("750px" as const)
-                      }
-                      loading={"lazy" as const}
-                      src={(() => {
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__znWI
+                      )}
+                      component={Link}
+                      href={(() => {
                         try {
-                          return $ctx.fetchDyanamicData.records[0].fields
-                            .image4[0].url;
+                          return $ctx.fetchDyanamicData.records[0].fields[
+                            "Step 2 URL"
+                          ];
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return undefined;
@@ -935,7 +1060,41 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           throw e;
                         }
                       })()}
-                    />
+                      platform={"nextjs"}
+                    >
+                      <p.PlasmicImg
+                        data-plasmic-name={"image3"}
+                        data-plasmic-override={overrides.image3}
+                        alt={""}
+                        className={classNames(sty.image3)}
+                        displayHeight={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? ("auto" as const)
+                            : ("auto" as const)
+                        }
+                        displayMaxHeight={"400px" as const}
+                        displayMaxWidth={"100%" as const}
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? ("auto" as const)
+                            : ("750px" as const)
+                        }
+                        loading={"lazy" as const}
+                        src={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .image4[0].url;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                      />
+                    </p.PlasmicLink>
 
                     <div
                       data-plasmic-name={"paragraph4"}
@@ -959,30 +1118,18 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       })()}
                     </div>
 
-                    <p.PlasmicImg
-                      data-plasmic-name={"image4"}
-                      data-plasmic-override={overrides.image4}
-                      alt={""}
-                      className={classNames(sty.image4)}
-                      displayHeight={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? ("auto" as const)
-                          : ("auto" as const)
-                      }
-                      displayMaxHeight={"400px" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? ("auto" as const)
-                          : ("750px" as const)
-                      }
-                      loading={"lazy" as const}
-                      src={(() => {
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__xYrZl
+                      )}
+                      component={Link}
+                      href={(() => {
                         try {
-                          return $ctx.fetchDyanamicData.records[0].fields
-                            .image5[0].url;
+                          return $ctx.fetchDyanamicData.records[0].fields[
+                            "Step 2 URL"
+                          ];
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return undefined;
@@ -990,7 +1137,41 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           throw e;
                         }
                       })()}
-                    />
+                      platform={"nextjs"}
+                    >
+                      <p.PlasmicImg
+                        data-plasmic-name={"image4"}
+                        data-plasmic-override={overrides.image4}
+                        alt={""}
+                        className={classNames(sty.image4)}
+                        displayHeight={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? ("auto" as const)
+                            : ("auto" as const)
+                        }
+                        displayMaxHeight={"400px" as const}
+                        displayMaxWidth={"100%" as const}
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? ("auto" as const)
+                            : ("750px" as const)
+                        }
+                        loading={"lazy" as const}
+                        src={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .image5[0].url;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                      />
+                    </p.PlasmicLink>
 
                     <div
                       data-plasmic-name={"paragraph5"}
@@ -1014,30 +1195,18 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       })()}
                     </div>
 
-                    <p.PlasmicImg
-                      data-plasmic-name={"image5"}
-                      data-plasmic-override={overrides.image5}
-                      alt={""}
-                      className={classNames(sty.image5)}
-                      displayHeight={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? ("auto" as const)
-                          : ("auto" as const)
-                      }
-                      displayMaxHeight={"400px" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? ("auto" as const)
-                          : ("750px" as const)
-                      }
-                      loading={"lazy" as const}
-                      src={(() => {
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__ps6YD
+                      )}
+                      component={Link}
+                      href={(() => {
                         try {
-                          return $ctx.fetchDyanamicData.records[0].fields
-                            .image6[0].url;
+                          return $ctx.fetchDyanamicData.records[0].fields[
+                            "Step 2 URL"
+                          ];
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return undefined;
@@ -1045,7 +1214,41 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           throw e;
                         }
                       })()}
-                    />
+                      platform={"nextjs"}
+                    >
+                      <p.PlasmicImg
+                        data-plasmic-name={"image5"}
+                        data-plasmic-override={overrides.image5}
+                        alt={""}
+                        className={classNames(sty.image5)}
+                        displayHeight={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? ("auto" as const)
+                            : ("auto" as const)
+                        }
+                        displayMaxHeight={"400px" as const}
+                        displayMaxWidth={"100%" as const}
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? ("auto" as const)
+                            : ("750px" as const)
+                        }
+                        loading={"lazy" as const}
+                        src={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .image6[0].url;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                      />
+                    </p.PlasmicLink>
 
                     <div
                       data-plasmic-name={"paragraph6"}
@@ -1069,30 +1272,18 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       })()}
                     </div>
 
-                    <p.PlasmicImg
-                      data-plasmic-name={"image6"}
-                      data-plasmic-override={overrides.image6}
-                      alt={""}
-                      className={classNames(sty.image6)}
-                      displayHeight={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? ("auto" as const)
-                          : ("auto" as const)
-                      }
-                      displayMaxHeight={"400px" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? ("auto" as const)
-                          : ("750px" as const)
-                      }
-                      loading={"lazy" as const}
-                      src={(() => {
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__qWpr0
+                      )}
+                      component={Link}
+                      href={(() => {
                         try {
-                          return $ctx.fetchDyanamicData.records[0].fields
-                            .image7[0].url;
+                          return $ctx.fetchDyanamicData.records[0].fields[
+                            "Step 2 URL"
+                          ];
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return undefined;
@@ -1100,7 +1291,41 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           throw e;
                         }
                       })()}
-                    />
+                      platform={"nextjs"}
+                    >
+                      <p.PlasmicImg
+                        data-plasmic-name={"image6"}
+                        data-plasmic-override={overrides.image6}
+                        alt={""}
+                        className={classNames(sty.image6)}
+                        displayHeight={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? ("auto" as const)
+                            : ("auto" as const)
+                        }
+                        displayMaxHeight={"400px" as const}
+                        displayMaxWidth={"100%" as const}
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? ("auto" as const)
+                            : ("750px" as const)
+                        }
+                        loading={"lazy" as const}
+                        src={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .image7[0].url;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                      />
+                    </p.PlasmicLink>
 
                     <div
                       data-plasmic-name={"paragraph7"}
@@ -1124,30 +1349,18 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       })()}
                     </div>
 
-                    <p.PlasmicImg
-                      data-plasmic-name={"image7"}
-                      data-plasmic-override={overrides.image7}
-                      alt={""}
-                      className={classNames(sty.image7)}
-                      displayHeight={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? ("auto" as const)
-                          : ("400px" as const)
-                      }
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? ("auto" as const)
-                          : ("750px" as const)
-                      }
-                      loading={"lazy" as const}
-                      src={(() => {
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__emJw0
+                      )}
+                      component={Link}
+                      href={(() => {
                         try {
-                          return $ctx.fetchDyanamicData.records[0].fields
-                            .image3[0].url;
+                          return $ctx.fetchDyanamicData.records[0].fields[
+                            "Step 2 URL"
+                          ];
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return undefined;
@@ -1155,7 +1368,41 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           throw e;
                         }
                       })()}
-                    />
+                      platform={"nextjs"}
+                    >
+                      <p.PlasmicImg
+                        data-plasmic-name={"image7"}
+                        data-plasmic-override={overrides.image7}
+                        alt={""}
+                        className={classNames(sty.image7)}
+                        displayHeight={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? ("auto" as const)
+                            : ("400px" as const)
+                        }
+                        displayMaxHeight={"none" as const}
+                        displayMaxWidth={"100%" as const}
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? ("auto" as const)
+                            : ("750px" as const)
+                        }
+                        loading={"lazy" as const}
+                        src={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .image3[0].url;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                      />
+                    </p.PlasmicLink>
 
                     <div
                       className={classNames(projectcss.all, sty.freeBox__iyJs)}
@@ -1193,12 +1440,26 @@ function PlasmicArticleInfo__RenderFunc(props: {
                                 sty.clickHereToLearnMoreOrderSparqZeroToday
                               )}
                             >
-                              <div
+                              <p.PlasmicLink
                                 className={classNames(
                                   projectcss.all,
+                                  projectcss.a,
                                   projectcss.__wab_text,
-                                  sty.text___0LmMp
+                                  sty.link___0LmMp
                                 )}
+                                component={Link}
+                                href={(() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.records[0]
+                                      .fields["Step 2 URL"];
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return undefined;
+                                    }
+                                    throw e;
+                                  }
+                                })()}
+                                platform={"nextjs"}
                               >
                                 {(() => {
                                   try {
@@ -1211,7 +1472,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                                     throw e;
                                   }
                                 })()}
-                              </div>
+                              </p.PlasmicLink>
                             </div>
                           </div>
 
@@ -1255,13 +1516,28 @@ function PlasmicArticleInfo__RenderFunc(props: {
                             </div>
                           </div>
 
-                          <div
+                          <p.PlasmicLink
                             data-plasmic-name={"alpPomButton138"}
                             data-plasmic-override={overrides.alpPomButton138}
                             className={classNames(
                               projectcss.all,
+                              projectcss.a,
                               sty.alpPomButton138
                             )}
+                            component={Link}
+                            href={(() => {
+                              try {
+                                return $ctx.fetchDyanamicData.records[0].fields[
+                                  "Step 2 URL"
+                                ];
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return undefined;
+                                }
+                                throw e;
+                              }
+                            })()}
+                            platform={"nextjs"}
                           >
                             <div
                               data-plasmic-name={"claimFreePods"}
@@ -1291,7 +1567,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                                 })()}
                               </div>
                             </div>
-                          </div>
+                          </p.PlasmicLink>
 
                           <div
                             data-plasmic-name={"divlpPomBox139"}
@@ -1362,30 +1638,48 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         ? true
                         : true
                     ) ? (
-                      <div
+                      <p.PlasmicLink
                         className={classNames(
                           projectcss.all,
+                          projectcss.a,
                           projectcss.__wab_text,
-                          sty.text__lntat
+                          sty.link__lntat
                         )}
+                        component={Link}
+                        href={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields[
+                              "Step 2 URL"
+                            ];
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                        platform={"nextjs"}
                       >
                         {"Click Here To Learn More & Order Sparq Zero® Today!"}
-                      </div>
+                      </p.PlasmicLink>
                     ) : null}
                     {(
                       hasVariant(globalVariants, "screen", "mobileOnly")
                         ? true
                         : true
                     ) ? (
-                      <div
+                      <p.PlasmicLink
                         className={classNames(
                           projectcss.all,
+                          projectcss.a,
                           projectcss.__wab_text,
-                          sty.text__ogQ80
+                          sty.link__ogQ80
                         )}
+                        component={Link}
+                        platform={"nextjs"}
                       >
                         {"Fast Same-Day Shipping"}
-                      </div>
+                      </p.PlasmicLink>
                     ) : null}
                     {(
                       hasVariant(globalVariants, "screen", "mobileOnly")
@@ -1430,16 +1724,30 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         ? true
                         : true
                     ) ? (
-                      <button
+                      <p.PlasmicLink
                         className={classNames(
                           projectcss.all,
-                          projectcss.button,
+                          projectcss.a,
                           projectcss.__wab_text,
-                          sty.button__yX9KC
+                          sty.link__yX9KC
                         )}
+                        component={Link}
+                        href={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields[
+                              "Step 2 URL"
+                            ];
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                        platform={"nextjs"}
                       >
                         {"CLAIM FREE PODS 👉"}
-                      </button>
+                      </p.PlasmicLink>
                     ) : null}
                   </div>
 
@@ -1482,32 +1790,64 @@ function PlasmicArticleInfo__RenderFunc(props: {
                   <div
                     className={classNames(projectcss.all, sty.freeBox__oy9IU)}
                   >
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img___0Zho)}
-                      displayHeight={"auto" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? ("266px" as const)
-                          : ("266px" as const)
-                      }
-                      loading={"lazy" as const}
-                      src={(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.records[0].fields
-                            .logo[0].url;
-                        } catch (e) {
-                          if (e instanceof TypeError) {
-                            return undefined;
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__pmkXc
+                      )}
+                      component={Link}
+                      platform={"nextjs"}
+                    >
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__wSaym
+                        )}
+                        component={Link}
+                        href={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields[
+                              "Step 2 URL"
+                            ];
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
                           }
-                          throw e;
-                        }
-                      })()}
-                    />
+                        })()}
+                        platform={"nextjs"}
+                      >
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img___0Zho)}
+                          displayHeight={"auto" as const}
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"100%" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("266px" as const)
+                              : ("266px" as const)
+                          }
+                          loading={"lazy" as const}
+                          src={(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .logo[0].url;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return undefined;
+                              }
+                              throw e;
+                            }
+                          })()}
+                        />
+                      </p.PlasmicLink>
+                    </p.PlasmicLink>
                   </div>
                 </React.Fragment>
               )}
@@ -1660,7 +2000,7 @@ type NodeDefaultElementType = {
   clickHereToLearnMoreOrderSparqZeroToday: "div";
   divlpPomText137: "div";
   fastSameDayShipping: "div";
-  alpPomButton138: "div";
+  alpPomButton138: "a";
   claimFreePods: "div";
   divlpPomBox139: "div";
   _100000HappyCustomersInStockShipsNow: "div";

@@ -1,6 +1,16 @@
 {
   "props": [
     {
+      "name": "#1F7926",
+      "type": "color",
+      "value": "#1F7926",
+      "category": "color",
+      "meta": {
+        "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
+        "id": "6Svo-6Lr3"
+      }
+    },
+    {
       "name": "UnnamedStyleToken",
       "type": "spacing",
       "value": "1px",
@@ -43,11 +53,21 @@
     {
       "name": "UnnamedStyleToken 13",
       "type": "color",
-      "value": "#F96A02",
+      "value": "#FF7613",
       "category": "color",
       "meta": {
         "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
         "id": "4EShhbvE5"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 14",
+      "type": "color",
+      "value": "#1F7926",
+      "category": "color",
+      "meta": {
+        "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
+        "id": "N4TLOIIXy"
       }
     },
     {
