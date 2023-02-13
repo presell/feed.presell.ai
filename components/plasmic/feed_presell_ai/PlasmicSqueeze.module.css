@@ -31,7 +31,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 100%;
+  width: 1546px;
   height: 920px;
   max-width: 100%;
   align-self: stretch;
@@ -39,9 +39,8 @@
   padding-top: 0px;
   left: auto;
   top: 0px;
-  right: 0px;
+  right: -2px;
   padding-bottom: 0px;
-  min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__xhsS {
@@ -304,8 +303,7 @@
   height: auto;
   max-width: 100%;
   align-self: center;
-  min-width: 0;
-  padding: 8px 300px;
+  padding: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__ysbXk {
@@ -316,7 +314,7 @@
 .freeBox__a3MCw {
   display: block;
   position: relative;
-  width: 100%;
+  width: 45%;
   height: auto;
   max-width: 100%;
   border-top-width: 1px;
@@ -324,7 +322,6 @@
   border-bottom-width: 1px;
   border-bottom-style: solid;
   align-self: center;
-  min-width: 0;
   padding: 6px 0px 63px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -335,53 +332,51 @@
     position: relative;
     left: auto;
     top: auto;
+    padding-bottom: 67px;
   }
 }
 .button__jeVfv {
   position: absolute;
-  width: 250px;
+  width: 45%;
   height: 50px;
   color: #ffffff;
   background: #f70000;
   text-align: center;
-  padding-top: 2px;
-  padding-right: 0px;
-  left: 0px;
-  top: 8px;
+  left: 200px;
+  top: 6px;
   z-index: 1;
-  right: auto;
-  margin-right: 0px;
-  margin-left: 329px;
   display: block;
   border-radius: 10px;
+  padding: 10px;
+  margin: 5px 0px 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .button__jeVfv {
     left: 51px;
     top: 13px;
-    margin-right: 0px;
-    margin-left: 0px;
+    width: 70%;
     display: block;
+    margin: 0px 0px 5px;
   }
 }
-.freeBox__ugJYb {
+.form {
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   width: 675px;
-  height: 460px;
+  height: 474px;
   max-width: 100%;
   background: #ffffff;
-  padding-top: 50px;
+  padding-top: 0px;
   padding-bottom: 0px;
   flex-shrink: 0;
   border-radius: 20px 20px 0px 0px;
   margin: 20px 0px 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .freeBox__ugJYb {
+  .form {
     padding-top: 0px;
   }
 }

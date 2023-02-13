@@ -63,6 +63,7 @@ export type PlasmicSqueeze__OverridesType = {
   httpApiFetcher?: p.Flex<typeof DataFetcher>;
   head?: p.Flex<typeof PlasmicHead>;
   columns?: p.Flex<"div">;
+  form?: p.Flex<"form">;
 };
 
 export interface DefaultSqueezeProps {}
@@ -490,11 +491,14 @@ function PlasmicSqueeze__RenderFunc(props: {
                         </div>
                       </div>
 
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__ugJYb
-                        )}
+                      <form
+                        data-plasmic-name={"form"}
+                        data-plasmic-override={overrides.form}
+                        action={
+                          "https://hook.us1.make.com/5mordka6hk6nytd9doqnbe6kbf4r3drk" as const
+                        }
+                        className={classNames(projectcss.all, sty.form)}
+                        method={"post" as const}
                       >
                         <div
                           className={classNames(
@@ -535,18 +539,22 @@ function PlasmicSqueeze__RenderFunc(props: {
                         </div>
 
                         <TextInput
+                          aria-label={"email" as const}
                           className={classNames(
                             "__wab_instance",
                             sty.textInput__p474A
                           )}
+                          name={"email" as const}
                           placeholder={"📧 Your Email Address" as const}
                         />
 
                         <TextInput
+                          aria-label={"phone" as const}
                           className={classNames(
                             "__wab_instance",
                             sty.textInput___0TAi9
                           )}
+                          name={"phone" as const}
                           placeholder={"📲 Your Phone Number" as const}
                         />
 
@@ -576,7 +584,7 @@ function PlasmicSqueeze__RenderFunc(props: {
                         >
                           {"I agree to receive emails and texts."}
                         </div>
-                      </div>
+                      </form>
 
                       {true ? (
                         <div
@@ -622,10 +630,11 @@ function PlasmicSqueeze__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "httpApiFetcher", "head", "columns"],
-  httpApiFetcher: ["httpApiFetcher", "head", "columns"],
+  root: ["root", "httpApiFetcher", "head", "columns", "form"],
+  httpApiFetcher: ["httpApiFetcher", "head", "columns", "form"],
   head: ["head"],
-  columns: ["columns"]
+  columns: ["columns"],
+  form: ["form"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -635,6 +644,7 @@ type NodeDefaultElementType = {
   httpApiFetcher: typeof DataFetcher;
   head: typeof PlasmicHead;
   columns: "div";
+  form: "form";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -701,6 +711,7 @@ export const PlasmicSqueeze = Object.assign(
     httpApiFetcher: makeNodeComponent("httpApiFetcher"),
     head: makeNodeComponent("head"),
     columns: makeNodeComponent("columns"),
+    form: makeNodeComponent("form"),
 
     // Metadata about props expected for PlasmicSqueeze
     internalVariantProps: PlasmicSqueeze__VariantProps,
