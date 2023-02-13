@@ -912,9 +912,8 @@
 .image2 {
   object-fit: cover;
   max-width: 100%;
-  height: auto;
+  height: 400px;
   width: 750px;
-  max-height: 400px;
   flex-shrink: 0;
 }
 .image2 > picture > img {
@@ -954,8 +953,7 @@
   object-fit: cover;
   max-width: 100%;
   width: 750px;
-  height: auto;
-  max-height: 400px;
+  height: 400px;
   flex-shrink: 0;
 }
 .image3 > picture > img {
@@ -1013,8 +1011,7 @@
   object-fit: cover;
   max-width: 100%;
   width: 750px;
-  height: auto;
-  max-height: 400px;
+  height: 400px;
   flex-shrink: 0;
 }
 .image4 > picture > img {
@@ -1072,8 +1069,7 @@
   object-fit: cover;
   max-width: 100%;
   width: 750px;
-  height: auto;
-  max-height: 400px;
+  height: 400px;
   flex-shrink: 0;
 }
 .image5 > picture > img {
@@ -1117,18 +1113,10 @@
   }
 }
 .image6 {
-  object-fit: cover;
-  max-width: 100%;
   width: 750px;
-  height: auto;
-  max-height: 400px;
+  height: 400px;
+  max-width: 100%;
   flex-shrink: 0;
-}
-.image6 > picture > img {
-  object-fit: cover;
-}
-.image6 > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .image6 {

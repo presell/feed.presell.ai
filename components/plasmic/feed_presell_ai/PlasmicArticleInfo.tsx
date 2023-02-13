@@ -1069,8 +1069,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         data-plasmic-override={overrides.image2}
                         alt={""}
                         className={classNames(sty.image2)}
-                        displayHeight={"auto" as const}
-                        displayMaxHeight={"400px" as const}
+                        displayHeight={"400px" as const}
+                        displayMaxHeight={"none" as const}
                         displayMaxWidth={"100%" as const}
                         displayMinHeight={"0" as const}
                         displayMinWidth={"0" as const}
@@ -1140,9 +1140,9 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayHeight={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? ("auto" as const)
-                            : ("auto" as const)
+                            : ("400px" as const)
                         }
-                        displayMaxHeight={"400px" as const}
+                        displayMaxHeight={"none" as const}
                         displayMaxWidth={"100%" as const}
                         displayMinHeight={"0" as const}
                         displayMinWidth={"0" as const}
@@ -1217,9 +1217,9 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayHeight={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? ("auto" as const)
-                            : ("auto" as const)
+                            : ("400px" as const)
                         }
-                        displayMaxHeight={"400px" as const}
+                        displayMaxHeight={"none" as const}
                         displayMaxWidth={"100%" as const}
                         displayMinHeight={"0" as const}
                         displayMinWidth={"0" as const}
@@ -1294,9 +1294,9 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayHeight={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? ("auto" as const)
-                            : ("auto" as const)
+                            : ("400px" as const)
                         }
-                        displayMaxHeight={"400px" as const}
+                        displayMaxHeight={"none" as const}
                         displayMaxWidth={"100%" as const}
                         displayMinHeight={"0" as const}
                         displayMinWidth={"0" as const}
@@ -1371,9 +1371,9 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayHeight={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? ("auto" as const)
-                            : ("auto" as const)
+                            : ("400px" as const)
                         }
-                        displayMaxHeight={"400px" as const}
+                        displayMaxHeight={"none" as const}
                         displayMaxWidth={"100%" as const}
                         displayMinHeight={"0" as const}
                         displayMinWidth={"0" as const}
