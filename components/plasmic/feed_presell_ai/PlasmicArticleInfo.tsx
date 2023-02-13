@@ -1156,7 +1156,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         src={(() => {
                           try {
                             return $ctx.fetchDyanamicData.records[0].fields
-                              .image4[0].url;
+                              .image3[0].url;
                           } catch (e) {
                             if (e instanceof TypeError) {
                               return undefined;
@@ -1179,7 +1179,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       {(() => {
                         try {
                           return $ctx.fetchDyanamicData.records[0].fields
-                            .paragraph5;
+                            .paragraph4;
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return "Enter some text";
@@ -1233,7 +1233,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         src={(() => {
                           try {
                             return $ctx.fetchDyanamicData.records[0].fields
-                              .image5[0].url;
+                              .image4[0].url;
                           } catch (e) {
                             if (e instanceof TypeError) {
                               return undefined;
@@ -1256,7 +1256,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       {(() => {
                         try {
                           return $ctx.fetchDyanamicData.records[0].fields
-                            .paragraph6;
+                            .paragraph5;
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return "Enter some text";
@@ -1310,7 +1310,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         src={(() => {
                           try {
                             return $ctx.fetchDyanamicData.records[0].fields
-                              .image6[0].url;
+                              .image5[0].url;
                           } catch (e) {
                             if (e instanceof TypeError) {
                               return undefined;
@@ -1333,7 +1333,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       {(() => {
                         try {
                           return $ctx.fetchDyanamicData.records[0].fields
-                            .paragraph7;
+                            .paragraph6;
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return "Enter some text";
@@ -1387,7 +1387,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         src={(() => {
                           try {
                             return $ctx.fetchDyanamicData.records[0].fields
-                              .image7[0].url;
+                              .image6[0].url;
                           } catch (e) {
                             if (e instanceof TypeError) {
                               return undefined;
@@ -1464,7 +1464,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         src={(() => {
                           try {
                             return $ctx.fetchDyanamicData.records[0].fields
-                              .image3[0].url;
+                              .image7[0].url;
                           } catch (e) {
                             if (e instanceof TypeError) {
                               return undefined;
