@@ -968,7 +968,8 @@
   .image3 {
     object-fit: contain;
     height: auto;
-    width: auto;
+    width: 750px;
+    flex-shrink: 0;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -1026,7 +1027,8 @@
   .image4 {
     object-fit: contain;
     height: auto;
-    width: auto;
+    width: 750px;
+    flex-shrink: 0;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -1083,7 +1085,8 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .image5 {
     height: auto;
-    width: auto;
+    width: 750px;
+    flex-shrink: 0;
   }
 }
 .paragraph6 {
@@ -1130,7 +1133,8 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .image6 {
     height: auto;
-    width: auto;
+    width: 750px;
+    flex-shrink: 0;
   }
 }
 .paragraph7 {
@@ -1176,7 +1180,8 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .image7 {
     height: auto;
-    width: auto;
+    width: 750px;
+    flex-shrink: 0;
   }
 }
 .freeBox__iyJs {

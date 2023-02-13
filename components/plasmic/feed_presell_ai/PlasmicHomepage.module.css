@@ -333,6 +333,7 @@
   user-select: text;
   text-decoration-line: none !important;
   text-overflow: clip !important;
+  padding-right: 0px;
 }
 .svg__r2Rbh {
   position: relative;

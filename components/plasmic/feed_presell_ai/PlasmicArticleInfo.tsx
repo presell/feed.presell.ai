@@ -766,22 +766,41 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         sty.heroSubHeadline
                       )}
                     >
-                      <div
-                        className={projectcss.__wab_expr_html_text}
-                        dangerouslySetInnerHTML={{
-                          __html: (() => {
-                            try {
-                              return $ctx.fetchDyanamicData.records[0].fields
-                                .heroHeadline;
-                            } catch (e) {
-                              if (e instanceof TypeError) {
-                                return "Enter some text";
+                      {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                        <div
+                          className={projectcss.__wab_expr_html_text}
+                          dangerouslySetInnerHTML={{
+                            __html: (() => {
+                              try {
+                                return $ctx.fetchDyanamicData.records[0].fields
+                                  .heroHeadline;
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return "Enter some text";
+                                }
+                                throw e;
                               }
-                              throw e;
-                            }
-                          })()
-                        }}
-                      />
+                            })()
+                          }}
+                        />
+                      ) : (
+                        <div
+                          className={projectcss.__wab_expr_html_text}
+                          dangerouslySetInnerHTML={{
+                            __html: (() => {
+                              try {
+                                return $ctx.fetchDyanamicData.records[0].fields
+                                  .heroHeadline;
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return "Enter some text";
+                                }
+                                throw e;
+                              }
+                            })()
+                          }}
+                        />
+                      )}
                     </div>
 
                     <div
@@ -791,17 +810,29 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         sty.text__vLfi6
                       )}
                     >
-                      {(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.records[0].fields
-                            .heroSubHeadline;
-                        } catch (e) {
-                          if (e instanceof TypeError) {
-                            return "Enter some text";
-                          }
-                          throw e;
-                        }
-                      })()}
+                      {hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? (() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .heroSubHeadline;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "Enter some text";
+                              }
+                              throw e;
+                            }
+                          })()
+                        : (() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .heroSubHeadline;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "Enter some text";
+                              }
+                              throw e;
+                            }
+                          })()}
                     </div>
 
                     <p.PlasmicLink
@@ -841,17 +872,31 @@ function PlasmicArticleInfo__RenderFunc(props: {
                             : ("750px" as const)
                         }
                         loading={"lazy" as const}
-                        src={(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.records[0].fields
-                              .heroImage[0].url;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
+                        src={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? (() => {
+                                try {
+                                  return $ctx.fetchDyanamicData.records[0]
+                                    .fields.heroImage[0].url;
+                                } catch (e) {
+                                  if (e instanceof TypeError) {
+                                    return undefined;
+                                  }
+                                  throw e;
+                                }
+                              })()
+                            : (() => {
+                                try {
+                                  return $ctx.fetchDyanamicData.records[0]
+                                    .fields.heroImage[0].url;
+                                } catch (e) {
+                                  if (e instanceof TypeError) {
+                                    return undefined;
+                                  }
+                                  throw e;
+                                }
+                              })()
+                        }
                       />
                     </p.PlasmicLink>
 
@@ -936,17 +981,31 @@ function PlasmicArticleInfo__RenderFunc(props: {
                             : ("750px" as const)
                         }
                         loading={"lazy" as const}
-                        src={(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.records[0].fields
-                              .image1[0].url;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
+                        src={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? (() => {
+                                try {
+                                  return $ctx.fetchDyanamicData.records[0]
+                                    .fields.image1[0].url;
+                                } catch (e) {
+                                  if (e instanceof TypeError) {
+                                    return undefined;
+                                  }
+                                  throw e;
+                                }
+                              })()
+                            : (() => {
+                                try {
+                                  return $ctx.fetchDyanamicData.records[0]
+                                    .fields.image1[0].url;
+                                } catch (e) {
+                                  if (e instanceof TypeError) {
+                                    return undefined;
+                                  }
+                                  throw e;
+                                }
+                              })()
+                        }
                       />
                     </p.PlasmicLink>
 
@@ -959,17 +1018,29 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         sty.paragraph2
                       )}
                     >
-                      {(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.records[0].fields
-                            .paragraph2;
-                        } catch (e) {
-                          if (e instanceof TypeError) {
-                            return "Enter some text";
-                          }
-                          throw e;
-                        }
-                      })()}
+                      {hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? (() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .paragraph2;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "Enter some text";
+                              }
+                              throw e;
+                            }
+                          })()
+                        : (() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .paragraph2;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "Enter some text";
+                              }
+                              throw e;
+                            }
+                          })()}
                     </div>
 
                     <p.PlasmicLink
@@ -1078,7 +1149,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayMinWidth={"0" as const}
                         displayWidth={
                           hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("auto" as const)
+                            ? ("750px" as const)
                             : ("750px" as const)
                         }
                         loading={"lazy" as const}
@@ -1155,7 +1226,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayMinWidth={"0" as const}
                         displayWidth={
                           hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("auto" as const)
+                            ? ("750px" as const)
                             : ("750px" as const)
                         }
                         loading={"lazy" as const}
@@ -1232,7 +1303,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayMinWidth={"0" as const}
                         displayWidth={
                           hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("auto" as const)
+                            ? ("750px" as const)
                             : ("750px" as const)
                         }
                         loading={"lazy" as const}
@@ -1309,7 +1380,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayMinWidth={"0" as const}
                         displayWidth={
                           hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("auto" as const)
+                            ? ("750px" as const)
                             : ("750px" as const)
                         }
                         loading={"lazy" as const}
@@ -1386,7 +1457,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayMinWidth={"0" as const}
                         displayWidth={
                           hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("auto" as const)
+                            ? ("750px" as const)
                             : ("750px" as const)
                         }
                         loading={"lazy" as const}
@@ -1660,7 +1731,17 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         })()}
                         platform={"nextjs"}
                       >
-                        {"Click Here To Learn More & Order Sparq Zero® Today!"}
+                        {(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .aOutroH1;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return "Click Here To Learn More & Order Sparq Zero® Today!";
+                            }
+                            throw e;
+                          }
+                        })()}
                       </p.PlasmicLink>
                     ) : null}
                     {(
@@ -1678,7 +1759,17 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         component={Link}
                         platform={"nextjs"}
                       >
-                        {"Fast Same-Day Shipping"}
+                        {(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .aOutroH2;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return "Fast Same-Day Shipping";
+                            }
+                            throw e;
+                          }
+                        })()}
                       </p.PlasmicLink>
                     ) : null}
                     {(
@@ -1693,7 +1784,17 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           sty.text__jQkx7
                         )}
                       >
-                        {"100,000+ Happy Customers! In Stock - Ships Now."}
+                        {(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .aOutroH3;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return "100,000+ Happy Customers! In Stock - Ships Now.";
+                            }
+                            throw e;
+                          }
+                        })()}
                       </div>
                     ) : null}
                     {(
@@ -1746,7 +1847,17 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         })()}
                         platform={"nextjs"}
                       >
-                        {"CLAIM FREE PODS 👉"}
+                        {(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .aCTA;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return "CLAIM FREE PODS 👉";
+                            }
+                            throw e;
+                          }
+                        })()}
                       </p.PlasmicLink>
                     ) : null}
                   </div>
