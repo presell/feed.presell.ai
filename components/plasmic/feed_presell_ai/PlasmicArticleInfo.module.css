@@ -817,7 +817,10 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .heroImage {
-    width: auto;
+    width: 333px;
+    height: 290px;
+    max-width: 100%;
+    flex-shrink: 0;
   }
 }
 .paragraph1 {
@@ -867,8 +870,10 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .image1 {
     object-fit: contain;
-    height: auto;
-    width: auto;
+    height: 290px;
+    width: 333px;
+    max-width: 100%;
+    flex-shrink: 0;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -922,6 +927,13 @@
 .image2 > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .image2 {
+    height: 290px;
+    width: 333px;
+    flex-shrink: 0;
+  }
+}
 .paragraph3 {
   position: relative;
   width: 750px;
@@ -965,8 +977,9 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .image3 {
     object-fit: contain;
-    height: auto;
-    width: 750px;
+    height: 290px;
+    width: 333px;
+    max-width: 100%;
     flex-shrink: 0;
   }
 }
@@ -1023,8 +1036,9 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .image4 {
     object-fit: contain;
-    height: auto;
-    width: 750px;
+    height: 290px;
+    width: 333px;
+    max-width: 100%;
     flex-shrink: 0;
   }
 }
@@ -1080,8 +1094,9 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .image5 {
-    height: auto;
-    width: 750px;
+    height: 290px;
+    width: 333px;
+    max-width: 100%;
     flex-shrink: 0;
   }
 }
@@ -1120,8 +1135,9 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .image6 {
-    height: auto;
-    width: 750px;
+    height: 290px;
+    width: 333px;
+    max-width: 100%;
     flex-shrink: 0;
   }
 }
@@ -1167,8 +1183,9 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .image7 {
-    height: auto;
-    width: 750px;
+    height: 290px;
+    width: 333px;
+    max-width: 100%;
     flex-shrink: 0;
   }
 }
