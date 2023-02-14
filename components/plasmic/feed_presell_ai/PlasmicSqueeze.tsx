@@ -193,7 +193,9 @@ function PlasmicSqueeze__RenderFunc(props: {
                     className={classNames("__wab_instance", sty.head)}
                     description={(() => {
                       try {
-                        return $ctx.fetchDyanamicData.fields.paragraph1;
+                        return $ctx.fetchDyanamicData.fields[
+                          "Step 2 SEO Description"
+                        ];
                       } catch (e) {
                         if (e instanceof TypeError) {
                           return undefined;
@@ -213,7 +215,9 @@ function PlasmicSqueeze__RenderFunc(props: {
                     })()}
                     title={(() => {
                       try {
-                        return $ctx.fetchDyanamicData.fields.heroHeadline;
+                        return $ctx.fetchDyanamicData.fields[
+                          "Step 2 SEO Title"
+                        ];
                       } catch (e) {
                         if (e instanceof TypeError) {
                           return undefined;
