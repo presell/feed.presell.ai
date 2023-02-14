@@ -35,7 +35,6 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { DataFetcher } from "@plasmicpkgs/plasmic-query"; // plasmic-import: ae7V86eNoXA/codeComponent
-import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
 import { PlasmicHead } from "@plasmicapp/react-web"; // plasmic-import: 9R13-owMVa/codeComponent
 
 import { useScreenVariants as useScreenVariantsgpwde9M3Mng } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: GPWDE9_m3Mng/globalVariant
@@ -57,7 +56,6 @@ export const PlasmicArticleInfo__ArgProps = new Array<ArgPropType>();
 export type PlasmicArticleInfo__OverridesType = {
   root?: p.Flex<"div">;
   httpApiFetcher?: p.Flex<typeof DataFetcher>;
-  embedHtml?: p.Flex<typeof Embed>;
   heroSubHeadline?: p.Flex<"div">;
   heroImage?: p.Flex<typeof p.PlasmicImg>;
   paragraph1?: p.Flex<"div">;
@@ -85,7 +83,6 @@ export type PlasmicArticleInfo__OverridesType = {
   _100000HappyCustomersInStockShipsNow?: p.Flex<"div">;
   div?: p.Flex<"div">;
   _4E8Df8335StarReviews103N00Q000000000000028Png?: p.Flex<"div">;
-  head?: p.Flex<typeof PlasmicHead>;
 };
 
 export interface DefaultArticleInfoProps {}
@@ -199,13 +196,32 @@ function PlasmicArticleInfo__RenderFunc(props: {
             <ph.DataCtxReader>
               {$ctx => (
                 <React.Fragment>
-                  <Embed
-                    data-plasmic-name={"embedHtml"}
-                    data-plasmic-override={overrides.embedHtml}
-                    className={classNames("__wab_instance", sty.embedHtml)}
-                    code={
-                      '<meta name="description" content="Meet The Newest Flavor Diffuser">\r\n<meta name="title" content="Here\'s how to claim a free device!">\r\n' as const
-                    }
+                  <PlasmicHead
+                    className={classNames("__wab_instance", sty.head___2TJbn)}
+                    description={(() => {
+                      try {
+                        return $ctx.fetchDyanamicData.records[0].fields[
+                          "Step 1 SEO Description"
+                        ];
+                      } catch (e) {
+                        if (e instanceof TypeError) {
+                          return undefined;
+                        }
+                        throw e;
+                      }
+                    })()}
+                    title={(() => {
+                      try {
+                        return $ctx.fetchDyanamicData.records[0].fields[
+                          "Step 1 SEO Title"
+                        ];
+                      } catch (e) {
+                        if (e instanceof TypeError) {
+                          return undefined;
+                        }
+                        throw e;
+                      }
+                    })()}
                   />
 
                   {true ? (
@@ -1946,9 +1962,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                   </div>
 
                   <PlasmicHead
-                    data-plasmic-name={"head"}
-                    data-plasmic-override={overrides.head}
-                    className={classNames("__wab_instance", sty.head)}
+                    className={classNames("__wab_instance", sty.head__qQEd1)}
                     description={(() => {
                       try {
                         return $ctx.fetchDyanamicData.fields.paragraph1;
@@ -2057,7 +2071,6 @@ const PlasmicDescendants = {
   root: [
     "root",
     "httpApiFetcher",
-    "embedHtml",
     "heroSubHeadline",
     "heroImage",
     "paragraph1",
@@ -2084,12 +2097,10 @@ const PlasmicDescendants = {
     "divlpPomBox139",
     "_100000HappyCustomersInStockShipsNow",
     "div",
-    "_4E8Df8335StarReviews103N00Q000000000000028Png",
-    "head"
+    "_4E8Df8335StarReviews103N00Q000000000000028Png"
   ],
   httpApiFetcher: [
     "httpApiFetcher",
-    "embedHtml",
     "heroSubHeadline",
     "heroImage",
     "paragraph1",
@@ -2116,10 +2127,8 @@ const PlasmicDescendants = {
     "divlpPomBox139",
     "_100000HappyCustomersInStockShipsNow",
     "div",
-    "_4E8Df8335StarReviews103N00Q000000000000028Png",
-    "head"
+    "_4E8Df8335StarReviews103N00Q000000000000028Png"
   ],
-  embedHtml: ["embedHtml"],
   heroSubHeadline: ["heroSubHeadline"],
   heroImage: ["heroImage"],
   paragraph1: ["paragraph1"],
@@ -2167,8 +2176,7 @@ const PlasmicDescendants = {
   div: ["div", "_4E8Df8335StarReviews103N00Q000000000000028Png"],
   _4E8Df8335StarReviews103N00Q000000000000028Png: [
     "_4E8Df8335StarReviews103N00Q000000000000028Png"
-  ],
-  head: ["head"]
+  ]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -2176,7 +2184,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   httpApiFetcher: typeof DataFetcher;
-  embedHtml: typeof Embed;
   heroSubHeadline: "div";
   heroImage: typeof p.PlasmicImg;
   paragraph1: "div";
@@ -2204,7 +2211,6 @@ type NodeDefaultElementType = {
   _100000HappyCustomersInStockShipsNow: "div";
   div: "div";
   _4E8Df8335StarReviews103N00Q000000000000028Png: "div";
-  head: typeof PlasmicHead;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -2269,7 +2275,6 @@ export const PlasmicArticleInfo = Object.assign(
   {
     // Helper components rendering sub-elements
     httpApiFetcher: makeNodeComponent("httpApiFetcher"),
-    embedHtml: makeNodeComponent("embedHtml"),
     heroSubHeadline: makeNodeComponent("heroSubHeadline"),
     heroImage: makeNodeComponent("heroImage"),
     paragraph1: makeNodeComponent("paragraph1"),
@@ -2303,7 +2308,6 @@ export const PlasmicArticleInfo = Object.assign(
     _4E8Df8335StarReviews103N00Q000000000000028Png: makeNodeComponent(
       "_4E8Df8335StarReviews103N00Q000000000000028Png"
     ),
-    head: makeNodeComponent("head"),
 
     // Metadata about props expected for PlasmicArticleInfo
     internalVariantProps: PlasmicArticleInfo__VariantProps,
