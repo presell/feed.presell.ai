@@ -600,7 +600,11 @@ function PlasmicSqueeze__RenderFunc(props: {
                             sty.text__lCs17
                           )}
                         >
-                          {"I agree to receive emails and texts."}
+                          {hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "I agree to receive emails and texts."
+                            : hasVariant(globalVariants, "screen", "laptop")
+                            ? "I agree to receive emails and texts."
+                            : "I agree to receive emails and texts."}
                         </div>
                       </form>
 
