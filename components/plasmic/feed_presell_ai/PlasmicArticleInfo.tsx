@@ -197,478 +197,20 @@ function PlasmicArticleInfo__RenderFunc(props: {
             <ph.DataCtxReader>
               {$ctx => (
                 <React.Fragment>
-                  {true ? (
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__kX152)}
-                    >
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img___3Hkyi)}
-                        displayHeight={"56px" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"auto" as const}
-                        loading={"lazy" as const}
-                        src={(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.fields.logo[0].url;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
-                      />
-
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__j6X3)}
+                    key={"title" as const}
+                    value={"test" as const}
+                  >
+                    {(
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox___6Svqf
-                        )}
-                      />
-                    </div>
-                  ) : null}
-                  {(
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? true
-                      : true
-                  ) ? (
-                    <div
-                      className={classNames(projectcss.all, sty.columns__um87Q)}
-                    >
-                      {(
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? true
-                          : true
-                      ) ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.column__lnI4
-                          )}
-                        >
-                          <p.PlasmicLink
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.a,
-                              sty.link___7Jrko
-                            )}
-                            component={Link}
-                            href={(() => {
-                              try {
-                                return $ctx.fetchDyanamicData.records[0].fields[
-                                  "Step 2 URL"
-                                ];
-                              } catch (e) {
-                                if (e instanceof TypeError) {
-                                  return undefined;
-                                }
-                                throw e;
-                              }
-                            })()}
-                            platform={"nextjs"}
-                          >
-                            {(
-                              hasVariant(globalVariants, "screen", "mobileOnly")
-                                ? true
-                                : true
-                            ) ? (
-                              <p.PlasmicImg
-                                alt={""}
-                                className={classNames(sty.img__bmaGl)}
-                                displayHeight={"auto" as const}
-                                displayMaxHeight={"none" as const}
-                                displayMaxWidth={"100%" as const}
-                                displayMinHeight={"0" as const}
-                                displayMinWidth={"0" as const}
-                                displayWidth={"266px" as const}
-                                loading={"lazy" as const}
-                                src={(() => {
-                                  try {
-                                    return $ctx.fetchDyanamicData.records[0]
-                                      .fields.logo[0].url;
-                                  } catch (e) {
-                                    if (e instanceof TypeError) {
-                                      return undefined;
-                                    }
-                                    throw e;
-                                  }
-                                })()}
-                              />
-                            ) : null}
-                          </p.PlasmicLink>
-                        </div>
-                      ) : null}
-                      {(
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? true
-                          : true
-                      ) ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.column__qZwpR
-                          )}
-                        />
-                      ) : null}
-                    </div>
-                  ) : null}
-                  {(
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? true
-                      : true
-                  ) ? (
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__eiUyg)}
-                    >
-                      {(
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? true
-                          : true
-                      ) ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.columns__xMkj
-                          )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.column__rA1Hw
-                            )}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__gWvpK
-                              )}
-                            >
-                              {(() => {
-                                try {
-                                  return $ctx.fetchDyanamicData.records[0]
-                                    .fields.aSlogan;
-                                } catch (e) {
-                                  if (e instanceof TypeError) {
-                                    return '"The Evaluation of Inhalation"';
-                                  }
-                                  throw e;
-                                }
-                              })()}
-                            </div>
-                          </div>
-
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.column__ekYKj
-                            )}
-                          >
-                            <p.PlasmicLink
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.a,
-                                sty.link__qFsy
-                              )}
-                              component={Link}
-                              href={(() => {
-                                try {
-                                  return $ctx.fetchDyanamicData.records[0]
-                                    .fields["Step 2 URL"];
-                                } catch (e) {
-                                  if (e instanceof TypeError) {
-                                    return undefined;
-                                  }
-                                  throw e;
-                                }
-                              })()}
-                              platform={"nextjs"}
-                            >
-                              <p.PlasmicImg
-                                alt={""}
-                                className={classNames(sty.img___72MUb)}
-                                displayHeight={"auto" as const}
-                                displayMaxHeight={"none" as const}
-                                displayMaxWidth={"100%" as const}
-                                displayMinHeight={"0" as const}
-                                displayMinWidth={"0" as const}
-                                displayWidth={
-                                  hasVariant(
-                                    globalVariants,
-                                    "screen",
-                                    "mobileOnly"
-                                  )
-                                    ? ("500px" as const)
-                                    : ("266px" as const)
-                                }
-                                loading={"lazy" as const}
-                                src={(() => {
-                                  try {
-                                    return $ctx.fetchDyanamicData.records[0]
-                                      .fields.logo[0].url;
-                                  } catch (e) {
-                                    if (e instanceof TypeError) {
-                                      return undefined;
-                                    }
-                                    throw e;
-                                  }
-                                })()}
-                              />
-                            </p.PlasmicLink>
-                          </div>
-
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.column__c4A2J
-                            )}
-                          >
-                            <p.PlasmicLink
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.a,
-                                projectcss.__wab_text,
-                                sty.link__sn8Lk
-                              )}
-                              component={Link}
-                              href={(() => {
-                                try {
-                                  return $ctx.fetchDyanamicData.records[0]
-                                    .fields["Step 2 URL"];
-                                } catch (e) {
-                                  if (e instanceof TypeError) {
-                                    return undefined;
-                                  }
-                                  throw e;
-                                }
-                              })()}
-                              platform={"nextjs"}
-                            >
-                              {(() => {
-                                try {
-                                  return $ctx.fetchDyanamicData.records[0]
-                                    .fields.aCTA;
-                                } catch (e) {
-                                  if (e instanceof TypeError) {
-                                    return "CLAIM FREE PODS";
-                                  }
-                                  throw e;
-                                }
-                              })()}
-                            </p.PlasmicLink>
-                          </div>
-                        </div>
-                      ) : null}
-                    </div>
-                  ) : null}
-                  {(
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? true
-                      : true
-                  ) ? (
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__kUzNs)}
-                    >
-                      {(
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? true
-                          : true
-                      ) ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.columns__lRlcp
-                          )}
-                        >
-                          {(
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? true
-                              : true
-                          ) ? (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.column__ykYIw
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.columns___8Xmd1
-                                )}
-                              >
-                                {(
-                                  hasVariant(
-                                    globalVariants,
-                                    "screen",
-                                    "mobileOnly"
-                                  )
-                                    ? true
-                                    : true
-                                ) ? (
-                                  <div
-                                    className={classNames(
-                                      projectcss.all,
-                                      sty.column__tli1L
-                                    )}
-                                  />
-                                ) : null}
-                                {(
-                                  hasVariant(
-                                    globalVariants,
-                                    "screen",
-                                    "mobileOnly"
-                                  )
-                                    ? true
-                                    : true
-                                ) ? (
-                                  <div
-                                    className={classNames(
-                                      projectcss.all,
-                                      sty.column__xm0Yd
-                                    )}
-                                  />
-                                ) : null}
-                              </div>
-                            </div>
-                          ) : null}
-                          {(
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? true
-                              : true
-                          ) ? (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.column__wvvO5
-                              )}
-                            />
-                          ) : null}
-                        </div>
-                      ) : null}
-                      {(
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? true
-                          : true
-                      ) ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.columns__irRgs
-                          )}
-                        >
-                          {(
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? true
-                              : true
-                          ) ? (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.column__cQPe4
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.columns___0Menr
-                                )}
-                              >
-                                {(
-                                  hasVariant(
-                                    globalVariants,
-                                    "screen",
-                                    "mobileOnly"
-                                  )
-                                    ? true
-                                    : true
-                                ) ? (
-                                  <div
-                                    className={classNames(
-                                      projectcss.all,
-                                      sty.column__jGp2P
-                                    )}
-                                  />
-                                ) : null}
-                                {(
-                                  hasVariant(
-                                    globalVariants,
-                                    "screen",
-                                    "mobileOnly"
-                                  )
-                                    ? true
-                                    : true
-                                ) ? (
-                                  <div
-                                    className={classNames(
-                                      projectcss.all,
-                                      sty.column__sffYy
-                                    )}
-                                  />
-                                ) : null}
-                              </div>
-                            </div>
-                          ) : null}
-                          {(
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? true
-                              : true
-                          ) ? (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.column__yfapz
-                              )}
-                            />
-                          ) : null}
-                          {(
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? true
-                              : true
-                          ) ? (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.column__v4Y1J
-                              )}
-                            />
-                          ) : null}
-                        </div>
-                      ) : null}
-                      {(
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? true
-                          : true
-                      ) ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.columns___7SEqV
-                          )}
-                        >
-                          {(
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? true
-                              : true
-                          ) ? (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.column__xGtwc
-                              )}
-                            />
-                          ) : null}
-                        </div>
-                      ) : null}
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__eopBj
+                          sty.columns__um87Q
                         )}
                       >
                         {(
@@ -679,7 +221,98 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           <div
                             className={classNames(
                               projectcss.all,
-                              sty.freeBox__qMx9Q
+                              sty.column__lnI4
+                            )}
+                          >
+                            <p.PlasmicLink
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.a,
+                                sty.link___7Jrko
+                              )}
+                              component={Link}
+                              href={(() => {
+                                try {
+                                  return $ctx.fetchDyanamicData.records[0]
+                                    .fields["Step 2 URL"];
+                                } catch (e) {
+                                  if (e instanceof TypeError) {
+                                    return undefined;
+                                  }
+                                  throw e;
+                                }
+                              })()}
+                              platform={"nextjs"}
+                            >
+                              {(
+                                hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? true
+                                  : true
+                              ) ? (
+                                <p.PlasmicImg
+                                  alt={""}
+                                  className={classNames(sty.img__bmaGl)}
+                                  displayHeight={"auto" as const}
+                                  displayMaxHeight={"none" as const}
+                                  displayMaxWidth={"100%" as const}
+                                  displayMinHeight={"0" as const}
+                                  displayMinWidth={"0" as const}
+                                  displayWidth={"266px" as const}
+                                  loading={"lazy" as const}
+                                  src={(() => {
+                                    try {
+                                      return $ctx.fetchDyanamicData.records[0]
+                                        .fields.logo[0].url;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return undefined;
+                                      }
+                                      throw e;
+                                    }
+                                  })()}
+                                />
+                              ) : null}
+                            </p.PlasmicLink>
+                          </div>
+                        ) : null}
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.column__qZwpR
+                            )}
+                          />
+                        ) : null}
+                      </div>
+                    ) : null}
+                    {(
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__kUzNs
+                        )}
+                      >
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.columns__lRlcp
                             )}
                           >
                             {(
@@ -690,12 +323,61 @@ function PlasmicArticleInfo__RenderFunc(props: {
                               <div
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__hS6RL
+                                  sty.column__ykYIw
                                 )}
                               >
-                                {"“Small Hero Quote Here”"}
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.columns___8Xmd1
+                                  )}
+                                >
+                                  {(
+                                    hasVariant(
+                                      globalVariants,
+                                      "screen",
+                                      "mobileOnly"
+                                    )
+                                      ? true
+                                      : true
+                                  ) ? (
+                                    <div
+                                      className={classNames(
+                                        projectcss.all,
+                                        sty.column__tli1L
+                                      )}
+                                    />
+                                  ) : null}
+                                  {(
+                                    hasVariant(
+                                      globalVariants,
+                                      "screen",
+                                      "mobileOnly"
+                                    )
+                                      ? true
+                                      : true
+                                  ) ? (
+                                    <div
+                                      className={classNames(
+                                        projectcss.all,
+                                        sty.column__xm0Yd
+                                      )}
+                                    />
+                                  ) : null}
+                                </div>
                               </div>
+                            ) : null}
+                            {(
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? true
+                                : true
+                            ) ? (
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.column__wvvO5
+                                )}
+                              />
                             ) : null}
                           </div>
                         ) : null}
@@ -707,7 +389,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           <div
                             className={classNames(
                               projectcss.all,
-                              sty.freeBox__lrEg0
+                              sty.columns__irRgs
                             )}
                           >
                             {(
@@ -715,12 +397,289 @@ function PlasmicArticleInfo__RenderFunc(props: {
                                 ? true
                                 : true
                             ) ? (
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.column__cQPe4
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.columns___0Menr
+                                  )}
+                                >
+                                  {(
+                                    hasVariant(
+                                      globalVariants,
+                                      "screen",
+                                      "mobileOnly"
+                                    )
+                                      ? true
+                                      : true
+                                  ) ? (
+                                    <div
+                                      className={classNames(
+                                        projectcss.all,
+                                        sty.column__jGp2P
+                                      )}
+                                    />
+                                  ) : null}
+                                  {(
+                                    hasVariant(
+                                      globalVariants,
+                                      "screen",
+                                      "mobileOnly"
+                                    )
+                                      ? true
+                                      : true
+                                  ) ? (
+                                    <div
+                                      className={classNames(
+                                        projectcss.all,
+                                        sty.column__sffYy
+                                      )}
+                                    />
+                                  ) : null}
+                                </div>
+                              </div>
+                            ) : null}
+                            {(
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? true
+                                : true
+                            ) ? (
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.column__yfapz
+                                )}
+                              />
+                            ) : null}
+                            {(
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? true
+                                : true
+                            ) ? (
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.column__v4Y1J
+                                )}
+                              />
+                            ) : null}
+                          </div>
+                        ) : null}
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.columns___7SEqV
+                            )}
+                          >
+                            {(
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? true
+                                : true
+                            ) ? (
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.column__xGtwc
+                                )}
+                              />
+                            ) : null}
+                          </div>
+                        ) : null}
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__eopBj
+                          )}
+                        >
+                          {(
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__qMx9Q
+                              )}
+                            >
+                              {(
+                                hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? true
+                                  : true
+                              ) ? (
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__hS6RL
+                                  )}
+                                >
+                                  {"“Small Hero Quote Here”"}
+                                </div>
+                              ) : null}
+                            </div>
+                          ) : null}
+                          {(
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__lrEg0
+                              )}
+                            >
+                              {(
+                                hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? true
+                                  : true
+                              ) ? (
+                                <p.PlasmicLink
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.a,
+                                    projectcss.__wab_text,
+                                    sty.link__cmcpk
+                                  )}
+                                  component={Link}
+                                  href={(() => {
+                                    try {
+                                      return $ctx.fetchDyanamicData.records[0]
+                                        .fields["Step 2 URL"];
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return undefined;
+                                      }
+                                      throw e;
+                                    }
+                                  })()}
+                                  platform={"nextjs"}
+                                >
+                                  {"Claim Special Offer"}
+                                </p.PlasmicLink>
+                              ) : null}
+                            </div>
+                          ) : null}
+                        </div>
+                      </div>
+                    ) : null}
+                    {true ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__kX152
+                        )}
+                      >
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img___3Hkyi)}
+                          displayHeight={"56px" as const}
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"100%" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"auto" as const}
+                          loading={"lazy" as const}
+                          src={(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.fields.logo[0].url;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return undefined;
+                              }
+                              throw e;
+                            }
+                          })()}
+                        />
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox___6Svqf
+                          )}
+                        />
+                      </div>
+                    ) : null}
+                    {(
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__eiUyg
+                        )}
+                      >
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.columns__xMkj
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.column__rA1Hw
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__gWvpK
+                                )}
+                              >
+                                {(() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.records[0]
+                                      .fields.aSlogan;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return '"The Evaluation of Inhalation"';
+                                    }
+                                    throw e;
+                                  }
+                                })()}
+                              </div>
+                            </div>
+
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.column__ekYKj
+                              )}
+                            >
                               <p.PlasmicLink
                                 className={classNames(
                                   projectcss.all,
                                   projectcss.a,
-                                  projectcss.__wab_text,
-                                  sty.link__cmcpk
+                                  sty.link__qFsy
                                 )}
                                 component={Link}
                                 href={(() => {
@@ -736,14 +695,1267 @@ function PlasmicArticleInfo__RenderFunc(props: {
                                 })()}
                                 platform={"nextjs"}
                               >
-                                {"Claim Special Offer"}
+                                <p.PlasmicImg
+                                  alt={""}
+                                  className={classNames(sty.img___72MUb)}
+                                  displayHeight={"auto" as const}
+                                  displayMaxHeight={"none" as const}
+                                  displayMaxWidth={"100%" as const}
+                                  displayMinHeight={"0" as const}
+                                  displayMinWidth={"0" as const}
+                                  displayWidth={
+                                    hasVariant(
+                                      globalVariants,
+                                      "screen",
+                                      "mobileOnly"
+                                    )
+                                      ? ("500px" as const)
+                                      : ("266px" as const)
+                                  }
+                                  loading={"lazy" as const}
+                                  src={(() => {
+                                    try {
+                                      return $ctx.fetchDyanamicData.records[0]
+                                        .fields.logo[0].url;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return undefined;
+                                      }
+                                      throw e;
+                                    }
+                                  })()}
+                                />
                               </p.PlasmicLink>
-                            ) : null}
+                            </div>
+
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.column__c4A2J
+                              )}
+                            >
+                              <p.PlasmicLink
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.a,
+                                  projectcss.__wab_text,
+                                  sty.link__sn8Lk
+                                )}
+                                component={Link}
+                                href={(() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.records[0]
+                                      .fields["Step 2 URL"];
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return undefined;
+                                    }
+                                    throw e;
+                                  }
+                                })()}
+                                platform={"nextjs"}
+                              >
+                                {(() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.records[0]
+                                      .fields.aCTA;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return "CLAIM FREE PODS";
+                                    }
+                                    throw e;
+                                  }
+                                })()}
+                              </p.PlasmicLink>
+                            </div>
                           </div>
                         ) : null}
                       </div>
+                    ) : null}
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__t0XxM)}
+                    >
+                      <div
+                        data-plasmic-name={"heroSubHeadline"}
+                        data-plasmic-override={overrides.heroSubHeadline}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.heroSubHeadline
+                        )}
+                      >
+                        {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                          <div
+                            className={projectcss.__wab_expr_html_text}
+                            dangerouslySetInnerHTML={{
+                              __html: (() => {
+                                try {
+                                  return $ctx.fetchDyanamicData.records[0]
+                                    .fields.heroHeadline;
+                                } catch (e) {
+                                  if (e instanceof TypeError) {
+                                    return "Enter some text";
+                                  }
+                                  throw e;
+                                }
+                              })()
+                            }}
+                          />
+                        ) : (
+                          <div
+                            className={projectcss.__wab_expr_html_text}
+                            dangerouslySetInnerHTML={{
+                              __html: (() => {
+                                try {
+                                  return $ctx.fetchDyanamicData.records[0]
+                                    .fields.heroHeadline;
+                                } catch (e) {
+                                  if (e instanceof TypeError) {
+                                    return "Enter some text";
+                                  }
+                                  throw e;
+                                }
+                              })()
+                            }}
+                          />
+                        )}
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__vLfi6
+                        )}
+                      >
+                        {hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? (() => {
+                              try {
+                                return $ctx.fetchDyanamicData.records[0].fields
+                                  .heroSubHeadline;
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return "Enter some text";
+                                }
+                                throw e;
+                              }
+                            })()
+                          : (() => {
+                              try {
+                                return $ctx.fetchDyanamicData.records[0].fields
+                                  .heroSubHeadline;
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return "Enter some text";
+                                }
+                                throw e;
+                              }
+                            })()}
+                      </div>
+
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__kMX
+                        )}
+                        component={Link}
+                        href={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields[
+                              "Step 2 URL"
+                            ];
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                        platform={"nextjs"}
+                      >
+                        <p.PlasmicImg
+                          data-plasmic-name={"heroImage"}
+                          data-plasmic-override={overrides.heroImage}
+                          alt={""}
+                          className={classNames(sty.heroImage)}
+                          displayHeight={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("auto" as const)
+                              : ("auto" as const)
+                          }
+                          displayMaxHeight={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("400px" as const)
+                              : ("400px" as const)
+                          }
+                          displayMaxWidth={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("100%" as const)
+                              : ("100%" as const)
+                          }
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("333px" as const)
+                              : ("750px" as const)
+                          }
+                          loading={"lazy" as const}
+                          src={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? (() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.records[0]
+                                      .fields.heroImage[0].url;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return undefined;
+                                    }
+                                    throw e;
+                                  }
+                                })()
+                              : (() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.records[0]
+                                      .fields.heroImage[0].url;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return undefined;
+                                    }
+                                    throw e;
+                                  }
+                                })()
+                          }
+                        />
+                      </p.PlasmicLink>
+
+                      <div
+                        data-plasmic-name={"paragraph1"}
+                        data-plasmic-override={overrides.paragraph1}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.paragraph1
+                        )}
+                      >
+                        {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                          (() => {
+                            try {
+                              return $ctx.fetchDyanamicData.fields.paragraph1;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "Enter some text";
+                              }
+                              throw e;
+                            }
+                          })()
+                        ) : (
+                          <div
+                            className={projectcss.__wab_expr_html_text}
+                            dangerouslySetInnerHTML={{
+                              __html: (() => {
+                                try {
+                                  return $ctx.fetchDyanamicData.records[0]
+                                    .fields.paragraph1;
+                                } catch (e) {
+                                  if (e instanceof TypeError) {
+                                    return "Enter some text";
+                                  }
+                                  throw e;
+                                }
+                              })()
+                            }}
+                          />
+                        )}
+                      </div>
+
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__z6Y0
+                        )}
+                        component={Link}
+                        href={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields[
+                              "Step 2 URL"
+                            ];
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                        platform={"nextjs"}
+                      >
+                        <p.PlasmicImg
+                          data-plasmic-name={"image1"}
+                          data-plasmic-override={overrides.image1}
+                          alt={""}
+                          className={classNames(sty.image1)}
+                          displayHeight={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("auto" as const)
+                              : ("auto" as const)
+                          }
+                          displayMaxHeight={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("400px" as const)
+                              : ("400px" as const)
+                          }
+                          displayMaxWidth={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("100%" as const)
+                              : ("100%" as const)
+                          }
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("333px" as const)
+                              : ("750px" as const)
+                          }
+                          loading={"lazy" as const}
+                          src={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? (() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.records[0]
+                                      .fields.image1[0].url;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return undefined;
+                                    }
+                                    throw e;
+                                  }
+                                })()
+                              : (() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.records[0]
+                                      .fields.image1[0].url;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return undefined;
+                                    }
+                                    throw e;
+                                  }
+                                })()
+                          }
+                        />
+                      </p.PlasmicLink>
+
+                      <div
+                        data-plasmic-name={"paragraph2"}
+                        data-plasmic-override={overrides.paragraph2}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.paragraph2
+                        )}
+                      >
+                        {hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? (() => {
+                              try {
+                                return $ctx.fetchDyanamicData.records[0].fields
+                                  .paragraph2;
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return "Enter some text";
+                                }
+                                throw e;
+                              }
+                            })()
+                          : (() => {
+                              try {
+                                return $ctx.fetchDyanamicData.records[0].fields
+                                  .paragraph2;
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return "Enter some text";
+                                }
+                                throw e;
+                              }
+                            })()}
+                      </div>
+
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__atTjL
+                        )}
+                        component={Link}
+                        href={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields[
+                              "Step 2 URL"
+                            ];
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                        platform={"nextjs"}
+                      >
+                        <p.PlasmicImg
+                          data-plasmic-name={"image2"}
+                          data-plasmic-override={overrides.image2}
+                          alt={""}
+                          className={classNames(sty.image2)}
+                          displayHeight={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("auto" as const)
+                              : ("auto" as const)
+                          }
+                          displayMaxHeight={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("400px" as const)
+                              : ("400px" as const)
+                          }
+                          displayMaxWidth={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("100%" as const)
+                              : ("100%" as const)
+                          }
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("333px" as const)
+                              : ("750px" as const)
+                          }
+                          loading={"lazy" as const}
+                          src={(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .image2[0].url;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return undefined;
+                              }
+                              throw e;
+                            }
+                          })()}
+                        />
+                      </p.PlasmicLink>
+
+                      <div
+                        data-plasmic-name={"paragraph3"}
+                        data-plasmic-override={overrides.paragraph3}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.paragraph3
+                        )}
+                      >
+                        {(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .paragraph3;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return "Enter some text";
+                            }
+                            throw e;
+                          }
+                        })()}
+                      </div>
+
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__znWI
+                        )}
+                        component={Link}
+                        href={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields[
+                              "Step 2 URL"
+                            ];
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                        platform={"nextjs"}
+                      >
+                        <p.PlasmicImg
+                          data-plasmic-name={"image3"}
+                          data-plasmic-override={overrides.image3}
+                          alt={""}
+                          className={classNames(sty.image3)}
+                          displayHeight={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("auto" as const)
+                              : ("auto" as const)
+                          }
+                          displayMaxHeight={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("400px" as const)
+                              : ("400px" as const)
+                          }
+                          displayMaxWidth={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("100%" as const)
+                              : ("100%" as const)
+                          }
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("333px" as const)
+                              : ("750px" as const)
+                          }
+                          loading={"lazy" as const}
+                          src={(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .image3[0].url;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return undefined;
+                              }
+                              throw e;
+                            }
+                          })()}
+                        />
+                      </p.PlasmicLink>
+
+                      <div
+                        data-plasmic-name={"paragraph4"}
+                        data-plasmic-override={overrides.paragraph4}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.paragraph4
+                        )}
+                      >
+                        {(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .paragraph4;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return "Enter some text";
+                            }
+                            throw e;
+                          }
+                        })()}
+                      </div>
+
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__xYrZl
+                        )}
+                        component={Link}
+                        href={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields[
+                              "Step 2 URL"
+                            ];
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                        platform={"nextjs"}
+                      >
+                        <p.PlasmicImg
+                          data-plasmic-name={"image4"}
+                          data-plasmic-override={overrides.image4}
+                          alt={""}
+                          className={classNames(sty.image4)}
+                          displayHeight={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("auto" as const)
+                              : ("auto" as const)
+                          }
+                          displayMaxHeight={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("400px" as const)
+                              : ("400px" as const)
+                          }
+                          displayMaxWidth={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("100%" as const)
+                              : ("100%" as const)
+                          }
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("333px" as const)
+                              : ("750px" as const)
+                          }
+                          loading={"lazy" as const}
+                          src={(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .image4[0].url;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return undefined;
+                              }
+                              throw e;
+                            }
+                          })()}
+                        />
+                      </p.PlasmicLink>
+
+                      <div
+                        data-plasmic-name={"paragraph5"}
+                        data-plasmic-override={overrides.paragraph5}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.paragraph5
+                        )}
+                      >
+                        {(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .paragraph5;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return "Enter some text";
+                            }
+                            throw e;
+                          }
+                        })()}
+                      </div>
+
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__ps6YD
+                        )}
+                        component={Link}
+                        href={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields[
+                              "Step 2 URL"
+                            ];
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                        platform={"nextjs"}
+                      >
+                        <p.PlasmicImg
+                          data-plasmic-name={"image5"}
+                          data-plasmic-override={overrides.image5}
+                          alt={""}
+                          className={classNames(sty.image5)}
+                          displayHeight={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("auto" as const)
+                              : ("auto" as const)
+                          }
+                          displayMaxHeight={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("400px" as const)
+                              : ("400px" as const)
+                          }
+                          displayMaxWidth={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("100%" as const)
+                              : ("100%" as const)
+                          }
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("333px" as const)
+                              : ("750px" as const)
+                          }
+                          loading={"lazy" as const}
+                          src={(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .image5[0].url;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return undefined;
+                              }
+                              throw e;
+                            }
+                          })()}
+                        />
+                      </p.PlasmicLink>
+
+                      <div
+                        data-plasmic-name={"paragraph6"}
+                        data-plasmic-override={overrides.paragraph6}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.paragraph6
+                        )}
+                      >
+                        {(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .paragraph6;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return "Enter some text";
+                            }
+                            throw e;
+                          }
+                        })()}
+                      </div>
+
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__qWpr0
+                        )}
+                        component={Link}
+                        href={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields[
+                              "Step 2 URL"
+                            ];
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                        platform={"nextjs"}
+                      >
+                        <p.PlasmicImg
+                          data-plasmic-name={"image6"}
+                          data-plasmic-override={overrides.image6}
+                          alt={""}
+                          className={classNames(sty.image6)}
+                          displayHeight={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("auto" as const)
+                              : ("auto" as const)
+                          }
+                          displayMaxHeight={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("400px" as const)
+                              : ("400px" as const)
+                          }
+                          displayMaxWidth={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("100%" as const)
+                              : ("100%" as const)
+                          }
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("333px" as const)
+                              : ("750px" as const)
+                          }
+                          loading={"lazy" as const}
+                          src={(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .image6[0].url;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return undefined;
+                              }
+                              throw e;
+                            }
+                          })()}
+                        />
+                      </p.PlasmicLink>
+
+                      <div
+                        data-plasmic-name={"paragraph7"}
+                        data-plasmic-override={overrides.paragraph7}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.paragraph7
+                        )}
+                      >
+                        {(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .paragraph7;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return "Enter some text";
+                            }
+                            throw e;
+                          }
+                        })()}
+                      </div>
+
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__emJw0
+                        )}
+                        component={Link}
+                        href={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields[
+                              "Step 2 URL"
+                            ];
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                        platform={"nextjs"}
+                      >
+                        <p.PlasmicImg
+                          data-plasmic-name={"image7"}
+                          data-plasmic-override={overrides.image7}
+                          alt={""}
+                          className={classNames(sty.image7)}
+                          displayHeight={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("auto" as const)
+                              : ("auto" as const)
+                          }
+                          displayMaxHeight={"400px" as const}
+                          displayMaxWidth={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("100%" as const)
+                              : ("100%" as const)
+                          }
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("333px" as const)
+                              : ("750px" as const)
+                          }
+                          loading={"lazy" as const}
+                          src={(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .image7[0].url;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return undefined;
+                              }
+                              throw e;
+                            }
+                          })()}
+                        />
+                      </p.PlasmicLink>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__iyJs
+                        )}
+                      >
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            data-plasmic-name={"divlpPomBox135"}
+                            data-plasmic-override={overrides.divlpPomBox135}
+                            className={classNames(
+                              projectcss.all,
+                              sty.divlpPomBox135
+                            )}
+                          >
+                            <div
+                              data-plasmic-name={"divlpPomText136"}
+                              data-plasmic-override={overrides.divlpPomText136}
+                              className={classNames(
+                                projectcss.all,
+                                sty.divlpPomText136
+                              )}
+                            >
+                              <div
+                                data-plasmic-name={
+                                  "clickHereToLearnMoreOrderSparqZeroToday"
+                                }
+                                data-plasmic-override={
+                                  overrides.clickHereToLearnMoreOrderSparqZeroToday
+                                }
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.clickHereToLearnMoreOrderSparqZeroToday
+                                )}
+                              >
+                                <p.PlasmicLink
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.a,
+                                    projectcss.__wab_text,
+                                    sty.link___0LmMp
+                                  )}
+                                  component={Link}
+                                  href={(() => {
+                                    try {
+                                      return $ctx.fetchDyanamicData.records[0]
+                                        .fields["Step 2 URL"];
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return undefined;
+                                      }
+                                      throw e;
+                                    }
+                                  })()}
+                                  platform={"nextjs"}
+                                >
+                                  {(() => {
+                                    try {
+                                      return $ctx.fetchDyanamicData.records[0]
+                                        .fields.aOutroH1;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return "Click Here To Learn More & Order Sparq Zero® Today!";
+                                      }
+                                      throw e;
+                                    }
+                                  })()}
+                                </p.PlasmicLink>
+                              </div>
+                            </div>
+
+                            <div
+                              data-plasmic-name={"divlpPomText137"}
+                              data-plasmic-override={overrides.divlpPomText137}
+                              className={classNames(
+                                projectcss.all,
+                                sty.divlpPomText137
+                              )}
+                            >
+                              <div
+                                data-plasmic-name={"fastSameDayShipping"}
+                                data-plasmic-override={
+                                  overrides.fastSameDayShipping
+                                }
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.fastSameDayShipping
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__o3N39
+                                  )}
+                                >
+                                  {(() => {
+                                    try {
+                                      return $ctx.fetchDyanamicData.records[0]
+                                        .fields.aOutroH2;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return "Fast Same-Day Shipping";
+                                      }
+                                      throw e;
+                                    }
+                                  })()}
+                                </div>
+                              </div>
+                            </div>
+
+                            <p.PlasmicLink
+                              data-plasmic-name={"alpPomButton138"}
+                              data-plasmic-override={overrides.alpPomButton138}
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.a,
+                                sty.alpPomButton138
+                              )}
+                              component={Link}
+                              href={(() => {
+                                try {
+                                  return $ctx.fetchDyanamicData.records[0]
+                                    .fields["Step 2 URL"];
+                                } catch (e) {
+                                  if (e instanceof TypeError) {
+                                    return undefined;
+                                  }
+                                  throw e;
+                                }
+                              })()}
+                              platform={"nextjs"}
+                            >
+                              <div
+                                data-plasmic-name={"claimFreePods"}
+                                data-plasmic-override={overrides.claimFreePods}
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.claimFreePods
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__zNhx
+                                  )}
+                                >
+                                  {(() => {
+                                    try {
+                                      return $ctx.fetchDyanamicData.records[0]
+                                        .fields.aCTA;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return "CLAIM FREE PODS 👉";
+                                      }
+                                      throw e;
+                                    }
+                                  })()}
+                                </div>
+                              </div>
+                            </p.PlasmicLink>
+
+                            <div
+                              data-plasmic-name={"divlpPomBox139"}
+                              data-plasmic-override={overrides.divlpPomBox139}
+                              className={classNames(
+                                projectcss.all,
+                                sty.divlpPomBox139
+                              )}
+                            />
+
+                            <div
+                              data-plasmic-name={
+                                "_100000HappyCustomersInStockShipsNow"
+                              }
+                              data-plasmic-override={
+                                overrides._100000HappyCustomersInStockShipsNow
+                              }
+                              className={classNames(
+                                projectcss.all,
+                                sty._100000HappyCustomersInStockShipsNow
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text___4UCxj
+                                )}
+                              >
+                                {(() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.records[0]
+                                      .fields.aOutroH3;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return "100,000+ Happy Customers! In Stock - Ships Now.";
+                                    }
+                                    throw e;
+                                  }
+                                })()}
+                              </div>
+                            </div>
+
+                            <div
+                              data-plasmic-name={"div"}
+                              data-plasmic-override={overrides.div}
+                              className={classNames(projectcss.all, sty.div)}
+                            >
+                              <div
+                                data-plasmic-name={
+                                  "_4E8Df8335StarReviews103N00Q000000000000028Png"
+                                }
+                                data-plasmic-override={
+                                  overrides._4E8Df8335StarReviews103N00Q000000000000028Png
+                                }
+                                className={classNames(
+                                  projectcss.all,
+                                  sty._4E8Df8335StarReviews103N00Q000000000000028Png
+                                )}
+                              />
+                            </div>
+                          </div>
+                        ) : null}
+                      </div>
+
+                      {(
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <p.PlasmicLink
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.a,
+                            projectcss.__wab_text,
+                            sty.link__lntat
+                          )}
+                          component={Link}
+                          href={(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields[
+                                "Step 2 URL"
+                              ];
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return undefined;
+                              }
+                              throw e;
+                            }
+                          })()}
+                          platform={"nextjs"}
+                        >
+                          {(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .aOutroH1;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "Click Here To Learn More & Order Sparq Zero® Today!";
+                              }
+                              throw e;
+                            }
+                          })()}
+                        </p.PlasmicLink>
+                      ) : null}
+                      {(
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <p.PlasmicLink
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.a,
+                            projectcss.__wab_text,
+                            sty.link__ogQ80
+                          )}
+                          component={Link}
+                          platform={"nextjs"}
+                        >
+                          {(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .aOutroH2;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "Fast Same-Day Shipping";
+                              }
+                              throw e;
+                            }
+                          })()}
+                        </p.PlasmicLink>
+                      ) : null}
+                      {(
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__jQkx7
+                          )}
+                        >
+                          {(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .aOutroH3;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "100,000+ Happy Customers! In Stock - Ships Now.";
+                              }
+                              throw e;
+                            }
+                          })()}
+                        </div>
+                      ) : null}
+                      {(
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img___4HXuc)}
+                          displayHeight={"21px" as const}
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"100%" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"112px" as const}
+                          loading={"lazy" as const}
+                          src={{
+                            src: "/plasmic/feed_presell_ai/images/_4E8Df8335StarReviews107A01G000000000000028Png.png",
+                            fullWidth: 262,
+                            fullHeight: 52,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      ) : null}
+                      {(
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <p.PlasmicLink
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.a,
+                            projectcss.__wab_text,
+                            sty.link__yX9KC
+                          )}
+                          component={Link}
+                          href={(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields[
+                                "Step 2 URL"
+                              ];
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return undefined;
+                              }
+                              throw e;
+                            }
+                          })()}
+                          platform={"nextjs"}
+                        >
+                          {(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .aCTA;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "CLAIM FREE PODS 👉";
+                              }
+                              throw e;
+                            }
+                          })()}
+                        </p.PlasmicLink>
+                      ) : null}
                     </div>
-                  ) : null}
+                  </div>
+
                   {(
                     hasVariant(globalVariants, "screen", "mobileOnly")
                       ? true
@@ -753,1186 +1965,6 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       className={classNames(projectcss.all, sty.freeBox__o3FXp)}
                     />
                   ) : null}
-
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__t0XxM)}
-                  >
-                    <div
-                      data-plasmic-name={"heroSubHeadline"}
-                      data-plasmic-override={overrides.heroSubHeadline}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.heroSubHeadline
-                      )}
-                    >
-                      {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                        <div
-                          className={projectcss.__wab_expr_html_text}
-                          dangerouslySetInnerHTML={{
-                            __html: (() => {
-                              try {
-                                return $ctx.fetchDyanamicData.records[0].fields
-                                  .heroHeadline;
-                              } catch (e) {
-                                if (e instanceof TypeError) {
-                                  return "Enter some text";
-                                }
-                                throw e;
-                              }
-                            })()
-                          }}
-                        />
-                      ) : (
-                        <div
-                          className={projectcss.__wab_expr_html_text}
-                          dangerouslySetInnerHTML={{
-                            __html: (() => {
-                              try {
-                                return $ctx.fetchDyanamicData.records[0].fields
-                                  .heroHeadline;
-                              } catch (e) {
-                                if (e instanceof TypeError) {
-                                  return "Enter some text";
-                                }
-                                throw e;
-                              }
-                            })()
-                          }}
-                        />
-                      )}
-                    </div>
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__vLfi6
-                      )}
-                    >
-                      {hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? (() => {
-                            try {
-                              return $ctx.fetchDyanamicData.records[0].fields
-                                .heroSubHeadline;
-                            } catch (e) {
-                              if (e instanceof TypeError) {
-                                return "Enter some text";
-                              }
-                              throw e;
-                            }
-                          })()
-                        : (() => {
-                            try {
-                              return $ctx.fetchDyanamicData.records[0].fields
-                                .heroSubHeadline;
-                            } catch (e) {
-                              if (e instanceof TypeError) {
-                                return "Enter some text";
-                              }
-                              throw e;
-                            }
-                          })()}
-                    </div>
-
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__kMX
-                      )}
-                      component={Link}
-                      href={(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.records[0].fields[
-                            "Step 2 URL"
-                          ];
-                        } catch (e) {
-                          if (e instanceof TypeError) {
-                            return undefined;
-                          }
-                          throw e;
-                        }
-                      })()}
-                      platform={"nextjs"}
-                    >
-                      <p.PlasmicImg
-                        data-plasmic-name={"heroImage"}
-                        data-plasmic-override={overrides.heroImage}
-                        alt={""}
-                        className={classNames(sty.heroImage)}
-                        displayHeight={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("auto" as const)
-                            : ("auto" as const)
-                        }
-                        displayMaxHeight={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("400px" as const)
-                            : ("400px" as const)
-                        }
-                        displayMaxWidth={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("100%" as const)
-                            : ("100%" as const)
-                        }
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("333px" as const)
-                            : ("750px" as const)
-                        }
-                        loading={"lazy" as const}
-                        src={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? (() => {
-                                try {
-                                  return $ctx.fetchDyanamicData.records[0]
-                                    .fields.heroImage[0].url;
-                                } catch (e) {
-                                  if (e instanceof TypeError) {
-                                    return undefined;
-                                  }
-                                  throw e;
-                                }
-                              })()
-                            : (() => {
-                                try {
-                                  return $ctx.fetchDyanamicData.records[0]
-                                    .fields.heroImage[0].url;
-                                } catch (e) {
-                                  if (e instanceof TypeError) {
-                                    return undefined;
-                                  }
-                                  throw e;
-                                }
-                              })()
-                        }
-                      />
-                    </p.PlasmicLink>
-
-                    <div
-                      data-plasmic-name={"paragraph1"}
-                      data-plasmic-override={overrides.paragraph1}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.paragraph1
-                      )}
-                    >
-                      {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                        (() => {
-                          try {
-                            return $ctx.fetchDyanamicData.fields.paragraph1;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return "Enter some text";
-                            }
-                            throw e;
-                          }
-                        })()
-                      ) : (
-                        <div
-                          className={projectcss.__wab_expr_html_text}
-                          dangerouslySetInnerHTML={{
-                            __html: (() => {
-                              try {
-                                return $ctx.fetchDyanamicData.records[0].fields
-                                  .paragraph1;
-                              } catch (e) {
-                                if (e instanceof TypeError) {
-                                  return "Enter some text";
-                                }
-                                throw e;
-                              }
-                            })()
-                          }}
-                        />
-                      )}
-                    </div>
-
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__z6Y0
-                      )}
-                      component={Link}
-                      href={(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.records[0].fields[
-                            "Step 2 URL"
-                          ];
-                        } catch (e) {
-                          if (e instanceof TypeError) {
-                            return undefined;
-                          }
-                          throw e;
-                        }
-                      })()}
-                      platform={"nextjs"}
-                    >
-                      <p.PlasmicImg
-                        data-plasmic-name={"image1"}
-                        data-plasmic-override={overrides.image1}
-                        alt={""}
-                        className={classNames(sty.image1)}
-                        displayHeight={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("auto" as const)
-                            : ("auto" as const)
-                        }
-                        displayMaxHeight={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("400px" as const)
-                            : ("400px" as const)
-                        }
-                        displayMaxWidth={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("100%" as const)
-                            : ("100%" as const)
-                        }
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("333px" as const)
-                            : ("750px" as const)
-                        }
-                        loading={"lazy" as const}
-                        src={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? (() => {
-                                try {
-                                  return $ctx.fetchDyanamicData.records[0]
-                                    .fields.image1[0].url;
-                                } catch (e) {
-                                  if (e instanceof TypeError) {
-                                    return undefined;
-                                  }
-                                  throw e;
-                                }
-                              })()
-                            : (() => {
-                                try {
-                                  return $ctx.fetchDyanamicData.records[0]
-                                    .fields.image1[0].url;
-                                } catch (e) {
-                                  if (e instanceof TypeError) {
-                                    return undefined;
-                                  }
-                                  throw e;
-                                }
-                              })()
-                        }
-                      />
-                    </p.PlasmicLink>
-
-                    <div
-                      data-plasmic-name={"paragraph2"}
-                      data-plasmic-override={overrides.paragraph2}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.paragraph2
-                      )}
-                    >
-                      {hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? (() => {
-                            try {
-                              return $ctx.fetchDyanamicData.records[0].fields
-                                .paragraph2;
-                            } catch (e) {
-                              if (e instanceof TypeError) {
-                                return "Enter some text";
-                              }
-                              throw e;
-                            }
-                          })()
-                        : (() => {
-                            try {
-                              return $ctx.fetchDyanamicData.records[0].fields
-                                .paragraph2;
-                            } catch (e) {
-                              if (e instanceof TypeError) {
-                                return "Enter some text";
-                              }
-                              throw e;
-                            }
-                          })()}
-                    </div>
-
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__atTjL
-                      )}
-                      component={Link}
-                      href={(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.records[0].fields[
-                            "Step 2 URL"
-                          ];
-                        } catch (e) {
-                          if (e instanceof TypeError) {
-                            return undefined;
-                          }
-                          throw e;
-                        }
-                      })()}
-                      platform={"nextjs"}
-                    >
-                      <p.PlasmicImg
-                        data-plasmic-name={"image2"}
-                        data-plasmic-override={overrides.image2}
-                        alt={""}
-                        className={classNames(sty.image2)}
-                        displayHeight={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("auto" as const)
-                            : ("auto" as const)
-                        }
-                        displayMaxHeight={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("400px" as const)
-                            : ("400px" as const)
-                        }
-                        displayMaxWidth={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("100%" as const)
-                            : ("100%" as const)
-                        }
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("333px" as const)
-                            : ("750px" as const)
-                        }
-                        loading={"lazy" as const}
-                        src={(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.records[0].fields
-                              .image2[0].url;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
-                      />
-                    </p.PlasmicLink>
-
-                    <div
-                      data-plasmic-name={"paragraph3"}
-                      data-plasmic-override={overrides.paragraph3}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.paragraph3
-                      )}
-                    >
-                      {(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.records[0].fields
-                            .paragraph3;
-                        } catch (e) {
-                          if (e instanceof TypeError) {
-                            return "Enter some text";
-                          }
-                          throw e;
-                        }
-                      })()}
-                    </div>
-
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__znWI
-                      )}
-                      component={Link}
-                      href={(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.records[0].fields[
-                            "Step 2 URL"
-                          ];
-                        } catch (e) {
-                          if (e instanceof TypeError) {
-                            return undefined;
-                          }
-                          throw e;
-                        }
-                      })()}
-                      platform={"nextjs"}
-                    >
-                      <p.PlasmicImg
-                        data-plasmic-name={"image3"}
-                        data-plasmic-override={overrides.image3}
-                        alt={""}
-                        className={classNames(sty.image3)}
-                        displayHeight={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("auto" as const)
-                            : ("auto" as const)
-                        }
-                        displayMaxHeight={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("400px" as const)
-                            : ("400px" as const)
-                        }
-                        displayMaxWidth={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("100%" as const)
-                            : ("100%" as const)
-                        }
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("333px" as const)
-                            : ("750px" as const)
-                        }
-                        loading={"lazy" as const}
-                        src={(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.records[0].fields
-                              .image3[0].url;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
-                      />
-                    </p.PlasmicLink>
-
-                    <div
-                      data-plasmic-name={"paragraph4"}
-                      data-plasmic-override={overrides.paragraph4}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.paragraph4
-                      )}
-                    >
-                      {(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.records[0].fields
-                            .paragraph4;
-                        } catch (e) {
-                          if (e instanceof TypeError) {
-                            return "Enter some text";
-                          }
-                          throw e;
-                        }
-                      })()}
-                    </div>
-
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__xYrZl
-                      )}
-                      component={Link}
-                      href={(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.records[0].fields[
-                            "Step 2 URL"
-                          ];
-                        } catch (e) {
-                          if (e instanceof TypeError) {
-                            return undefined;
-                          }
-                          throw e;
-                        }
-                      })()}
-                      platform={"nextjs"}
-                    >
-                      <p.PlasmicImg
-                        data-plasmic-name={"image4"}
-                        data-plasmic-override={overrides.image4}
-                        alt={""}
-                        className={classNames(sty.image4)}
-                        displayHeight={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("auto" as const)
-                            : ("auto" as const)
-                        }
-                        displayMaxHeight={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("400px" as const)
-                            : ("400px" as const)
-                        }
-                        displayMaxWidth={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("100%" as const)
-                            : ("100%" as const)
-                        }
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("333px" as const)
-                            : ("750px" as const)
-                        }
-                        loading={"lazy" as const}
-                        src={(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.records[0].fields
-                              .image4[0].url;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
-                      />
-                    </p.PlasmicLink>
-
-                    <div
-                      data-plasmic-name={"paragraph5"}
-                      data-plasmic-override={overrides.paragraph5}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.paragraph5
-                      )}
-                    >
-                      {(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.records[0].fields
-                            .paragraph5;
-                        } catch (e) {
-                          if (e instanceof TypeError) {
-                            return "Enter some text";
-                          }
-                          throw e;
-                        }
-                      })()}
-                    </div>
-
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__ps6YD
-                      )}
-                      component={Link}
-                      href={(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.records[0].fields[
-                            "Step 2 URL"
-                          ];
-                        } catch (e) {
-                          if (e instanceof TypeError) {
-                            return undefined;
-                          }
-                          throw e;
-                        }
-                      })()}
-                      platform={"nextjs"}
-                    >
-                      <p.PlasmicImg
-                        data-plasmic-name={"image5"}
-                        data-plasmic-override={overrides.image5}
-                        alt={""}
-                        className={classNames(sty.image5)}
-                        displayHeight={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("auto" as const)
-                            : ("auto" as const)
-                        }
-                        displayMaxHeight={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("400px" as const)
-                            : ("400px" as const)
-                        }
-                        displayMaxWidth={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("100%" as const)
-                            : ("100%" as const)
-                        }
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("333px" as const)
-                            : ("750px" as const)
-                        }
-                        loading={"lazy" as const}
-                        src={(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.records[0].fields
-                              .image5[0].url;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
-                      />
-                    </p.PlasmicLink>
-
-                    <div
-                      data-plasmic-name={"paragraph6"}
-                      data-plasmic-override={overrides.paragraph6}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.paragraph6
-                      )}
-                    >
-                      {(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.records[0].fields
-                            .paragraph6;
-                        } catch (e) {
-                          if (e instanceof TypeError) {
-                            return "Enter some text";
-                          }
-                          throw e;
-                        }
-                      })()}
-                    </div>
-
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__qWpr0
-                      )}
-                      component={Link}
-                      href={(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.records[0].fields[
-                            "Step 2 URL"
-                          ];
-                        } catch (e) {
-                          if (e instanceof TypeError) {
-                            return undefined;
-                          }
-                          throw e;
-                        }
-                      })()}
-                      platform={"nextjs"}
-                    >
-                      <p.PlasmicImg
-                        data-plasmic-name={"image6"}
-                        data-plasmic-override={overrides.image6}
-                        alt={""}
-                        className={classNames(sty.image6)}
-                        displayHeight={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("auto" as const)
-                            : ("auto" as const)
-                        }
-                        displayMaxHeight={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("400px" as const)
-                            : ("400px" as const)
-                        }
-                        displayMaxWidth={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("100%" as const)
-                            : ("100%" as const)
-                        }
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("333px" as const)
-                            : ("750px" as const)
-                        }
-                        loading={"lazy" as const}
-                        src={(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.records[0].fields
-                              .image6[0].url;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
-                      />
-                    </p.PlasmicLink>
-
-                    <div
-                      data-plasmic-name={"paragraph7"}
-                      data-plasmic-override={overrides.paragraph7}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.paragraph7
-                      )}
-                    >
-                      {(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.records[0].fields
-                            .paragraph7;
-                        } catch (e) {
-                          if (e instanceof TypeError) {
-                            return "Enter some text";
-                          }
-                          throw e;
-                        }
-                      })()}
-                    </div>
-
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__emJw0
-                      )}
-                      component={Link}
-                      href={(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.records[0].fields[
-                            "Step 2 URL"
-                          ];
-                        } catch (e) {
-                          if (e instanceof TypeError) {
-                            return undefined;
-                          }
-                          throw e;
-                        }
-                      })()}
-                      platform={"nextjs"}
-                    >
-                      <p.PlasmicImg
-                        data-plasmic-name={"image7"}
-                        data-plasmic-override={overrides.image7}
-                        alt={""}
-                        className={classNames(sty.image7)}
-                        displayHeight={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("auto" as const)
-                            : ("auto" as const)
-                        }
-                        displayMaxHeight={"400px" as const}
-                        displayMaxWidth={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("100%" as const)
-                            : ("100%" as const)
-                        }
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("333px" as const)
-                            : ("750px" as const)
-                        }
-                        loading={"lazy" as const}
-                        src={(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.records[0].fields
-                              .image7[0].url;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
-                      />
-                    </p.PlasmicLink>
-
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__iyJs)}
-                    >
-                      {(
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? true
-                          : true
-                      ) ? (
-                        <div
-                          data-plasmic-name={"divlpPomBox135"}
-                          data-plasmic-override={overrides.divlpPomBox135}
-                          className={classNames(
-                            projectcss.all,
-                            sty.divlpPomBox135
-                          )}
-                        >
-                          <div
-                            data-plasmic-name={"divlpPomText136"}
-                            data-plasmic-override={overrides.divlpPomText136}
-                            className={classNames(
-                              projectcss.all,
-                              sty.divlpPomText136
-                            )}
-                          >
-                            <div
-                              data-plasmic-name={
-                                "clickHereToLearnMoreOrderSparqZeroToday"
-                              }
-                              data-plasmic-override={
-                                overrides.clickHereToLearnMoreOrderSparqZeroToday
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty.clickHereToLearnMoreOrderSparqZeroToday
-                              )}
-                            >
-                              <p.PlasmicLink
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.a,
-                                  projectcss.__wab_text,
-                                  sty.link___0LmMp
-                                )}
-                                component={Link}
-                                href={(() => {
-                                  try {
-                                    return $ctx.fetchDyanamicData.records[0]
-                                      .fields["Step 2 URL"];
-                                  } catch (e) {
-                                    if (e instanceof TypeError) {
-                                      return undefined;
-                                    }
-                                    throw e;
-                                  }
-                                })()}
-                                platform={"nextjs"}
-                              >
-                                {(() => {
-                                  try {
-                                    return $ctx.fetchDyanamicData.records[0]
-                                      .fields.aOutroH1;
-                                  } catch (e) {
-                                    if (e instanceof TypeError) {
-                                      return "Click Here To Learn More & Order Sparq Zero® Today!";
-                                    }
-                                    throw e;
-                                  }
-                                })()}
-                              </p.PlasmicLink>
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"divlpPomText137"}
-                            data-plasmic-override={overrides.divlpPomText137}
-                            className={classNames(
-                              projectcss.all,
-                              sty.divlpPomText137
-                            )}
-                          >
-                            <div
-                              data-plasmic-name={"fastSameDayShipping"}
-                              data-plasmic-override={
-                                overrides.fastSameDayShipping
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty.fastSameDayShipping
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__o3N39
-                                )}
-                              >
-                                {(() => {
-                                  try {
-                                    return $ctx.fetchDyanamicData.records[0]
-                                      .fields.aOutroH2;
-                                  } catch (e) {
-                                    if (e instanceof TypeError) {
-                                      return "Fast Same-Day Shipping";
-                                    }
-                                    throw e;
-                                  }
-                                })()}
-                              </div>
-                            </div>
-                          </div>
-
-                          <p.PlasmicLink
-                            data-plasmic-name={"alpPomButton138"}
-                            data-plasmic-override={overrides.alpPomButton138}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.a,
-                              sty.alpPomButton138
-                            )}
-                            component={Link}
-                            href={(() => {
-                              try {
-                                return $ctx.fetchDyanamicData.records[0].fields[
-                                  "Step 2 URL"
-                                ];
-                              } catch (e) {
-                                if (e instanceof TypeError) {
-                                  return undefined;
-                                }
-                                throw e;
-                              }
-                            })()}
-                            platform={"nextjs"}
-                          >
-                            <div
-                              data-plasmic-name={"claimFreePods"}
-                              data-plasmic-override={overrides.claimFreePods}
-                              className={classNames(
-                                projectcss.all,
-                                sty.claimFreePods
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__zNhx
-                                )}
-                              >
-                                {(() => {
-                                  try {
-                                    return $ctx.fetchDyanamicData.records[0]
-                                      .fields.aCTA;
-                                  } catch (e) {
-                                    if (e instanceof TypeError) {
-                                      return "CLAIM FREE PODS 👉";
-                                    }
-                                    throw e;
-                                  }
-                                })()}
-                              </div>
-                            </div>
-                          </p.PlasmicLink>
-
-                          <div
-                            data-plasmic-name={"divlpPomBox139"}
-                            data-plasmic-override={overrides.divlpPomBox139}
-                            className={classNames(
-                              projectcss.all,
-                              sty.divlpPomBox139
-                            )}
-                          />
-
-                          <div
-                            data-plasmic-name={
-                              "_100000HappyCustomersInStockShipsNow"
-                            }
-                            data-plasmic-override={
-                              overrides._100000HappyCustomersInStockShipsNow
-                            }
-                            className={classNames(
-                              projectcss.all,
-                              sty._100000HappyCustomersInStockShipsNow
-                            )}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___4UCxj
-                              )}
-                            >
-                              {(() => {
-                                try {
-                                  return $ctx.fetchDyanamicData.records[0]
-                                    .fields.aOutroH3;
-                                } catch (e) {
-                                  if (e instanceof TypeError) {
-                                    return "100,000+ Happy Customers! In Stock - Ships Now.";
-                                  }
-                                  throw e;
-                                }
-                              })()}
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"div"}
-                            data-plasmic-override={overrides.div}
-                            className={classNames(projectcss.all, sty.div)}
-                          >
-                            <div
-                              data-plasmic-name={
-                                "_4E8Df8335StarReviews103N00Q000000000000028Png"
-                              }
-                              data-plasmic-override={
-                                overrides._4E8Df8335StarReviews103N00Q000000000000028Png
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty._4E8Df8335StarReviews103N00Q000000000000028Png
-                              )}
-                            />
-                          </div>
-                        </div>
-                      ) : null}
-                    </div>
-
-                    {(
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? true
-                        : true
-                    ) ? (
-                      <p.PlasmicLink
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          projectcss.__wab_text,
-                          sty.link__lntat
-                        )}
-                        component={Link}
-                        href={(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.records[0].fields[
-                              "Step 2 URL"
-                            ];
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
-                        platform={"nextjs"}
-                      >
-                        {(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.records[0].fields
-                              .aOutroH1;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return "Click Here To Learn More & Order Sparq Zero® Today!";
-                            }
-                            throw e;
-                          }
-                        })()}
-                      </p.PlasmicLink>
-                    ) : null}
-                    {(
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? true
-                        : true
-                    ) ? (
-                      <p.PlasmicLink
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          projectcss.__wab_text,
-                          sty.link__ogQ80
-                        )}
-                        component={Link}
-                        platform={"nextjs"}
-                      >
-                        {(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.records[0].fields
-                              .aOutroH2;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return "Fast Same-Day Shipping";
-                            }
-                            throw e;
-                          }
-                        })()}
-                      </p.PlasmicLink>
-                    ) : null}
-                    {(
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? true
-                        : true
-                    ) ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__jQkx7
-                        )}
-                      >
-                        {(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.records[0].fields
-                              .aOutroH3;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return "100,000+ Happy Customers! In Stock - Ships Now.";
-                            }
-                            throw e;
-                          }
-                        })()}
-                      </div>
-                    ) : null}
-                    {(
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? true
-                        : true
-                    ) ? (
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img___4HXuc)}
-                        displayHeight={"21px" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"112px" as const}
-                        loading={"lazy" as const}
-                        src={{
-                          src: "/plasmic/feed_presell_ai/images/_4E8Df8335StarReviews107A01G000000000000028Png.png",
-                          fullWidth: 262,
-                          fullHeight: 52,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    ) : null}
-                    {(
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? true
-                        : true
-                    ) ? (
-                      <p.PlasmicLink
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          projectcss.__wab_text,
-                          sty.link__yX9KC
-                        )}
-                        component={Link}
-                        href={(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.records[0].fields[
-                              "Step 2 URL"
-                            ];
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
-                        platform={"nextjs"}
-                      >
-                        {(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.records[0].fields
-                              .aCTA;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return "CLAIM FREE PODS 👉";
-                            }
-                            throw e;
-                          }
-                        })()}
-                      </p.PlasmicLink>
-                    ) : null}
-                  </div>
 
                   <PlasmicHead
                     data-plasmic-name={"head"}
