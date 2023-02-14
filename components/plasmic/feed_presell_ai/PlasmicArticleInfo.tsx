@@ -323,6 +323,19 @@ function PlasmicArticleInfo__RenderFunc(props: {
                   ) ? (
                     <div
                       className={classNames(projectcss.all, sty.freeBox__eiUyg)}
+                      key={"title" as const}
+                      value={(() => {
+                        try {
+                          return $ctx.fetchDyanamicData.records[0].fields[
+                            "Step 1 SEO Title"
+                          ];
+                        } catch (e) {
+                          if (e instanceof TypeError) {
+                            return "";
+                          }
+                          throw e;
+                        }
+                      })()}
                     >
                       {(
                         hasVariant(globalVariants, "screen", "mobileOnly")
