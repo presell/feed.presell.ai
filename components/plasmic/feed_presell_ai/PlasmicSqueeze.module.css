@@ -612,6 +612,31 @@
   width: 1em;
   height: 1em;
 }
+.textInput__dzeZj:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  width: 400px;
+  height: 60px;
+  flex-shrink: 0;
+  display: none;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .textInput__dzeZj:global(.__wab_instance) {
+    width: 350px;
+  }
+}
+.svg__ixBrq {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg___8VoXy {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
 .button__pWaS5:global(.__wab_instance) {
   max-width: 100%;
   position: relative;

@@ -576,6 +576,27 @@ function PlasmicSqueeze__RenderFunc(props: {
                           placeholder={"📲 Your Phone Number" as const}
                         />
 
+                        {true ? (
+                          <TextInput
+                            aria-label={"record_id" as const}
+                            className={classNames(
+                              "__wab_instance",
+                              sty.textInput__dzeZj
+                            )}
+                            defaultValue={(() => {
+                              try {
+                                return $ctx.fetchDyanamicData.id;
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return undefined;
+                                }
+                                throw e;
+                              }
+                            })()}
+                            name={"record_id" as const}
+                          />
+                        ) : null}
+
                         <Button
                           className={classNames(
                             "__wab_instance",
