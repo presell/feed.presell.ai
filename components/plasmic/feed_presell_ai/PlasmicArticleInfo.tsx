@@ -1084,9 +1084,9 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayHeight={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? ("290px" as const)
-                            : ("400px" as const)
+                            : ("auto" as const)
                         }
-                        displayMaxHeight={"none" as const}
+                        displayMaxHeight={"400px" as const}
                         displayMaxWidth={"100%" as const}
                         displayMinHeight={"0" as const}
                         displayMinWidth={"0" as const}
@@ -1161,9 +1161,9 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayHeight={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? ("290px" as const)
-                            : ("400px" as const)
+                            : ("auto" as const)
                         }
-                        displayMaxHeight={"none" as const}
+                        displayMaxHeight={"400px" as const}
                         displayMaxWidth={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? ("100%" as const)
@@ -1242,9 +1242,9 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayHeight={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? ("290px" as const)
-                            : ("400px" as const)
+                            : ("auto" as const)
                         }
-                        displayMaxHeight={"none" as const}
+                        displayMaxHeight={"400px" as const}
                         displayMaxWidth={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? ("100%" as const)
@@ -1323,9 +1323,9 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayHeight={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? ("290px" as const)
-                            : ("400px" as const)
+                            : ("auto" as const)
                         }
-                        displayMaxHeight={"none" as const}
+                        displayMaxHeight={"400px" as const}
                         displayMaxWidth={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? ("100%" as const)
@@ -1404,9 +1404,9 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayHeight={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? ("290px" as const)
-                            : ("400px" as const)
+                            : ("auto" as const)
                         }
-                        displayMaxHeight={"none" as const}
+                        displayMaxHeight={"400px" as const}
                         displayMaxWidth={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? ("100%" as const)
@@ -1485,9 +1485,9 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayHeight={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? ("290px" as const)
-                            : ("400px" as const)
+                            : ("auto" as const)
                         }
-                        displayMaxHeight={"none" as const}
+                        displayMaxHeight={"400px" as const}
                         displayMaxWidth={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? ("100%" as const)

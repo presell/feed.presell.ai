@@ -919,8 +919,9 @@
 .image2 {
   object-fit: cover;
   max-width: 100%;
-  height: 400px;
+  height: auto;
   width: 750px;
+  max-height: 400px;
   flex-shrink: 0;
 }
 .image2 > picture > img {
@@ -967,7 +968,8 @@
   object-fit: cover;
   max-width: 100%;
   width: 750px;
-  height: 400px;
+  height: auto;
+  max-height: 400px;
   flex-shrink: 0;
 }
 .image3 > picture > img {
@@ -1026,7 +1028,8 @@
   object-fit: cover;
   max-width: 100%;
   width: 750px;
-  height: 400px;
+  height: auto;
+  max-height: 400px;
   flex-shrink: 0;
 }
 .image4 > picture > img {
@@ -1085,7 +1088,8 @@
   object-fit: cover;
   max-width: 100%;
   width: 750px;
-  height: 400px;
+  height: auto;
+  max-height: 400px;
   flex-shrink: 0;
 }
 .image5 > picture > img {
@@ -1131,8 +1135,9 @@
 }
 .image6 {
   width: 750px;
-  height: 400px;
+  height: auto;
   max-width: 100%;
+  max-height: 400px;
   flex-shrink: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -1174,7 +1179,8 @@
   object-fit: cover;
   max-width: 100%;
   width: 750px;
-  height: 400px;
+  height: auto;
+  max-height: 400px;
   flex-shrink: 0;
 }
 .image7 > picture > img {
@@ -1449,12 +1455,14 @@
   max-width: 100%;
   background: #fcfcfc;
   margin-bottom: 0px;
+  align-self: center;
   min-width: 0;
   padding: 15px 8px;
 }
 .link__pmkXc {
   position: relative;
   display: flex;
+  align-self: center;
 }
 .link__wSaym {
   display: flex;
@@ -1463,6 +1471,7 @@
   object-fit: cover;
   max-width: 100%;
   width: 266px;
+  align-self: center;
   flex-shrink: 0;
 }
 .img___0Zho > picture > img {
