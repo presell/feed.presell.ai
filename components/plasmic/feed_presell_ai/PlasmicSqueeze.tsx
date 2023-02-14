@@ -292,7 +292,7 @@ function PlasmicSqueeze__RenderFunc(props: {
                                     "mobileOnly"
                                   )
                                     ? ("170px" as const)
-                                    : ("200px" as const)
+                                    : ("196px" as const)
                                 }
                                 loading={"lazy" as const}
                                 src={(() => {
