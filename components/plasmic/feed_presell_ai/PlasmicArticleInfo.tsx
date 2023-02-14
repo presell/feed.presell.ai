@@ -35,6 +35,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { DataFetcher } from "@plasmicpkgs/plasmic-query"; // plasmic-import: ae7V86eNoXA/codeComponent
+import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
 import { PlasmicHead } from "@plasmicapp/react-web"; // plasmic-import: 9R13-owMVa/codeComponent
 
 import { useScreenVariants as useScreenVariantsgpwde9M3Mng } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: GPWDE9_m3Mng/globalVariant
@@ -56,6 +57,7 @@ export const PlasmicArticleInfo__ArgProps = new Array<ArgPropType>();
 export type PlasmicArticleInfo__OverridesType = {
   root?: p.Flex<"div">;
   httpApiFetcher?: p.Flex<typeof DataFetcher>;
+  embedHtml?: p.Flex<typeof Embed>;
   heroSubHeadline?: p.Flex<"div">;
   heroImage?: p.Flex<typeof p.PlasmicImg>;
   paragraph1?: p.Flex<"div">;
@@ -197,6 +199,15 @@ function PlasmicArticleInfo__RenderFunc(props: {
             <ph.DataCtxReader>
               {$ctx => (
                 <React.Fragment>
+                  <Embed
+                    data-plasmic-name={"embedHtml"}
+                    data-plasmic-override={overrides.embedHtml}
+                    className={classNames("__wab_instance", sty.embedHtml)}
+                    code={
+                      '<meta name="description" content="Meet The Newest Flavor Diffuser">\r\n<meta name="title" content="Here\'s how to claim a free device!">\r\n' as const
+                    }
+                  />
+
                   {true ? (
                     <div
                       className={classNames(projectcss.all, sty.freeBox__kX152)}
@@ -2046,6 +2057,7 @@ const PlasmicDescendants = {
   root: [
     "root",
     "httpApiFetcher",
+    "embedHtml",
     "heroSubHeadline",
     "heroImage",
     "paragraph1",
@@ -2077,6 +2089,7 @@ const PlasmicDescendants = {
   ],
   httpApiFetcher: [
     "httpApiFetcher",
+    "embedHtml",
     "heroSubHeadline",
     "heroImage",
     "paragraph1",
@@ -2106,6 +2119,7 @@ const PlasmicDescendants = {
     "_4E8Df8335StarReviews103N00Q000000000000028Png",
     "head"
   ],
+  embedHtml: ["embedHtml"],
   heroSubHeadline: ["heroSubHeadline"],
   heroImage: ["heroImage"],
   paragraph1: ["paragraph1"],
@@ -2162,6 +2176,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   httpApiFetcher: typeof DataFetcher;
+  embedHtml: typeof Embed;
   heroSubHeadline: "div";
   heroImage: typeof p.PlasmicImg;
   paragraph1: "div";
@@ -2254,6 +2269,7 @@ export const PlasmicArticleInfo = Object.assign(
   {
     // Helper components rendering sub-elements
     httpApiFetcher: makeNodeComponent("httpApiFetcher"),
+    embedHtml: makeNodeComponent("embedHtml"),
     heroSubHeadline: makeNodeComponent("heroSubHeadline"),
     heroImage: makeNodeComponent("heroImage"),
     paragraph1: makeNodeComponent("paragraph1"),

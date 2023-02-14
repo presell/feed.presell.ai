@@ -28,9 +28,11 @@
   --token-4EShhbvE5: #ff7613;
   --plasmic-token-unnamed-style-token-13: var(--token-4EShhbvE5);
   --token-N4TLOIIXy: var(--token-6Svo-6Lr3);
-  --plasmic-token-unnamed-style-token-14: var(--token-N4TLOIIXy);
+  --plasmic-token-background-color-1-f-7926: var(--token-N4TLOIIXy);
   --token-6Svo-6Lr3: #1f7926;
   --plasmic-token-1-f-7926: var(--token-6Svo-6Lr3);
+  --token-i-n5ayoRa: #1f7926;
+  --plasmic-token-unnamed-style-token-15: var(--token-i-n5ayoRa);
 }
 
 @media (min-width: 0px) and (max-width: 768px) {

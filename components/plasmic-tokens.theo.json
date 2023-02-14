@@ -61,13 +61,13 @@
       }
     },
     {
-      "name": "UnnamedStyleToken 14",
+      "name": "UnnamedStyleToken 15",
       "type": "color",
       "value": "#1F7926",
       "category": "color",
       "meta": {
         "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
-        "id": "N4TLOIIXy"
+        "id": "i-n5ayoRa"
       }
     },
     {
@@ -148,6 +148,16 @@
       "meta": {
         "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
         "id": "AlA2wEdz4"
+      }
+    },
+    {
+      "name": "background-color-#1F7926",
+      "type": "color",
+      "value": "#1F7926",
+      "category": "color",
+      "meta": {
+        "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
+        "id": "N4TLOIIXy"
       }
     }
   ],
