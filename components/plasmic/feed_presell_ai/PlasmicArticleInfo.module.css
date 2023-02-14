@@ -935,6 +935,7 @@
   .paragraph2 {
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 750px;
   }
 }
 .link__atTjL {
@@ -968,7 +969,7 @@
     height: auto;
     width: 333px;
     max-width: 100%;
-    max-height: 400px;
+    max-height: 300px;
     flex-shrink: 0;
   }
 }

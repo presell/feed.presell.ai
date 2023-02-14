@@ -948,35 +948,28 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         sty.paragraph1
                       )}
                     >
-                      {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                        (() => {
-                          try {
-                            return $ctx.fetchDyanamicData.fields.paragraph1;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return "Enter some text";
-                            }
-                            throw e;
-                          }
-                        })()
-                      ) : (
-                        <div
-                          className={projectcss.__wab_expr_html_text}
-                          dangerouslySetInnerHTML={{
-                            __html: (() => {
-                              try {
-                                return $ctx.fetchDyanamicData.records[0].fields
-                                  .paragraph1;
-                              } catch (e) {
-                                if (e instanceof TypeError) {
-                                  return "Enter some text";
-                                }
-                                throw e;
+                      {hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? (() => {
+                            try {
+                              return $ctx.fetchDyanamicData.fields.paragraph1;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "Enter some text";
                               }
-                            })()
-                          }}
-                        />
-                      )}
+                              throw e;
+                            }
+                          })()
+                        : (() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .paragraph1;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "Enter some text";
+                              }
+                              throw e;
+                            }
+                          })()}
                     </div>
 
                     <p.PlasmicLink
@@ -1123,7 +1116,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         }
                         displayMaxHeight={
                           hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("400px" as const)
+                            ? ("300px" as const)
                             : ("400px" as const)
                         }
                         displayMaxWidth={
