@@ -837,8 +837,8 @@
   max-width: 100%;
   font-size: 20px;
   text-align: left;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .text__vLfi6 {
@@ -892,8 +892,8 @@
   align-self: center;
   text-align: left;
   font-size: 18px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   padding-bottom: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -957,8 +957,8 @@
   max-width: 100%;
   font-size: 18px;
   align-self: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .paragraph2 {
@@ -1009,8 +1009,8 @@
   height: auto;
   max-width: 100%;
   font-size: 18px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .paragraph3 {
@@ -1072,8 +1072,8 @@
   height: auto;
   max-width: 100%;
   font-size: 18px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .paragraph4 {
@@ -1135,8 +1135,8 @@
   height: auto;
   max-width: 100%;
   font-size: 18px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .paragraph5 {
@@ -1187,8 +1187,8 @@
   height: auto;
   max-width: 100%;
   font-size: 18px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .paragraph6 {
@@ -1234,9 +1234,9 @@
   height: auto;
   max-width: 100%;
   font-size: 18px;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
 }
 @media (max-width: 1440px) {
   .paragraph7 {
