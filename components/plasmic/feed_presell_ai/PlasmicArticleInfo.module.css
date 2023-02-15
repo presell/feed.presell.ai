@@ -698,8 +698,10 @@
   width: 381px;
   height: auto;
   max-width: 100%;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
   margin-right: 0px;
-  padding: 5px;
 }
 .freeBox__qMx9Q {
   position: relative;
@@ -744,7 +746,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  padding-right: 0px;
+  padding-right: 16px;
   padding-bottom: 8px;
   padding-top: 8px;
   justify-content: flex-start;
@@ -1229,12 +1231,12 @@
 }
 .paragraph7 {
   position: relative;
-  width: 750px;
+  width: 354px;
   height: auto;
   max-width: 100%;
   font-size: 18px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .paragraph7 {
