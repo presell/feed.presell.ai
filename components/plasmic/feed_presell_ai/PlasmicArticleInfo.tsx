@@ -492,285 +492,6 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       ) : null}
                     </div>
                   ) : null}
-                  {(
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? true
-                      : true
-                  ) ? (
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__kUzNs)}
-                    >
-                      {(
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? true
-                          : true
-                      ) ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.columns__lRlcp
-                          )}
-                        >
-                          {(
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? true
-                              : true
-                          ) ? (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.column__ykYIw
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.columns___8Xmd1
-                                )}
-                              >
-                                {(
-                                  hasVariant(
-                                    globalVariants,
-                                    "screen",
-                                    "mobileOnly"
-                                  )
-                                    ? true
-                                    : true
-                                ) ? (
-                                  <div
-                                    className={classNames(
-                                      projectcss.all,
-                                      sty.column__tli1L
-                                    )}
-                                  />
-                                ) : null}
-                                {(
-                                  hasVariant(
-                                    globalVariants,
-                                    "screen",
-                                    "mobileOnly"
-                                  )
-                                    ? true
-                                    : true
-                                ) ? (
-                                  <div
-                                    className={classNames(
-                                      projectcss.all,
-                                      sty.column__xm0Yd
-                                    )}
-                                  />
-                                ) : null}
-                              </div>
-                            </div>
-                          ) : null}
-                          {(
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? true
-                              : true
-                          ) ? (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.column__wvvO5
-                              )}
-                            />
-                          ) : null}
-                        </div>
-                      ) : null}
-                      {(
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? true
-                          : true
-                      ) ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.columns__irRgs
-                          )}
-                        >
-                          {(
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? true
-                              : true
-                          ) ? (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.column__cQPe4
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.columns___0Menr
-                                )}
-                              >
-                                {(
-                                  hasVariant(
-                                    globalVariants,
-                                    "screen",
-                                    "mobileOnly"
-                                  )
-                                    ? true
-                                    : true
-                                ) ? (
-                                  <div
-                                    className={classNames(
-                                      projectcss.all,
-                                      sty.column__jGp2P
-                                    )}
-                                  />
-                                ) : null}
-                                {(
-                                  hasVariant(
-                                    globalVariants,
-                                    "screen",
-                                    "mobileOnly"
-                                  )
-                                    ? true
-                                    : true
-                                ) ? (
-                                  <div
-                                    className={classNames(
-                                      projectcss.all,
-                                      sty.column__sffYy
-                                    )}
-                                  />
-                                ) : null}
-                              </div>
-                            </div>
-                          ) : null}
-                          {(
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? true
-                              : true
-                          ) ? (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.column__yfapz
-                              )}
-                            />
-                          ) : null}
-                          {(
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? true
-                              : true
-                          ) ? (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.column__v4Y1J
-                              )}
-                            />
-                          ) : null}
-                        </div>
-                      ) : null}
-                      {(
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? true
-                          : true
-                      ) ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.columns___7SEqV
-                          )}
-                        >
-                          {(
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? true
-                              : true
-                          ) ? (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.column__xGtwc
-                              )}
-                            />
-                          ) : null}
-                        </div>
-                      ) : null}
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__eopBj
-                        )}
-                      >
-                        {(
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? true
-                            : true
-                        ) ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__qMx9Q
-                            )}
-                          >
-                            {(
-                              hasVariant(globalVariants, "screen", "mobileOnly")
-                                ? true
-                                : true
-                            ) ? (
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__hS6RL
-                                )}
-                              >
-                                {"“Small Hero Quote Here”"}
-                              </div>
-                            ) : null}
-                          </div>
-                        ) : null}
-                        {(
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? true
-                            : true
-                        ) ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__lrEg0
-                            )}
-                          >
-                            {(
-                              hasVariant(globalVariants, "screen", "mobileOnly")
-                                ? true
-                                : true
-                            ) ? (
-                              <p.PlasmicLink
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.a,
-                                  projectcss.__wab_text,
-                                  sty.link__cmcpk
-                                )}
-                                component={Link}
-                                href={(() => {
-                                  try {
-                                    return $ctx.fetchDyanamicData.records[0]
-                                      .fields["Step 2 URL"];
-                                  } catch (e) {
-                                    if (e instanceof TypeError) {
-                                      return undefined;
-                                    }
-                                    throw e;
-                                  }
-                                })()}
-                                platform={"nextjs"}
-                              >
-                                {"Claim Special Offer"}
-                              </p.PlasmicLink>
-                            ) : null}
-                          </div>
-                        ) : null}
-                      </div>
-                    </div>
-                  ) : null}
 
                   <div
                     className={classNames(projectcss.all, sty.freeBox__t0XxM)}
@@ -1954,6 +1675,285 @@ function PlasmicArticleInfo__RenderFunc(props: {
                     </p.PlasmicLink>
                   </div>
 
+                  {(
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__kUzNs)}
+                    >
+                      {(
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.columns__lRlcp
+                          )}
+                        >
+                          {(
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.column__ykYIw
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.columns___8Xmd1
+                                )}
+                              >
+                                {(
+                                  hasVariant(
+                                    globalVariants,
+                                    "screen",
+                                    "mobileOnly"
+                                  )
+                                    ? true
+                                    : true
+                                ) ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.column__tli1L
+                                    )}
+                                  />
+                                ) : null}
+                                {(
+                                  hasVariant(
+                                    globalVariants,
+                                    "screen",
+                                    "mobileOnly"
+                                  )
+                                    ? true
+                                    : true
+                                ) ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.column__xm0Yd
+                                    )}
+                                  />
+                                ) : null}
+                              </div>
+                            </div>
+                          ) : null}
+                          {(
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.column__wvvO5
+                              )}
+                            />
+                          ) : null}
+                        </div>
+                      ) : null}
+                      {(
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.columns__irRgs
+                          )}
+                        >
+                          {(
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.column__cQPe4
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.columns___0Menr
+                                )}
+                              >
+                                {(
+                                  hasVariant(
+                                    globalVariants,
+                                    "screen",
+                                    "mobileOnly"
+                                  )
+                                    ? true
+                                    : true
+                                ) ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.column__jGp2P
+                                    )}
+                                  />
+                                ) : null}
+                                {(
+                                  hasVariant(
+                                    globalVariants,
+                                    "screen",
+                                    "mobileOnly"
+                                  )
+                                    ? true
+                                    : true
+                                ) ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.column__sffYy
+                                    )}
+                                  />
+                                ) : null}
+                              </div>
+                            </div>
+                          ) : null}
+                          {(
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.column__yfapz
+                              )}
+                            />
+                          ) : null}
+                          {(
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.column__v4Y1J
+                              )}
+                            />
+                          ) : null}
+                        </div>
+                      ) : null}
+                      {(
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.columns___7SEqV
+                          )}
+                        >
+                          {(
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.column__xGtwc
+                              )}
+                            />
+                          ) : null}
+                        </div>
+                      ) : null}
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__eopBj
+                        )}
+                      >
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__qMx9Q
+                            )}
+                          >
+                            {(
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? true
+                                : true
+                            ) ? (
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__hS6RL
+                                )}
+                              >
+                                {"“Small Hero Quote Here”"}
+                              </div>
+                            ) : null}
+                          </div>
+                        ) : null}
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__lrEg0
+                            )}
+                          >
+                            {(
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? true
+                                : true
+                            ) ? (
+                              <p.PlasmicLink
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.a,
+                                  projectcss.__wab_text,
+                                  sty.link__cmcpk
+                                )}
+                                component={Link}
+                                href={(() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.records[0]
+                                      .fields["Step 2 URL"];
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return undefined;
+                                    }
+                                    throw e;
+                                  }
+                                })()}
+                                platform={"nextjs"}
+                              >
+                                {"Claim Special Offer"}
+                              </p.PlasmicLink>
+                            ) : null}
+                          </div>
+                        ) : null}
+                      </div>
+                    </div>
+                  ) : null}
                   {(
                     hasVariant(globalVariants, "screen", "mobileOnly")
                       ? true
