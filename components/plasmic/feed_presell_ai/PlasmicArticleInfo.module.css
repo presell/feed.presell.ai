@@ -837,7 +837,7 @@
   max-width: 100%;
   font-size: 20px;
   text-align: left;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   margin-top: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -867,6 +867,7 @@
   height: auto;
   width: 750px;
   max-height: 400px;
+  margin-bottom: 5px;
   flex-shrink: 0;
 }
 .heroImage > picture > img {
@@ -958,7 +959,7 @@
   font-size: 18px;
   align-self: center;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .paragraph2 {
@@ -986,6 +987,7 @@
   height: auto;
   width: 750px;
   max-height: 400px;
+  margin-bottom: 5px;
   flex-shrink: 0;
 }
 .image2 > picture > img {
@@ -1010,7 +1012,7 @@
   max-width: 100%;
   font-size: 18px;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .paragraph3 {
@@ -1038,6 +1040,7 @@
   width: 750px;
   height: auto;
   max-height: 400px;
+  margin-bottom: 5px;
   flex-shrink: 0;
 }
 .image3 > picture > img {
@@ -1073,7 +1076,7 @@
   max-width: 100%;
   font-size: 18px;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .paragraph4 {
@@ -1101,6 +1104,7 @@
   width: 750px;
   height: auto;
   max-height: 400px;
+  margin-bottom: 5px;
   flex-shrink: 0;
 }
 .image4 > picture > img {
@@ -1188,7 +1192,7 @@
   max-width: 100%;
   font-size: 18px;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .paragraph6 {
@@ -1217,6 +1221,7 @@
   height: auto;
   max-width: 100%;
   max-height: 400px;
+  margin-bottom: 5px;
   flex-shrink: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -1235,7 +1240,7 @@
   max-width: 100%;
   font-size: 18px;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   padding-bottom: 0px;
 }
 @media (max-width: 1440px) {
@@ -1568,6 +1573,7 @@
   width: 750px;
   height: auto;
   max-height: 400px;
+  margin-bottom: 10px;
   flex-shrink: 0;
 }
 .image7 > picture > img {
