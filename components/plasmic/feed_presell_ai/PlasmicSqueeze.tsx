@@ -126,11 +126,13 @@ function PlasmicSqueeze__RenderFunc(props: {
       `}</style>
 
       <div className={projectcss.plasmic_page_wrapper}>
-        <div
+        <p.Stack
+          as={"div"}
           data-plasmic-name={"root"}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
+          hasGap={true}
           className={classNames(
             projectcss.all,
             projectcss.root_reset,
@@ -670,7 +672,7 @@ function PlasmicSqueeze__RenderFunc(props: {
               )}
             </ph.DataCtxReader>
           </DataFetcher>
-        </div>
+        </p.Stack>
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;
