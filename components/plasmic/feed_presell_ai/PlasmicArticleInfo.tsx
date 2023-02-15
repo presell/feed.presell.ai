@@ -71,7 +71,6 @@ export type PlasmicArticleInfo__OverridesType = {
   paragraph6?: p.Flex<"div">;
   image6?: p.Flex<typeof p.PlasmicImg>;
   paragraph7?: p.Flex<"div">;
-  image7?: p.Flex<typeof p.PlasmicImg>;
   divlpPomBox135?: p.Flex<"div">;
   divlpPomText136?: p.Flex<"div">;
   clickHereToLearnMoreOrderSparqZeroToday?: p.Flex<"div">;
@@ -83,6 +82,7 @@ export type PlasmicArticleInfo__OverridesType = {
   _100000HappyCustomersInStockShipsNow?: p.Flex<"div">;
   div?: p.Flex<"div">;
   _4E8Df8335StarReviews103N00Q000000000000028Png?: p.Flex<"div">;
+  image7?: p.Flex<typeof p.PlasmicImg>;
 };
 
 export interface DefaultArticleInfoProps {}
@@ -771,15 +771,6 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       </div>
                     </div>
                   ) : null}
-                  {(
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? true
-                      : true
-                  ) ? (
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__o3FXp)}
-                    />
-                  ) : null}
 
                   <div
                     className={classNames(projectcss.all, sty.freeBox__t0XxM)}
@@ -907,7 +898,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayMinWidth={"0" as const}
                         displayWidth={
                           hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("333px" as const)
+                            ? ("354px" as const)
                             : ("750px" as const)
                         }
                         loading={"lazy" as const}
@@ -1017,7 +1008,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayMinWidth={"0" as const}
                         displayWidth={
                           hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("333px" as const)
+                            ? ("354px" as const)
                             : ("750px" as const)
                         }
                         loading={"lazy" as const}
@@ -1128,7 +1119,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayMinWidth={"0" as const}
                         displayWidth={
                           hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("333px" as const)
+                            ? ("354px" as const)
                             : ("750px" as const)
                         }
                         loading={"lazy" as const}
@@ -1213,7 +1204,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayMinWidth={"0" as const}
                         displayWidth={
                           hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("333px" as const)
+                            ? ("354px" as const)
                             : ("750px" as const)
                         }
                         loading={"lazy" as const}
@@ -1298,7 +1289,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayMinWidth={"0" as const}
                         displayWidth={
                           hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("333px" as const)
+                            ? ("354px" as const)
                             : ("750px" as const)
                         }
                         loading={"lazy" as const}
@@ -1383,7 +1374,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayMinWidth={"0" as const}
                         displayWidth={
                           hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("333px" as const)
+                            ? ("354px" as const)
                             : ("750px" as const)
                         }
                         loading={"lazy" as const}
@@ -1468,7 +1459,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayMinWidth={"0" as const}
                         displayWidth={
                           hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("333px" as const)
+                            ? ("354px" as const)
                             : ("750px" as const)
                         }
                         loading={"lazy" as const}
@@ -1508,294 +1499,242 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       })()}
                     </div>
 
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__emJw0
-                      )}
-                      component={Link}
-                      href={(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.records[0].fields[
-                            "Step 2 URL"
-                          ];
-                        } catch (e) {
-                          if (e instanceof TypeError) {
-                            return undefined;
-                          }
-                          throw e;
-                        }
-                      })()}
-                      platform={"nextjs"}
-                    >
-                      <p.PlasmicImg
-                        data-plasmic-name={"image7"}
-                        data-plasmic-override={overrides.image7}
-                        alt={""}
-                        className={classNames(sty.image7)}
-                        displayHeight={
+                    {(
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__iyJs
+                        )}
+                      >
+                        {(
                           hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("auto" as const)
-                            : ("auto" as const)
-                        }
-                        displayMaxHeight={"400px" as const}
-                        displayMaxWidth={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("100%" as const)
-                            : ("100%" as const)
-                        }
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={
-                          hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? ("333px" as const)
-                            : ("750px" as const)
-                        }
-                        loading={"lazy" as const}
-                        src={(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.records[0].fields
-                              .image7[0].url;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
-                      />
-                    </p.PlasmicLink>
-
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__iyJs)}
-                    >
-                      {(
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? true
-                          : true
-                      ) ? (
-                        <div
-                          data-plasmic-name={"divlpPomBox135"}
-                          data-plasmic-override={overrides.divlpPomBox135}
-                          className={classNames(
-                            projectcss.all,
-                            sty.divlpPomBox135
-                          )}
-                        >
+                            ? true
+                            : true
+                        ) ? (
                           <div
-                            data-plasmic-name={"divlpPomText136"}
-                            data-plasmic-override={overrides.divlpPomText136}
+                            data-plasmic-name={"divlpPomBox135"}
+                            data-plasmic-override={overrides.divlpPomBox135}
                             className={classNames(
                               projectcss.all,
-                              sty.divlpPomText136
+                              sty.divlpPomBox135
                             )}
                           >
                             <div
-                              data-plasmic-name={
-                                "clickHereToLearnMoreOrderSparqZeroToday"
-                              }
-                              data-plasmic-override={
-                                overrides.clickHereToLearnMoreOrderSparqZeroToday
-                              }
+                              data-plasmic-name={"divlpPomText136"}
+                              data-plasmic-override={overrides.divlpPomText136}
                               className={classNames(
                                 projectcss.all,
-                                sty.clickHereToLearnMoreOrderSparqZeroToday
-                              )}
-                            >
-                              <p.PlasmicLink
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.a,
-                                  projectcss.__wab_text,
-                                  sty.link___0LmMp
-                                )}
-                                component={Link}
-                                href={(() => {
-                                  try {
-                                    return $ctx.fetchDyanamicData.records[0]
-                                      .fields["Step 2 URL"];
-                                  } catch (e) {
-                                    if (e instanceof TypeError) {
-                                      return undefined;
-                                    }
-                                    throw e;
-                                  }
-                                })()}
-                                platform={"nextjs"}
-                              >
-                                {(() => {
-                                  try {
-                                    return $ctx.fetchDyanamicData.records[0]
-                                      .fields.aOutroH1;
-                                  } catch (e) {
-                                    if (e instanceof TypeError) {
-                                      return "Click Here To Learn More & Order Sparq Zero® Today!";
-                                    }
-                                    throw e;
-                                  }
-                                })()}
-                              </p.PlasmicLink>
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"divlpPomText137"}
-                            data-plasmic-override={overrides.divlpPomText137}
-                            className={classNames(
-                              projectcss.all,
-                              sty.divlpPomText137
-                            )}
-                          >
-                            <div
-                              data-plasmic-name={"fastSameDayShipping"}
-                              data-plasmic-override={
-                                overrides.fastSameDayShipping
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty.fastSameDayShipping
+                                sty.divlpPomText136
                               )}
                             >
                               <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__o3N39
-                                )}
-                              >
-                                {(() => {
-                                  try {
-                                    return $ctx.fetchDyanamicData.records[0]
-                                      .fields.aOutroH2;
-                                  } catch (e) {
-                                    if (e instanceof TypeError) {
-                                      return "Fast Same-Day Shipping";
-                                    }
-                                    throw e;
-                                  }
-                                })()}
-                              </div>
-                            </div>
-                          </div>
-
-                          <p.PlasmicLink
-                            data-plasmic-name={"alpPomButton138"}
-                            data-plasmic-override={overrides.alpPomButton138}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.a,
-                              sty.alpPomButton138
-                            )}
-                            component={Link}
-                            href={(() => {
-                              try {
-                                return $ctx.fetchDyanamicData.records[0].fields[
-                                  "Step 2 URL"
-                                ];
-                              } catch (e) {
-                                if (e instanceof TypeError) {
-                                  return undefined;
+                                data-plasmic-name={
+                                  "clickHereToLearnMoreOrderSparqZeroToday"
                                 }
-                                throw e;
-                              }
-                            })()}
-                            platform={"nextjs"}
-                          >
+                                data-plasmic-override={
+                                  overrides.clickHereToLearnMoreOrderSparqZeroToday
+                                }
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.clickHereToLearnMoreOrderSparqZeroToday
+                                )}
+                              >
+                                <p.PlasmicLink
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.a,
+                                    projectcss.__wab_text,
+                                    sty.link___0LmMp
+                                  )}
+                                  component={Link}
+                                  href={(() => {
+                                    try {
+                                      return $ctx.fetchDyanamicData.records[0]
+                                        .fields["Step 2 URL"];
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return undefined;
+                                      }
+                                      throw e;
+                                    }
+                                  })()}
+                                  platform={"nextjs"}
+                                >
+                                  {(() => {
+                                    try {
+                                      return $ctx.fetchDyanamicData.records[0]
+                                        .fields.aOutroH1;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return "Click Here To Learn More & Order Sparq Zero® Today!";
+                                      }
+                                      throw e;
+                                    }
+                                  })()}
+                                </p.PlasmicLink>
+                              </div>
+                            </div>
+
                             <div
-                              data-plasmic-name={"claimFreePods"}
-                              data-plasmic-override={overrides.claimFreePods}
+                              data-plasmic-name={"divlpPomText137"}
+                              data-plasmic-override={overrides.divlpPomText137}
                               className={classNames(
                                 projectcss.all,
-                                sty.claimFreePods
+                                sty.divlpPomText137
                               )}
                             >
                               <div
+                                data-plasmic-name={"fastSameDayShipping"}
+                                data-plasmic-override={
+                                  overrides.fastSameDayShipping
+                                }
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__zNhx
+                                  sty.fastSameDayShipping
                                 )}
                               >
-                                {(() => {
-                                  try {
-                                    return $ctx.fetchDyanamicData.records[0]
-                                      .fields.aCTA;
-                                  } catch (e) {
-                                    if (e instanceof TypeError) {
-                                      return "CLAIM FREE PODS 👉";
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__o3N39
+                                  )}
+                                >
+                                  {(() => {
+                                    try {
+                                      return $ctx.fetchDyanamicData.records[0]
+                                        .fields.aOutroH2;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return "Fast Same-Day Shipping";
+                                      }
+                                      throw e;
                                     }
-                                    throw e;
-                                  }
-                                })()}
+                                  })()}
+                                </div>
                               </div>
                             </div>
-                          </p.PlasmicLink>
 
-                          <div
-                            data-plasmic-name={"divlpPomBox139"}
-                            data-plasmic-override={overrides.divlpPomBox139}
-                            className={classNames(
-                              projectcss.all,
-                              sty.divlpPomBox139
-                            )}
-                          />
-
-                          <div
-                            data-plasmic-name={
-                              "_100000HappyCustomersInStockShipsNow"
-                            }
-                            data-plasmic-override={
-                              overrides._100000HappyCustomersInStockShipsNow
-                            }
-                            className={classNames(
-                              projectcss.all,
-                              sty._100000HappyCustomersInStockShipsNow
-                            )}
-                          >
-                            <div
+                            <p.PlasmicLink
+                              data-plasmic-name={"alpPomButton138"}
+                              data-plasmic-override={overrides.alpPomButton138}
                               className={classNames(
                                 projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___4UCxj
+                                projectcss.a,
+                                sty.alpPomButton138
                               )}
-                            >
-                              {(() => {
+                              component={Link}
+                              href={(() => {
                                 try {
                                   return $ctx.fetchDyanamicData.records[0]
-                                    .fields.aOutroH3;
+                                    .fields["Step 2 URL"];
                                 } catch (e) {
                                   if (e instanceof TypeError) {
-                                    return "100,000+ Happy Customers! In Stock - Ships Now.";
+                                    return undefined;
                                   }
                                   throw e;
                                 }
                               })()}
-                            </div>
-                          </div>
+                              platform={"nextjs"}
+                            >
+                              <div
+                                data-plasmic-name={"claimFreePods"}
+                                data-plasmic-override={overrides.claimFreePods}
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.claimFreePods
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__zNhx
+                                  )}
+                                >
+                                  {(() => {
+                                    try {
+                                      return $ctx.fetchDyanamicData.records[0]
+                                        .fields.aCTA;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return "CLAIM FREE PODS 👉";
+                                      }
+                                      throw e;
+                                    }
+                                  })()}
+                                </div>
+                              </div>
+                            </p.PlasmicLink>
 
-                          <div
-                            data-plasmic-name={"div"}
-                            data-plasmic-override={overrides.div}
-                            className={classNames(projectcss.all, sty.div)}
-                          >
+                            <div
+                              data-plasmic-name={"divlpPomBox139"}
+                              data-plasmic-override={overrides.divlpPomBox139}
+                              className={classNames(
+                                projectcss.all,
+                                sty.divlpPomBox139
+                              )}
+                            />
+
                             <div
                               data-plasmic-name={
-                                "_4E8Df8335StarReviews103N00Q000000000000028Png"
+                                "_100000HappyCustomersInStockShipsNow"
                               }
                               data-plasmic-override={
-                                overrides._4E8Df8335StarReviews103N00Q000000000000028Png
+                                overrides._100000HappyCustomersInStockShipsNow
                               }
                               className={classNames(
                                 projectcss.all,
-                                sty._4E8Df8335StarReviews103N00Q000000000000028Png
+                                sty._100000HappyCustomersInStockShipsNow
                               )}
-                            />
-                          </div>
-                        </div>
-                      ) : null}
-                    </div>
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text___4UCxj
+                                )}
+                              >
+                                {(() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.records[0]
+                                      .fields.aOutroH3;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return "100,000+ Happy Customers! In Stock - Ships Now.";
+                                    }
+                                    throw e;
+                                  }
+                                })()}
+                              </div>
+                            </div>
 
+                            <div
+                              data-plasmic-name={"div"}
+                              data-plasmic-override={overrides.div}
+                              className={classNames(projectcss.all, sty.div)}
+                            >
+                              <div
+                                data-plasmic-name={
+                                  "_4E8Df8335StarReviews103N00Q000000000000028Png"
+                                }
+                                data-plasmic-override={
+                                  overrides._4E8Df8335StarReviews103N00Q000000000000028Png
+                                }
+                                className={classNames(
+                                  projectcss.all,
+                                  sty._4E8Df8335StarReviews103N00Q000000000000028Png
+                                )}
+                              />
+                            </div>
+                          </div>
+                        ) : null}
+                      </div>
+                    ) : null}
                     {(
                       hasVariant(globalVariants, "screen", "mobileOnly")
                         ? true
@@ -1952,7 +1891,76 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         })()}
                       </p.PlasmicLink>
                     ) : null}
+
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__emJw0
+                      )}
+                      component={Link}
+                      href={(() => {
+                        try {
+                          return $ctx.fetchDyanamicData.records[0].fields[
+                            "Step 2 URL"
+                          ];
+                        } catch (e) {
+                          if (e instanceof TypeError) {
+                            return undefined;
+                          }
+                          throw e;
+                        }
+                      })()}
+                      platform={"nextjs"}
+                    >
+                      <p.PlasmicImg
+                        data-plasmic-name={"image7"}
+                        data-plasmic-override={overrides.image7}
+                        alt={""}
+                        className={classNames(sty.image7)}
+                        displayHeight={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? ("auto" as const)
+                            : ("auto" as const)
+                        }
+                        displayMaxHeight={"400px" as const}
+                        displayMaxWidth={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? ("100%" as const)
+                            : ("100%" as const)
+                        }
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? ("354px" as const)
+                            : ("750px" as const)
+                        }
+                        loading={"lazy" as const}
+                        src={(() => {
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .image7[0].url;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
+                      />
+                    </p.PlasmicLink>
                   </div>
+
+                  {(
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__o3FXp)}
+                    />
+                  ) : null}
 
                   <PlasmicHead
                     className={classNames("__wab_instance", sty.head__qQEd1)}
@@ -2079,7 +2087,6 @@ const PlasmicDescendants = {
     "paragraph6",
     "image6",
     "paragraph7",
-    "image7",
     "divlpPomBox135",
     "divlpPomText136",
     "clickHereToLearnMoreOrderSparqZeroToday",
@@ -2090,7 +2097,8 @@ const PlasmicDescendants = {
     "divlpPomBox139",
     "_100000HappyCustomersInStockShipsNow",
     "div",
-    "_4E8Df8335StarReviews103N00Q000000000000028Png"
+    "_4E8Df8335StarReviews103N00Q000000000000028Png",
+    "image7"
   ],
   httpApiFetcher: [
     "httpApiFetcher",
@@ -2109,7 +2117,6 @@ const PlasmicDescendants = {
     "paragraph6",
     "image6",
     "paragraph7",
-    "image7",
     "divlpPomBox135",
     "divlpPomText136",
     "clickHereToLearnMoreOrderSparqZeroToday",
@@ -2120,7 +2127,8 @@ const PlasmicDescendants = {
     "divlpPomBox139",
     "_100000HappyCustomersInStockShipsNow",
     "div",
-    "_4E8Df8335StarReviews103N00Q000000000000028Png"
+    "_4E8Df8335StarReviews103N00Q000000000000028Png",
+    "image7"
   ],
   heroSubHeadline: ["heroSubHeadline"],
   heroImage: ["heroImage"],
@@ -2137,7 +2145,6 @@ const PlasmicDescendants = {
   paragraph6: ["paragraph6"],
   image6: ["image6"],
   paragraph7: ["paragraph7"],
-  image7: ["image7"],
   divlpPomBox135: [
     "divlpPomBox135",
     "divlpPomText136",
@@ -2169,7 +2176,8 @@ const PlasmicDescendants = {
   div: ["div", "_4E8Df8335StarReviews103N00Q000000000000028Png"],
   _4E8Df8335StarReviews103N00Q000000000000028Png: [
     "_4E8Df8335StarReviews103N00Q000000000000028Png"
-  ]
+  ],
+  image7: ["image7"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -2192,7 +2200,6 @@ type NodeDefaultElementType = {
   paragraph6: "div";
   image6: typeof p.PlasmicImg;
   paragraph7: "div";
-  image7: typeof p.PlasmicImg;
   divlpPomBox135: "div";
   divlpPomText136: "div";
   clickHereToLearnMoreOrderSparqZeroToday: "div";
@@ -2204,6 +2211,7 @@ type NodeDefaultElementType = {
   _100000HappyCustomersInStockShipsNow: "div";
   div: "div";
   _4E8Df8335StarReviews103N00Q000000000000028Png: "div";
+  image7: typeof p.PlasmicImg;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -2283,7 +2291,6 @@ export const PlasmicArticleInfo = Object.assign(
     paragraph6: makeNodeComponent("paragraph6"),
     image6: makeNodeComponent("image6"),
     paragraph7: makeNodeComponent("paragraph7"),
-    image7: makeNodeComponent("image7"),
     divlpPomBox135: makeNodeComponent("divlpPomBox135"),
     divlpPomText136: makeNodeComponent("divlpPomText136"),
     clickHereToLearnMoreOrderSparqZeroToday: makeNodeComponent(
@@ -2301,6 +2308,7 @@ export const PlasmicArticleInfo = Object.assign(
     _4E8Df8335StarReviews103N00Q000000000000028Png: makeNodeComponent(
       "_4E8Df8335StarReviews103N00Q000000000000028Png"
     ),
+    image7: makeNodeComponent("image7"),
 
     // Metadata about props expected for PlasmicArticleInfo
     internalVariantProps: PlasmicArticleInfo__VariantProps,
