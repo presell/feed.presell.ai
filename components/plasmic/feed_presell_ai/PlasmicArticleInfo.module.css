@@ -1230,16 +1230,28 @@
 }
 .paragraph7 {
   position: relative;
-  width: 354px;
+  width: 750px;
   height: auto;
   max-width: 100%;
   font-size: 18px;
   margin-top: 10px;
   margin-bottom: 0px;
+  padding-bottom: 5px;
+}
+@media (max-width: 1440px) {
+  .paragraph7 {
+    width: 750px;
+  }
+}
+@media (max-width: 1024px) {
+  .paragraph7 {
+    width: 750px;
+  }
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .paragraph7 {
     margin-top: 10px;
+    width: 354px;
   }
 }
 .freeBox__iyJs {
@@ -1251,8 +1263,10 @@
   width: 100%;
   height: auto;
   max-width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
   min-width: 0;
-  padding: 8px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__iyJs {
@@ -1262,15 +1276,24 @@
 .divlpPomBox135 {
   background: rgba(255, 255, 255, 1);
   width: 649px;
-  height: 236px;
+  height: 204px;
   display: block;
   margin-right: 0px;
   flex-shrink: 0;
   border-radius: 10px;
 }
+@media (max-width: 1440px) {
+  .divlpPomBox135 {
+    height: 197px;
+    flex-shrink: 0;
+  }
+}
 @media (max-width: 1024px) {
   .divlpPomBox135 {
     width: 631px;
+    margin-bottom: 0px;
+    height: 189px;
+    flex-shrink: 0;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
