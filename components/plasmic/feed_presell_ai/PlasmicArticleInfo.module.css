@@ -1174,6 +1174,11 @@
 .image5 > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
+@media (max-width: 1024px) {
+  .image5 {
+    height: auto;
+  }
+}
 @media (min-width: 0px) and (max-width: 768px) {
   .image5 {
     height: auto;
@@ -1251,6 +1256,7 @@
   .paragraph7 {
     margin-top: 5px;
     width: 354px;
+    margin-bottom: 0px;
   }
 }
 .freeBox__iyJs {
