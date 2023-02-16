@@ -379,7 +379,7 @@
   color: #535353;
   font-weight: 800;
   height: auto;
-  padding: 30px 0px 5px;
+  padding: 30px 0px 0px;
   margin: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -397,7 +397,7 @@
   max-width: 100%;
   font-size: 20px;
   text-align: left;
-  margin: 2px;
+  margin: 0px 2px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .text__vLfi6 {
@@ -454,7 +454,7 @@
   text-align: left;
   font-size: 18px;
   padding-bottom: 0px;
-  margin: 2px 0px 0px;
+  margin: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .paragraph1 {
@@ -482,8 +482,8 @@
   width: 750px;
   height: auto;
   max-height: 400px;
-  margin-bottom: 2px;
   flex-shrink: 0;
+  margin: 0px;
 }
 .image1 > picture > img {
   object-fit: cover;
@@ -544,8 +544,8 @@
   height: auto;
   width: 750px;
   max-height: 400px;
-  margin-bottom: 2px;
   flex-shrink: 0;
+  margin: 0px;
 }
 .image2 > picture > img {
   object-fit: cover;
@@ -596,8 +596,8 @@
   width: 750px;
   height: auto;
   max-height: 400px;
-  margin-bottom: 2px;
   flex-shrink: 0;
+  margin: 0px;
 }
 .image3 > picture > img {
   object-fit: cover;
@@ -775,8 +775,8 @@
   height: auto;
   max-width: 100%;
   max-height: 400px;
-  margin-bottom: 2px;
   flex-shrink: 0;
+  margin: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .image6 {
