@@ -58,19 +58,19 @@ export type PlasmicArticleInfo__OverridesType = {
   httpApiFetcher?: p.Flex<typeof DataFetcher>;
   heroSubHeadline?: p.Flex<"div">;
   heroImage?: p.Flex<typeof p.PlasmicImg>;
-  paragraph1?: p.Flex<"div">;
+  paragraph1?: p.Flex<"p">;
   image1?: p.Flex<typeof p.PlasmicImg>;
-  paragraph2?: p.Flex<"div">;
+  paragraph2?: p.Flex<"p">;
   image2?: p.Flex<typeof p.PlasmicImg>;
-  paragraph3?: p.Flex<"div">;
+  paragraph3?: p.Flex<"p">;
   image3?: p.Flex<typeof p.PlasmicImg>;
-  paragraph4?: p.Flex<"div">;
+  paragraph4?: p.Flex<"p">;
   image4?: p.Flex<typeof p.PlasmicImg>;
-  paragraph5?: p.Flex<"div">;
+  paragraph5?: p.Flex<"p">;
   image5?: p.Flex<typeof p.PlasmicImg>;
-  paragraph6?: p.Flex<"div">;
+  paragraph6?: p.Flex<"p">;
   image6?: p.Flex<typeof p.PlasmicImg>;
-  paragraph7?: p.Flex<"div">;
+  paragraph7?: p.Flex<"p">;
   divlpPomBox135?: p.Flex<"div">;
   divlpPomText136?: p.Flex<"div">;
   clickHereToLearnMoreOrderSparqZeroToday?: p.Flex<"div">;
@@ -651,11 +651,12 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       />
                     </p.PlasmicLink>
 
-                    <div
+                    <p
                       data-plasmic-name={"paragraph1"}
                       data-plasmic-override={overrides.paragraph1}
                       className={classNames(
                         projectcss.all,
+                        projectcss.p,
                         projectcss.__wab_text,
                         sty.paragraph1
                       )}
@@ -682,7 +683,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                               throw e;
                             }
                           })()}
-                    </div>
+                    </p>
 
                     <p.PlasmicLink
                       className={classNames(
@@ -761,11 +762,12 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       />
                     </p.PlasmicLink>
 
-                    <div
+                    <p
                       data-plasmic-name={"paragraph2"}
                       data-plasmic-override={overrides.paragraph2}
                       className={classNames(
                         projectcss.all,
+                        projectcss.p,
                         projectcss.__wab_text,
                         sty.paragraph2
                       )}
@@ -793,7 +795,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                               throw e;
                             }
                           })()}
-                    </div>
+                    </p>
 
                     <p.PlasmicLink
                       className={classNames(
@@ -858,11 +860,12 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       />
                     </p.PlasmicLink>
 
-                    <div
+                    <p
                       data-plasmic-name={"paragraph3"}
                       data-plasmic-override={overrides.paragraph3}
                       className={classNames(
                         projectcss.all,
+                        projectcss.p,
                         projectcss.__wab_text,
                         sty.paragraph3
                       )}
@@ -878,7 +881,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           throw e;
                         }
                       })()}
-                    </div>
+                    </p>
 
                     <p.PlasmicLink
                       className={classNames(
@@ -943,11 +946,12 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       />
                     </p.PlasmicLink>
 
-                    <div
+                    <p
                       data-plasmic-name={"paragraph4"}
                       data-plasmic-override={overrides.paragraph4}
                       className={classNames(
                         projectcss.all,
+                        projectcss.p,
                         projectcss.__wab_text,
                         sty.paragraph4
                       )}
@@ -963,7 +967,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           throw e;
                         }
                       })()}
-                    </div>
+                    </p>
 
                     <p.PlasmicLink
                       className={classNames(
@@ -1028,11 +1032,12 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       />
                     </p.PlasmicLink>
 
-                    <div
+                    <p
                       data-plasmic-name={"paragraph5"}
                       data-plasmic-override={overrides.paragraph5}
                       className={classNames(
                         projectcss.all,
+                        projectcss.p,
                         projectcss.__wab_text,
                         sty.paragraph5
                       )}
@@ -1048,7 +1053,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           throw e;
                         }
                       })()}
-                    </div>
+                    </p>
 
                     <p.PlasmicLink
                       className={classNames(
@@ -1115,11 +1120,12 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       />
                     </p.PlasmicLink>
 
-                    <div
+                    <p
                       data-plasmic-name={"paragraph6"}
                       data-plasmic-override={overrides.paragraph6}
                       className={classNames(
                         projectcss.all,
+                        projectcss.p,
                         projectcss.__wab_text,
                         sty.paragraph6
                       )}
@@ -1135,7 +1141,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           throw e;
                         }
                       })()}
-                    </div>
+                    </p>
 
                     <p.PlasmicLink
                       className={classNames(
@@ -1200,11 +1206,12 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       />
                     </p.PlasmicLink>
 
-                    <div
+                    <p
                       data-plasmic-name={"paragraph7"}
                       data-plasmic-override={overrides.paragraph7}
                       className={classNames(
                         projectcss.all,
+                        projectcss.p,
                         projectcss.__wab_text,
                         sty.paragraph7
                       )}
@@ -1220,7 +1227,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           throw e;
                         }
                       })()}
-                    </div>
+                    </p>
 
                     {(
                       hasVariant(globalVariants, "screen", "mobileOnly")
@@ -2189,19 +2196,19 @@ type NodeDefaultElementType = {
   httpApiFetcher: typeof DataFetcher;
   heroSubHeadline: "div";
   heroImage: typeof p.PlasmicImg;
-  paragraph1: "div";
+  paragraph1: "p";
   image1: typeof p.PlasmicImg;
-  paragraph2: "div";
+  paragraph2: "p";
   image2: typeof p.PlasmicImg;
-  paragraph3: "div";
+  paragraph3: "p";
   image3: typeof p.PlasmicImg;
-  paragraph4: "div";
+  paragraph4: "p";
   image4: typeof p.PlasmicImg;
-  paragraph5: "div";
+  paragraph5: "p";
   image5: typeof p.PlasmicImg;
-  paragraph6: "div";
+  paragraph6: "p";
   image6: typeof p.PlasmicImg;
-  paragraph7: "div";
+  paragraph7: "p";
   divlpPomBox135: "div";
   divlpPomText136: "div";
   clickHereToLearnMoreOrderSparqZeroToday: "div";
