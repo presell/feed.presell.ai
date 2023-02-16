@@ -3,10 +3,10 @@
   display: flex;
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #f6f6f6;
+  overflow: auto;
   min-width: 0;
-  min-height: 0;
   padding: 0px;
 }
 .root > :global(.__wab_flex-container) {
@@ -16,7 +16,6 @@
   align-items: stretch;
   align-content: stretch;
   min-width: 0;
-  min-height: 0;
 }
 @media (max-width: 1024px) {
   .root {
@@ -113,7 +112,7 @@
   .freeBox__xhsS {
     padding-top: 0px;
     padding-bottom: 0px;
-    height: 893px;
+    height: 891px;
   }
 }
 .freeBox__o0Xt {
@@ -568,7 +567,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .form {
     padding-top: 0px;
-    height: 441px;
+    height: 460px;
     flex-shrink: 0;
   }
 }
