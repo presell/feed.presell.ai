@@ -552,8 +552,9 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       component={Link}
                       href={(() => {
                         try {
-                          return $ctx.fetchDyanamicData.records[0].fields
-                            .heroHeadline;
+                          return $ctx.fetchDyanamicData.records[0].fields[
+                            "Step 2 URL"
+                          ];
                         } catch (e) {
                           if (e instanceof TypeError) {
                             return undefined;
