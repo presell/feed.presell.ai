@@ -21,19 +21,21 @@
   .root {
     display: flex;
     flex-direction: column;
+    background: #eaeaea;
+    padding-bottom: 440px;
   }
 }
 @media (max-width: 1024px) {
   .root > :global(.__wab_flex-container) {
-    align-items: stretch;
+    align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: stretch;
     margin-left: calc(0px - 0px);
     width: calc(100% + 0px);
-    margin-top: calc(0px - 0px);
-    height: calc(100% + 0px);
+    margin-top: calc(0px - 16px);
+    height: calc(100% + 16px);
   }
 }
 @media (max-width: 1024px) {
@@ -46,7 +48,7 @@
     > picture
     > img {
     margin-left: 0px;
-    margin-top: 0px;
+    margin-top: 16px;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -106,6 +108,7 @@
     align-items: center;
     flex-wrap: nowrap;
     align-content: stretch;
+    background: #eaeaea;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
