@@ -482,17 +482,6 @@ function PlasmicArticle2__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.button,
-                        projectcss.__wab_text,
-                        sty.button__dq5V
-                      )}
-                    >
-                      {"Click Me"}
-                    </button>
-
-                    <button
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.button,
                         sty.button__tFzAw
                       )}
                     >
@@ -2206,16 +2195,6 @@ function PlasmicArticle2__RenderFunc(props: {
                           )}
                         />
                       </div>
-                    </div>
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__rnXhJ
-                      )}
-                    >
-                      {"FEEL THE DIFFERENCE"}
                     </div>
                   </div>
                 </p.Stack>

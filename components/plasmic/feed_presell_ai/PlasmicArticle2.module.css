@@ -32,7 +32,7 @@
 .div2 {
   flex-direction: column;
   background: rgba(245, 245, 245, 1);
-  width: 1534px;
+  width: 1769px;
   height: 5924px;
   display: flex;
   position: absolute;
@@ -54,6 +54,11 @@
 .div2 > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-top: 40px;
 }
+@media (max-width: 1440px) {
+  .div2 {
+    width: 1455px;
+  }
+}
 .div3 {
   background: rgba(245, 245, 245, 1);
   width: auto;
@@ -67,6 +72,11 @@
   padding-right: 109px;
   margin-top: calc(0px + 40px) !important;
   padding-top: 38px;
+}
+@media (max-width: 1440px) {
+  .div3 {
+    margin-top: calc(0px + 40px) !important;
+  }
 }
 .div4 {
   width: 1336px;
@@ -175,11 +185,6 @@
   letter-spacing: 0em;
   line-height: 100%;
   color: rgba(98, 98, 98, 1);
-}
-.button__dq5V {
-  position: absolute;
-  left: 0px;
-  top: 0px;
 }
 .button__tFzAw {
   position: absolute;
@@ -2379,13 +2384,6 @@
   position: absolute;
   top: 26px;
   left: 284px;
-}
-.text__rnXhJ {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 54px;
-  height: 54px;
 }
 .div39 {
   transform: translate(0px, -0.1410000000000764px);
