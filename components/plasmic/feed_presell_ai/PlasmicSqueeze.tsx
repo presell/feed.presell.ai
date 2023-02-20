@@ -125,13 +125,11 @@ function PlasmicSqueeze__RenderFunc(props: {
         }
       `}</style>
 
-      <p.Stack
-        as={"div"}
+      <div
         data-plasmic-name={"root"}
         data-plasmic-override={overrides.root}
         data-plasmic-root={true}
         data-plasmic-for-node={forNode}
-        hasGap={true}
         className={classNames(
           projectcss.all,
           projectcss.root_reset,
@@ -614,8 +612,6 @@ function PlasmicSqueeze__RenderFunc(props: {
                       >
                         {hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "I agree to receive emails and texts."
-                          : hasVariant(globalVariants, "screen", "laptop")
-                          ? "I agree to receive emails and texts."
                           : "I agree to receive emails and texts."}
                       </div>
                     </form>
@@ -656,7 +652,7 @@ function PlasmicSqueeze__RenderFunc(props: {
             )}
           </ph.DataCtxReader>
         </DataFetcher>
-      </p.Stack>
+      </div>
     </React.Fragment>
   ) as React.ReactElement | null;
 }

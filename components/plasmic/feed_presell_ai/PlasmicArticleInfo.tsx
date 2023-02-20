@@ -1126,8 +1126,6 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         displayHeight={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? ("auto" as const)
-                            : hasVariant(globalVariants, "screen", "tabletOnly")
-                            ? ("auto" as const)
                             : ("auto" as const)
                         }
                         displayMaxHeight={

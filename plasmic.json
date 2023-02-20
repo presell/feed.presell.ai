@@ -263,6 +263,33 @@
           "cssFilePath": "plasmic/feed_presell_ai/PlasmicHomepage.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "TzYAdcfqLH",
+          "name": "Article2",
+          "type": "managed",
+          "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
+          "renderModuleFilePath": "plasmic/feed_presell_ai/PlasmicArticle2.tsx",
+          "importSpec": {
+            "modulePath": "../pages/article-2.tsx"
+          },
+          "cssFilePath": "plasmic/feed_presell_ai/PlasmicArticle2.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "C1YShID-k4x",
+          "name": "Checkbox",
+          "type": "managed",
+          "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
+          "renderModuleFilePath": "plasmic/feed_presell_ai/PlasmicCheckbox.tsx",
+          "importSpec": {
+            "modulePath": "Checkbox.tsx"
+          },
+          "cssFilePath": "plasmic/feed_presell_ai/PlasmicCheckbox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "checkbox"
         }
       ],
       "icons": [
@@ -305,6 +332,21 @@
           "id": "mLLNiYFIAvU",
           "name": "SearchsvgIcon",
           "moduleFilePath": "plasmic/feed_presell_ai/icons/PlasmicIcon__Searchsvg.tsx"
+        },
+        {
+          "id": "0gzLvHFH4_v",
+          "name": "SquaresvgIcon",
+          "moduleFilePath": "plasmic/feed_presell_ai/icons/PlasmicIcon__Squaresvg.tsx"
+        },
+        {
+          "id": "hY0jzsEB-SX",
+          "name": "SquareCheckFilledsvgIcon",
+          "moduleFilePath": "plasmic/feed_presell_ai/icons/PlasmicIcon__SquareCheckFilledsvg.tsx"
+        },
+        {
+          "id": "tOg8-JR6KQ7",
+          "name": "SquareMinussvgIcon",
+          "moduleFilePath": "plasmic/feed_presell_ai/icons/PlasmicIcon__SquareMinussvg.tsx"
         }
       ],
       "images": [
@@ -512,6 +554,101 @@
           "id": "oEvaEHC3L",
           "name": "article - mobile.png",
           "filePath": "../public/plasmic/feed_presell_ai/images/articleMobilepng.png"
+        },
+        {
+          "id": "0SK6HkRvs",
+          "name": "logo.png",
+          "filePath": "../public/plasmic/feed_presell_ai/images/logopng.png"
+        },
+        {
+          "id": "Phlu9V1xqR",
+          "name": "midbanner.jpg",
+          "filePath": "../public/plasmic/feed_presell_ai/images/midbannerjpg.jpeg"
+        },
+        {
+          "id": "tmcHcaoEky",
+          "name": "review.jpg",
+          "filePath": "../public/plasmic/feed_presell_ai/images/reviewjpg.jpeg"
+        },
+        {
+          "id": "2U9krhaK5I",
+          "name": "fingericon.png",
+          "filePath": "../public/plasmic/feed_presell_ai/images/fingericonpng.png"
+        },
+        {
+          "id": "1s96A3qcTQ",
+          "name": "star.png",
+          "filePath": "../public/plasmic/feed_presell_ai/images/starpng.png"
+        },
+        {
+          "id": "CL04Fw6k1U",
+          "name": "nw-brandlogo.png",
+          "filePath": "../public/plasmic/feed_presell_ai/images/nwBrandlogopng.png"
+        },
+        {
+          "id": "uY2N_vxbvd",
+          "name": "li",
+          "filePath": "../public/plasmic/feed_presell_ai/images/li.png"
+        },
+        {
+          "id": "9Mg7xCgdyg",
+          "name": "div 3",
+          "filePath": "../public/plasmic/feed_presell_ai/images/div3.jpeg"
+        },
+        {
+          "id": "HGW05Qm_gE",
+          "name": "sidereview1.png",
+          "filePath": "../public/plasmic/feed_presell_ai/images/sidereview1Png.png"
+        },
+        {
+          "id": "Nph1oyjfIW",
+          "name": "sidereview2.png",
+          "filePath": "../public/plasmic/feed_presell_ai/images/sidereview2Png.png"
+        },
+        {
+          "id": "5lXUgTfinb",
+          "name": "prodimage.png",
+          "filePath": "../public/plasmic/feed_presell_ai/images/prodimagepng.png"
+        },
+        {
+          "id": "rUGMW6tGLF",
+          "name": "sidereview3.png",
+          "filePath": "../public/plasmic/feed_presell_ai/images/sidereview3Png.png"
+        },
+        {
+          "id": "BGUyeQx-5w",
+          "name": "tick.png",
+          "filePath": "../public/plasmic/feed_presell_ai/images/tickpng.png"
+        },
+        {
+          "id": "lDg6utDU9t",
+          "name": "cross.png",
+          "filePath": "../public/plasmic/feed_presell_ai/images/crosspng.png"
+        },
+        {
+          "id": "vohZ3HW86V",
+          "name": "paymentcard.png",
+          "filePath": "../public/plasmic/feed_presell_ai/images/paymentcardpng.png"
+        },
+        {
+          "id": "3snGpb8Jz7",
+          "name": "div",
+          "filePath": "../public/plasmic/feed_presell_ai/images/div.png"
+        },
+        {
+          "id": "zME8DCRhF",
+          "name": "nw-mobbrand1.png",
+          "filePath": "../public/plasmic/feed_presell_ai/images/nwMobbrand1Png.png"
+        },
+        {
+          "id": "Z7zTcBJU9l",
+          "name": "nw-mobbrand2.png",
+          "filePath": "../public/plasmic/feed_presell_ai/images/nwMobbrand2Png.png"
+        },
+        {
+          "id": "eNZXdL8PLh",
+          "name": "nw-mobbrand3.png",
+          "filePath": "../public/plasmic/feed_presell_ai/images/nwMobbrand3Png.png"
         }
       ],
       "indirect": false,
