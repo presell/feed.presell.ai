@@ -2027,11 +2027,11 @@
 .div31 {
   background: rgba(255, 255, 255, 1);
   width: 416px;
-  height: 402px;
+  height: 433px;
   display: block;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 11px;
+  left: 10px;
   border-radius: 8px;
 }
 @media (max-width: 1440px) {
@@ -2169,8 +2169,8 @@
   height: 376px;
   display: block;
   position: absolute;
-  top: 417px;
-  left: 0px;
+  top: 475px;
+  left: 8px;
   border-radius: 8px;
 }
 @media (max-width: 1440px) {
@@ -2273,8 +2273,8 @@
   height: 358px;
   display: block;
   position: absolute;
-  left: -3px;
-  top: 818px;
+  left: -6px;
+  top: 883px;
   border-radius: 8px;
 }
 @media (max-width: 1440px) {
@@ -2430,8 +2430,8 @@
   height: 461px;
   display: block;
   position: absolute;
-  left: 3px;
-  top: 1171px;
+  left: 0px;
+  top: 1243px;
   padding-top: 0px;
   border-radius: 8px;
 }
@@ -2568,8 +2568,14 @@
   height: 30px;
   display: block;
   position: absolute;
-  top: 6033px;
-  left: 101px;
+  top: 6034px;
+  left: 160px;
+}
+@media (max-width: 1440px) {
+  .div39 {
+    left: 68px;
+    top: 6031px;
+  }
 }
 @media (max-width: 1224px) {
   .div39 {
