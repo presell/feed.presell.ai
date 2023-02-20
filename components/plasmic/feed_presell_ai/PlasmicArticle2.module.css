@@ -14,7 +14,7 @@
 }
 ._1554Px {
   background: rgba(255, 255, 255, 1);
-  width: 1000px;
+  width: 1772px;
   display: block;
   height: 6091px;
   position: relative;
@@ -32,7 +32,7 @@
 .div2 {
   flex-direction: column;
   background: rgba(245, 245, 245, 1);
-  width: 1769px;
+  width: 1774px;
   height: 5924px;
   display: flex;
   position: absolute;
@@ -75,7 +75,10 @@
 }
 @media (max-width: 1440px) {
   .div3 {
+    max-width: 1526px;
+    width: 100%;
     margin-top: calc(0px + 40px) !important;
+    min-width: 0;
   }
 }
 .div4 {
