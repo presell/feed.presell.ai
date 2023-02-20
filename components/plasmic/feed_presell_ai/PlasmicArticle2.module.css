@@ -14,7 +14,7 @@
 }
 ._1554Px {
   background: rgba(255, 255, 255, 1);
-  width: 1772px;
+  width: 1236px;
   display: block;
   height: 6091px;
   position: relative;
@@ -32,7 +32,7 @@
 .div2 {
   flex-direction: column;
   background: rgba(245, 245, 245, 1);
-  width: 1774px;
+  width: 1557px;
   height: 5924px;
   display: flex;
   position: absolute;
@@ -59,6 +59,11 @@
     width: 1455px;
   }
 }
+@media (max-width: 1224px) {
+  .div2 {
+    width: 1233px;
+  }
+}
 .div3 {
   background: rgba(245, 245, 245, 1);
   width: auto;
@@ -79,6 +84,11 @@
     width: 100%;
     margin-top: calc(0px + 40px) !important;
     min-width: 0;
+  }
+}
+@media (max-width: 1224px) {
+  .div3 {
+    margin-top: calc(0px + 40px) !important;
   }
 }
 .div4 {
@@ -225,17 +235,20 @@
 }
 .div6 {
   flex-direction: row;
-  width: auto;
+  width: 100%;
   height: auto;
   display: flex;
   position: relative;
-  padding-left: 15px;
+  padding-left: 0px;
   padding-right: 15.015px;
+  max-width: 1314px;
+  min-width: 0;
 }
 .div6 > :global(.__wab_flex-container) {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+  min-width: 0;
   margin-left: calc(0px - 30px);
   width: calc(100% + 30px);
 }
@@ -2258,7 +2271,7 @@
 }
 .div38 {
   background: url("/plasmic/feed_presell_ai/images/div3.jpeg") -46px -88px / 507px 611px no-repeat;
-  width: 416px;
+  width: 403px;
   height: 461px;
   display: block;
   position: absolute;
