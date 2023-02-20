@@ -36,6 +36,7 @@ import {
 } from "@plasmicapp/react-web";
 import { DataFetcher } from "@plasmicpkgs/plasmic-query"; // plasmic-import: ae7V86eNoXA/codeComponent
 import { PlasmicHead } from "@plasmicapp/react-web"; // plasmic-import: 9R13-owMVa/codeComponent
+import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
 
 import { useScreenVariants as useScreenVariantsgpwde9M3Mng } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: GPWDE9_m3Mng/globalVariant
 
@@ -78,6 +79,7 @@ export type PlasmicArticleInfo__OverridesType = {
   fastSameDayShipping?: p.Flex<"div">;
   alpPomButton138?: p.Flex<"a"> & Partial<LinkProps>;
   claimFreePods?: p.Flex<"div">;
+  embedHtml?: p.Flex<typeof Embed>;
   divlpPomBox139?: p.Flex<"div">;
   _100000HappyCustomersInStockShipsNow?: p.Flex<"div">;
   div?: p.Flex<"div">;
@@ -1397,6 +1399,18 @@ function PlasmicArticleInfo__RenderFunc(props: {
                                   })()}
                                 </div>
                               </div>
+
+                              <Embed
+                                data-plasmic-name={"embedHtml"}
+                                data-plasmic-override={overrides.embedHtml}
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.embedHtml
+                                )}
+                                code={
+                                  "{% if record.fields['aCTA'] %}\r\n  true\r\n{% else %}\r\n  false\r\n{% endif %}\r\n" as const
+                                }
+                              />
                             </p.PlasmicLink>
 
                             <div
@@ -2101,6 +2115,7 @@ const PlasmicDescendants = {
     "fastSameDayShipping",
     "alpPomButton138",
     "claimFreePods",
+    "embedHtml",
     "divlpPomBox139",
     "_100000HappyCustomersInStockShipsNow",
     "div",
@@ -2131,6 +2146,7 @@ const PlasmicDescendants = {
     "fastSameDayShipping",
     "alpPomButton138",
     "claimFreePods",
+    "embedHtml",
     "divlpPomBox139",
     "_100000HappyCustomersInStockShipsNow",
     "div",
@@ -2160,6 +2176,7 @@ const PlasmicDescendants = {
     "fastSameDayShipping",
     "alpPomButton138",
     "claimFreePods",
+    "embedHtml",
     "divlpPomBox139",
     "_100000HappyCustomersInStockShipsNow",
     "div",
@@ -2174,8 +2191,9 @@ const PlasmicDescendants = {
   ],
   divlpPomText137: ["divlpPomText137", "fastSameDayShipping"],
   fastSameDayShipping: ["fastSameDayShipping"],
-  alpPomButton138: ["alpPomButton138", "claimFreePods"],
+  alpPomButton138: ["alpPomButton138", "claimFreePods", "embedHtml"],
   claimFreePods: ["claimFreePods"],
+  embedHtml: ["embedHtml"],
   divlpPomBox139: ["divlpPomBox139"],
   _100000HappyCustomersInStockShipsNow: [
     "_100000HappyCustomersInStockShipsNow"
@@ -2214,6 +2232,7 @@ type NodeDefaultElementType = {
   fastSameDayShipping: "div";
   alpPomButton138: "a";
   claimFreePods: "div";
+  embedHtml: typeof Embed;
   divlpPomBox139: "div";
   _100000HappyCustomersInStockShipsNow: "div";
   div: "div";
@@ -2307,6 +2326,7 @@ export const PlasmicArticleInfo = Object.assign(
     fastSameDayShipping: makeNodeComponent("fastSameDayShipping"),
     alpPomButton138: makeNodeComponent("alpPomButton138"),
     claimFreePods: makeNodeComponent("claimFreePods"),
+    embedHtml: makeNodeComponent("embedHtml"),
     divlpPomBox139: makeNodeComponent("divlpPomBox139"),
     _100000HappyCustomersInStockShipsNow: makeNodeComponent(
       "_100000HappyCustomersInStockShipsNow"
