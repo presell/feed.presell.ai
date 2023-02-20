@@ -1376,26 +1376,26 @@ function PlasmicArticleInfo__RenderFunc(props: {
                                   projectcss.all,
                                   sty.claimFreePods
                                 )}
-                              />
-
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__zNhx
-                                )}
                               >
-                                {(() => {
-                                  try {
-                                    return $ctx.fetchDyanamicData.records[0]
-                                      .fields.aCTA;
-                                  } catch (e) {
-                                    if (e instanceof TypeError) {
-                                      return "CLAIM FREE PODS 👉";
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__zNhx
+                                  )}
+                                >
+                                  {(() => {
+                                    try {
+                                      return $ctx.fetchDyanamicData.records[0]
+                                        .fields.aCTA;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return "CLAIM FREE PODS 👉";
+                                      }
+                                      throw e;
                                     }
-                                    throw e;
-                                  }
-                                })()}
+                                  })()}
+                                </div>
                               </div>
                             </p.PlasmicLink>
 

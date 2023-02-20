@@ -847,17 +847,15 @@
 .alpPomButton138 {
   background: var(--token-N4TLOIIXy);
   transform: translate(0px, -0.5px);
-  width: 300px;
-  height: 60px;
+  width: 218px;
+  height: 56px;
   display: block;
   position: absolute;
   top: 111px;
   left: 41px;
-  max-width: 100%;
-  max-height: 400px;
   text-align: center;
+  box-shadow: 0px 4px 16px 0px #00000033;
   border-radius: 5px;
-  margin: 0px;
 }
 .claimFreePods {
   position: absolute;
@@ -872,10 +870,6 @@
 }
 .text__zNhx {
   color: #ffffff;
-  align-self: center;
-  position: absolute;
-  left: 87px;
-  top: 15.46875px;
 }
 .divlpPomBox139 {
   background: rgba(0, 0, 0, 1);
