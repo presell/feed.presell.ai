@@ -14,7 +14,7 @@
 }
 ._1554Px {
   background: rgba(255, 255, 255, 1);
-  width: 1236px;
+  width: 1560px;
   display: block;
   height: 6091px;
   position: relative;
@@ -32,7 +32,7 @@
 .div2 {
   flex-direction: column;
   background: rgba(245, 245, 245, 1);
-  width: 1557px;
+  width: 1893px;
   height: 5924px;
   display: flex;
   position: absolute;
@@ -241,7 +241,8 @@
   position: relative;
   padding-left: 0px;
   padding-right: 15.015px;
-  max-width: 1314px;
+  max-width: 1426px;
+  padding-top: 0px;
   min-width: 0;
 }
 .div6 > :global(.__wab_flex-container) {
@@ -257,6 +258,18 @@
 .div6 > :global(.__wab_flex-container) > picture > img,
 .div6 > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 30px;
+}
+@media (max-width: 1224px) {
+  .div6 {
+    max-width: 1271px;
+    width: 100%;
+    min-width: 0;
+  }
+}
+@media (max-width: 1224px) {
+  .div6 > :global(.__wab_flex-container) {
+    min-width: 0;
+  }
 }
 .div7 {
   background: rgba(255, 255, 255, 1);
@@ -1922,6 +1935,12 @@
   position: relative;
   flex-shrink: 0;
 }
+@media (max-width: 1224px) {
+  .div30 {
+    width: 388px;
+    flex-shrink: 0;
+  }
+}
 .div31 {
   background: rgba(255, 255, 255, 1);
   width: 416px;
@@ -1931,6 +1950,13 @@
   top: 0px;
   left: 0px;
   border-radius: 8px;
+}
+@media (max-width: 1224px) {
+  .div31 {
+    width: 340px;
+    left: -5px;
+    height: 450px;
+  }
 }
 .div32 {
   transform: translate(-0.3439999999999941px, 0px);
@@ -1952,6 +1978,13 @@
   top: 0px;
   left: 0px;
   border-radius: 100px;
+}
+@media (max-width: 1224px) {
+  .sidereview1Png {
+    left: 6px;
+    top: -5px;
+    width: 97px;
+  }
 }
 .text__m7T3R {
   display: block;
@@ -1988,17 +2021,6 @@
   flex-direction: column;
   justify-content: center;
 }
-.text__chKcx {
-  display: block;
-  font-size: 16px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0em;
-  line-height: 26px;
-  color: rgba(0, 0, 0, 1);
-}
 .iSmokedForOver29YearsAndTiredToQuitSeveralTimesWithNoSuccessUntilICameAcrossSparqNowNotOnlyDoINotSmokeImDoingSomethingHealthyInPlaceGreatProductIllBeAUserForLife {
   position: absolute;
   top: 242px;
@@ -2019,6 +2041,39 @@
   letter-spacing: 0em;
   line-height: 26px;
   color: rgba(98, 98, 98, 1);
+  position: absolute;
+  left: 11.968994140625px;
+  top: 14px;
+}
+@media (max-width: 1224px) {
+  .text__uXSeM {
+    max-width: 286px;
+    width: 342px;
+    left: 11.968994140625px;
+    top: 14px;
+  }
+}
+.text__chKcx {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  left: 81px;
+  top: 211px;
+}
+@media (max-width: 1224px) {
+  .text__chKcx {
+    max-width: 209px;
+    width: 237px;
+    left: 87px;
+    top: 212px;
+  }
 }
 .div33 {
   background: rgba(255, 255, 255, 1);

@@ -1857,17 +1857,7 @@ function PlasmicArticle2__RenderFunc(props: {
                           projectcss.all,
                           sty.bestAlternativeToSmoking
                         )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__chKcx
-                          )}
-                        >
-                          {"Best alternative to smoking"}
-                        </div>
-                      </div>
+                      />
 
                       <div
                         data-plasmic-name={
@@ -1892,6 +1882,16 @@ function PlasmicArticle2__RenderFunc(props: {
                             "I smoked for over 29 years and tired to quit several times with no success. Until I came across sparq. Now not only do I not smoke, I’m doing something healthy in place! Great product, I’ll be a user for life!"
                           }
                         </div>
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__chKcx
+                        )}
+                      >
+                        {"Best alternative to smoking"}
                       </div>
                     </div>
 
