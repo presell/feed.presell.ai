@@ -350,20 +350,6 @@
     padding: 36px 0px 0px;
   }
 }
-.link__syMJv {
-  position: relative;
-  width: 750px;
-  height: auto;
-  max-width: 100%;
-  font-size: 36px;
-  color: #535353;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
-  font-weight: 400;
-  text-align: left;
-  padding: 30px 0px 0px;
-}
 .text__vLfi6 {
   position: relative;
   width: 750px;
@@ -861,14 +847,17 @@
 .alpPomButton138 {
   background: var(--token-N4TLOIIXy);
   transform: translate(0px, -0.5px);
-  width: 218px;
-  height: 56px;
+  width: 300px;
+  height: 60px;
   display: block;
   position: absolute;
   top: 111px;
   left: 41px;
+  max-width: 100%;
+  max-height: 400px;
   text-align: center;
   border-radius: 5px;
+  margin: 0px;
 }
 .claimFreePods {
   position: absolute;
@@ -883,6 +872,10 @@
 }
 .text__zNhx {
   color: #ffffff;
+  align-self: center;
+  position: absolute;
+  left: 87px;
+  top: 15.46875px;
 }
 .divlpPomBox139 {
   background: rgba(0, 0, 0, 1);

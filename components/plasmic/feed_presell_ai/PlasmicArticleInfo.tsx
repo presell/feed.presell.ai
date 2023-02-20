@@ -542,46 +542,6 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       )}
                     </div>
 
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link__syMJv
-                      )}
-                      component={Link}
-                      href={(() => {
-                        try {
-                          return $ctx.fetchDyanamicData.records[0].fields[
-                            "Step 2 URL"
-                          ];
-                        } catch (e) {
-                          if (e instanceof TypeError) {
-                            return undefined;
-                          }
-                          throw e;
-                        }
-                      })()}
-                      platform={"nextjs"}
-                    >
-                      <div
-                        className={projectcss.__wab_expr_html_text}
-                        dangerouslySetInnerHTML={{
-                          __html: (() => {
-                            try {
-                              return $ctx.fetchDyanamicData.records[0].fields
-                                .heroHeadline;
-                            } catch (e) {
-                              if (e instanceof TypeError) {
-                                return "Enter some text";
-                              }
-                              throw e;
-                            }
-                          })()
-                        }}
-                      />
-                    </p.PlasmicLink>
-
                     <div
                       className={classNames(
                         projectcss.all,
@@ -1416,26 +1376,26 @@ function PlasmicArticleInfo__RenderFunc(props: {
                                   projectcss.all,
                                   sty.claimFreePods
                                 )}
+                              />
+
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__zNhx
+                                )}
                               >
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.text__zNhx
-                                  )}
-                                >
-                                  {(() => {
-                                    try {
-                                      return $ctx.fetchDyanamicData.records[0]
-                                        .fields.aCTA;
-                                    } catch (e) {
-                                      if (e instanceof TypeError) {
-                                        return "CLAIM FREE PODS 👉";
-                                      }
-                                      throw e;
+                                {(() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.records[0]
+                                      .fields.aCTA;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return "CLAIM FREE PODS 👉";
                                     }
-                                  })()}
-                                </div>
+                                    throw e;
+                                  }
+                                })()}
                               </div>
                             </p.PlasmicLink>
 
