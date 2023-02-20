@@ -14,7 +14,7 @@
 }
 ._1554Px {
   background: rgba(255, 255, 255, 1);
-  width: 1560px;
+  width: 1899px;
   display: block;
   height: 6091px;
   position: relative;
@@ -99,6 +99,13 @@
   padding-top: 0px;
   flex-shrink: 0;
 }
+@media (max-width: 1224px) {
+  .div4 {
+    width: 1068px;
+    height: 435px;
+    flex-shrink: 0;
+  }
+}
 .h1 {
   width: 1306px;
   height: 138px;
@@ -107,6 +114,13 @@
   top: 8px;
   left: 34px;
   padding-top: 0px;
+}
+@media (max-width: 1224px) {
+  .h1 {
+    width: 1089px;
+    left: -22px;
+    height: 189px;
+  }
 }
 .text__nW4WB {
   display: block;
@@ -121,6 +135,12 @@
   top: -6px;
   left: 164px;
   transform: translate(-0.4379999999999882px, 0px);
+}
+@media (max-width: 1224px) {
+  .text__nW4WB {
+    left: 53px;
+    top: 23px;
+  }
 }
 .br {
   display: block;
@@ -148,6 +168,13 @@
   left: 156px;
   transform: translate(-0.2189999999999941px, 0px);
 }
+@media (max-width: 1224px) {
+  .text___1Re1Y {
+    width: 1076px;
+    left: 12px;
+    top: 95px;
+  }
+}
 .text__hpOk3 {
   display: block;
   font-size: 38px;
@@ -160,6 +187,13 @@
   left: 261px;
   transform: translate(-0.25px, 0px);
 }
+@media (max-width: 1224px) {
+  .text__hpOk3 {
+    padding-left: 0px;
+    left: 152px;
+    top: 197px;
+  }
+}
 .div5 {
   transform: translate(0px, -0.3129999999999882px);
   width: 1306px;
@@ -168,6 +202,12 @@
   position: absolute;
   top: 329px;
   left: 15px;
+}
+@media (max-width: 1224px) {
+  .div5 {
+    left: -101px;
+    top: 376px;
+  }
 }
 .starpng {
   background: url("/plasmic/feed_presell_ai/images/starpng.png") 0px 0px / 123px 18px no-repeat;
@@ -210,6 +250,12 @@
   flex-direction: row;
   padding-top: 15px;
   padding-left: 10px;
+}
+@media (max-width: 1224px) {
+  .button__tFzAw {
+    left: 393px;
+    top: 284px;
+  }
 }
 .text___3LJ7S {
   position: relative;
@@ -2085,6 +2131,11 @@
   left: 0px;
   border-radius: 8px;
 }
+@media (max-width: 1224px) {
+  .div33 {
+    width: 347px;
+  }
+}
 .div34 {
   transform: translate(-0.3439999999999941px, 0px);
   width: 100px;
@@ -2565,10 +2616,16 @@
   width: 321px;
   height: auto;
   max-width: 800px;
-  left: 1205px;
-  top: 27px;
+  left: 1311px;
+  top: 31px;
   font-size: 17px;
   color: #000000;
+}
+@media (max-width: 1440px) {
+  .text__bfmUc {
+    left: 1194px;
+    top: 29px;
+  }
 }
 ._414Px {
   background: rgba(255, 255, 255, 1);
