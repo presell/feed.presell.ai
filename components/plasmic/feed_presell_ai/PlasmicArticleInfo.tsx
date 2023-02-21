@@ -59,7 +59,6 @@ export type PlasmicArticleInfo__OverridesType = {
   heroSubHeadline?: p.Flex<"div">;
   heroImage?: p.Flex<typeof p.PlasmicImg>;
   paragraph1?: p.Flex<"div">;
-  code?: p.Flex<"code">;
   image1?: p.Flex<typeof p.PlasmicImg>;
   paragraph2?: p.Flex<"div">;
   image2?: p.Flex<typeof p.PlasmicImg>;
@@ -586,20 +585,6 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link___1Bdfd
-                      )}
-                      component={Link}
-                      href={"https://www.plasmic.app/" as const}
-                      platform={"nextjs"}
-                    >
-                      {"Some link text"}
-                    </p.PlasmicLink>
-
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
                         sty.link__kMX
                       )}
                       component={Link}
@@ -704,45 +689,6 @@ function PlasmicArticleInfo__RenderFunc(props: {
                               throw e;
                             }
                           })()}
-                    </div>
-
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__ouPsr)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__lDuBy
-                        )}
-                      >
-                        <code
-                          data-plasmic-name={"code"}
-                          data-plasmic-override={overrides.code}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.code,
-                            projectcss.__wab_text,
-                            sty.code
-                          )}
-                        >
-                          <div
-                            className={projectcss.__wab_expr_html_text}
-                            dangerouslySetInnerHTML={{
-                              __html: (() => {
-                                try {
-                                  return $ctx.fetchDyanamicData.records[0]
-                                    .fields.heroSubHeadline;
-                                } catch (e) {
-                                  if (e instanceof TypeError) {
-                                    return "This is centered content, with a max width of 1080px.";
-                                  }
-                                  throw e;
-                                }
-                              })()
-                            }}
-                          />
-                        </code>
-                      </div>
                     </div>
 
                     <p.PlasmicLink
@@ -2140,7 +2086,6 @@ const PlasmicDescendants = {
     "heroSubHeadline",
     "heroImage",
     "paragraph1",
-    "code",
     "image1",
     "paragraph2",
     "image2",
@@ -2171,7 +2116,6 @@ const PlasmicDescendants = {
     "heroSubHeadline",
     "heroImage",
     "paragraph1",
-    "code",
     "image1",
     "paragraph2",
     "image2",
@@ -2200,7 +2144,6 @@ const PlasmicDescendants = {
   heroSubHeadline: ["heroSubHeadline"],
   heroImage: ["heroImage"],
   paragraph1: ["paragraph1"],
-  code: ["code"],
   image1: ["image1"],
   paragraph2: ["paragraph2"],
   image2: ["image2"],
@@ -2256,7 +2199,6 @@ type NodeDefaultElementType = {
   heroSubHeadline: "div";
   heroImage: typeof p.PlasmicImg;
   paragraph1: "div";
-  code: "code";
   image1: typeof p.PlasmicImg;
   paragraph2: "div";
   image2: typeof p.PlasmicImg;
@@ -2348,7 +2290,6 @@ export const PlasmicArticleInfo = Object.assign(
     heroSubHeadline: makeNodeComponent("heroSubHeadline"),
     heroImage: makeNodeComponent("heroImage"),
     paragraph1: makeNodeComponent("paragraph1"),
-    code: makeNodeComponent("code"),
     image1: makeNodeComponent("image1"),
     paragraph2: makeNodeComponent("paragraph2"),
     image2: makeNodeComponent("image2"),
