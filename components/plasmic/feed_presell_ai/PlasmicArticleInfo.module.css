@@ -355,7 +355,7 @@
     padding: 36px 0px 0px;
   }
 }
-.text__vLfi6 {
+.link__vLfi6 {
   position: relative;
   width: 750px;
   height: auto;
@@ -365,7 +365,7 @@
   margin: 0px 2px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .text__vLfi6 {
+  .link__vLfi6 {
     margin-top: 0px;
     margin-bottom: 5px;
     font-size: 18px;
@@ -717,6 +717,11 @@
     padding: 0px;
     margin: 0px 0px 5px;
   }
+}
+.head__kJ2Xe:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
 }
 .link__qWpr0 {
   position: relative;
