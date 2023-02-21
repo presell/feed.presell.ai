@@ -355,7 +355,7 @@
     padding: 36px 0px 0px;
   }
 }
-.link__vLfi6 {
+.text__vLfi6 {
   position: relative;
   width: 750px;
   height: auto;
@@ -365,7 +365,7 @@
   margin: 0px 2px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .link__vLfi6 {
+  .text__vLfi6 {
     margin-top: 0px;
     margin-bottom: 5px;
     font-size: 18px;

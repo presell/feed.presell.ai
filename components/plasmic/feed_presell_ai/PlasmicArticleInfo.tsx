@@ -49,11 +49,9 @@ export type PlasmicArticleInfo__VariantsArgs = {};
 type VariantPropType = keyof PlasmicArticleInfo__VariantsArgs;
 export const PlasmicArticleInfo__VariantProps = new Array<VariantPropType>();
 
-export type PlasmicArticleInfo__ArgsType = {
-  link?: string;
-};
+export type PlasmicArticleInfo__ArgsType = {};
 type ArgPropType = keyof PlasmicArticleInfo__ArgsType;
-export const PlasmicArticleInfo__ArgProps = new Array<ArgPropType>("link");
+export const PlasmicArticleInfo__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicArticleInfo__OverridesType = {
   root?: p.Flex<"div">;
@@ -107,16 +105,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
   const { variants, overrides, forNode } = props;
 
   const $ctx = ph.useDataEnv?.() || {};
-  const args = React.useMemo(
-    () =>
-      Object.assign(
-        {
-          link: "https://www.google.com" as const
-        },
-        props.args
-      ),
-    [props.args]
-  );
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
 
   const $props = {
     ...args,
@@ -553,16 +542,12 @@ function PlasmicArticleInfo__RenderFunc(props: {
                       )}
                     </div>
 
-                    <p.PlasmicLink
+                    <div
                       className={classNames(
                         projectcss.all,
-                        projectcss.a,
                         projectcss.__wab_text,
-                        sty.link__vLfi6
+                        sty.text__vLfi6
                       )}
-                      component={Link}
-                      href={args.link}
-                      platform={"nextjs"}
                     >
                       {hasVariant(globalVariants, "screen", "mobileOnly") ? (
                         (() => {
@@ -594,7 +579,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           }}
                         />
                       )}
-                    </p.PlasmicLink>
+                    </div>
 
                     <p.PlasmicLink
                       className={classNames(
