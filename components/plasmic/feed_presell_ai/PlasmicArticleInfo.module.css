@@ -321,6 +321,11 @@
   border-radius: 30px;
   margin: 50px 0px 20px 221px;
 }
+@media (max-width: 1224px) {
+  .freeBox__t0XxM {
+    margin-left: 0px;
+  }
+}
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__t0XxM {
     padding-left: 0px;
