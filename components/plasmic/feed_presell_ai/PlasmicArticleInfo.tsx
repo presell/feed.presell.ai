@@ -586,59 +586,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           dangerouslySetInnerHTML={{
                             __html: (() => {
                               try {
-                                // console.log("*** Line 577  ***"+$ctx.fetchDyanamicData.records[0].fields
-                                // .heroSubHeadline);
-                                var ParaSbText = $ctx.fetchDyanamicData.records[0].fields.heroSubHeadline;
-                                var html = urlScheck(ParaSbText); 
-                             
-                                function urlScheck(text) {
-                                  var regex = /\[([^\][]*)]/g;
-                                  var results = [], m;
-                                  while (m = regex.exec(text)) {
-                                    results.push(m[1]);         
-                                  }
-                                    const replaceData = results;
-
-                                    var arrayLength = replaceData.length;
-                                    var  asas= 0;
-                                    for (var i=0; i <= arrayLength; i++) {
-                                    
-                                   var urlRegSB = /(https?:\/\/[^\s]+)/g;
-                                   return text.replace(+ replaceData + '').replace(urlRegSB, function (url) {
-                                   var laststringremove = url.replaceAll(")", "")
-                                     
-                                  
-                                    var onlyurl =  '<a href="' + laststringremove + '" style="color:#4896fa;text-decoration: underline #4896FA 1px;">' + replaceData[asas] + '</a>';
-                                    asas ++ ;
-                                   
-                                    return onlyurl;
-                                  })
-                                }
-                              }
-                             
-                        const cleanedParagraph = html.replace(/\[(.*?.)\]/g, '');
-                                
-                        const cleanedParagraph21  = cleanedParagraph.replace('(', '<span>').replace('(', '</span>');
-                        console.log(cleanedParagraph21)
-                        const cleanedParagraphhh  = cleanedParagraph21.replace('(', '<span>').replace('(', '</span>');
-                        
-                        const regex = /\*\*([\w\s]+)\*\*/g; // define the regular expression pattern
-                        const boldedText = cleanedParagraphhh.replace(regex, '<strong>$1</strong>');
-                        console.log(boldedText);
-                                      // undersore replace with italic
-                        const Italic = boldedText.replace(/_([^_]+)_/g, "<i>$1</i>");
-                        console.log(Italic);
-                                      // ~~ replace with strikethrough
-                        const strikethrough = Italic.replace(/~~([^~]+)~~/g, "<s style='text-decoration: line-through;'>$1</s>");
-                        console.log(strikethrough);
-                                    // `` replace with code
-                        const code21 = strikethrough.replace(/`([^`]+)`/g, "<code style='background-color: #F1F1F1;padding: 2px;'>$1</code>");
-                        console.log(code21);
-                        return code21;
-
-                       
- 
-       
+                                return $ctx.fetchDyanamicData.records[0].fields
+                                  .heroSubHeadline;
                               } catch (e) {
                                 if (e instanceof TypeError) {
                                   return "Enter some text";
