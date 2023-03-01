@@ -641,7 +641,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         console.log(code21);
           
                         return code21;
- 
+
        
                               } catch (e) {
                                 if (e instanceof TypeError) {
