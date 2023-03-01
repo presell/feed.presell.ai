@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.16.2",
     "@next/font": "13.1.4",
     "@plasmicapp/cli": "^0.1.213",
     "@plasmicapp/host": "^1.0.96",
@@ -28,6 +29,9 @@
     "next": "13.1.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-html-parser": "^2.0.2",
+    "remark": "^14.0.2",
+    "remark-react": "^9.0.1",
     "typescript": "4.9.4"
   }
 }

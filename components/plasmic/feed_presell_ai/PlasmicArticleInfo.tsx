@@ -41,8 +41,20 @@ import { useScreenVariants as useScreenVariantsgpwde9M3Mng } from "./PlasmicGlob
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
+
 import projectcss from "./plasmic_feed_presell_ai.module.css"; // plasmic-import: 9u4jBEkqWUKrrXSfUUFFfk/projectcss
 import sty from "./PlasmicArticleInfo.module.css"; // plasmic-import: 2LavSKTrjq/css
+
+
+import ReactHtmlParser from 'react-html-parser';
+
+
+
+
+
+
+
+
 
 export type PlasmicArticleInfo__VariantMembers = {};
 export type PlasmicArticleInfo__VariantsArgs = {};
@@ -85,7 +97,7 @@ export type PlasmicArticleInfo__OverridesType = {
   image7?: p.Flex<typeof p.PlasmicImg>;
 };
 
-export interface DefaultArticleInfoProps {}
+export interface DefaultArticleInfoProps { }
 
 const __wrapUserFunction =
   globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
@@ -130,6 +142,9 @@ function PlasmicArticleInfo__RenderFunc(props: {
         body {
           margin: 0;
         }
+        .plasmic_feed_presell_ai_all__rRTbn.PlasmicArticleInfo_freeBox__t0XxM__i4vV6 {
+          margin-left: 60px;
+      }
       `}</style>
 
       <div className={projectcss.plasmic_page_wrapper}>
@@ -148,6 +163,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
           )}
           id={(() => {
             try {
+              // console.log("**** Line 154 **** "+$ctx.params.slug);
               return $ctx.params.slug;
             } catch (e) {
               if (e instanceof TypeError) {
@@ -200,6 +216,8 @@ function PlasmicArticleInfo__RenderFunc(props: {
                     className={classNames("__wab_instance", sty.head___2TJbn)}
                     description={(() => {
                       try {
+                        // console.log("**** all Dyanamic Data array Line  207 ***");
+                        // console.log($ctx.fetchDyanamicData); 
                         return $ctx.fetchDyanamicData.records[0].fields[
                           "Step 1 SEO Description"
                         ];
@@ -528,6 +546,7 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           dangerouslySetInnerHTML={{
                             __html: (() => {
                               try {
+
                                 return $ctx.fetchDyanamicData.records[0].fields
                                   .heroHeadline;
                               } catch (e) {
@@ -567,14 +586,66 @@ function PlasmicArticleInfo__RenderFunc(props: {
                           dangerouslySetInnerHTML={{
                             __html: (() => {
                               try {
-                                return $ctx.fetchDyanamicData.records[0].fields
-                                  .heroSubHeadline;
+                                // console.log("*** Line 577  ***"+$ctx.fetchDyanamicData.records[0].fields
+                                // .heroSubHeadline);
+                                var ParaSbText = $ctx.fetchDyanamicData.records[0].fields.heroSubHeadline;
+                                var html = urlScheck(ParaSbText); 
+                             
+                                function urlScheck(text) {
+                                  var regex = /\[([^\][]*)]/g;
+                                  var results = [], m;
+                                  while (m = regex.exec(text)) {
+                                    results.push(m[1]);         
+                                  }
+                                    const replaceData = results;
+
+                                    var arrayLength = replaceData.length;
+                                    var  asas= 0;
+                                    for (var i=0; i <= arrayLength; i++) {
+                                    
+                                   var urlRegSB = /(https?:\/\/[^\s]+)/g;
+                                   return text.replace(+ replaceData + '').replace(urlRegSB, function (url) {
+                                   var laststringremove = url.replaceAll(")", "")
+                                     
+                                  
+                                    var onlyurl =  '<a href="' + laststringremove + '" style="color:#4896fa;text-decoration: underline #4896FA 1px;">' + replaceData[asas] + '</a>';
+                                    asas ++ ;
+                                   
+                                    return onlyurl;
+                                  })
+                                }
+                              }
+                             
+                        const cleanedParagraph = html.replace(/\[(.*?.)\]/g, '');
+                                
+                        const cleanedParagraph21  = cleanedParagraph.replace('(', '<span>').replace('(', '</span>');
+                        console.log(cleanedParagraph21)
+                        const cleanedParagraphhh  = cleanedParagraph21.replace('(', '<span>').replace('(', '</span>');
+                        
+                        const regex = /\*\*([\w\s]+)\*\*/g; // define the regular expression pattern
+                        const boldedText = cleanedParagraphhh.replace(regex, '<strong>$1</strong>');
+                        console.log(boldedText);
+                                      // undersore replace with italic
+                        const Italic = boldedText.replace(/_([^_]+)_/g, "<i>$1</i>");
+                        console.log(Italic);
+                                      // ~~ replace with strikethrough
+                        const strikethrough = Italic.replace(/~~([^~]+)~~/g, "<s style='text-decoration: line-through;'>$1</s>");
+                        console.log(strikethrough);
+                                    // `` replace with code
+                        const code21 = strikethrough.replace(/`([^`]+)`/g, "<code style='background-color: #F1F1F1;padding: 2px;'>$1</code>");
+                        console.log(code21);
+                        return code21;
+
+                       
+ 
+       
                               } catch (e) {
                                 if (e instanceof TypeError) {
                                   return "Enter some text";
                                 }
                                 throw e;
                               }
+
                             })()
                           }}
                         />
@@ -633,27 +704,27 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         src={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? (() => {
-                                try {
-                                  return $ctx.fetchDyanamicData.records[0]
-                                    .fields.heroImage[0].url;
-                                } catch (e) {
-                                  if (e instanceof TypeError) {
-                                    return undefined;
-                                  }
-                                  throw e;
+                              try {
+                                return $ctx.fetchDyanamicData.records[0]
+                                  .fields.heroImage[0].url;
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return undefined;
                                 }
-                              })()
+                                throw e;
+                              }
+                            })()
                             : (() => {
-                                try {
-                                  return $ctx.fetchDyanamicData.records[0]
-                                    .fields.heroImage[0].url;
-                                } catch (e) {
-                                  if (e instanceof TypeError) {
-                                    return undefined;
-                                  }
-                                  throw e;
+                              try {
+                                return $ctx.fetchDyanamicData.records[0]
+                                  .fields.heroImage[0].url;
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return undefined;
                                 }
-                              })()
+                                throw e;
+                              }
+                            })()
                         }
                       />
                     </p.PlasmicLink>
@@ -669,26 +740,26 @@ function PlasmicArticleInfo__RenderFunc(props: {
                     >
                       {hasVariant(globalVariants, "screen", "mobileOnly")
                         ? (() => {
-                            try {
-                              return $ctx.fetchDyanamicData.fields.paragraph1;
-                            } catch (e) {
-                              if (e instanceof TypeError) {
-                                return "Enter some text";
-                              }
-                              throw e;
+                          try {
+                            return $ctx.fetchDyanamicData.fields.paragraph1;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return "Enter some text";
                             }
-                          })()
+                            throw e;
+                          }
+                        })()
                         : (() => {
-                            try {
-                              return $ctx.fetchDyanamicData.records[0].fields
-                                .paragraph1;
-                            } catch (e) {
-                              if (e instanceof TypeError) {
-                                return "Enter some text";
-                              }
-                              throw e;
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .paragraph1;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return "Enter some text";
                             }
-                          })()}
+                            throw e;
+                          }
+                        })()}
                     </div>
 
                     <p.PlasmicLink
@@ -743,27 +814,27 @@ function PlasmicArticleInfo__RenderFunc(props: {
                         src={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? (() => {
-                                try {
-                                  return $ctx.fetchDyanamicData.records[0]
-                                    .fields.image1[0].url;
-                                } catch (e) {
-                                  if (e instanceof TypeError) {
-                                    return undefined;
-                                  }
-                                  throw e;
+                              try {
+                                return $ctx.fetchDyanamicData.records[0]
+                                  .fields.image1[0].url;
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return undefined;
                                 }
-                              })()
+                                throw e;
+                              }
+                            })()
                             : (() => {
-                                try {
-                                  return $ctx.fetchDyanamicData.records[0]
-                                    .fields.image1[0].url;
-                                } catch (e) {
-                                  if (e instanceof TypeError) {
-                                    return undefined;
-                                  }
-                                  throw e;
+                              try {
+                                return $ctx.fetchDyanamicData.records[0]
+                                  .fields.image1[0].url;
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return undefined;
                                 }
-                              })()
+                                throw e;
+                              }
+                            })()
                         }
                       />
                     </p.PlasmicLink>
@@ -779,27 +850,27 @@ function PlasmicArticleInfo__RenderFunc(props: {
                     >
                       {hasVariant(globalVariants, "screen", "mobileOnly")
                         ? (() => {
-                            try {
-                              return $ctx.fetchDyanamicData.records[0].fields
-                                .paragraph2;
-                            } catch (e) {
-                              if (e instanceof TypeError) {
-                                return "Enter some text";
-                              }
-                              throw e;
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .paragraph2;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return "Enter some text";
                             }
-                          })()
+                            throw e;
+                          }
+                        })()
                         : (() => {
-                            try {
-                              return $ctx.fetchDyanamicData.records[0].fields
-                                .paragraph2;
-                            } catch (e) {
-                              if (e instanceof TypeError) {
-                                return "Enter some text";
-                              }
-                              throw e;
+                          try {
+                            return $ctx.fetchDyanamicData.records[0].fields
+                              .paragraph2;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return "Enter some text";
                             }
-                          })()}
+                            throw e;
+                          }
+                        })()}
                     </div>
 
                     <p.PlasmicLink
@@ -2238,17 +2309,17 @@ type NodeComponentProps<T extends NodeNameType> =
     overrides?: NodeOverridesType<T>;
   } & Omit<PlasmicArticleInfo__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     /* Specify args directly as props*/ Omit<
-      PlasmicArticleInfo__ArgsType,
-      ReservedPropsType
-    > &
+    PlasmicArticleInfo__ArgsType,
+    ReservedPropsType
+  > &
     /* Specify overrides for each element directly as props*/ Omit<
-      NodeOverridesType<T>,
-      ReservedPropsType | VariantPropType | ArgPropType
-    > &
+    NodeOverridesType<T>,
+    ReservedPropsType | VariantPropType | ArgPropType
+  > &
     /* Specify props for the root element*/ Omit<
-      Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
-      ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
-    >;
+    Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
+    ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
+  >;
 
 function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   type PropsType = NodeComponentProps<NodeName> & { key?: React.Key };

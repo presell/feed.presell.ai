@@ -177,7 +177,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             }
                           })() ?? []
                         ).map((currentItem, currentIndex) => (
-                          <div
+                         <div
                             className={classNames(
                               projectcss.all,
                               sty.column___5ZJgT
