@@ -14,6 +14,7 @@ import * as React from "react";
 
 import Head from "next/head";
 import Link, { LinkProps } from "next/link";
+import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
@@ -320,6 +321,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicArticle2__RenderFunc(props: {
   variants: PlasmicArticle2__VariantsArgs;
   args: PlasmicArticle2__ArgsType;
@@ -328,6 +336,7 @@ function PlasmicArticle2__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -340,7 +349,6 @@ function PlasmicArticle2__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
   const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
@@ -1550,7 +1558,7 @@ function PlasmicArticle2__RenderFunc(props: {
                                     "__wab_instance",
                                     sty.checkbox__wasj8
                                   )}
-                                  defaultChecked={true}
+                                  isChecked={true}
                                   name={"strawberry" as const}
                                 />
                               </div>

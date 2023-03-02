@@ -14,6 +14,7 @@ import * as React from "react";
 
 import Head from "next/head";
 import Link, { LinkProps } from "next/link";
+import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
@@ -75,6 +76,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicSqueeze__RenderFunc(props: {
   variants: PlasmicSqueeze__VariantsArgs;
   args: PlasmicSqueeze__ArgsType;
@@ -83,6 +91,7 @@ function PlasmicSqueeze__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -95,7 +104,6 @@ function PlasmicSqueeze__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
   const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
@@ -125,507 +133,121 @@ function PlasmicSqueeze__RenderFunc(props: {
         }
       `}</style>
 
-      <div
-        data-plasmic-name={"root"}
-        data-plasmic-override={overrides.root}
-        data-plasmic-root={true}
-        data-plasmic-for-node={forNode}
-        className={classNames(
-          projectcss.all,
-          projectcss.root_reset,
-          projectcss.plasmic_default_styles,
-          projectcss.plasmic_mixins,
-          projectcss.plasmic_tokens,
-          sty.root
-        )}
-        id={(() => {
-          try {
-            return $ctx.params.slug;
-          } catch (e) {
-            if (e instanceof TypeError) {
-              return undefined;
-            }
-            throw e;
-          }
-        })()}
-      >
-        <DataFetcher
-          data-plasmic-name={"httpApiFetcher"}
-          data-plasmic-override={overrides.httpApiFetcher}
-          className={classNames("__wab_instance", sty.httpApiFetcher)}
-          dataName={"fetchDyanamicData" as const}
-          errorDisplay={
-            <ph.DataCtxReader>{$ctx => "Error fetching data"}</ph.DataCtxReader>
-          }
-          headers={{
-            "Content-Type": "application/json",
-            Accept: "application/json",
-            Authorization: "Bearer keyVDvhyVSx5Ntbl3"
-          }}
-          loadingDisplay={
-            <ph.DataCtxReader>{$ctx => "Loading..."}</ph.DataCtxReader>
-          }
-          method={"GET" as const}
-          noLayout={false}
-          url={(() => {
+      <div className={projectcss.plasmic_page_wrapper}>
+        <div
+          data-plasmic-name={"root"}
+          data-plasmic-override={overrides.root}
+          data-plasmic-root={true}
+          data-plasmic-for-node={forNode}
+          className={classNames(
+            projectcss.all,
+            projectcss.root_reset,
+            projectcss.plasmic_default_styles,
+            projectcss.plasmic_mixins,
+            projectcss.plasmic_tokens,
+            sty.root
+          )}
+          id={(() => {
             try {
-              return (
-                "https://api.airtable.com/v0/appmM1mMqcDvugXhY/PlasmicCMS/" +
-                $ctx.params.slug
-              );
+              return $ctx.params.slug;
             } catch (e) {
               if (e instanceof TypeError) {
-                return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/PlasmicCMS?slug";
+                return undefined;
               }
               throw e;
             }
           })()}
         >
-          <ph.DataCtxReader>
-            {$ctx => (
-              <React.Fragment>
-                <PlasmicHead
-                  data-plasmic-name={"head"}
-                  data-plasmic-override={overrides.head}
-                  className={classNames("__wab_instance", sty.head)}
-                  description={(() => {
-                    try {
-                      return $ctx.fetchDyanamicData.fields[
-                        "Step 2 SEO Description"
-                      ];
-                    } catch (e) {
-                      if (e instanceof TypeError) {
-                        return undefined;
+          <DataFetcher
+            data-plasmic-name={"httpApiFetcher"}
+            data-plasmic-override={overrides.httpApiFetcher}
+            className={classNames("__wab_instance", sty.httpApiFetcher)}
+            dataName={"fetchDyanamicData" as const}
+            errorDisplay={
+              <ph.DataCtxReader>
+                {$ctx => "Error fetching data"}
+              </ph.DataCtxReader>
+            }
+            headers={{
+              "Content-Type": "application/json",
+              Accept: "application/json",
+              Authorization: "Bearer keyVDvhyVSx5Ntbl3"
+            }}
+            loadingDisplay={
+              <ph.DataCtxReader>{$ctx => "Loading..."}</ph.DataCtxReader>
+            }
+            method={"GET" as const}
+            noLayout={false}
+            url={(() => {
+              try {
+                return (
+                  "https://api.airtable.com/v0/appmM1mMqcDvugXhY/PlasmicCMS/" +
+                  $ctx.params.slug
+                );
+              } catch (e) {
+                if (e instanceof TypeError) {
+                  return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/PlasmicCMS?slug";
+                }
+                throw e;
+              }
+            })()}
+          >
+            <ph.DataCtxReader>
+              {$ctx => (
+                <React.Fragment>
+                  <PlasmicHead
+                    data-plasmic-name={"head"}
+                    data-plasmic-override={overrides.head}
+                    className={classNames("__wab_instance", sty.head)}
+                    description={(() => {
+                      try {
+                        return $ctx.fetchDyanamicData.fields[
+                          "Step 2 SEO Description"
+                        ];
+                      } catch (e) {
+                        if (e instanceof TypeError) {
+                          return undefined;
+                        }
+                        throw e;
                       }
-                      throw e;
-                    }
-                  })()}
-                  image={(() => {
-                    try {
-                      return undefined;
-                    } catch (e) {
-                      if (e instanceof TypeError) {
+                    })()}
+                    image={(() => {
+                      try {
                         return undefined;
+                      } catch (e) {
+                        if (e instanceof TypeError) {
+                          return undefined;
+                        }
+                        throw e;
                       }
-                      throw e;
-                    }
-                  })()}
-                  title={(() => {
-                    try {
-                      return $ctx.fetchDyanamicData.fields["Step 2 SEO Title"];
-                    } catch (e) {
-                      if (e instanceof TypeError) {
-                        return undefined;
+                    })()}
+                    title={(() => {
+                      try {
+                        return $ctx.fetchDyanamicData.fields[
+                          "Step 2 SEO Title"
+                        ];
+                      } catch (e) {
+                        if (e instanceof TypeError) {
+                          return undefined;
+                        }
+                        throw e;
                       }
-                      throw e;
-                    }
-                  })()}
-                />
+                    })()}
+                  />
 
-                {true ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__xhsS)}
-                  >
+                  {true ? (
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__o0Xt)}
-                    >
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__aA2H)}
-                        displayHeight={"56px" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"auto" as const}
-                        loading={"lazy" as const}
-                        src={(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.fields.logo[0].url;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
-                      />
-                    </div>
-
-                    {true ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.columns__l1GHc
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.column___4RWm5
-                          )}
-                        >
-                          <p.Stack
-                            as={"div"}
-                            hasGap={true}
-                            className={classNames(
-                              projectcss.all,
-                              sty.columns__nA7Ai
-                            )}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.column__cGcZq
-                              )}
-                            >
-                              <p.PlasmicImg
-                                alt={""}
-                                className={classNames(sty.img__fGtp5)}
-                                displayHeight={"175px" as const}
-                                displayMaxHeight={"none" as const}
-                                displayMaxWidth={"100%" as const}
-                                displayMinHeight={"0" as const}
-                                displayMinWidth={"0" as const}
-                                displayWidth={
-                                  hasVariant(
-                                    globalVariants,
-                                    "screen",
-                                    "mobileOnly"
-                                  )
-                                    ? ("170px" as const)
-                                    : ("196px" as const)
-                                }
-                                loading={"lazy" as const}
-                                src={(() => {
-                                  try {
-                                    return $ctx.fetchDyanamicData.fields
-                                      .sThumbail[0].url;
-                                  } catch (e) {
-                                    if (e instanceof TypeError) {
-                                      return undefined;
-                                    }
-                                    throw e;
-                                  }
-                                })()}
-                              />
-                            </div>
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.column__nTBu0
-                              )}
-                            >
-                              {(
-                                hasVariant(
-                                  globalVariants,
-                                  "screen",
-                                  "mobileOnly"
-                                )
-                                  ? true
-                                  : true
-                              ) ? (
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.text__op1Z7
-                                  )}
-                                >
-                                  {(() => {
-                                    try {
-                                      return $ctx.fetchDyanamicData.fields.sH1;
-                                    } catch (e) {
-                                      if (e instanceof TypeError) {
-                                        return "Enter some text";
-                                      }
-                                      throw e;
-                                    }
-                                  })()}
-                                </div>
-                              ) : null}
-                              {(
-                                hasVariant(
-                                  globalVariants,
-                                  "screen",
-                                  "mobileOnly"
-                                )
-                                  ? true
-                                  : true
-                              ) ? (
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.text___8D1YK
-                                  )}
-                                >
-                                  {(() => {
-                                    try {
-                                      return $ctx.fetchDyanamicData.fields.sH2;
-                                    } catch (e) {
-                                      if (e instanceof TypeError) {
-                                        return "undefine";
-                                      }
-                                      throw e;
-                                    }
-                                  })()}
-                                </div>
-                              ) : null}
-                              {(
-                                hasVariant(
-                                  globalVariants,
-                                  "screen",
-                                  "mobileOnly"
-                                )
-                                  ? true
-                                  : true
-                              ) ? (
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.text__u1WhW
-                                  )}
-                                >
-                                  {(() => {
-                                    try {
-                                      return $ctx.fetchDyanamicData.fields.sH1;
-                                    } catch (e) {
-                                      if (e instanceof TypeError) {
-                                        return "Enter some text";
-                                      }
-                                      throw e;
-                                    }
-                                  })()}
-                                </div>
-                              ) : null}
-                              {(
-                                hasVariant(
-                                  globalVariants,
-                                  "screen",
-                                  "mobileOnly"
-                                )
-                                  ? true
-                                  : true
-                              ) ? (
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.text__vJdSs
-                                  )}
-                                >
-                                  {(() => {
-                                    try {
-                                      return $ctx.fetchDyanamicData.fields.sH2;
-                                    } catch (e) {
-                                      if (e instanceof TypeError) {
-                                        return "Enter some text";
-                                      }
-                                      throw e;
-                                    }
-                                  })()}
-                                </div>
-                              ) : null}
-
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text___5XdCo
-                                )}
-                              >
-                                {(() => {
-                                  try {
-                                    return $ctx.fetchDyanamicData.fields.sH3;
-                                  } catch (e) {
-                                    if (e instanceof TypeError) {
-                                      return "Enter some text";
-                                    }
-                                    throw e;
-                                  }
-                                })()}
-                              </div>
-                            </div>
-                          </p.Stack>
-                        </div>
-                      </div>
-                    ) : null}
-
-                    <div
-                      className={classNames(projectcss.all, sty.columns__ysbXk)}
+                      className={classNames(projectcss.all, sty.freeBox__xhsS)}
                     >
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.column___4N6M1
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__a3MCw
-                          )}
-                        >
-                          {(
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? true
-                              : true
-                          ) ? (
-                            <button
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.button,
-                                projectcss.__wab_text,
-                                sty.button__jeVfv
-                              )}
-                            >
-                              {(() => {
-                                try {
-                                  return $ctx.fetchDyanamicData.fields.sBadge;
-                                } catch (e) {
-                                  if (e instanceof TypeError) {
-                                    return "Click Me";
-                                  }
-                                  throw e;
-                                }
-                              })()}
-                            </button>
-                          ) : null}
-                        </div>
-                      </div>
-                    </div>
-
-                    <form
-                      data-plasmic-name={"form"}
-                      data-plasmic-override={overrides.form}
-                      action={
-                        "https://hook.us1.make.com/5mordka6hk6nytd9doqnbe6kbf4r3drk" as const
-                      }
-                      className={classNames(projectcss.all, sty.form)}
-                      method={"post" as const}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__o4C3M
-                        )}
-                      >
-                        {(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.fields.sH4;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return "Enter some text";
-                            }
-                            throw e;
-                          }
-                        })()}
-                      </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__qDwa
-                        )}
-                      >
-                        {(() => {
-                          try {
-                            return $ctx.fetchDyanamicData.fields.sH5;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return "Enter some text";
-                            }
-                            throw e;
-                          }
-                        })()}
-                      </div>
-
-                      <TextInput
-                        aria-label={"email" as const}
-                        className={classNames(
-                          "__wab_instance",
-                          sty.textInput__p474A
-                        )}
-                        name={"email" as const}
-                        placeholder={"📧 Your Email Address" as const}
-                      />
-
-                      <TextInput
-                        aria-label={"phone" as const}
-                        className={classNames(
-                          "__wab_instance",
-                          sty.textInput___0TAi9
-                        )}
-                        name={"phone" as const}
-                        placeholder={"📲 Your Phone Number" as const}
-                      />
-
-                      {true ? (
-                        <TextInput
-                          aria-label={"record_id" as const}
-                          className={classNames(
-                            "__wab_instance",
-                            sty.textInput__dzeZj
-                          )}
-                          defaultValue={(() => {
-                            try {
-                              return $ctx.fetchDyanamicData.id;
-                            } catch (e) {
-                              if (e instanceof TypeError) {
-                                return undefined;
-                              }
-                              throw e;
-                            }
-                          })()}
-                          name={"record_id" as const}
-                        />
-                      ) : null}
-
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__pWaS5
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__pdsJ0
-                          )}
-                        >
-                          {"Get Offer"}
-                        </div>
-                      </Button>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__lCs17
-                        )}
-                      >
-                        {hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "I agree to receive emails and texts."
-                          : "I agree to receive emails and texts."}
-                      </div>
-                    </form>
-
-                    {true ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__dEoA
+                          sty.freeBox__o0Xt
                         )}
                       >
                         <p.PlasmicImg
                           alt={""}
-                          className={classNames(sty.img___9YjWs)}
+                          className={classNames(sty.img__aA2H)}
                           displayHeight={"56px" as const}
                           displayMaxHeight={"none" as const}
                           displayMaxWidth={"100%" as const}
@@ -645,13 +267,416 @@ function PlasmicSqueeze__RenderFunc(props: {
                           })()}
                         />
                       </div>
-                    ) : null}
-                  </div>
-                ) : null}
-              </React.Fragment>
-            )}
-          </ph.DataCtxReader>
-        </DataFetcher>
+
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.columns__l1GHc
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.column___4RWm5
+                            )}
+                          >
+                            <p.Stack
+                              as={"div"}
+                              hasGap={true}
+                              className={classNames(
+                                projectcss.all,
+                                sty.columns__nA7Ai
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.column__cGcZq
+                                )}
+                              >
+                                <p.PlasmicImg
+                                  alt={""}
+                                  className={classNames(sty.img__fGtp5)}
+                                  displayHeight={"175px" as const}
+                                  displayMaxHeight={"none" as const}
+                                  displayMaxWidth={"100%" as const}
+                                  displayMinHeight={"0" as const}
+                                  displayMinWidth={"0" as const}
+                                  displayWidth={
+                                    hasVariant(
+                                      globalVariants,
+                                      "screen",
+                                      "mobileOnly"
+                                    )
+                                      ? ("170px" as const)
+                                      : ("196px" as const)
+                                  }
+                                  loading={"lazy" as const}
+                                  src={(() => {
+                                    try {
+                                      return $ctx.fetchDyanamicData.fields
+                                        .sThumbail[0].url;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return undefined;
+                                      }
+                                      throw e;
+                                    }
+                                  })()}
+                                />
+                              </div>
+
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.column__nTBu0
+                                )}
+                              >
+                                {(
+                                  hasVariant(
+                                    globalVariants,
+                                    "screen",
+                                    "mobileOnly"
+                                  )
+                                    ? true
+                                    : true
+                                ) ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.__wab_text,
+                                      sty.text__op1Z7
+                                    )}
+                                  >
+                                    {(() => {
+                                      try {
+                                        return $ctx.fetchDyanamicData.fields
+                                          .sH1;
+                                      } catch (e) {
+                                        if (e instanceof TypeError) {
+                                          return "Enter some text";
+                                        }
+                                        throw e;
+                                      }
+                                    })()}
+                                  </div>
+                                ) : null}
+                                {(
+                                  hasVariant(
+                                    globalVariants,
+                                    "screen",
+                                    "mobileOnly"
+                                  )
+                                    ? true
+                                    : true
+                                ) ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.__wab_text,
+                                      sty.text___8D1YK
+                                    )}
+                                  >
+                                    {(() => {
+                                      try {
+                                        return $ctx.fetchDyanamicData.fields
+                                          .sH2;
+                                      } catch (e) {
+                                        if (e instanceof TypeError) {
+                                          return "undefine";
+                                        }
+                                        throw e;
+                                      }
+                                    })()}
+                                  </div>
+                                ) : null}
+                                {(
+                                  hasVariant(
+                                    globalVariants,
+                                    "screen",
+                                    "mobileOnly"
+                                  )
+                                    ? true
+                                    : true
+                                ) ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.__wab_text,
+                                      sty.text__u1WhW
+                                    )}
+                                  >
+                                    {(() => {
+                                      try {
+                                        return $ctx.fetchDyanamicData.fields
+                                          .sH1;
+                                      } catch (e) {
+                                        if (e instanceof TypeError) {
+                                          return "Enter some text";
+                                        }
+                                        throw e;
+                                      }
+                                    })()}
+                                  </div>
+                                ) : null}
+                                {(
+                                  hasVariant(
+                                    globalVariants,
+                                    "screen",
+                                    "mobileOnly"
+                                  )
+                                    ? true
+                                    : true
+                                ) ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.__wab_text,
+                                      sty.text__vJdSs
+                                    )}
+                                  >
+                                    {(() => {
+                                      try {
+                                        return $ctx.fetchDyanamicData.fields
+                                          .sH2;
+                                      } catch (e) {
+                                        if (e instanceof TypeError) {
+                                          return "Enter some text";
+                                        }
+                                        throw e;
+                                      }
+                                    })()}
+                                  </div>
+                                ) : null}
+
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text___5XdCo
+                                  )}
+                                >
+                                  {(() => {
+                                    try {
+                                      return $ctx.fetchDyanamicData.fields.sH3;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return "Enter some text";
+                                      }
+                                      throw e;
+                                    }
+                                  })()}
+                                </div>
+                              </div>
+                            </p.Stack>
+                          </div>
+                        </div>
+                      ) : null}
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.columns__ysbXk
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.column___4N6M1
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__a3MCw
+                            )}
+                          >
+                            {(
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? true
+                                : true
+                            ) ? (
+                              <button
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.button,
+                                  projectcss.__wab_text,
+                                  sty.button__jeVfv
+                                )}
+                              >
+                                {(() => {
+                                  try {
+                                    return $ctx.fetchDyanamicData.fields.sBadge;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return "Click Me";
+                                    }
+                                    throw e;
+                                  }
+                                })()}
+                              </button>
+                            ) : null}
+                          </div>
+                        </div>
+                      </div>
+
+                      <form
+                        data-plasmic-name={"form"}
+                        data-plasmic-override={overrides.form}
+                        action={
+                          "https://hook.us1.make.com/5mordka6hk6nytd9doqnbe6kbf4r3drk" as const
+                        }
+                        className={classNames(projectcss.all, sty.form)}
+                        method={"post" as const}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__o4C3M
+                          )}
+                        >
+                          {(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.fields.sH4;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "Enter some text";
+                              }
+                              throw e;
+                            }
+                          })()}
+                        </div>
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__qDwa
+                          )}
+                        >
+                          {(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.fields.sH5;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "Enter some text";
+                              }
+                              throw e;
+                            }
+                          })()}
+                        </div>
+
+                        <TextInput
+                          aria-label={"email" as const}
+                          className={classNames(
+                            "__wab_instance",
+                            sty.textInput__p474A
+                          )}
+                          name={"email" as const}
+                          placeholder={"📧 Your Email Address" as const}
+                        />
+
+                        <TextInput
+                          aria-label={"phone" as const}
+                          className={classNames(
+                            "__wab_instance",
+                            sty.textInput___0TAi9
+                          )}
+                          name={"phone" as const}
+                          placeholder={"📲 Your Phone Number" as const}
+                        />
+
+                        {true ? (
+                          <TextInput
+                            aria-label={"record_id" as const}
+                            className={classNames(
+                              "__wab_instance",
+                              sty.textInput__dzeZj
+                            )}
+                            name={"record_id" as const}
+                            value={(() => {
+                              try {
+                                return $ctx.fetchDyanamicData.id;
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return undefined;
+                                }
+                                throw e;
+                              }
+                            })()}
+                          />
+                        ) : null}
+
+                        <Button
+                          className={classNames(
+                            "__wab_instance",
+                            sty.button__pWaS5
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__pdsJ0
+                            )}
+                          >
+                            {"Get Offer"}
+                          </div>
+                        </Button>
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__lCs17
+                          )}
+                        >
+                          {hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "I agree to receive emails and texts."
+                            : "I agree to receive emails and texts."}
+                        </div>
+                      </form>
+
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__dEoA
+                          )}
+                        >
+                          <p.PlasmicImg
+                            alt={""}
+                            className={classNames(sty.img___9YjWs)}
+                            displayHeight={"56px" as const}
+                            displayMaxHeight={"none" as const}
+                            displayMaxWidth={"100%" as const}
+                            displayMinHeight={"0" as const}
+                            displayMinWidth={"0" as const}
+                            displayWidth={"auto" as const}
+                            loading={"lazy" as const}
+                            src={(() => {
+                              try {
+                                return $ctx.fetchDyanamicData.fields.logo[0]
+                                  .url;
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return undefined;
+                                }
+                                throw e;
+                              }
+                            })()}
+                          />
+                        </div>
+                      ) : null}
+                    </div>
+                  ) : null}
+                </React.Fragment>
+              )}
+            </ph.DataCtxReader>
+          </DataFetcher>
+        </div>
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;

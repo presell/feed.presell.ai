@@ -14,6 +14,7 @@ import * as React from "react";
 
 import Head from "next/head";
 import Link, { LinkProps } from "next/link";
+import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
@@ -101,6 +102,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicCheckbox__RenderFunc(props: {
   variants: PlasmicCheckbox__VariantsArgs;
   args: PlasmicCheckbox__ArgsType;
@@ -109,6 +117,7 @@ function PlasmicCheckbox__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -121,41 +130,45 @@ function PlasmicCheckbox__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
+  const [$queries, setDollarQueries] = React.useState({});
   const stateSpecs = React.useMemo(
     () => [
       {
         path: "noLabel",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.noLabel : undefined
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.noLabel
+          : undefined
       },
       {
         path: "isDisabled",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.isDisabled : undefined
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.isDisabled
+          : undefined
       },
       {
         path: "isChecked",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.isChecked : undefined
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.isChecked
+          : undefined
       },
       {
         path: "isIndeterminate",
         type: "private",
         variableType: "variant",
         initFunc: true
-          ? ($props, $state, $ctx) => $props.isIndeterminate
+          ? ({ $props, $state, $queries, $ctx }) => $props.isIndeterminate
           : undefined
       }
     ],
     [$props, $ctx]
   );
-  const $state = p.useDollarState(stateSpecs, $props, $ctx);
-
-  const [$queries, setDollarQueries] = React.useState({});
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
     useTrigger("useFocusVisibleWithin", {

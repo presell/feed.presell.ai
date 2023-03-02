@@ -14,6 +14,7 @@ import * as React from "react";
 
 import Head from "next/head";
 import Link, { LinkProps } from "next/link";
+import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
@@ -166,6 +167,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicButton2__RenderFunc(props: {
   variants: PlasmicButton2__VariantsArgs;
   args: PlasmicButton2__ArgsType;
@@ -174,6 +182,7 @@ function PlasmicButton2__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -186,7 +195,7 @@ function PlasmicButton2__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
+  const [$queries, setDollarQueries] = React.useState({});
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -194,7 +203,7 @@ function PlasmicButton2__RenderFunc(props: {
         type: "private",
         variableType: "variant",
         initFunc: true
-          ? ($props, $state, $ctx) => $props.showStartIcon
+          ? ({ $props, $state, $queries, $ctx }) => $props.showStartIcon
           : undefined
       },
       {
@@ -202,79 +211,93 @@ function PlasmicButton2__RenderFunc(props: {
         type: "private",
         variableType: "variant",
         initFunc: true
-          ? ($props, $state, $ctx) => $props.showEndIcon
+          ? ({ $props, $state, $queries, $ctx }) => $props.showEndIcon
           : undefined
       },
       {
         path: "color",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.color : undefined
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.color
+          : undefined
       },
       {
         path: "iconOnly",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.iconOnly : undefined
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.iconOnly
+          : undefined
       },
       {
         path: "outline",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.outline : undefined
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.outline
+          : undefined
       },
       {
         path: "bgDifference",
         type: "private",
         variableType: "variant",
         initFunc: true
-          ? ($props, $state, $ctx) => $props.bgDifference
+          ? ({ $props, $state, $queries, $ctx }) => $props.bgDifference
           : undefined
       },
       {
         path: "round",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.round : undefined
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.round
+          : undefined
       },
       {
         path: "large",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.large : undefined
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.large
+          : undefined
       },
       {
         path: "flat",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.flat : undefined
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.flat
+          : undefined
       },
       {
         path: "extraSmallShadow",
         type: "private",
         variableType: "variant",
         initFunc: true
-          ? ($props, $state, $ctx) => $props.extraSmallShadow
+          ? ({ $props, $state, $queries, $ctx }) => $props.extraSmallShadow
           : undefined
       },
       {
         path: "isDisabled",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.isDisabled : undefined
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.isDisabled
+          : undefined
       },
       {
         path: "small",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.small : undefined
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.small
+          : undefined
       }
     ],
     [$props, $ctx]
   );
-  const $state = p.useDollarState(stateSpecs, $props, $ctx);
-
-  const [$queries, setDollarQueries] = React.useState({});
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   return (
     <p.Stack

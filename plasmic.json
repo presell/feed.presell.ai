@@ -53,8 +53,7 @@
           "name": "DataProvider",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -73,8 +72,7 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "kmmGrmCVRJPgZ5NNJMDQ4v",
@@ -103,8 +101,7 @@
           "name": "WordpressProvider",
           "componentImportPath": "@plasmicpkgs/plasmic-wordpress"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "hjKYmYi6HMwK6TRyk7ew5R",
@@ -148,8 +145,7 @@
           "name": "CmsQueryRepeater",
           "componentImportPath": "@plasmicpkgs/plasmic-cms"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "YUiM7yqBWAqsh8KSnrdj7",
@@ -173,8 +169,7 @@
           "name": "GraphqlFetcher",
           "componentImportPath": "@plasmicpkgs/plasmic-query"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
@@ -290,6 +285,32 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "checkbox"
+        },
+        {
+          "id": "lRoBU_AVXI",
+          "name": "NavArticle1",
+          "type": "managed",
+          "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
+          "renderModuleFilePath": "plasmic/feed_presell_ai/PlasmicNavArticle1.tsx",
+          "importSpec": {
+            "modulePath": "NavArticle1.tsx"
+          },
+          "cssFilePath": "plasmic/feed_presell_ai/PlasmicNavArticle1.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "dAAdljOIrTq",
+          "name": "BodyArticle1",
+          "type": "managed",
+          "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
+          "renderModuleFilePath": "plasmic/feed_presell_ai/PlasmicBodyArticle1.tsx",
+          "importSpec": {
+            "modulePath": "BodyArticle1.tsx"
+          },
+          "cssFilePath": "plasmic/feed_presell_ai/PlasmicBodyArticle1.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -649,6 +670,11 @@
           "id": "eNZXdL8PLh",
           "name": "nw-mobbrand3.png",
           "filePath": "../public/plasmic/feed_presell_ai/images/nwMobbrand3Png.png"
+        },
+        {
+          "id": "biW_r4qxv",
+          "name": "Divider.svg",
+          "filePath": "../public/plasmic/feed_presell_ai/images/dividersvg.bin"
         }
       ],
       "indirect": false,
@@ -796,7 +822,7 @@
         {
           "id": "p3HNI5RglT",
           "name": "TabPane",
-          "componentImportPath": "rc-tabs"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerTabs"
         },
         {
           "id": "Hb-DVgvuk3",
@@ -823,8 +849,7 @@
           "name": "TableValue",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerTable"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     }
   ],
   "globalVariants": {
@@ -841,6 +866,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.213",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.213/dist/plasmic.schema.json"
+  "cliVersion": "0.1.217",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.217/dist/plasmic.schema.json"
 }
