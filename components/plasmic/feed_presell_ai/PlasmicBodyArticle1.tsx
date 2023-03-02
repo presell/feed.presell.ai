@@ -889,7 +889,7 @@ function PlasmicBodyArticle1__RenderFunc(props: {
                 displayWidth={
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? ("8px" as const)
-                    : ("10px" as const)
+                    : ("8px" as const)
                 }
                 loading={"lazy" as const}
                 src={{
