@@ -877,18 +877,26 @@ function PlasmicBodyArticle1__RenderFunc(props: {
               <p.PlasmicImg
                 alt={""}
                 className={classNames(sty.img__x5KNk)}
-                displayHeight={"auto" as const}
+                displayHeight={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? ("70%" as const)
+                    : ("80%" as const)
+                }
                 displayMaxHeight={"none" as const}
                 displayMaxWidth={"100%" as const}
                 displayMinHeight={"0" as const}
                 displayMinWidth={"0" as const}
-                displayWidth={"auto" as const}
+                displayWidth={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? ("8px" as const)
+                    : ("10px" as const)
+                }
                 loading={"lazy" as const}
                 src={{
-                  src: "/plasmic/feed_presell_ai/images/dividersvg.bin",
-                  fullWidth: 5,
-                  fullHeight: 150,
-                  aspectRatio: 0.033333
+                  src: "/plasmic/feed_presell_ai/images/_4F0Afe7D15505Bfe240E785E7Ac88B6Cwebp.webp",
+                  fullWidth: 3,
+                  fullHeight: 90,
+                  aspectRatio: undefined
                 }}
               />
             </div>

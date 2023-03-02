@@ -53,7 +53,8 @@
           "name": "DataProvider",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -72,7 +73,8 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "kmmGrmCVRJPgZ5NNJMDQ4v",
@@ -101,7 +103,8 @@
           "name": "WordpressProvider",
           "componentImportPath": "@plasmicpkgs/plasmic-wordpress"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "hjKYmYi6HMwK6TRyk7ew5R",
@@ -145,7 +148,8 @@
           "name": "CmsQueryRepeater",
           "componentImportPath": "@plasmicpkgs/plasmic-cms"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "YUiM7yqBWAqsh8KSnrdj7",
@@ -169,7 +173,8 @@
           "name": "GraphqlFetcher",
           "componentImportPath": "@plasmicpkgs/plasmic-query"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
@@ -675,6 +680,11 @@
           "id": "biW_r4qxv",
           "name": "Divider.svg",
           "filePath": "../public/plasmic/feed_presell_ai/images/dividersvg.bin"
+        },
+        {
+          "id": "NRS1oLh5G",
+          "name": "4f0afe7d15505bfe240e785e7ac88b6c.webp",
+          "filePath": "../public/plasmic/feed_presell_ai/images/_4F0Afe7D15505Bfe240E785E7Ac88B6Cwebp.webp"
         }
       ],
       "indirect": false,
@@ -849,7 +859,8 @@
           "name": "TableValue",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerTable"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {

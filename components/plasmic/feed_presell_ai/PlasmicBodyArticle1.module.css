@@ -569,12 +569,20 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
+  width: 10px;
+  height: 80%;
 }
 .img__x5KNk > picture > img {
   object-fit: cover;
 }
 .img__x5KNk > :global(.__wab_img-spacer) > img {
   object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__x5KNk {
+    height: 70%;
+    width: 8px;
+  }
 }
 .column__rInz {
   display: flex;
