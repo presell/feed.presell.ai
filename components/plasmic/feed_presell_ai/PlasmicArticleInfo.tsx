@@ -114,6 +114,31 @@ function PlasmicArticleInfo__RenderFunc(props: {
         body {
           margin: 0;
         }
+       .PlasmicArticleInfo_bodyArticle1__gruVP.__wab_instance{
+            margin:50px auto;
+                padding: 15px;
+          }
+          @media screen and (max-width:1020px){
+            .PlasmicBodyArticle1_article1Body__70B4p{
+              width:95% !important;
+              padding:40px !important;
+            }
+          }
+
+          @media screen and (max-width:767px){
+            .PlasmicBodyArticle1_article1Body__70B4p{
+              width:95%;
+            }
+            .PlasmicNavArticle1_img__SsQks {
+              width: 100%;
+            }
+            .PlasmicNavArticle1_column__ujnQu__vpHsq{
+              padding: 10px 85px !important;
+            }
+          
+            
+          }
+        
       `}</style>
 
       <div className={projectcss.plasmic_page_wrapper}>

@@ -154,7 +154,50 @@ function PlasmicBodyArticle1__RenderFunc(props: {
             dangerouslySetInnerHTML={{
               __html: (() => {
                 try {
-                  return $ctx.fetchDyanamicData.records[0].fields.heroHeadline;
+                 // return $ctx.fetchDyanamicData.records[0].fields.heroHeadline;
+
+                  var ParaSbTexthead = $ctx.fetchDyanamicData.records[0].fields.heroHeadline;
+                  var htmlhead = urlScheck(ParaSbTexthead); 
+                 
+                  function urlScheck(text) {
+                    var regex = /\[([^\][]*)]/g;
+                    var results = [], m;
+                    while (m = regex.exec(text)) {
+                    results.push(m[1]);         
+                    }
+                    const replaceDatahead = results;
+
+                    var arrayLengthhead = replaceDatahead.length;
+                    var  asas= 0;
+                    for (var i=0; i <= arrayLengthhead; i++) {
+                    
+                     var urlRegSB = /(https?:\/\/[^\s]+)/g;
+                     return text.replace(+ replaceDatahead + '').replace(urlRegSB, function (url) {
+                     var laststringremovehead = url.replaceAll(")", "")
+                     
+                    
+                    var onlyurlhead =  '<a href="' + laststringremovehead + '" style="color:#4896fa;text-decoration: underline #4896FA 1px;">' + replaceDatahead[asas] + '</a>';
+                    asas ++ ;
+                     
+                    return onlyurlhead;
+                    })
+                  }
+                  }
+                 
+                      const cleanedParagraphhead = htmlhead.replace(/\[(.*?.)\]/g, '');
+                      const cleanedParagraphhead2  = cleanedParagraphhead.replace('(', '<span>').replace('(', '</span>');
+                      const cleanedParagraphhead1  = cleanedParagraphhead2.replace('(', '<span>').replace('(', '</span>');
+
+                      const regex = /\*\*(.*?)\*\*/g; // define the regular expression pattern
+                      const boldedTexthead = cleanedParagraphhead1.replace(regex, '<b>$1</b>');
+                                    // undersore replace with italic
+                      const Italichead = boldedTexthead.replace(/_([^_]+)_/g, "<i>$1</i>");
+                                    // ~~ replace with strikethrough
+                      const strikethroughead = Italichead.replace(/~~([^~]+)~~/g, "<s style='text-decoration: line-through;'>$1</s>");
+                                  // `` replace with code
+                      const code21head = strikethroughead.replace(/`([^`]+)`/g, "<code style='background-color: #F1F1F1;padding: 2px;'>$1</code>");
+                      return code21head;
+
                 } catch (e) {
                   if (e instanceof TypeError) {
                     return "Enter some text";
@@ -170,7 +213,49 @@ function PlasmicBodyArticle1__RenderFunc(props: {
             dangerouslySetInnerHTML={{
               __html: (() => {
                 try {
-                  return $ctx.fetchDyanamicData.records[0].fields.heroHeadline;
+                 // return $ctx.fetchDyanamicData.records[0].fields.heroHeadline;
+                 var ParaSbTexthead = $ctx.fetchDyanamicData.records[0].fields.heroHeadline;
+                 var htmlhead = urlScheck(ParaSbTexthead); 
+                
+                 function urlScheck(text) {
+                   var regex = /\[([^\][]*)]/g;
+                   var results = [], m;
+                   while (m = regex.exec(text)) {
+                   results.push(m[1]);         
+                   }
+                   const replaceDatahead = results;
+
+                   var arrayLengthhead = replaceDatahead.length;
+                   var  asas= 0;
+                   for (var i=0; i <= arrayLengthhead; i++) {
+                   
+                    var urlRegSB = /(https?:\/\/[^\s]+)/g;
+                    return text.replace(+ replaceDatahead + '').replace(urlRegSB, function (url) {
+                    var laststringremovehead = url.replaceAll(")", "")
+                    
+                   
+                   var onlyurlhead =  '<a href="' + laststringremovehead + '" style="color:#4896fa;text-decoration: underline #4896FA 1px;">' + replaceDatahead[asas] + '</a>';
+                   asas ++ ;
+                    
+                   return onlyurlhead;
+                   })
+                 }
+                 }
+                
+                     const cleanedParagraphhead = htmlhead.replace(/\[(.*?.)\]/g, '');
+                     const cleanedParagraphhead2  = cleanedParagraphhead.replace('(', '<span>').replace('(', '</span>');
+                     const cleanedParagraphhead1  = cleanedParagraphhead2.replace('(', '<span>').replace('(', '</span>');
+
+                     const regex = /\*\*(.*?)\*\*/g; // define the regular expression pattern
+                     const boldedTexthead = cleanedParagraphhead1.replace(regex, '<b>$1</b>');
+                                   // undersore replace with italic
+                     const Italichead = boldedTexthead.replace(/_([^_]+)_/g, "<i>$1</i>");
+                                   // ~~ replace with strikethrough
+                     const strikethroughead = Italichead.replace(/~~([^~]+)~~/g, "<s style='text-decoration: line-through;'>$1</s>");
+                                 // `` replace with code
+                     const code21head = strikethroughead.replace(/`([^`]+)`/g, "<code style='background-color: #F1F1F1;padding: 2px;'>$1</code>");
+                     return code21head;
+
                 } catch (e) {
                   if (e instanceof TypeError) {
                     return "Enter some text";
@@ -228,25 +313,20 @@ function PlasmicBodyArticle1__RenderFunc(props: {
                   }
                   }
                  
-              const cleanedParagraph = html.replace(/\[(.*?.)\]/g, '');
-                  
-              const cleanedParagraph21  = cleanedParagraph.replace('(', '<span>').replace('(', '</span>');
-              console.log(cleanedParagraph21)
-              const cleanedParagraphhh  = cleanedParagraph21.replace('(', '<span>').replace('(', '</span>');
-              const regex = /\*\*([\w\s]+)\*\*/g; // define the regular expression pattern
-                      const boldedText = cleanedParagraphhh.replace(regex, '<strong>$1</strong>');
-                      console.log(boldedText);
+                      const cleanedParagraph = html.replace(/\[(.*?.)\]/g, '');
+                      const cleanedParagraph21  = cleanedParagraph.replace('(', '<span>').replace('(', '</span>');
+                      const cleanedParagraphhh  = cleanedParagraph21.replace('(', '<span>').replace('(', '</span>');
+
+                      const regex = /\*\*(.*?)\*\*/g; // define the regular expression pattern
+                      const boldedText = cleanedParagraphhh.replace(regex, '<b>$1</b>');
                                     // undersore replace with italic
                       const Italic = boldedText.replace(/_([^_]+)_/g, "<i>$1</i>");
-                      console.log(Italic);
                                     // ~~ replace with strikethrough
                       const strikethrough = Italic.replace(/~~([^~]+)~~/g, "<s style='text-decoration: line-through;'>$1</s>");
-                      console.log(strikethrough);
                                   // `` replace with code
                       const code21 = strikethrough.replace(/`([^`]+)`/g, "<code style='background-color: #F1F1F1;padding: 2px;'>$1</code>");
-                      console.log(code21);
                       return code21;
-                      
+
                 } catch (e) {
                   if (e instanceof TypeError) {
                     return "Enter some text";
@@ -274,7 +354,7 @@ function PlasmicBodyArticle1__RenderFunc(props: {
                       results.push(m[1]);         
                       }
                       const replaceData = results;
-  
+                     
                       var arrayLength = replaceData.length;
                       var  asas= 0;
                       for (var i=0; i <= arrayLength; i++) {
@@ -282,7 +362,7 @@ function PlasmicBodyArticle1__RenderFunc(props: {
                        var urlRegSB = /(https?:\/\/[^\s]+)/g;
                        return text.replace(+ replaceData + '').replace(urlRegSB, function (url) {
                        var laststringremove = url.replaceAll(")", "")
-                       
+                      
                       
                       var onlyurl =  '<a href="' + laststringremove + '" style="color:#4896fa;text-decoration: underline #4896FA 1px;">' + replaceData[asas] + '</a>';
                       asas ++ ;
@@ -292,23 +372,18 @@ function PlasmicBodyArticle1__RenderFunc(props: {
                     }
                     }
                    
-                const cleanedParagraph = html.replace(/\[(.*?.)\]/g, '');
-                    
-                const cleanedParagraph21  = cleanedParagraph.replace('(', '<span>').replace('(', '</span>');
-                console.log(cleanedParagraph21)
-                const cleanedParagraphhh  = cleanedParagraph21.replace('(', '<span>').replace('(', '</span>');
-                const regex = /\*\*([\w\s]+)\*\*/g; // define the regular expression pattern
-                        const boldedText = cleanedParagraphhh.replace(regex, '<strong>$1</strong>');
-                        console.log(boldedText);
+                        const cleanedParagraph = html.replace(/\[(.*?.)\]/g, '');
+                        const cleanedParagraph21  = cleanedParagraph.replace('(', '<span>').replace('(', '</span>');
+                        const cleanedParagraphhh  = cleanedParagraph21.replace('(', '<span>').replace('(', '</span>');
+                      
+                        const regex = /\*\*(.*?)\*\*/g; // define the regular expression pattern
+                        const boldedText = cleanedParagraphhh.replace(regex, '<b>$1</b>');
                                       // undersore replace with italic
                         const Italic = boldedText.replace(/_([^_]+)_/g, "<i>$1</i>");
-                        console.log(Italic);
                                       // ~~ replace with strikethrough
                         const strikethrough = Italic.replace(/~~([^~]+)~~/g, "<s style='text-decoration: line-through;'>$1</s>");
-                        console.log(strikethrough);
                                     // `` replace with code
                         const code21 = strikethrough.replace(/`([^`]+)`/g, "<code style='background-color: #F1F1F1;padding: 2px;'>$1</code>");
-                        console.log(code21);
                         return code21;
   
                 } catch (e) {
@@ -404,9 +479,58 @@ function PlasmicBodyArticle1__RenderFunc(props: {
         )}
       >
         {hasVariant(globalVariants, "screen", "mobileOnly")
-          ? (() => {
+          ? (
+            <div
+              className={projectcss.__wab_expr_html_text}
+              dangerouslySetInnerHTML={{
+                __html: (() => {
               try {
-                return $ctx.fetchDyanamicData.records[0].fields.paragraph1;
+               // return $ctx.fetchDyanamicData.records[0].fields.paragraph1;
+               var ParaSbTextPara1 = $ctx.fetchDyanamicData.records[0].fields.paragraph1;
+               var htmlPara1 = urlScheck(ParaSbTextPara1); 
+             
+               function urlScheck(text) {
+                 var regexPara1 = /\[([^\][]*)]/g;
+                 var results = [], m;
+                 while (m = regexPara1.exec(text)) {
+                 results.push(m[1]);         
+                 }
+                 const replaceDataPara1 = results;
+                 
+                 var arrayLengthPara1 = replaceDataPara1.length;
+                 
+                 var  asas= 0;
+                 for (var i=0; i <= arrayLengthPara1; i++) {
+                 
+                  var urlRegSBPara1 = /(https?:\/\/[^\s]+)/g;
+                  return text.replace(+ replaceDataPara1 + '').replace(urlRegSBPara1, function (url) {
+                  var laststringremovePara1 = url.replaceAll(")", "")
+                 
+                 
+                 var onlyurlPara1 =  '<a href="' + laststringremovePara1 + '" style="color:#4896fa;text-decoration: underline #4896FA 1px;">' + replaceDataPara1[asas] + '</a>';
+                
+                 asas ++ ;
+                  
+                 return onlyurlPara1;
+                 })
+               }
+               }
+              
+                   const cleanedParagraphPara1 = htmlPara1.replace(/\[(.*?.)\]/g, '');
+                   const cleanedParagraph21Para1  = cleanedParagraphPara1.replace('(', '<span>').replace('(', '</span>');
+                   const cleanedParagraphhhPara1Para1  = cleanedParagraph21Para1.replace('(', '<span>').replace('(', '</span>');
+
+                   const regexPara121 = /\*\*(.*?)\*\*/g; // define the regular expression pattern
+                   const boldedTextPara1 = cleanedParagraphhhPara1Para1.replace(regexPara121, '<b>$1</b>');
+                                 // undersore replace with italic
+                   const ItalicPara1 = boldedTextPara1.replace(/_([^_]+)_/g, "<i>$1</i>");
+                                 // ~~ replace with strikethrough
+                   const strikethroughPara1 = ItalicPara1.replace(/~~([^~]+)~~/g, "<s style='text-decoration: line-through;'>$1</s>");
+                               // `` replace with code
+                   const code21Para1 = strikethroughPara1.replace(/`([^`]+)`/g, "<code style='background-color: #F1F1F1;padding: 2px;'>$1</code>");
+                   return code21Para1;
+
+
               } catch (e) {
                 if (e instanceof TypeError) {
                   return "Enter some text";
@@ -414,17 +538,72 @@ function PlasmicBodyArticle1__RenderFunc(props: {
                 throw e;
               }
             })()
-          : (() => {
+          }}
+        />
+      ) : (
+            <div
+              className={projectcss.__wab_expr_html_text}
+              dangerouslySetInnerHTML={{
+                __html: (() => {
               try {
-                return $ctx.fetchDyanamicData.records[0].fields.paragraph1;
+              //  return $ctx.fetchDyanamicData.records[0].fields.paragraph1;
+           
+                  var ParaSbTextPara1 = $ctx.fetchDyanamicData.records[0].fields.paragraph1;
+                  var htmlPara1 = urlScheck(ParaSbTextPara1); 
+                
+                  function urlScheck(text) {
+                    var regexPara1 = /\[([^\][]*)]/g;
+                    var results = [], m;
+                    while (m = regexPara1.exec(text)) {
+                    results.push(m[1]);         
+                    }
+                    const replaceDataPara1 = results;
+                    
+                    var arrayLengthPara1 = replaceDataPara1.length;
+                    
+                    var  asas= 0;
+                    for (var i=0; i <= arrayLengthPara1; i++) {
+                    
+                     var urlRegSBPara1 = /(https?:\/\/[^\s]+)/g;
+                     return text.replace(+ replaceDataPara1 + '').replace(urlRegSBPara1, function (url) {
+                     var laststringremovePara1 = url.replaceAll(")", "")
+                    
+                    
+                    var onlyurlPara1 =  '<a href="' + laststringremovePara1 + '" style="color:#4896fa;text-decoration: underline #4896FA 1px;">' + replaceDataPara1[asas] + '</a>';
+                   
+                    asas ++ ;
+                     
+                    return onlyurlPara1;
+                    })
+                  }
+                  }
+                 
+                      const cleanedParagraphPara1 = htmlPara1.replace(/\[(.*?.)\]/g, '');
+
+                      const cleanedParagraph21Para1  = cleanedParagraphPara1.replace('(', '<span>').replace('(', '</span>');
+                      const cleanedParagraphhhPara1Para1  = cleanedParagraph21Para1.replace('(', '<span>').replace('(', '</span>');
+                      const regexPara121 = /\*\*(.*?)\*\*/g; // define the regular expression pattern
+                      const boldedTextPara1 = cleanedParagraphhhPara1Para1.replace(regexPara121, '<b>$1</b>');
+                                    // undersore replace with italic
+                      const ItalicPara1 = boldedTextPara1.replace(/_([^_]+)_/g, "<i>$1</i>");
+                                    // ~~ replace with strikethrough
+                      const strikethroughPara1 = ItalicPara1.replace(/~~([^~]+)~~/g, "<s style='text-decoration: line-through;'>$1</s>");
+                                  // `` replace with code
+                      const code21Para1 = strikethroughPara1.replace(/`([^`]+)`/g, "<code style='background-color: #F1F1F1;padding: 2px;'>$1</code>");
+                      return code21Para1;
+
+
               } catch (e) {
                 if (e instanceof TypeError) {
                   return "Enter some text";
                 }
                 throw e;
               }
-            })()}
-      </div>
+            })()
+          }}
+        />
+      )}
+    </div>
 
       <p.PlasmicLink
         className={classNames(projectcss.all, projectcss.a, sty.link__xbqJg)}
@@ -507,9 +686,56 @@ function PlasmicBodyArticle1__RenderFunc(props: {
         )}
       >
         {hasVariant(globalVariants, "screen", "mobileOnly")
-          ? (() => {
+         ? (
+          <div
+            className={projectcss.__wab_expr_html_text}
+            dangerouslySetInnerHTML={{
+              __html: (() => {
               try {
-                return $ctx.fetchDyanamicData.records[0].fields.paragraph2;
+               // return $ctx.fetchDyanamicData.records[0].fields.paragraph2;
+               var ParaSbTextPara2 = $ctx.fetchDyanamicData.records[0].fields.paragraph2;
+               var htmlPara2 = urlScheck(ParaSbTextPara2); 
+ 
+               function urlScheck(text) {
+                 var regexPara2 = /\[([^\][]*)]/g;
+                 var results = [], m;
+                 while (m = regexPara2.exec(text)) {
+                 results.push(m[1]);         
+                 }
+                 const replaceDataPara2 = results;
+                 
+                 var arrayLengthPara2 = replaceDataPara2.length;
+                 
+                 var  asas= 0;
+                 for (var i=0; i <= arrayLengthPara2; i++) {
+                 
+                  var urlRegSBPara2 = /(https?:\/\/[^\s]+)/g;
+                  return text.replace(+ replaceDataPara2 + '').replace(urlRegSBPara2, function (url) {
+                  var laststringremovePara2 = url.replaceAll(")", "")
+
+                 
+                 var onlyurlPara2 =  '<a href="' + laststringremovePara2 + '" style="color:#4896fa;text-decoration: underline #4896FA 1px;">' + replaceDataPara2[asas] + '</a>';
+                 asas ++ ;
+                 return onlyurlPara2;
+                 })
+               }
+               }
+              
+                   const cleanedParagraphPara2 = htmlPara2.replace(/\[(.*?.)\]/g, '');
+
+                   const cleanedParagraph21Para2  = cleanedParagraphPara2.replace('(', '<span>').replace('(', '</span>');
+                   const cleanedParagraphhhPara1Para2  = cleanedParagraph21Para2.replace('(', '<span>').replace('(', '</span>');
+                   const regexPara121 = /\*\*(.*?)\*\*/g; // define the regular expression pattern
+                   const boldedTextPara2 = cleanedParagraphhhPara1Para2.replace(regexPara121, '<b>$1</b>');
+                                 // undersore replace with italic
+                   const ItalicPara2 = boldedTextPara2.replace(/_([^_]+)_/g, "<i>$1</i>");
+                                 // ~~ replace with strikethrough
+                   const strikethroughPara2 = ItalicPara2.replace(/~~([^~]+)~~/g, "<s style='text-decoration: line-through;'>$1</s>");
+                               // `` replace with code
+                   const code21Para2 = strikethroughPara2.replace(/`([^`]+)`/g, "<code style='background-color: #F1F1F1;padding: 2px;'>$1</code>");
+                   return code21Para2;
+
+
               } catch (e) {
                 if (e instanceof TypeError) {
                   return "Enter some text";
@@ -517,18 +743,70 @@ function PlasmicBodyArticle1__RenderFunc(props: {
                 throw e;
               }
             })()
-          : (() => {
+          }}
+        />
+      ) : (
+            <div
+              className={projectcss.__wab_expr_html_text}
+              dangerouslySetInnerHTML={{
+                __html: (() => {
               try {
-                return $ctx.fetchDyanamicData.records[0].fields.paragraph2;
+               // return $ctx.fetchDyanamicData.records[0].fields.paragraph2;
+               var ParaSbTextPara2 = $ctx.fetchDyanamicData.records[0].fields.paragraph2;
+               var htmlPara2 = urlScheck(ParaSbTextPara2); 
+             
+               function urlScheck(text) {
+                 var regexPara1 = /\[([^\][]*)]/g;
+                 var results = [], m;
+                 while (m = regexPara1.exec(text)) {
+                 results.push(m[1]);         
+                 }
+                 const replaceDataPara2 = results;
+                 
+                 var arrayLengthPara2 = replaceDataPara2.length;
+                 
+                 var  asas= 0;
+                 for (var i=0; i <= arrayLengthPara2; i++) {
+                 
+                 var urlRegSBPara1 = /(https?:\/\/[^\s]+)/g;
+                 return text.replace(+ replaceDataPara2 + '').replace(urlRegSBPara1, function (url) {
+                 var laststringremovePara2 = url.replaceAll(")", "")
+                               
+                 var onlyurlPara2 =  '<a href="' + laststringremovePara2 + '" style="color:#4896fa;text-decoration: underline #4896FA 1px;">' + replaceDataPara2[asas] + '</a>';
+                
+                 asas ++ ;
+                  
+                 return onlyurlPara2;
+                 })
+               }
+               }
+                   const cleanedParagraphPara2 = htmlPara2.replace(/\[(.*?.)\]/g, '');
+
+                   const cleanedParagraph21Para2  = cleanedParagraphPara2.replace('(', '<span>').replace('(', '</span>');
+                   const cleanedParagraphhhPara1Para1  = cleanedParagraph21Para2.replace('(', '<span>').replace('(', '</span>');
+                   const regexPara121 = /\*\*(.*?)\*\*/g; // define the regular expression pattern
+                   const boldedTextPara2 = cleanedParagraphhhPara1Para1.replace(regexPara121, '<b>$1</b>');
+                  // console.log(boldedTextPara2);
+
+                                 // undersore replace with italic
+                   const ItalicPara2 = boldedTextPara2.replace(/_([^_]+)_/g, "<i>$1</i>");
+                                 // ~~ replace with strikethrough
+                   const strikethroughPara2 = ItalicPara2.replace(/~~([^~]+)~~/g, "<s style='text-decoration: line-through;'>$1</s>");
+                               // `` replace with code
+                   const code21Para2 = strikethroughPara2.replace(/`([^`]+)`/g, "<code style='background-color: #F1F1F1;padding: 2px;'>$1</code>");
+                   return code21Para2;
+
               } catch (e) {
                 if (e instanceof TypeError) {
                   return "Enter some text";
                 }
                 throw e;
               }
-            })()}
-      </div>
-
+            })()
+          }}
+        />
+      )}
+    </div>
       <p.PlasmicLink
         className={classNames(projectcss.all, projectcss.a, sty.link__emysg)}
         component={Link}
@@ -594,16 +872,64 @@ function PlasmicBodyArticle1__RenderFunc(props: {
           sty.paragraph3
         )}
       >
-        {(() => {
+     
+            <div
+              className={projectcss.__wab_expr_html_text}
+              dangerouslySetInnerHTML={{
+                __html: (() => {
           try {
-            return $ctx.fetchDyanamicData.records[0].fields.paragraph3;
+           // return $ctx.fetchDyanamicData.records[0].fields.paragraph3;
+ 
+           var ParaSbTextPara3 = $ctx.fetchDyanamicData.records[0].fields.paragraph3;
+               var htmlPara3 = urlScheck(ParaSbTextPara3); 
+             
+               function urlScheck(text) {
+                 var regexPara3 = /\[([^\][]*)]/g;
+                 var results = [], m;
+                 while (m = regexPara3.exec(text)) {
+                 results.push(m[1]);         
+                 }
+                 const replaceDataPara3 = results;
+                 
+                 var arrayLengthPara3 = replaceDataPara3.length;
+                 
+                 var  asas= 0;
+                 for (var i=0; i <= arrayLengthPara3; i++) {
+                 
+                 var urlRegSBPara3 = /(https?:\/\/[^\s]+)/g;
+                 return text.replace(+ replaceDataPara3 + '').replace(urlRegSBPara3, function (url) {
+                 var laststringremovePara3 = url.replaceAll(")", "")
+                 
+                 var onlyurlPara3 =  '<a href="' + laststringremovePara3 + '" style="color:#4896fa;text-decoration: underline #4896FA 1px;">' + replaceDataPara3[asas] + '</a>';               
+                 asas ++ ;
+                  
+                 return onlyurlPara3;
+                 })
+               }
+               }
+                   const cleanedParagraphPara3 = htmlPara3.replace(/\[(.*?.)\]/g, '');
+
+                   const cleanedParagraph21Para3  = cleanedParagraphPara3.replace('(', '<span>').replace('(', '</span>');
+                   const cleanedParagraphhhPara1Para3  = cleanedParagraph21Para3.replace('(', '<span>').replace('(', '</span>');
+                   const regexPara121 = /\*\*(.*?)\*\*/g; // define the regular expression pattern
+                   const boldedTextPara3 = cleanedParagraphhhPara1Para3.replace(regexPara121, '<b>$1</b>');
+                                 // undersore replace with italic
+                   const ItalicPara3 = boldedTextPara3.replace(/_([^_]+)_/g, "<i>$1</i>");
+                                 // ~~ replace with strikethrough
+                   const strikethroughPara3 = ItalicPara3.replace(/~~([^~]+)~~/g, "<s style='text-decoration: line-through;'>$1</s>");
+                               // `` replace with code
+                   const code21Para3 = strikethroughPara3.replace(/`([^`]+)`/g, "<code style='background-color: #F1F1F1;padding: 2px;'>$1</code>");
+                   return code21Para3;
+
           } catch (e) {
             if (e instanceof TypeError) {
               return "Enter some text";
             }
             throw e;
           }
-        })()}
+        })()
+      }}
+    />
       </div>
 
       <p.PlasmicLink
@@ -671,16 +997,66 @@ function PlasmicBodyArticle1__RenderFunc(props: {
           sty.paragraph4
         )}
       >
-        {(() => {
+         <div
+              className={projectcss.__wab_expr_html_text}
+              dangerouslySetInnerHTML={{
+                __html: (() => {
           try {
-            return $ctx.fetchDyanamicData.records[0].fields.paragraph4;
+           // return $ctx.fetchDyanamicData.records[0].fields.paragraph4;
+           var ParaSbTextPara4 = $ctx.fetchDyanamicData.records[0].fields.paragraph4;
+           var htmlPara4 = urlScheck(ParaSbTextPara4); 
+         
+           function urlScheck(text) {
+             var regexPara4 = /\[([^\][]*)]/g;
+             var results = [], m;
+             while (m = regexPara4.exec(text)) {
+             results.push(m[1]);         
+             }
+             const replaceDataPara4 = results;
+             
+             var arrayLengthPara4 = replaceDataPara4.length;
+             
+             var  asas= 0;
+             for (var i=0; i <= arrayLengthPara4; i++) {
+             
+              var urlRegSBPara4 = /(https?:\/\/[^\s]+)/g;
+              return text.replace(+ replaceDataPara4 + '').replace(urlRegSBPara4, function (url) {
+              var laststringremovePara4 = url.replaceAll(")", "")
+             
+             
+             var onlyurlPara4 =  '<a href="' + laststringremovePara4 + '" style="color:#4896fa;text-decoration: underline #4896FA 1px;">' + replaceDataPara4[asas] + '</a>';
+            
+             asas ++ ;
+              
+             return onlyurlPara4;
+             })
+           }
+           }
+               const cleanedParagraphPara4 = htmlPara4.replace(/\[(.*?.)\]/g, '');
+
+               const cleanedParagraph21Para4  = cleanedParagraphPara4.replace('(', '<span>').replace('(', '</span>');
+               const cleanedParagraphhhPara1Para4  = cleanedParagraph21Para4.replace('(', '<span>').replace('(', '</span>');
+               const regexPara1214 = /\*\*(.*?)\*\*/g; // define the regular expression pattern
+               const boldedTextPara4 = cleanedParagraphhhPara1Para4.replace(regexPara1214, '<b>$1</b>');
+               //console.log(boldedTextPara4);
+                             // undersore replace with italic
+               const ItalicPara4 = boldedTextPara4.replace(/_([^_]+)_/g, "<i>$1</i>");
+                             // ~~ replace with strikethrough
+               const strikethroughPara4 = ItalicPara4.replace(/~~([^~]+)~~/g, "<s style='text-decoration: line-through;'>$1</s>");
+                           // `` replace with code
+               const code21Para4 = strikethroughPara4.replace(/`([^`]+)`/g, "<code style='background-color: #F1F1F1;padding: 2px;'>$1</code>");
+               return code21Para4;
+
+
           } catch (e) {
             if (e instanceof TypeError) {
               return "Enter some text";
             }
             throw e;
           }
-        })()}
+        })()
+      }}
+    />
       </div>
 
       <p.PlasmicLink
@@ -748,16 +1124,65 @@ function PlasmicBodyArticle1__RenderFunc(props: {
           sty.paragraph5
         )}
       >
-        {(() => {
+        <div
+              className={projectcss.__wab_expr_html_text}
+              dangerouslySetInnerHTML={{
+                __html: (() => {
           try {
-            return $ctx.fetchDyanamicData.records[0].fields.paragraph5;
+           // return $ctx.fetchDyanamicData.records[0].fields.paragraph4;
+           var ParaSbTextPara5 = $ctx.fetchDyanamicData.records[0].fields.paragraph5;
+           var htmlPara5 = urlScheck(ParaSbTextPara5); 
+         
+           function urlScheck(text) {
+             var regexPara5 = /\[([^\][]*)]/g;
+             var results = [], m;
+             while (m = regexPara5.exec(text)) {
+             results.push(m[1]);         
+             }
+             const replaceDataPara5 = results;
+             
+             var arrayLengthPara5 = replaceDataPara5.length;
+             
+             var  asas= 0;
+             for (var i=0; i <= arrayLengthPara5; i++) {
+             
+              var urlRegSBPara5 = /(https?:\/\/[^\s]+)/g;
+              return text.replace(+ replaceDataPara5 + '').replace(urlRegSBPara5, function (url) {
+              var laststringremovePara5 = url.replaceAll(")", "")
+             
+             
+             var onlyurlPara5 =  '<a href="' + laststringremovePara5 + '" style="color:#4896fa;text-decoration: underline #4896FA 1px;">' + replaceDataPara5[asas] + '</a>';           
+             asas ++ ;
+              
+             return onlyurlPara5;
+             })
+           }
+           }
+               const cleanedParagraphPara5 = htmlPara5.replace(/\[(.*?.)\]/g, '');
+
+               const cleanedParagraph21Para5  = cleanedParagraphPara5.replace('(', '<span>').replace('(', '</span>');
+               const cleanedParagraphhhPara1Para5  = cleanedParagraph21Para5.replace('(', '<span>').replace('(', '</span>');
+               const regexPara1214 = /\*\*(.*?)\*\*/g; // define the regular expression pattern
+               const boldedTextPara5 = cleanedParagraphhhPara1Para5.replace(regexPara1214, '<b>$1</b>');
+               //console.log(boldedTextPara5);
+                             // undersore replace with italic
+               const ItalicPara5 = boldedTextPara5.replace(/_([^_]+)_/g, "<i>$1</i>");
+                             // ~~ replace with strikethrough
+               const strikethroughPara5 = ItalicPara5.replace(/~~([^~]+)~~/g, "<s style='text-decoration: line-through;'>$1</s>");
+                           // `` replace with code
+               const code21Para5 = strikethroughPara5.replace(/`([^`]+)`/g, "<code style='background-color: #F1F1F1;padding: 2px;'>$1</code>");
+               return code21Para5;
+
+
           } catch (e) {
             if (e instanceof TypeError) {
               return "Enter some text";
             }
             throw e;
           }
-        })()}
+        })()
+      }}
+    />
       </div>
 
       <p.PlasmicLink
@@ -825,16 +1250,64 @@ function PlasmicBodyArticle1__RenderFunc(props: {
           sty.paragraph6
         )}
       >
-        {(() => {
+         <div
+              className={projectcss.__wab_expr_html_text}
+              dangerouslySetInnerHTML={{
+                __html: (() => {
           try {
-            return $ctx.fetchDyanamicData.records[0].fields.paragraph6;
+           // return $ctx.fetchDyanamicData.records[0].fields.paragraph4;
+           var ParaSbTextPara6 = $ctx.fetchDyanamicData.records[0].fields.paragraph6;
+           var htmlPara6 = urlScheck(ParaSbTextPara6); 
+         
+           function urlScheck(text) {
+             var regexPara6 = /\[([^\][]*)]/g;
+             var results = [], m;
+             while (m = regexPara6.exec(text)) {
+             results.push(m[1]);         
+             }
+             const replaceDataPara6 = results;
+             
+             var arrayLengthPara6 = replaceDataPara6.length;
+             
+             var  asas= 0;
+             for (var i=0; i <= arrayLengthPara6; i++) {
+             
+              var urlRegSBPara6 = /(https?:\/\/[^\s]+)/g;
+              return text.replace(+ replaceDataPara6 + '').replace(urlRegSBPara6, function (url) {
+              var laststringremovePara6 = url.replaceAll(")", "")
+             
+             
+             var onlyurlPara6 =  '<a href="' + laststringremovePara6 + '" style="color:#4896fa;text-decoration: underline #4896FA 1px;">' + replaceDataPara6[asas] + '</a>';           
+             asas ++ ;
+              
+             return onlyurlPara6;
+             })
+           }
+           }
+               const cleanedParagraphPara6 = htmlPara6.replace(/\[(.*?.)\]/g, '');
+
+               const cleanedParagraph21Para6  = cleanedParagraphPara6.replace('(', '<span>').replace('(', '</span>');
+               const cleanedParagraphhhPara1Para6  = cleanedParagraph21Para6.replace('(', '<span>').replace('(', '</span>');
+               const regexPara1214 = /\*\*(.*?)\*\*/g; // define the regular expression pattern
+               const boldedTextPara6 = cleanedParagraphhhPara1Para6.replace(regexPara1214, '<b>$1</b>');
+                             // undersore replace with italic
+               const ItalicPara6 = boldedTextPara6.replace(/_([^_]+)_/g, "<i>$1</i>");
+                             // ~~ replace with strikethrough
+               const strikethroughPara6 = ItalicPara6.replace(/~~([^~]+)~~/g, "<s style='text-decoration: line-through;'>$1</s>");
+                           // `` replace with code
+               const code21Para6 = strikethroughPara6.replace(/`([^`]+)`/g, "<code style='background-color: #F1F1F1;padding: 2px;'>$1</code>");
+               return code21Para6;
+
+
           } catch (e) {
             if (e instanceof TypeError) {
               return "Enter some text";
             }
             throw e;
           }
-        })()}
+        })()
+      }}
+    />
       </div>
 
       <PlasmicHead
@@ -908,16 +1381,62 @@ function PlasmicBodyArticle1__RenderFunc(props: {
           sty.paragraph7
         )}
       >
-        {(() => {
+       <div
+              className={projectcss.__wab_expr_html_text}
+              dangerouslySetInnerHTML={{
+                __html: (() => {
           try {
-            return $ctx.fetchDyanamicData.records[0].fields.paragraph7;
+           // return $ctx.fetchDyanamicData.records[0].fields.paragraph4;
+           var ParaSbTextPara7 = $ctx.fetchDyanamicData.records[0].fields.paragraph7;
+           var htmlPara7 = urlScheck(ParaSbTextPara7); 
+         
+           function urlScheck(text) {
+             var regexPara7 = /\[([^\][]*)]/g;
+             var results = [], m;
+             while (m = regexPara7.exec(text)) {
+             results.push(m[1]);         
+             }
+             const replaceDataPara7 = results;
+             
+             var arrayLengthPara7 = replaceDataPara7.length;
+             
+             var  asas= 0;
+             for (var i=0; i <= arrayLengthPara7; i++) {
+             
+              var urlRegSBPara7 = /(https?:\/\/[^\s]+)/g;
+              return text.replace(+ replaceDataPara7 + '').replace(urlRegSBPara7, function (url) {
+              var laststringremovePara7 = url.replaceAll(")", "")
+                         
+             var onlyurlPara7 =  '<a href="' + laststringremovePara7 + '" style="color:#4896fa;text-decoration: underline #4896FA 1px;">' + replaceDataPara7[asas] + '</a>';           
+             asas ++ ;
+              
+             return onlyurlPara7;
+             })
+           }
+           }
+               const cleanedParagraphPara7 = htmlPara7.replace(/\[(.*?.)\]/g, '');
+
+               const cleanedParagraph21Para7  = cleanedParagraphPara7.replace('(', '<span>').replace('(', '</span>');
+               const cleanedParagraphhhPara1Para7  = cleanedParagraph21Para7.replace('(', '<span>').replace('(', '</span>');
+               const regexPara1214 = /\*\*(.*?)\*\*/g; // define the regular expression pattern
+               const boldedTextPara7 = cleanedParagraphhhPara1Para7.replace(regexPara1214, '<b>$1</b>');
+                             // undersore replace with italic
+               const ItalicPara7 = boldedTextPara7.replace(/_([^_]+)_/g, "<i>$1</i>");
+                             // ~~ replace with strikethrough
+               const strikethroughPara7 = ItalicPara7.replace(/~~([^~]+)~~/g, "<s style='text-decoration: line-through;'>$1</s>");
+                           // `` replace with code
+               const code21Para7 = strikethroughPara7.replace(/`([^`]+)`/g, "<code style='background-color: #F1F1F1;padding: 2px;'>$1</code>");
+               return code21Para7;
+
           } catch (e) {
             if (e instanceof TypeError) {
               return "Enter some text";
             }
             throw e;
           }
-        })()}
+        })()
+      }}
+    />
       </div>
 
       {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
