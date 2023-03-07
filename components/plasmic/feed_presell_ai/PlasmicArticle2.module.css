@@ -1545,7 +1545,7 @@
   line-height: 100%;
   color: rgba(98, 98, 98, 1);
 }
-.checkbox__wasj8:global(.__wab_instance) {
+.checkbox:global(.__wab_instance) {
   max-width: 100%;
   position: absolute;
   left: 14.59375px;
@@ -1585,7 +1585,7 @@
   line-height: 100%;
   color: rgba(98, 98, 98, 1);
 }
-.checkbox__uR5L9:global(.__wab_instance) {
+.checkbox2:global(.__wab_instance) {
   max-width: 100%;
   position: absolute;
   left: 15px;

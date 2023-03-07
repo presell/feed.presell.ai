@@ -316,6 +316,45 @@
           "cssFilePath": "plasmic/feed_presell_ai/PlasmicBodyArticle1.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "RqMwUBLQKr",
+          "name": "Book",
+          "type": "managed",
+          "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
+          "renderModuleFilePath": "plasmic/feed_presell_ai/PlasmicBook.tsx",
+          "importSpec": {
+            "modulePath": "../pages/book.tsx"
+          },
+          "cssFilePath": "plasmic/feed_presell_ai/PlasmicBook.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "GnR90DiK5J",
+          "name": "NavLogoOnly",
+          "type": "managed",
+          "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
+          "renderModuleFilePath": "plasmic/feed_presell_ai/PlasmicNavLogoOnly.tsx",
+          "importSpec": {
+            "modulePath": "NavLogoOnly.tsx"
+          },
+          "cssFilePath": "plasmic/feed_presell_ai/PlasmicNavLogoOnly.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "d3sx3n94uP-",
+          "name": "SqueezeForm",
+          "type": "managed",
+          "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
+          "renderModuleFilePath": "plasmic/feed_presell_ai/PlasmicSqueezeForm.tsx",
+          "importSpec": {
+            "modulePath": "SqueezeForm.tsx"
+          },
+          "cssFilePath": "plasmic/feed_presell_ai/PlasmicSqueezeForm.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -877,6 +916,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.217",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.217/dist/plasmic.schema.json"
+  "cliVersion": "0.1.219",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.219/dist/plasmic.schema.json"
 }

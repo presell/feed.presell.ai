@@ -140,8 +140,10 @@ export type PlasmicArticle2__OverridesType = {
   div17?: p.Flex<"div">;
   div18?: p.Flex<"div">;
   strawberry?: p.Flex<"div">;
+  checkbox?: p.Flex<typeof Checkbox>;
   div21?: p.Flex<"div">;
   vanila?: p.Flex<"div">;
+  checkbox2?: p.Flex<typeof Checkbox>;
   div24?: p.Flex<"div">;
   paymentcardpng?: p.Flex<"div">;
   fingericonpng2?: p.Flex<"div">;
@@ -350,6 +352,28 @@ function PlasmicArticle2__RenderFunc(props: {
 
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "checkbox.isChecked",
+        type: "private",
+        variableType: "boolean",
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => "isChecked" as const
+          : undefined
+      },
+      {
+        path: "checkbox2.isChecked",
+        type: "private",
+        variableType: "boolean",
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => undefined
+          : undefined
+      }
+    ],
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsgpwde9M3Mng()
@@ -1552,14 +1576,27 @@ function PlasmicArticle2__RenderFunc(props: {
                                 </div>
 
                                 <Checkbox
+                                  data-plasmic-name={"checkbox"}
+                                  data-plasmic-override={overrides.checkbox}
                                   aria-label={"strawberry" as const}
                                   children={null}
                                   className={classNames(
                                     "__wab_instance",
-                                    sty.checkbox__wasj8
+                                    sty.checkbox
                                   )}
-                                  isChecked={true}
+                                  isChecked={p.generateStateValueProp($state, [
+                                    "checkbox",
+
+                                    "isChecked"
+                                  ])}
                                   name={"strawberry" as const}
+                                  onChange={(...args) => {
+                                    p.generateStateOnChangeProp($state, [
+                                      "checkbox",
+
+                                      "isChecked"
+                                    ])(args[0]);
+                                  }}
                                 />
                               </div>
 
@@ -1591,13 +1628,27 @@ function PlasmicArticle2__RenderFunc(props: {
                                 </div>
 
                                 <Checkbox
+                                  data-plasmic-name={"checkbox2"}
+                                  data-plasmic-override={overrides.checkbox2}
                                   aria-label={"vanilla" as const}
                                   children={null}
                                   className={classNames(
                                     "__wab_instance",
-                                    sty.checkbox__uR5L9
+                                    sty.checkbox2
                                   )}
+                                  isChecked={p.generateStateValueProp($state, [
+                                    "checkbox2",
+
+                                    "isChecked"
+                                  ])}
                                   name={"vanilla" as const}
+                                  onChange={(...args) => {
+                                    p.generateStateOnChangeProp($state, [
+                                      "checkbox2",
+
+                                      "isChecked"
+                                    ])(args[0]);
+                                  }}
                                 />
                               </div>
                             </p.Stack>
@@ -4095,8 +4146,10 @@ const PlasmicDescendants = {
     "div17",
     "div18",
     "strawberry",
+    "checkbox",
     "div21",
     "vanila",
+    "checkbox2",
     "div24",
     "paymentcardpng",
     "fingericonpng2",
@@ -4351,8 +4404,10 @@ const PlasmicDescendants = {
     "div17",
     "div18",
     "strawberry",
+    "checkbox",
     "div21",
     "vanila",
+    "checkbox2",
     "div24",
     "paymentcardpng",
     "fingericonpng2",
@@ -4482,8 +4537,10 @@ const PlasmicDescendants = {
     "div17",
     "div18",
     "strawberry",
+    "checkbox",
     "div21",
     "vanila",
+    "checkbox2",
     "div24",
     "paymentcardpng",
     "fingericonpng2",
@@ -4624,8 +4681,10 @@ const PlasmicDescendants = {
     "div17",
     "div18",
     "strawberry",
+    "checkbox",
     "div21",
     "vanila",
+    "checkbox2",
     "div24",
     "paymentcardpng",
     "fingericonpng2",
@@ -4740,8 +4799,10 @@ const PlasmicDescendants = {
     "div17",
     "div18",
     "strawberry",
+    "checkbox",
     "div21",
     "vanila",
+    "checkbox2",
     "div24",
     "paymentcardpng",
     "fingericonpng2",
@@ -4916,8 +4977,10 @@ const PlasmicDescendants = {
     "div17",
     "div18",
     "strawberry",
+    "checkbox",
     "div21",
     "vanila",
+    "checkbox2",
     "div24",
     "paymentcardpng",
     "fingericonpng2"
@@ -4934,8 +4997,10 @@ const PlasmicDescendants = {
     "div17",
     "div18",
     "strawberry",
+    "checkbox",
     "div21",
     "vanila",
+    "checkbox2",
     "div24",
     "paymentcardpng",
     "fingericonpng2"
@@ -4951,18 +5016,39 @@ const PlasmicDescendants = {
     "div17",
     "div18",
     "strawberry",
+    "checkbox",
     "div21",
     "vanila",
+    "checkbox2",
     "div24",
     "paymentcardpng",
     "fingericonpng2"
   ],
-  div16: ["div16", "div17", "div18", "strawberry", "div21", "vanila"],
-  div17: ["div17", "div18", "strawberry", "div21", "vanila"],
-  div18: ["div18", "strawberry"],
+  div16: [
+    "div16",
+    "div17",
+    "div18",
+    "strawberry",
+    "checkbox",
+    "div21",
+    "vanila",
+    "checkbox2"
+  ],
+  div17: [
+    "div17",
+    "div18",
+    "strawberry",
+    "checkbox",
+    "div21",
+    "vanila",
+    "checkbox2"
+  ],
+  div18: ["div18", "strawberry", "checkbox"],
   strawberry: ["strawberry"],
-  div21: ["div21", "vanila"],
+  checkbox: ["checkbox"],
+  div21: ["div21", "vanila", "checkbox2"],
   vanila: ["vanila"],
+  checkbox2: ["checkbox2"],
   div24: ["div24", "paymentcardpng", "fingericonpng2"],
   paymentcardpng: ["paymentcardpng"],
   fingericonpng2: ["fingericonpng2"],
@@ -5947,8 +6033,10 @@ type NodeDefaultElementType = {
   div17: "div";
   div18: "div";
   strawberry: "div";
+  checkbox: typeof Checkbox;
   div21: "div";
   vanila: "div";
+  checkbox2: typeof Checkbox;
   div24: "div";
   paymentcardpng: "div";
   fingericonpng2: "div";
@@ -6286,8 +6374,10 @@ export const PlasmicArticle2 = Object.assign(
     div17: makeNodeComponent("div17"),
     div18: makeNodeComponent("div18"),
     strawberry: makeNodeComponent("strawberry"),
+    checkbox: makeNodeComponent("checkbox"),
     div21: makeNodeComponent("div21"),
     vanila: makeNodeComponent("vanila"),
+    checkbox2: makeNodeComponent("checkbox2"),
     div24: makeNodeComponent("div24"),
     paymentcardpng: makeNodeComponent("paymentcardpng"),
     fingericonpng2: makeNodeComponent("fingericonpng2"),

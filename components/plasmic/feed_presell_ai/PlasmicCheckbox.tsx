@@ -151,11 +151,11 @@ function PlasmicCheckbox__RenderFunc(props: {
       },
       {
         path: "isChecked",
-        type: "private",
-        variableType: "variant",
-        initFunc: true
-          ? ({ $props, $state, $queries, $ctx }) => $props.isChecked
-          : undefined
+        type: "writable",
+        variableType: "text",
+
+        valueProp: "isChecked",
+        onChangeProp: "onChange"
       },
       {
         path: "isIndeterminate",

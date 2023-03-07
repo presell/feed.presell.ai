@@ -35,10 +35,10 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import NavLogoOnly from "../../NavLogoOnly"; // plasmic-import: GnR90DiK5J/component
+import SqueezeForm from "../../SqueezeForm"; // plasmic-import: d3sx3n94uP-/component
 import { DataFetcher } from "@plasmicpkgs/plasmic-query"; // plasmic-import: ae7V86eNoXA/codeComponent
 import { PlasmicHead } from "@plasmicapp/react-web"; // plasmic-import: 9R13-owMVa/codeComponent
-import TextInput from "../../TextInput"; // plasmic-import: oXgnbMzjmEb/component
-import Button from "../../Button"; // plasmic-import: tGhiKRCWdC1/component
 
 import { useScreenVariants as useScreenVariantsgpwde9M3Mng } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: GPWDE9_m3Mng/globalVariant
 
@@ -46,9 +46,6 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_feed_presell_ai.module.css"; // plasmic-import: 9u4jBEkqWUKrrXSfUUFFfk/projectcss
 import sty from "./PlasmicSqueeze.module.css"; // plasmic-import: VYTD6jD3PVG/css
-
-import SearchsvgIcon from "./icons/PlasmicIcon__Searchsvg"; // plasmic-import: mLLNiYFIAvU/icon
-import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: LM5WZ4deOJj/icon
 
 export type PlasmicSqueeze__VariantMembers = {};
 export type PlasmicSqueeze__VariantsArgs = {};
@@ -61,9 +58,11 @@ export const PlasmicSqueeze__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicSqueeze__OverridesType = {
   root?: p.Flex<"div">;
+  navLogoOnly?: p.Flex<typeof NavLogoOnly>;
+  productDetails2?: p.Flex<"div">;
   httpApiFetcher?: p.Flex<typeof DataFetcher>;
   head?: p.Flex<typeof PlasmicHead>;
-  form?: p.Flex<"form">;
+  productDetails?: p.Flex<"div">;
 };
 
 export interface DefaultSqueezeProps {}
@@ -158,6 +157,72 @@ function PlasmicSqueeze__RenderFunc(props: {
             }
           })()}
         >
+          <div className={classNames(projectcss.all, sty.freeBox___9Kr3Y)}>
+            <NavLogoOnly
+              data-plasmic-name={"navLogoOnly"}
+              data-plasmic-override={overrides.navLogoOnly}
+              className={classNames("__wab_instance", sty.navLogoOnly)}
+            />
+
+            <div
+              data-plasmic-name={"productDetails2"}
+              data-plasmic-override={overrides.productDetails2}
+              className={classNames(projectcss.all, sty.productDetails2)}
+            >
+              <div className={classNames(projectcss.all, sty.columns___4BvLk)}>
+                <div className={classNames(projectcss.all, sty.column__boAbo)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__q2Uq9)}
+                    displayHeight={"175px" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"196px" as const}
+                    loading={"lazy" as const}
+                  />
+                </div>
+
+                <div className={classNames(projectcss.all, sty.column__fLy3A)}>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__bbNbu
+                    )}
+                  >
+                    {"Product Name Here"}
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__yDtlO
+                    )}
+                  >
+                    {"Enter some text"}
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___6VnSg
+                    )}
+                  >
+                    {"Enter some text"}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <SqueezeForm
+              className={classNames("__wab_instance", sty.squeezeForm__ybJdD)}
+            />
+          </div>
+
           <DataFetcher
             data-plasmic-name={"httpApiFetcher"}
             data-plasmic-override={overrides.httpApiFetcher}
@@ -239,40 +304,13 @@ function PlasmicSqueeze__RenderFunc(props: {
                     <div
                       className={classNames(projectcss.all, sty.freeBox__xhsS)}
                     >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__o0Xt
-                        )}
-                      >
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img__aA2H)}
-                          displayHeight={"56px" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"auto" as const}
-                          loading={"lazy" as const}
-                          src={(() => {
-                            try {
-                              return $ctx.fetchDyanamicData.fields.logo[0].url;
-                            } catch (e) {
-                              if (e instanceof TypeError) {
-                                return undefined;
-                              }
-                              throw e;
-                            }
-                          })()}
-                        />
-                      </div>
-
                       {true ? (
                         <div
+                          data-plasmic-name={"productDetails"}
+                          data-plasmic-override={overrides.productDetails}
                           className={classNames(
                             projectcss.all,
-                            sty.columns__l1GHc
+                            sty.productDetails
                           )}
                         >
                           <div
@@ -474,170 +512,12 @@ function PlasmicSqueeze__RenderFunc(props: {
                         </div>
                       ) : null}
 
-                      <div
+                      <SqueezeForm
                         className={classNames(
-                          projectcss.all,
-                          sty.columns__ysbXk
+                          "__wab_instance",
+                          sty.squeezeForm__xLwqS
                         )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.column___4N6M1
-                          )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__a3MCw
-                            )}
-                          >
-                            {(
-                              hasVariant(globalVariants, "screen", "mobileOnly")
-                                ? true
-                                : true
-                            ) ? (
-                              <button
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.button,
-                                  projectcss.__wab_text,
-                                  sty.button__jeVfv
-                                )}
-                              >
-                                {(() => {
-                                  try {
-                                    return $ctx.fetchDyanamicData.fields.sBadge;
-                                  } catch (e) {
-                                    if (e instanceof TypeError) {
-                                      return "Click Me";
-                                    }
-                                    throw e;
-                                  }
-                                })()}
-                              </button>
-                            ) : null}
-                          </div>
-                        </div>
-                      </div>
-
-                      <form
-                        data-plasmic-name={"form"}
-                        data-plasmic-override={overrides.form}
-                        action={
-                          "https://hook.us1.make.com/5mordka6hk6nytd9doqnbe6kbf4r3drk" as const
-                        }
-                        className={classNames(projectcss.all, sty.form)}
-                        method={"post" as const}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__o4C3M
-                          )}
-                        >
-                          {(() => {
-                            try {
-                              return $ctx.fetchDyanamicData.fields.sH4;
-                            } catch (e) {
-                              if (e instanceof TypeError) {
-                                return "Enter some text";
-                              }
-                              throw e;
-                            }
-                          })()}
-                        </div>
-
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__qDwa
-                          )}
-                        >
-                          {(() => {
-                            try {
-                              return $ctx.fetchDyanamicData.fields.sH5;
-                            } catch (e) {
-                              if (e instanceof TypeError) {
-                                return "Enter some text";
-                              }
-                              throw e;
-                            }
-                          })()}
-                        </div>
-
-                        <TextInput
-                          aria-label={"email" as const}
-                          className={classNames(
-                            "__wab_instance",
-                            sty.textInput__p474A
-                          )}
-                          name={"email" as const}
-                          placeholder={"📧 Your Email Address" as const}
-                        />
-
-                        <TextInput
-                          aria-label={"phone" as const}
-                          className={classNames(
-                            "__wab_instance",
-                            sty.textInput___0TAi9
-                          )}
-                          name={"phone" as const}
-                          placeholder={"📲 Your Phone Number" as const}
-                        />
-
-                        {true ? (
-                          <TextInput
-                            aria-label={"record_id" as const}
-                            className={classNames(
-                              "__wab_instance",
-                              sty.textInput__dzeZj
-                            )}
-                            name={"record_id" as const}
-                            value={(() => {
-                              try {
-                                return $ctx.fetchDyanamicData.id;
-                              } catch (e) {
-                                if (e instanceof TypeError) {
-                                  return undefined;
-                                }
-                                throw e;
-                              }
-                            })()}
-                          />
-                        ) : null}
-
-                        <Button
-                          className={classNames(
-                            "__wab_instance",
-                            sty.button__pWaS5
-                          )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__pdsJ0
-                            )}
-                          >
-                            {"Get Offer"}
-                          </div>
-                        </Button>
-
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__lCs17
-                          )}
-                        >
-                          {hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? "I agree to receive emails and texts."
-                            : "I agree to receive emails and texts."}
-                        </div>
-                      </form>
+                      />
 
                       {true ? (
                         <div
@@ -683,19 +563,30 @@ function PlasmicSqueeze__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "httpApiFetcher", "head", "form"],
-  httpApiFetcher: ["httpApiFetcher", "head", "form"],
+  root: [
+    "root",
+    "navLogoOnly",
+    "productDetails2",
+    "httpApiFetcher",
+    "head",
+    "productDetails"
+  ],
+  navLogoOnly: ["navLogoOnly"],
+  productDetails2: ["productDetails2"],
+  httpApiFetcher: ["httpApiFetcher", "head", "productDetails"],
   head: ["head"],
-  form: ["form"]
+  productDetails: ["productDetails"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  navLogoOnly: typeof NavLogoOnly;
+  productDetails2: "div";
   httpApiFetcher: typeof DataFetcher;
   head: typeof PlasmicHead;
-  form: "form";
+  productDetails: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -759,9 +650,11 @@ export const PlasmicSqueeze = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    navLogoOnly: makeNodeComponent("navLogoOnly"),
+    productDetails2: makeNodeComponent("productDetails2"),
     httpApiFetcher: makeNodeComponent("httpApiFetcher"),
     head: makeNodeComponent("head"),
-    form: makeNodeComponent("form"),
+    productDetails: makeNodeComponent("productDetails"),
 
     // Metadata about props expected for PlasmicSqueeze
     internalVariantProps: PlasmicSqueeze__VariantProps,
