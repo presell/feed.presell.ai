@@ -35,9 +35,9 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import { DataFetcher } from "@plasmicpkgs/plasmic-query"; // plasmic-import: ae7V86eNoXA/codeComponent
 import NavLogoOnly from "../../NavLogoOnly"; // plasmic-import: GnR90DiK5J/component
 import SqueezeForm from "../../SqueezeForm"; // plasmic-import: d3sx3n94uP-/component
-import { DataFetcher } from "@plasmicpkgs/plasmic-query"; // plasmic-import: ae7V86eNoXA/codeComponent
 import { PlasmicHead } from "@plasmicapp/react-web"; // plasmic-import: 9R13-owMVa/codeComponent
 
 import { useScreenVariants as useScreenVariantsgpwde9M3Mng } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: GPWDE9_m3Mng/globalVariant
@@ -58,9 +58,13 @@ export const PlasmicSqueeze__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicSqueeze__OverridesType = {
   root?: p.Flex<"div">;
+  httpApiFetcher?: p.Flex<typeof DataFetcher>;
   navLogoOnly?: p.Flex<typeof NavLogoOnly>;
   productDetails2?: p.Flex<"div">;
-  httpApiFetcher?: p.Flex<typeof DataFetcher>;
+  sThumbail?: p.Flex<typeof p.PlasmicImg>;
+  sH1?: p.Flex<"div">;
+  sH2?: p.Flex<"div">;
+  sH3?: p.Flex<"div">;
   head?: p.Flex<typeof PlasmicHead>;
   productDetails?: p.Flex<"div">;
 };
@@ -157,72 +161,6 @@ function PlasmicSqueeze__RenderFunc(props: {
             }
           })()}
         >
-          <div className={classNames(projectcss.all, sty.freeBox___9Kr3Y)}>
-            <NavLogoOnly
-              data-plasmic-name={"navLogoOnly"}
-              data-plasmic-override={overrides.navLogoOnly}
-              className={classNames("__wab_instance", sty.navLogoOnly)}
-            />
-
-            <div
-              data-plasmic-name={"productDetails2"}
-              data-plasmic-override={overrides.productDetails2}
-              className={classNames(projectcss.all, sty.productDetails2)}
-            >
-              <div className={classNames(projectcss.all, sty.columns___4BvLk)}>
-                <div className={classNames(projectcss.all, sty.column__boAbo)}>
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__q2Uq9)}
-                    displayHeight={"175px" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"196px" as const}
-                    loading={"lazy" as const}
-                  />
-                </div>
-
-                <div className={classNames(projectcss.all, sty.column__fLy3A)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__bbNbu
-                    )}
-                  >
-                    {"Product Name Here"}
-                  </div>
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__yDtlO
-                    )}
-                  >
-                    {"Enter some text"}
-                  </div>
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___6VnSg
-                    )}
-                  >
-                    {"Enter some text"}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <SqueezeForm
-              className={classNames("__wab_instance", sty.squeezeForm__ybJdD)}
-            />
-          </div>
-
           <DataFetcher
             data-plasmic-name={"httpApiFetcher"}
             data-plasmic-override={overrides.httpApiFetcher}
@@ -246,12 +184,14 @@ function PlasmicSqueeze__RenderFunc(props: {
             url={(() => {
               try {
                 return (
-                  "https://api.airtable.com/v0/appmM1mMqcDvugXhY/PlasmicCMS/" +
-                  $ctx.params.slug
+                  "https://api.airtable.com/v0/appmM1mMqcDvugXhY/PlasmicCMS?filterByFormula=slug=" +
+                  "'" +
+                  $ctx.params.slug +
+                  "'"
                 );
               } catch (e) {
                 if (e instanceof TypeError) {
-                  return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/PlasmicCMS?slug";
+                  return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/PlasmicCMS?filterByFormula=slug=";
                 }
                 throw e;
               }
@@ -260,6 +200,141 @@ function PlasmicSqueeze__RenderFunc(props: {
             <ph.DataCtxReader>
               {$ctx => (
                 <React.Fragment>
+                  <NavLogoOnly
+                    data-plasmic-name={"navLogoOnly"}
+                    data-plasmic-override={overrides.navLogoOnly}
+                    className={classNames("__wab_instance", sty.navLogoOnly)}
+                  />
+
+                  <div
+                    data-plasmic-name={"productDetails2"}
+                    data-plasmic-override={overrides.productDetails2}
+                    className={classNames(projectcss.all, sty.productDetails2)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.columns___4BvLk
+                      )}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.column__boAbo
+                        )}
+                      >
+                        <p.PlasmicImg
+                          data-plasmic-name={"sThumbail"}
+                          data-plasmic-override={overrides.sThumbail}
+                          alt={""}
+                          className={classNames(sty.sThumbail)}
+                          displayHeight={"175px" as const}
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"100%" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"196px" as const}
+                          loading={"lazy" as const}
+                          src={(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .sThumbail[0].url;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return undefined;
+                              }
+                              throw e;
+                            }
+                          })()}
+                        />
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.column__fLy3A
+                        )}
+                      >
+                        <div
+                          data-plasmic-name={"sH1"}
+                          data-plasmic-override={overrides.sH1}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.sH1
+                          )}
+                        >
+                          {(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .sH1;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "Product Name Here";
+                              }
+                              throw e;
+                            }
+                          })()}
+                        </div>
+
+                        <div
+                          data-plasmic-name={"sH2"}
+                          data-plasmic-override={overrides.sH2}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.sH2
+                          )}
+                        >
+                          {(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .sH2;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "Enter some text";
+                              }
+                              throw e;
+                            }
+                          })()}
+                        </div>
+
+                        <div
+                          data-plasmic-name={"sH3"}
+                          data-plasmic-override={overrides.sH3}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.sH3
+                          )}
+                        >
+                          {(() => {
+                            try {
+                              return $ctx.fetchDyanamicData.records[0].fields
+                                .sH3;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return "Enter some text";
+                              }
+                              throw e;
+                            }
+                          })()}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__myn72)}
+                  >
+                    <SqueezeForm
+                      className={classNames(
+                        "__wab_instance",
+                        sty.squeezeForm__ybJdD
+                      )}
+                    />
+                  </div>
+
                   <PlasmicHead
                     data-plasmic-name={"head"}
                     data-plasmic-override={overrides.head}
@@ -565,15 +640,33 @@ function PlasmicSqueeze__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
+    "httpApiFetcher",
     "navLogoOnly",
     "productDetails2",
+    "sThumbail",
+    "sH1",
+    "sH2",
+    "sH3",
+    "head",
+    "productDetails"
+  ],
+  httpApiFetcher: [
     "httpApiFetcher",
+    "navLogoOnly",
+    "productDetails2",
+    "sThumbail",
+    "sH1",
+    "sH2",
+    "sH3",
     "head",
     "productDetails"
   ],
   navLogoOnly: ["navLogoOnly"],
-  productDetails2: ["productDetails2"],
-  httpApiFetcher: ["httpApiFetcher", "head", "productDetails"],
+  productDetails2: ["productDetails2", "sThumbail", "sH1", "sH2", "sH3"],
+  sThumbail: ["sThumbail"],
+  sH1: ["sH1"],
+  sH2: ["sH2"],
+  sH3: ["sH3"],
   head: ["head"],
   productDetails: ["productDetails"]
 } as const;
@@ -582,9 +675,13 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  httpApiFetcher: typeof DataFetcher;
   navLogoOnly: typeof NavLogoOnly;
   productDetails2: "div";
-  httpApiFetcher: typeof DataFetcher;
+  sThumbail: typeof p.PlasmicImg;
+  sH1: "div";
+  sH2: "div";
+  sH3: "div";
   head: typeof PlasmicHead;
   productDetails: "div";
 };
@@ -650,9 +747,13 @@ export const PlasmicSqueeze = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    httpApiFetcher: makeNodeComponent("httpApiFetcher"),
     navLogoOnly: makeNodeComponent("navLogoOnly"),
     productDetails2: makeNodeComponent("productDetails2"),
-    httpApiFetcher: makeNodeComponent("httpApiFetcher"),
+    sThumbail: makeNodeComponent("sThumbail"),
+    sH1: makeNodeComponent("sH1"),
+    sH2: makeNodeComponent("sH2"),
+    sH3: makeNodeComponent("sH3"),
     head: makeNodeComponent("head"),
     productDetails: makeNodeComponent("productDetails"),
 

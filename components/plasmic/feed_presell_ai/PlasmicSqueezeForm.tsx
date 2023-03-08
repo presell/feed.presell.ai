@@ -179,7 +179,7 @@ function PlasmicSqueezeForm__RenderFunc(props: {
       >
         {(() => {
           try {
-            return $ctx.fetchDyanamicData.fields.sH4;
+            return $ctx.fetchDyanamicData.records[0].fields.sH5;
           } catch (e) {
             if (e instanceof TypeError) {
               return "Enter some text";
@@ -198,7 +198,7 @@ function PlasmicSqueezeForm__RenderFunc(props: {
       >
         {(() => {
           try {
-            return $ctx.fetchDyanamicData.fields.sH5;
+            return $ctx.fetchDyanamicData.records[0].fields.sH4;
           } catch (e) {
             if (e instanceof TypeError) {
               return "Enter some text";

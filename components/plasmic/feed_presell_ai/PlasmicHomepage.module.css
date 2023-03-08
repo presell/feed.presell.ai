@@ -243,7 +243,7 @@
   height: auto;
   max-width: 100%;
   min-width: 0;
-  padding: 8px;
+  padding: 8px 6px 8px 8px;
 }
 .h4 {
   position: relative;

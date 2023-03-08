@@ -324,7 +324,7 @@
           "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
           "renderModuleFilePath": "plasmic/feed_presell_ai/PlasmicBook.tsx",
           "importSpec": {
-            "modulePath": "../pages/book.tsx"
+            "modulePath": "../pages/book/[slug].tsx"
           },
           "cssFilePath": "plasmic/feed_presell_ai/PlasmicBook.module.css",
           "scheme": "blackbox",
@@ -916,6 +916,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.219",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.219/dist/plasmic.schema.json"
+  "cliVersion": "0.1.221",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.221/dist/plasmic.schema.json"
 }

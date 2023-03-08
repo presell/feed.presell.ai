@@ -9,6 +9,15 @@
   min-width: 0;
   min-height: 0;
 }
+.httpApiFetcher:global(.__wab_instance) {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+  height: 950px;
+  min-width: 0;
+  flex-shrink: 0;
+}
 .freeBox {
   display: flex;
   position: relative;
@@ -33,12 +42,4 @@
   height: 100%;
   min-width: 0;
   min-height: 0;
-}
-.httpApiFetcher:global(.__wab_instance) {
-  width: 100%;
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-  min-width: 0;
-  display: none;
 }
