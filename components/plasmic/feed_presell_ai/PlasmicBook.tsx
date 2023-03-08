@@ -35,9 +35,9 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import { DataFetcher } from "@plasmicpkgs/plasmic-query"; // plasmic-import: ae7V86eNoXA/codeComponent
 import NavLogoOnly from "../../NavLogoOnly"; // plasmic-import: GnR90DiK5J/component
 import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
+import { DataFetcher } from "@plasmicpkgs/plasmic-query"; // plasmic-import: ae7V86eNoXA/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -55,10 +55,10 @@ export const PlasmicBook__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicBook__OverridesType = {
   root?: p.Flex<"div">;
-  httpApiFetcher?: p.Flex<typeof DataFetcher>;
   freeBox?: p.Flex<"div">;
   navLogoOnly?: p.Flex<typeof NavLogoOnly>;
   calendarEmbed?: p.Flex<typeof Embed>;
+  httpApiFetcher?: p.Flex<typeof DataFetcher>;
 };
 
 export interface DefaultBookProps {}
@@ -149,76 +149,52 @@ function PlasmicBook__RenderFunc(props: {
             }
           })()}
         >
-          <DataFetcher
-            data-plasmic-name={"httpApiFetcher"}
-            data-plasmic-override={overrides.httpApiFetcher}
-            className={classNames("__wab_instance", sty.httpApiFetcher)}
-            dataName={"fetchDyanamicData" as const}
-            errorDisplay={
-              <ph.DataCtxReader>
-                {$ctx => "Error fetching data"}
-              </ph.DataCtxReader>
-            }
-            headers={{
-              "Content-Type": "application/json",
-              Accept: "application/json",
-              Authorization: "Bearer keyVDvhyVSx5Ntbl3"
-            }}
-            loadingDisplay={
-              <ph.DataCtxReader>{$ctx => "Loading..."}</ph.DataCtxReader>
-            }
-            method={"GET" as const}
-            noLayout={false}
-            url={(() => {
-              try {
-                return (
-                  "https://api.airtable.com/v0/appmM1mMqcDvugXhY/PlasmicCMS?filterByFormula=slug=" +
-                  "'" +
-                  $ctx.params.slug +
-                  "'"
-                );
-              } catch (e) {
-                if (e instanceof TypeError) {
-                  return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/PlasmicCMS?filterByFormula=slug=";
-                }
-                throw e;
-              }
-            })()}
+          <div
+            data-plasmic-name={"freeBox"}
+            data-plasmic-override={overrides.freeBox}
+            className={classNames(projectcss.all, sty.freeBox)}
           >
-            <ph.DataCtxReader>
-              {$ctx => (
-                <div
-                  data-plasmic-name={"freeBox"}
-                  data-plasmic-override={overrides.freeBox}
-                  className={classNames(projectcss.all, sty.freeBox)}
-                >
-                  <NavLogoOnly
-                    data-plasmic-name={"navLogoOnly"}
-                    data-plasmic-override={overrides.navLogoOnly}
-                    className={classNames("__wab_instance", sty.navLogoOnly)}
-                  />
+            <NavLogoOnly
+              data-plasmic-name={"navLogoOnly"}
+              data-plasmic-override={overrides.navLogoOnly}
+              className={classNames("__wab_instance", sty.navLogoOnly)}
+            />
 
-                  <Embed
-                    data-plasmic-name={"calendarEmbed"}
-                    data-plasmic-override={overrides.calendarEmbed}
-                    className={classNames("__wab_instance", sty.calendarEmbed)}
-                    code={(() => {
-                      try {
-                        return $ctx.fetchDyanamicData.records[0].fields[
-                          "Custom Embed"
-                        ];
-                      } catch (e) {
-                        if (e instanceof TypeError) {
-                          return undefined;
-                        }
-                        throw e;
-                      }
-                    })()}
-                  />
-                </div>
-              )}
-            </ph.DataCtxReader>
-          </DataFetcher>
+            <Embed
+              data-plasmic-name={"calendarEmbed"}
+              data-plasmic-override={overrides.calendarEmbed}
+              className={classNames("__wab_instance", sty.calendarEmbed)}
+              code={
+                '<!-- Calendly inline widget begin -->\r\n\r\n<div class="calendly-inline-widget" data-url="https://calendly.com/presellsecrets/growth-framework" style="min-width:320px;height:630px;"></div>\r\n\r\n<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>\r\n\r\n<!-- Calendly inline widget end -->' as const
+              }
+            />
+          </div>
+
+          {true ? (
+            <DataFetcher
+              data-plasmic-name={"httpApiFetcher"}
+              data-plasmic-override={overrides.httpApiFetcher}
+              children={null}
+              className={classNames("__wab_instance", sty.httpApiFetcher)}
+              dataName={"" as const}
+              errorDisplay={
+                <ph.DataCtxReader>
+                  {$ctx => "Error fetching data"}
+                </ph.DataCtxReader>
+              }
+              headers={{
+                "Content-Type": "application/json",
+                Accept: "application/json",
+                Authorization: "Bearer keyVDvhyVSx5Ntbl3"
+              }}
+              loadingDisplay={
+                <ph.DataCtxReader>{$ctx => "Loading..."}</ph.DataCtxReader>
+              }
+              method={"GET" as const}
+              noLayout={false}
+              url={"" as const}
+            />
+          ) : null}
         </div>
       </div>
     </React.Fragment>
@@ -226,21 +202,21 @@ function PlasmicBook__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "httpApiFetcher", "freeBox", "navLogoOnly", "calendarEmbed"],
-  httpApiFetcher: ["httpApiFetcher", "freeBox", "navLogoOnly", "calendarEmbed"],
+  root: ["root", "freeBox", "navLogoOnly", "calendarEmbed", "httpApiFetcher"],
   freeBox: ["freeBox", "navLogoOnly", "calendarEmbed"],
   navLogoOnly: ["navLogoOnly"],
-  calendarEmbed: ["calendarEmbed"]
+  calendarEmbed: ["calendarEmbed"],
+  httpApiFetcher: ["httpApiFetcher"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  httpApiFetcher: typeof DataFetcher;
   freeBox: "div";
   navLogoOnly: typeof NavLogoOnly;
   calendarEmbed: typeof Embed;
+  httpApiFetcher: typeof DataFetcher;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -304,10 +280,10 @@ export const PlasmicBook = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    httpApiFetcher: makeNodeComponent("httpApiFetcher"),
     freeBox: makeNodeComponent("freeBox"),
     navLogoOnly: makeNodeComponent("navLogoOnly"),
     calendarEmbed: makeNodeComponent("calendarEmbed"),
+    httpApiFetcher: makeNodeComponent("httpApiFetcher"),
 
     // Metadata about props expected for PlasmicBook
     internalVariantProps: PlasmicBook__VariantProps,
