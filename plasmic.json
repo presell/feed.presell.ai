@@ -265,19 +265,6 @@
           "componentType": "page"
         },
         {
-          "id": "TzYAdcfqLH",
-          "name": "Article2",
-          "type": "managed",
-          "projectId": "9u4jBEkqWUKrrXSfUUFFfk",
-          "renderModuleFilePath": "plasmic/feed_presell_ai/PlasmicArticle2.tsx",
-          "importSpec": {
-            "modulePath": "../pages/article-2.tsx"
-          },
-          "cssFilePath": "plasmic/feed_presell_ai/PlasmicArticle2.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "C1YShID-k4x",
           "name": "Checkbox",
           "type": "managed",
