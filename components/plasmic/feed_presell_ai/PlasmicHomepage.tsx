@@ -395,7 +395,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                     component={Link}
                                     href={`/squeeze/${(() => {
                                       try {
-                                        return currentItem.id;
+                                        return currentItem.fields.slug;
                                       } catch (e) {
                                         if (e instanceof TypeError) {
                                           return "recv3gYlFYc1L0KHG";
