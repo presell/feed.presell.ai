@@ -209,7 +209,7 @@ function PlasmicBook__RenderFunc(props: {
                         ];
                       } catch (e) {
                         if (e instanceof TypeError) {
-                          return '<!-- Calendly inline widget begin -->\n<div class="calendly-inline-widget" data-url="https://calendly.com/presellsecrets/growth-framework" style="min-width:320px;height:630px;"></div>\n<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>\n<!-- Calendly inline widget end -->';
+                          return undefined;
                         }
                         throw e;
                       }
